@@ -2,27 +2,36 @@
 #define MAINGAMELOOP_H
 
 #include "imap.h"
+#include "connection/mailboxelement.h"
+#include <QThread>
 
-class MainGameLoop
-{
-public:
-    ~MainGameLoop();
-    static inline MainGameLoop * getInstance(){
-        if(instance == nullptr){
-            instance = new MainGameLoop();
-        }
-        return instance;
+class MainGameLoop : public MailReceiver, public QThread {
+ public:
+  ~MainGameLoop();
+  inline static MainGameLoop* getLooperInstance() {
+    if (instance == nullptr) {
+      instance = new MainGameLoop();
     }
+    return instance;
+  }
 
-    void start();
+  void startLooper();
 
-private:
-    static MainGameLoop *instance ;
-    IMap *map;
-    MainGameLoop();
+ private:
+  static MainGameLoop* instance;
+  IMap* map;
+  MainGameLoop();
+
+  void proccessGamerMessage(mailMessage* msg, MailSender* receiver);
+  void proccessWatcherMessage(mailMessage* msg, MailSender* receiver);
+
+  // QThread interface
+ protected:
+  void run();
+  bool isWork;
+  QList<DiffElement*>* getAllMapAsDiff();
+  QList<MailSender*> watchers;
+  QList<MailSender*> gamers;
 };
 
-MainGameLoop *MainGameLoop::instance = nullptr;
-
-
-#endif // MAINGAMELOOP_H
+#endif  // MAINGAMELOOP_H

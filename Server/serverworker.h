@@ -3,18 +3,40 @@
 
 #include <QTcpSocket>
 #include <QThread>
+#include <QDataStream>
 
-class ServerWorker : public QThread
-{
-public:
-    ServerWorker(QTcpSocket *socket);
+#include <connection/mailboxelement.h>
 
-    // QThread interface
-protected:
-    void run();
+class ServerWorker : public QThread, public MailSender {
+ public:
+  ServerWorker(QTcpSocket* socket);
 
-private:
-    QTcpSocket *socket;
+  // QThread interface
+ protected:
+  void run();
+
+ protected:
+  struct responceData {
+   public:
+    responceData(QList<DiffElement*>* diff, MessageForServer* messag) {
+      this->diff = diff;
+      this->messag = messag;
+    }
+
+    QList<DiffElement*>* diff;
+    MessageForServer* messag;
+  };
+
+  QTcpSocket* socket;
+  volatile bool isWork = true;
+  QDataStream* in;
+  QDataStream* out;
+  QMutex workerMutex;
+  QQueue<responceData> responceMessage;
+
+  // MailSender interface
+ public:
+  void receiveResponce(QList<DiffElement*>* diff, MessageForServer* message);
 };
 
-#endif // SERVERWORKER_H
+#endif  // SERVERWORKER_H

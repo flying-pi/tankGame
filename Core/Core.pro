@@ -6,28 +6,32 @@
 
 QT       -= gui
 
+QT += core  gui network concurrent
+
+
 TARGET = Core
 TEMPLATE = lib
 
-CONFIG += c++11
+CONFIG += c++14
 
 DEFINES += CORE_LIBRARY
 
 SOURCES += core.cpp \
     infinitydouble.cpp \
-    baseElenents/basetank.cpp \
     imap.cpp \
     ibasegameelement.cpp \
     maps/listbsemap.cpp \
+    connection/simpleconnection.cpp
 
 HEADERS += core.h\
         core_global.h \
     ibasegameelement.h \
     infinitydouble.h \
-    baseElenents/basetank.h \
     imap.h \
     maps/listbsemap.h \
-    coreconst.h
+    coreconst.h \
+    connection/simpleconnection.h \
+    connection/mailboxelement.h
     util/baseutil.h
 
 unix {

@@ -6,18 +6,31 @@
 #include <QTime>
 
 #include "serverconnection.h"
+#include "maingameloop.h"
 
-void onServerError(serverError error){
-qDebug() << "some bad error :: " << error;
+void onServerError(serverError error) {
+  qDebug() << "some bad error :: " << error;
 }
 
-int main(int argc, char *argv[])
-{
-    QCoreApplication a(argc, argv);
-    QTime midnight(0,0,0);
-    qsrand(midnight.secsTo(QTime::currentTime()));
-    ServerConnection *server = ServerConnection::getInstance();
-    QObject::connect(server,&ServerConnection::onServerError,&onServerError);
-    server->startServer();
-    return a.exec();
+void initMainLooper() {
+  MainGameLoop* mainLooper = MainGameLoop::getLooperInstance();
+  mainLooper->startLooper();
+}
+
+void initServer() {
+  ServerConnection* server = ServerConnection::getServerInstance();
+  QObject::connect(server, &ServerConnection::onServerError, &onServerError);
+  server->setDefaultReceiver(MainGameLoop::getLooperInstance());
+  server->startServer();
+}
+
+int main(int argc, char* argv[]) {
+  QCoreApplication a(argc, argv);
+
+  QTime midnight(0, 0, 0);
+  qsrand(midnight.secsTo(QTime::currentTime()));
+
+  initServer();
+
+  return a.exec();
 }
