@@ -7,8 +7,6 @@ ServerWorker::ServerWorker(QTcpSocket* socket) {
 }
 
 void ServerWorker::run() {
-  socket->moveToThread(this);
-
   in = new QDataStream(socket);
   in->setVersion(QDataStream::Qt_5_7);
 
@@ -16,7 +14,7 @@ void ServerWorker::run() {
   out->setVersion(QDataStream::Qt_5_7);
 
   while (this->isWork) {
-    while (socket->waitForReadyRead()) {
+    while (socket->waitForReadyRead(1)) {
       MessageForServer* newMessage = new MessageForServer();
       (*in) >> (*newMessage);
       qInfo() << "get new message on server :: " << (*newMessage).toString();
@@ -27,21 +25,22 @@ void ServerWorker::run() {
       out->startTransaction();
       (*out) << (*data.messag);
       (*out) << data.diff->length();
-      for (int i = 0; i < data.diff->length(); i++) {
+      for (int i = 0; i < data.diff->length(); i++)
         (*out) << (*data.diff->at(i));
+      out->commitTransaction();
+      socket->flush();
+      for (int i = 0; i < data.diff->length(); i++) {
         delete data.diff->at(i);
       }
       delete data.diff;
       delete data.messag;
-      out->commitTransaction();
-      socket->flush();
     }
   }
 }
 
 void ServerWorker::receiveResponce(QList<DiffElement*>* diff,
                                    MessageForServer* message) {
-  QtConcurrent::run(QThreadPool::globalInstance(), [&] {
+  QtConcurrent::run(QThreadPool::globalInstance(), [=] {
     workerMutex.lock();
     responceMessage.push_back(responceData(diff, message));
     workerMutex.unlock();

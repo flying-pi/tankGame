@@ -4,18 +4,23 @@
 #
 #-------------------------------------------------
 
-QT       += core gui network
+QT       += core gui network opengl
+
+CONFIG += c++14
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = GameView
 TEMPLATE = app
 
+QMAKE_LFLAGS += -rdynamic
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    field.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    field.h
 
 FORMS    += mainwindow.ui
 

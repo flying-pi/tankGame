@@ -19,10 +19,10 @@ class MailReceiver {
                         MailSender* sender,
                         int type,
                         bool isReplace = true) {
-    run(QThreadPool::globalInstance(), [&] {
+    run(QThreadPool::globalInstance(), [=] {
       mutex.lock();
       mailMessage* msg;
-      if (isReplace) {
+      if (isReplace && messages.length() != 0) {
         for (int i = 0; i < messages.length(); i++) {
           msg = messages.at(i);
           if ((msg->sender == sender && msg->type == type) ||
@@ -35,12 +35,13 @@ class MailReceiver {
         }
       } else
         messages.push_back(new mailMessage(message, sender, type, isReplace));
+      qInfo() << "getting new message in queue :: " << (*messages.last());
       mutex.unlock();
     });
   }
 
  protected:
-  struct mailMessage {
+  class mailMessage {
    public:
     MessageForServer* message;
     MailSender* sender;
@@ -55,16 +56,23 @@ class MailReceiver {
       this->type = type;
       this->isReplace = isReplace;
     }
+    friend QDebug operator<<(QDebug debug, const mailMessage& c) {
+      QDebugStateSaver saver(debug);
+      debug.nospace() << "mailMessage {message:" << (*c.message);
+      return debug;
+    }
   };
   QQueue<mailMessage*> messages;
   QMutex mutex;
 
-  mailMessage* nextMessage() {
+  virtual mailMessage* nextMessage() {
     if (!mutex.tryLock())
       return nullptr;
     mailMessage* result = nullptr;
-    if (messages.length() > 0)
+    if (messages.length() > 0) {
+      qInfo() << "enqueue message";
       result = messages.takeFirst();
+    }
     mutex.unlock();
     return result;
   }

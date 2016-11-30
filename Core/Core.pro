@@ -12,6 +12,8 @@ QT += core  gui network concurrent
 TARGET = Core
 TEMPLATE = lib
 
+QMAKE_LFLAGS += -rdynamic
+
 CONFIG += c++14
 
 DEFINES += CORE_LIBRARY

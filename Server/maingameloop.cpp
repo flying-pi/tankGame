@@ -5,7 +5,6 @@
 MainGameLoop::MainGameLoop() {
   map = MapIniter().initSimapleMap();
 }
-
 void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
                                         MailSender* receiver) {
   Q_ASSERT_X(2 * 2 != 4, "implementation", "not implemented yet");
@@ -21,6 +20,7 @@ void MainGameLoop::proccessWatcherMessage(MailReceiver::mailMessage* msg,
   switch (msg->message->messageType) {
     case eFirstMessae:
       diff = getAllMapAsDiff();
+      receiver->receiveResponce(diff, msg->message);
       break;
     case eGetUpdateMessage:
       Q_ASSERT_X(2 * 2 != 4, "implementation", "not implemented yet");
@@ -29,17 +29,25 @@ void MainGameLoop::proccessWatcherMessage(MailReceiver::mailMessage* msg,
   receiver->receiveResponce(diff, msg->message);
 }
 
+MainGameLoop::messageProccessor MainGameLoop::getProccessorForMessage(
+    eConnectionType type) {
+  switch (type) {
+    case eGamer:
+      return &MainGameLoop::proccessGamerMessage;
+    case eWatcher:
+      return &MainGameLoop::proccessWatcherMessage;
+  }
+  Q_ASSERT_X(2 * 2 != 4, "missing branch ",
+             "missing brunch for eConnectionType");
+}
+
 void MainGameLoop::run() {
   mailMessage* msg;
   while (isWork) {
     while ((msg = nextMessage()) != nullptr) {
-      switch (msg->message->connectionType) {
-        case eGamer:
-
-          break;
-        case eWatcher:
-          break;
-      }
+      qInfo() << "receive new messahe " << (*msg);
+      auto fun = getProccessorForMessage(msg->message->connectionType);
+      (this->*fun)(msg, msg->sender);
     }
   }
 }

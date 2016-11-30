@@ -21,6 +21,7 @@ SimpleConnection::MessageBuilder* SimpleConnection::getBulder() {
 }
 
 void SimpleConnection::onSocketError(QAbstractSocket::SocketError err) {
+  qCritical() << err;
   isWork = false;
   // TODO add something
 }
@@ -28,7 +29,8 @@ void SimpleConnection::onSocketError(QAbstractSocket::SocketError err) {
 void SimpleConnection::run() {
   socket = new QTcpSocket();
   connect(socket, SIGNAL(error(QAbstractSocket::SocketError)), this,
-          SLOT(onSocketError(QAbstractSocket::SocketError)));
+          SLOT(onSocketError(QAbstractSocket::SocketError)),
+          Qt::DirectConnection);
   socket->connectToHost(adress, DefaultServerParams::port);
   isWork = socket->waitForConnected();
   qDebug() << "Connect to server on " << socket->peerAddress().toString() << ":"
@@ -36,6 +38,11 @@ void SimpleConnection::run() {
   out = new QDataStream();
   out->setDevice(socket);
   out->setVersion(QDataStream::Qt_5_7);
+
+  in = new QDataStream();
+  in->setDevice(socket);
+  in->setVersion(QDataStream::Qt_5_7);
+
   while (isWork) {
     if (messages.length() > 0) {
       MessageForServer* newMessage = messages.takeFirst();
@@ -45,7 +52,24 @@ void SimpleConnection::run() {
       socket->flush();
       continue;
     }
-    msleep(500);
+    bool isEnethinRead = false;
+    while (socket->waitForReadyRead(10000)) {
+      qInfo() << "something read from server";
+      isEnethinRead = true;
+      MessageForServer sendedMessage;
+      (*in) >> sendedMessage;
+      int diffsLenth;
+      (*in) >> diffsLenth;
+      QList<DiffElement*>* result = new QList<DiffElement*>();
+      for (int i = 0; i < diffsLenth; i++) {
+        DiffElement* newItem = new DiffElement();
+        (*in) >> (*newItem);
+        result->append(newItem);
+      }
+      emit onDiffReceive(result);
+    }
+    if (!isEnethinRead)
+      msleep(100);
   }
 }
 

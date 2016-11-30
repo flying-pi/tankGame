@@ -26,9 +26,15 @@ void initServer() {
 
 int main(int argc, char* argv[]) {
   QCoreApplication a(argc, argv);
+  qSetMessagePattern(
+      "[%{type}::%{appname} in %{file}:%{line} th:%{threadid}] message:: "
+      "%{message} "
+      "%{backtrace [separator=\"\n\t\"]}");
 
   QTime midnight(0, 0, 0);
   qsrand(midnight.secsTo(QTime::currentTime()));
+
+  initMainLooper();
 
   initServer();
 

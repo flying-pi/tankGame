@@ -77,7 +77,7 @@ class IBaseGameElement : public QObject {
 
 class DiffElement {
  public:
-  DiffElement() {}
+  DiffElement() { data = new IBaseGameElement(); }
   DiffElement(eDiffType type, IBaseGameElement* data) {
     this->type = type;
     this->data = data;

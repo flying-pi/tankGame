@@ -7,6 +7,7 @@
 #include <QQueue>
 #include <QTcpSocket>
 #include <QDataStream>
+#include <ibasegameelement.h>
 
 enum eConnectionType { eGamer, eWatcher };
 enum eMessageType { eFirstMessae, eGetUpdateMessage };
@@ -36,6 +37,13 @@ class MessageForServer : public QObject {
     return result;
   }
 
+  friend QDebug operator<<(QDebug debug, MessageForServer& c) {
+    QDebugStateSaver saver(debug);
+    debug.nospace() << c.toString();
+
+    return debug;
+  }
+
   QString toString();
 };
 
@@ -63,11 +71,12 @@ class SimpleConnection : public QThread {
   MessageBuilder* getBulder();
 
  signals:
+  void onDiffReceive(QList<DiffElement*>* diffs);
 
  public slots:
 
- private slots:
-  void onSocketError(QAbstractSocket::SocketError);
+ protected slots:
+  void onSocketError(QAbstractSocket::SocketError error);
 
   // QThread interface
  protected:
@@ -77,6 +86,7 @@ class SimpleConnection : public QThread {
   QTcpSocket* socket;
 
   QDataStream* out;
+  QDataStream* in;
 
   QMutex mutex;
   QQueue<MessageForServer*> messages;

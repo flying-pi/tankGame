@@ -1,12 +1,14 @@
 QT += core  gui network concurrent
 
-CONFIG += c++11
+CONFIG += c++14
 
 TARGET = Server
 CONFIG += console
 CONFIG -= app_bundle
 
 TEMPLATE = app
+
+QMAKE_LFLAGS += -rdynamic
 
 SOURCES += main.cpp \
     maingameloop.cpp \
