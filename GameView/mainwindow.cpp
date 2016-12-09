@@ -19,7 +19,3 @@ void MainWindow::connectToServer() {
   connect(&connection, SIGNAL(onDiffReceive(QList<DiffElement*>*)),
           ui->gameField, SLOT(onDiffReceive(QList<DiffElement*>*)));
 }
-
-void MainWindow::on_testbtn_clicked() {
-  connection.getBulder()->asFirstMessage(eConnectionType::eWatcher)->build();
-}

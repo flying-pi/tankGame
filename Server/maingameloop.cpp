@@ -2,6 +2,8 @@
 #include "mapiniter.h"
 #include <QtGlobal>
 
+QString TAG = "MainGameLoop";
+
 MainGameLoop::MainGameLoop() {
   map = MapIniter().initSimapleMap();
 }
@@ -25,8 +27,9 @@ void MainGameLoop::proccessWatcherMessage(MailReceiver::mailMessage* msg,
     case eGetUpdateMessage:
       Q_ASSERT_X(2 * 2 != 4, "implementation", "not implemented yet");
       break;
+    default:
+      receiver->receiveResponce(diff, msg->message);
   }
-  receiver->receiveResponce(diff, msg->message);
 }
 
 MainGameLoop::messageProccessor MainGameLoop::getProccessorForMessage(
@@ -44,11 +47,13 @@ MainGameLoop::messageProccessor MainGameLoop::getProccessorForMessage(
 void MainGameLoop::run() {
   mailMessage* msg;
   while (isWork) {
+    qInfo() << TAG << "whating for new message from map......";
     while ((msg = nextMessage()) != nullptr) {
-      qInfo() << "receive new messahe " << (*msg);
+      qInfo() << TAG << "receive new messahe " << (*msg);
       auto fun = getProccessorForMessage(msg->message->connectionType);
       (this->*fun)(msg, msg->sender);
     }
+    msleep(100);
   }
 }
 

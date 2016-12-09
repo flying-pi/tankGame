@@ -39,10 +39,11 @@ void SimpleConnection::run() {
   out->setDevice(socket);
   out->setVersion(QDataStream::Qt_5_7);
 
-  in = new QDataStream();
-  in->setDevice(socket);
-  in->setVersion(QDataStream::Qt_5_7);
+  Receiver* receiver = new Receiver(socket, this);
+  while (!receiver->istThreadStart())
+    qInfo() << "whaiting for receiver loop start........";
 
+  qInfo() << "starting sending to server message loop";
   while (isWork) {
     if (messages.length() > 0) {
       MessageForServer* newMessage = messages.takeFirst();
@@ -50,26 +51,9 @@ void SimpleConnection::run() {
       (*out) << (*newMessage);
       out->commitTransaction();
       socket->flush();
+      qInfo() << "sending some message for server";
       continue;
     }
-    bool isEnethinRead = false;
-    while (socket->waitForReadyRead(10000)) {
-      qInfo() << "something read from server";
-      isEnethinRead = true;
-      MessageForServer sendedMessage;
-      (*in) >> sendedMessage;
-      int diffsLenth;
-      (*in) >> diffsLenth;
-      QList<DiffElement*>* result = new QList<DiffElement*>();
-      for (int i = 0; i < diffsLenth; i++) {
-        DiffElement* newItem = new DiffElement();
-        (*in) >> (*newItem);
-        result->append(newItem);
-      }
-      emit onDiffReceive(result);
-    }
-    if (!isEnethinRead)
-      msleep(100);
   }
 }
 
@@ -96,6 +80,10 @@ void SimpleConnection::MessageBuilder::build() {
   parent->addMessage(this);
 }
 
+void SimpleConnection::sendDiff(QList<DiffElement*>* diffs) {
+  emit onDiffReceive(diffs);
+}
+
 QString MessageForServer::toString() {
   return "MessageForServer :: connectionType = " + stringify(connectionType) +
          "; messageType = " + stringify(messageType);
@@ -119,4 +107,43 @@ QString stringify(eMessageType e) {
       return "eGetUpdateMessage";
   }
   return "";
+}
+
+SimpleConnection::Receiver::Receiver(QTcpSocket* socket,
+                                     SimpleConnection* parentThread,
+                                     QObject* parent)
+    : QThread(parent) {
+  this->socket = socket;
+  this->parentThread = parentThread;
+  this->start();
+}
+
+bool SimpleConnection::Receiver::istThreadStart() {
+  return isStart;
+  msleep(100);
+}
+
+void SimpleConnection::Receiver::run() {
+  in = new QDataStream();
+  in->setDevice(socket);
+  in->setVersion(QDataStream::Qt_5_7);
+
+  while (true) {
+    qInfo() << "starting message receiver loop";
+    isStart = true;
+    socket->waitForReadyRead(-1);
+    qInfo() << "starting reading some response";
+    MessageForServer sendedMessage;
+    (*in) >> sendedMessage;
+    int diffsLenth;
+    (*in) >> diffsLenth;
+    QList<DiffElement*>* result = new QList<DiffElement*>();
+    for (int i = 0; i < diffsLenth; i++) {
+      DiffElement* newItem = new DiffElement();
+      (*in) >> (*newItem);
+      result->append(newItem);
+    }
+    parentThread->sendDiff(result);
+    qInfo() << "something read from server";
+  }
 }

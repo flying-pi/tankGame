@@ -19,9 +19,6 @@ class MainWindow : public QMainWindow {
   void connectToServer();
   SimpleConnection connection;
 
- private slots:
-  void on_testbtn_clicked();
-
  private:
   Ui::MainWindow* ui;
 };

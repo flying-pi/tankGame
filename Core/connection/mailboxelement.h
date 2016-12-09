@@ -21,6 +21,8 @@ class MailReceiver {
                         bool isReplace = true) {
     run(QThreadPool::globalInstance(), [=] {
       mutex.lock();
+      isQueueLock = true;
+      qInfo() << "MailReceiver :: adding new message item in to queue";
       mailMessage* msg;
       if (isReplace && messages.length() != 0) {
         for (int i = 0; i < messages.length(); i++) {
@@ -37,6 +39,7 @@ class MailReceiver {
         messages.push_back(new mailMessage(message, sender, type, isReplace));
       qInfo() << "getting new message in queue :: " << (*messages.last());
       mutex.unlock();
+      isQueueLock = false;
     });
   }
 
@@ -58,16 +61,23 @@ class MailReceiver {
     }
     friend QDebug operator<<(QDebug debug, const mailMessage& c) {
       QDebugStateSaver saver(debug);
-      debug.nospace() << "mailMessage {message:" << (*c.message);
+
+      if (c.message == nullptr)
+        debug.nospace() << "mailMessage {message:" << (*c.message) << "}";
+      else
+        debug.nospace() << "mailMessage {message:empty}";
+
       return debug;
     }
   };
   QQueue<mailMessage*> messages;
   QMutex mutex;
+  volatile bool isQueueLock = false;
 
   virtual mailMessage* nextMessage() {
-    if (!mutex.tryLock())
+    if (!isQueueLock)
       return nullptr;
+    mutex.lock();
     mailMessage* result = nullptr;
     if (messages.length() > 0) {
       qInfo() << "enqueue message";

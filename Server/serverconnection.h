@@ -25,11 +25,13 @@ class ServerConnection : public QThread, public MailSender {
  signals:
   void onServerError(serverError error);
 
- private:
+ protected:
   static ServerConnection* instance;
   ServerConnection();
   QTcpServer* server;
   QList<ServerWorker*>* connections;
+ protected slots:
+  void onWorkerStop(ServerWorker* worker);
 
   // QThread interface
  protected:

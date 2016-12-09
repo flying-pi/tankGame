@@ -8,8 +8,11 @@
 #include <connection/mailboxelement.h>
 
 class ServerWorker : public QThread, public MailSender {
+  Q_OBJECT
  public:
   ServerWorker(QTcpSocket* socket);
+ signals:
+  void onStop(ServerWorker* worker);
 
   // QThread interface
  protected:
@@ -29,10 +32,25 @@ class ServerWorker : public QThread, public MailSender {
 
   QTcpSocket* socket;
   volatile bool isWork = true;
-  QDataStream* in;
   QDataStream* out;
   QMutex workerMutex;
   QQueue<responceData> responceMessage;
+
+  class ReceiverThread : public QThread {
+   public:
+    ReceiverThread(ServerWorker* parent, QTcpSocket* socket);
+    virtual ~ReceiverThread();
+    void stop();
+
+    // QThread interface
+   protected:
+    void run();
+    QTcpSocket* socket;
+    ServerWorker* parentThread;
+    QDataStream* in;
+    bool isWork = true;
+    QMutex receiverMutex;
+  };
 
   // MailSender interface
  public:

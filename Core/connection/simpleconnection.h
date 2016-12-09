@@ -53,6 +53,7 @@ class SimpleConnection : public QThread {
   explicit SimpleConnection(QHostAddress adress, QObject* parent = 0);
   virtual ~SimpleConnection();
   void openConnection();
+  void sendDiff(QList<DiffElement*>* diffs);
 
   class MessageBuilder {
     friend class SimpleConnection;
@@ -86,12 +87,29 @@ class SimpleConnection : public QThread {
   QTcpSocket* socket;
 
   QDataStream* out;
-  QDataStream* in;
 
   QMutex mutex;
   QQueue<MessageForServer*> messages;
 
   void addMessage(MessageBuilder* messages);
+
+  class Receiver : public QThread {
+   public:
+    Receiver(QTcpSocket* socket,
+             SimpleConnection* parentThread,
+             QObject* parent = 0);
+    bool istThreadStart();
+
+   protected:
+    QTcpSocket* socket;
+    QDataStream* in;
+    SimpleConnection* parentThread;
+    volatile bool isStart = false;
+
+    // QThread interface
+   protected:
+    void run();
+  };
 };
 
 #endif  // SIMPLECONNECTION_H

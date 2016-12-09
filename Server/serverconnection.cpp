@@ -13,6 +13,11 @@ ServerConnection::ServerConnection() {
   connections = new QList<ServerWorker*>();
 }
 
+void ServerConnection::onWorkerStop(ServerWorker* worker) {
+  connections->removeAll(worker);
+  delete worker;
+}
+
 void ServerConnection::startServer() {
   if (this->isRunning())
     return;
