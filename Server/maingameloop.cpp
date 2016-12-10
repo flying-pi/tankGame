@@ -46,8 +46,8 @@ MainGameLoop::messageProccessor MainGameLoop::getProccessorForMessage(
 
 void MainGameLoop::run() {
   mailMessage* msg;
+  qInfo() << "starting main loop";
   while (isWork) {
-    qInfo() << TAG << "whating for new message from map......";
     while ((msg = nextMessage()) != nullptr) {
       qInfo() << TAG << "receive new messahe " << (*msg);
       auto fun = getProccessorForMessage(msg->message->connectionType);

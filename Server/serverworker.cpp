@@ -1,6 +1,7 @@
 #include "serverworker.h"
 
 #include <connection/simpleconnection.h>
+#include <QThread>
 
 ServerWorker::ServerWorker(QTcpSocket* socket) {
   this->socket = socket;
@@ -14,8 +15,6 @@ void ServerWorker::run() {
 
   while (this->isWork) {
     workerMutex.lock();
-    //    qInfo() << "responce messages list size :: " +
-    //                   QString::number(responceMessage.length());
     while (responceMessage.length() > 0) {
       responceData data = responceMessage.takeFirst();
       qInfo() << "getting some message for sending";
@@ -43,13 +42,36 @@ void ServerWorker::run() {
   emit onStop(this);
 }
 
+class receiveRespnceThread : public QThread {
+ public:
+  QMutex* mutex;
+  QList<DiffElement*>* diff;
+  MessageForServer* message;
+  QQueue<ServerWorker::responceData>* responceMessage;
+
+  // QThread interface
+ protected:
+  void run() {
+    mutex->lock();
+    responceMessage->push_back(ServerWorker::responceData(diff, message));
+    mutex->unlock();
+  }
+};
+
 void ServerWorker::receiveResponce(QList<DiffElement*>* diff,
                                    MessageForServer* message) {
   qInfo() << "getting responce for client from map loop";
+
+  //  receiveRespnceThread r;
+  //  r.mutex = workerMutex;
+
   QtConcurrent::run(QThreadPool::globalInstance(), [=] {
+    qInfo() << "ServerWorker::receiveResponce - befor mutex";
     workerMutex.lock();
+    qInfo() << "ServerWorker::receiveResponce - in mutex";
     responceMessage.push_back(responceData(diff, message));
     workerMutex.unlock();
+    qInfo() << "ServerWorker::receiveResponce - after mutex";
   });
 }
 

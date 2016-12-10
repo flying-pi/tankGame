@@ -32,7 +32,7 @@ class MainGameLoop : public MailReceiver, public QThread {
   // QThread interface
  protected:
   void run();
-  bool isWork;
+  bool isWork = true;
   QList<DiffElement*>* getAllMapAsDiff();
   QList<MailSender*> watchers;
   QList<MailSender*> gamers;

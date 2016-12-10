@@ -9,6 +9,8 @@
 
 class ServerWorker : public QThread, public MailSender {
   Q_OBJECT
+  friend class receiveRespnceThread;
+
  public:
   ServerWorker(QTcpSocket* socket);
  signals:

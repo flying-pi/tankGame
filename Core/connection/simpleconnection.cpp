@@ -53,6 +53,8 @@ void SimpleConnection::run() {
       socket->flush();
       qInfo() << "sending some message for server";
       continue;
+    } else {
+      msleep(100);
     }
   }
 }
