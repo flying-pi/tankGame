@@ -11,7 +11,7 @@ class ListBseMap : public IMap {
   // IMap interface
  public:
   QSizeF* getSize();
-  void insertElement(IBaseGameElement* element, QPointF point);
+  void insertElement(IBaseGameElement* element, QVector3D point);
   void proccessAllInR(IBaseGameElement* element,
                       double r,
                       bool (&mapOperator)(IBaseGameElement*));

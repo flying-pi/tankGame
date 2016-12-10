@@ -23,7 +23,8 @@ SOURCES += core.cpp \
     imap.cpp \
     ibasegameelement.cpp \
     maps/listbsemap.cpp \
-    connection/simpleconnection.cpp
+    connection/simpleconnection.cpp \
+    util/baseutil.cpp
 
 HEADERS += core.h\
         core_global.h \
@@ -33,7 +34,7 @@ HEADERS += core.h\
     maps/listbsemap.h \
     coreconst.h \
     connection/simpleconnection.h \
-    connection/mailboxelement.h
+    connection/mailboxelement.h \
     util/baseutil.h
 
 unix {

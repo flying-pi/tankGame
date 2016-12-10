@@ -15,7 +15,7 @@ QSizeF* ListBseMap::getSize() {
   delete size;
 }
 
-void ListBseMap::insertElement(IBaseGameElement* element, QPointF point) {
+void ListBseMap::insertElement(IBaseGameElement* element, QVector3D point) {
   items->append(element);
 }
 

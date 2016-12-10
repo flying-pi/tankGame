@@ -17,8 +17,8 @@ IMap* MapIniter::initSimapleMap() {
 IBaseGameElement* MapIniter::getRandomGrass(double maxWidth, double maxHeigth) {
   IBaseGameElement* result = new IBaseGameElement();
   result->setPosition(
-      new QPointF((double)rand() / (double)RAND_MAX * maxWidth,
-                  (double)rand() / (double)RAND_MAX * maxHeigth));
+      new QVector3D((double)rand() / (double)RAND_MAX * maxWidth,
+                    (double)rand() / (double)RAND_MAX * maxHeigth, 0));
   result->setHelth(InfinityDouble::InfinityValue());
   result->setTransitWeight(InfinityDouble::FromValue(0));
   return result;

@@ -8,6 +8,7 @@
 #include <QDataStream>
 #include <QString>
 #include <QTime>
+#include <QVector3D>
 
 enum eDiffType { eNew, eChange, eDeleted };
 class IBaseGameElement;
@@ -19,16 +20,18 @@ class IBaseGameElement : public QObject {
     helth = InfinityDouble::FromValue(1);
     weight = InfinityDouble::FromValue(0);
     transitWeight = InfinityDouble::FromValue(0);
-    position = new QPointF(0, 0);
+    position = new QVector3D(0, 0, 0);
     name = QString::number(QTime::currentTime().msec());
+    additionalData = new QByteArray();
   }
 
-  virtual QPointF* getPosition() { return position; }
+  virtual QVector3D* getPosition() { return position; }
   virtual int getType() { return type; }
   virtual InfinityDouble* getHelth() { return helth; }
   virtual InfinityDouble* getWeight() { return weight; }
   virtual InfinityDouble* getMaxTransitWeight() { return transitWeight; }
   virtual QString* getName() { return &name; }
+  virtual QByteArray* getAdditionalData() { return additionalData; }
 
   friend QDataStream& operator<<(QDataStream& stream,
                                  const IBaseGameElement& myclass) {
@@ -48,7 +51,7 @@ class IBaseGameElement : public QObject {
     delete position;
   }
 
-  virtual void setPosition(QPointF* value) { this->position = value; }
+  virtual void setPosition(QVector3D* value) { this->position = value; }
 
   virtual void setHelth(InfinityDouble* value) { this->helth = value; }
 
@@ -62,15 +65,21 @@ class IBaseGameElement : public QObject {
 
   virtual void setName(QString name) { this->name = name; }
 
+  virtual void setAdditionakData(QByteArray* data) {
+    this->additionalData = data;
+  }
+
  signals:
 
  public slots:
 
  protected:
-  QPointF* position;
-  InfinityDouble* helth;
-  InfinityDouble* weight;
-  InfinityDouble* transitWeight;
+  QVector3D* position = nullptr;
+  InfinityDouble* helth = nullptr;
+  InfinityDouble* weight = nullptr;
+  InfinityDouble* transitWeight = nullptr;
+  QByteArray* additionalData = nullptr;
+
   int type = -1;
   QString name;
 };
