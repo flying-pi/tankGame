@@ -57,6 +57,8 @@ void SimpleConnection::run() {
       msleep(100);
     }
   }
+  receiver->stop();
+  delete receiver;
 }
 
 void SimpleConnection::addMessage(MessageBuilder* message) {
@@ -120,9 +122,20 @@ SimpleConnection::Receiver::Receiver(QTcpSocket* socket,
   this->start();
 }
 
+SimpleConnection::Receiver::~Receiver() {
+  delete in;
+}
+
 bool SimpleConnection::Receiver::istThreadStart() {
   return isStart;
   msleep(100);
+}
+
+void SimpleConnection::Receiver::stop() {
+  isWork = false;
+  while (isLoopActive) {
+    msleep(100);
+  }
 }
 
 void SimpleConnection::Receiver::run() {
@@ -130,8 +143,11 @@ void SimpleConnection::Receiver::run() {
   in->setDevice(socket);
   in->setVersion(QDataStream::Qt_5_7);
 
+  qInfo() << "starting message receiver loop";
   while (true) {
-    qInfo() << "starting message receiver loop";
+    isLoopActive = true;
+    if (!isWork)
+      break;
     isStart = true;
     socket->waitForReadyRead(-1);
     qInfo() << "starting reading some response";
@@ -148,4 +164,5 @@ void SimpleConnection::Receiver::run() {
     parentThread->sendDiff(result);
     qInfo() << "something read from server";
   }
+  isLoopActive = false;
 }

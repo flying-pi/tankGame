@@ -98,13 +98,17 @@ class SimpleConnection : public QThread {
     Receiver(QTcpSocket* socket,
              SimpleConnection* parentThread,
              QObject* parent = 0);
+    virtual ~Receiver();
     bool istThreadStart();
+    void stop();
 
    protected:
     QTcpSocket* socket;
     QDataStream* in;
     SimpleConnection* parentThread;
     volatile bool isStart = false;
+    volatile bool isWork = true;
+    volatile bool isLoopActive = false;
 
     // QThread interface
    protected:
