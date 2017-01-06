@@ -24,7 +24,8 @@ SOURCES += core.cpp \
     ibasegameelement.cpp \
     maps/listbsemap.cpp \
     connection/simpleconnection.cpp \
-    util/baseutil.cpp
+    GameElements/basetank.cpp \
+    GameElements/basebulet.cpp
 
 HEADERS += core.h\
         core_global.h \
@@ -35,7 +36,9 @@ HEADERS += core.h\
     coreconst.h \
     connection/simpleconnection.h \
     connection/mailboxelement.h \
-    util/baseutil.h
+    util/baseutil.h \
+    GameElements/basetank.h \
+    GameElements/basebulet.h
 
 unix {
     target.path = /usr/lib

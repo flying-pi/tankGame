@@ -21,5 +21,6 @@ IBaseGameElement* MapIniter::getRandomGrass(double maxWidth, double maxHeigth) {
                     (double)rand() / (double)RAND_MAX * maxHeigth, 0));
   result->setHelth(InfinityDouble::InfinityValue());
   result->setTransitWeight(InfinityDouble::FromValue(0));
+  result->setType(eBaseGameElementType::eGrass);
   return result;
 }

@@ -11,6 +11,7 @@
 #include <QVector3D>
 
 enum eDiffType { eNew, eChange, eDeleted };
+enum eBaseGameElementType { eGrass, eSimpleTank };
 class IBaseGameElement;
 
 class IBaseGameElement : public QObject {
@@ -25,6 +26,8 @@ class IBaseGameElement : public QObject {
     additionalData = new QByteArray();
   }
 
+  virtual void nextStep(){};
+
   virtual QVector3D* getPosition() { return position; }
   virtual int getType() { return type; }
   virtual InfinityDouble* getHelth() { return helth; }
@@ -36,12 +39,15 @@ class IBaseGameElement : public QObject {
   friend QDataStream& operator<<(QDataStream& stream,
                                  const IBaseGameElement& myclass) {
     return stream << (*myclass.position) << (*myclass.helth)
-                  << (*myclass.weight) << (*myclass.transitWeight);
+                  << (*myclass.weight) << (*myclass.transitWeight)
+                  << (*myclass.additionalData) << myclass.type << myclass.name;
   }
   friend QDataStream& operator>>(QDataStream& stream,
                                  IBaseGameElement& myclass) {
     return stream >> (*myclass.position) >> (*myclass.helth) >>
-           (*myclass.weight) >> (*myclass.transitWeight);
+           (*myclass.weight) >> (*myclass.transitWeight) >>
+           (*myclass.additionalData) >> myclass.type >> myclass.name;
+    ;
   }
 
   virtual ~IBaseGameElement() {
@@ -81,7 +87,7 @@ class IBaseGameElement : public QObject {
   QByteArray* additionalData = nullptr;
 
   int type = -1;
-  QString name;
+  QString name;  //цифровий підпис свій/не свій
 };
 
 class DiffElement {

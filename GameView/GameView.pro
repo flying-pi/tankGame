@@ -30,3 +30,6 @@ else:unix: LIBS += -L$$OUT_PWD/../Core/ -lCore
 
 INCLUDEPATH += $$PWD/../Core
 DEPENDPATH += $$PWD/../Core
+
+RESOURCES += \
+    res.qrc

@@ -32,7 +32,4 @@ HEADERS += \
     serverconnection.h \
     serverworker.h
 
-DISTFILES += \
-    res/grass.png
-
 

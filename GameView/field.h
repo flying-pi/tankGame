@@ -16,6 +16,14 @@ class Field : public QGLWidget {
   void initializeGL() Q_DECL_OVERRIDE;
   void resizeGL(int w, int h) Q_DECL_OVERRIDE;
   void paintGL() Q_DECL_OVERRIDE;
+  QList<IBaseGameElement*>* fieldState;
+  void initRes();
+
+  void drawGrass(float x, float y);
+
+  GLuint grass;
+
+  float scaleK = 0.005;
 };
 
 #endif  // FIELD_H
