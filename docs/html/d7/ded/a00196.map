@@ -1,0 +1,3 @@
+<map id="MailReceiver" name="MailReceiver">
+<area shape="rect" id="node2" href="$d3/de5/a00209.html" title="{MainGameLoop\n|# isWork\l# watchers\l# gamersList\l# gamersItems\l&#45; map\l&#45; instance\l|+ ~MainGameLoop()\l+ startLooper()\l+ getLooperInstance()\l# run()\l# getAllMapAsDiff()\l&#45; MainGameLoop()\l&#45; proccessGamerMessage()\l&#45; proccessWatcherMessage()\l&#45; getProccessorForMessage()\l}" alt="" coords="5,199,274,531"/>
+</map>

@@ -1,0 +1,127 @@
+\hypertarget{a00089_source}{}\section{maingameloop.\+cpp}
+\label{a00089_source}\index{Server/maingameloop.\+cpp@{Server/maingameloop.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00092}{"maingameloop.h"}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00098}{"mapiniter.h"}
+00003 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QtGlobal}\textcolor{preprocessor}{>}
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{coreutil}\textcolor{preprocessor}{.}\textcolor{preprocessor}{h}\textcolor{preprocessor}{>}
+00005 
+\Hypertarget{a00089_source_l00006}\hyperlink{a00089_a3670baaac428449f4299429202343042}{00006} \hyperlink{a00089_a3670baaac428449f4299429202343042}{QString} \hyperlink{a00089_a3670baaac428449f4299429202343042}{TAG} = \textcolor{stringliteral}{"MainGameLoop"};
+00007 
+\Hypertarget{a00089_source_l00008}\hyperlink{a00209_a0632599cb00fa2c86ba1c71904c1f59f}{00008} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_a0632599cb00fa2c86ba1c71904c1f59f}{MainGameLoop}() \{
+00009   \hyperlink{a00209_ae0ccec14d7db91cf6db41349a73b41a7}{map} = \hyperlink{a00217}{MapIniter}\hyperlink{a00217_a1137dec968988621ea18091fdf379987}{(}\hyperlink{a00217_a1137dec968988621ea18091fdf379987}{)}\hyperlink{a00217_ae6dfbed9cc8569db78442c0bfe57e252}{.}\hyperlink{a00217_ae6dfbed9cc8569db78442c0bfe57e252}{initSimapleMap}\hyperlink{a00217_ae6dfbed9cc8569db78442c0bfe57e252}{(}\hyperlink{a00217_ae6dfbed9cc8569db78442c0bfe57e252}{)};
+00010 \}
+\Hypertarget{a00089_source_l00011}\hyperlink{a00209_ac7722494194e946c7d045471858c3aee}{00011} \textcolor{keywordtype}{void} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_ac7722494194e946c7d045471858c3aee}{proccessGamerMessage}(
+      \hyperlink{a00197_ace6950e3788bb037f23ce8668ef83829}{MailReceiver}::\hyperlink{a00201}{mailMessage}* msg,
+00012                                         \hyperlink{a00205}{MailSender}* receiver) \{
+00013   \hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{GamerInformation}* currentGamer = nullptr;
+00014   \textcolor{keywordtype}{bool} isAlredyExist = \textcolor{keyword}{false};
+00015   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < gamersList.size(); i++) \{
+00016     \textcolor{keywordflow}{if} (gamersList.at(i)->sender == receiver) \{
+00017       isAlredyExist = \textcolor{keyword}{true};
+00018       currentGamer = gamersList.at(i);
+00019       \textcolor{keywordflow}{break};
+00020     \}
+00021   \}
+00022   \textcolor{keywordflow}{if} (!isAlredyExist) \{
+00023     currentGamer->name = codingNum(gamersList.size());
+00024     currentGamer\hyperlink{a00213_aebab9469416fa837ba9140f2bf2b280d}{->}\hyperlink{a00213_aebab9469416fa837ba9140f2bf2b280d}{sender} = receiver;
+00025     gamersList.append(currentGamer);
+00026 
+00027     gamersItems.append(\textcolor{keyword}{new} QList<IBaseGameElement*>());
+00028 
+00029     \hyperlink{a00149}{BaseBasis}* basis = \textcolor{keyword}{new} \hyperlink{a00149}{BaseBasis}\hyperlink{a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5}{(}\hyperlink{a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5}{)};
+00030     basis->setPosition(&currentGamer->position);
+00031     basis->setEnergy(currentGamer->lifeCount);
+00032     map->insertElement(basis, basis->getPosition());
+00033 
+00034     gamersItems.last()->append(basis);
+00035     currentGamer->minion = gamersItems.last();
+00036   \}
+00037 \}
+00038 
+\Hypertarget{a00089_source_l00039}\hyperlink{a00209_a26ac1e61f11a51a84b6f2e770808d162}{00039} \textcolor{keywordtype}{void} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_a26ac1e61f11a51a84b6f2e770808d162}{proccessWatcherMessage}(
+      \hyperlink{a00197_ace6950e3788bb037f23ce8668ef83829}{MailReceiver}::\hyperlink{a00201}{mailMessage}* msg,
+00040                                           \hyperlink{a00205}{MailSender}* receiver) \{
+00041   \textcolor{keywordflow}{if} (!watchers.contains(receiver))
+00042     watchers.append(receiver);
+00043   QList<DiffElement*>* diff;
+00044   \textcolor{keywordflow}{switch} (msg\hyperlink{a00201_aa5878557546468fcfb65e099a5d4bf7d}{->}\hyperlink{a00201_aa5878557546468fcfb65e099a5d4bf7d}{message}\hyperlink{a00121_a77e3d9ee30093b40db7f2d8f5d7590aa}{->}\hyperlink{a00121_a77e3d9ee30093b40db7f2d8f5d7590aa}{messageType}) \{
+00045     \textcolor{keywordflow}{case} eFirstMessae:
+00046       diff = getAllMapAsDiff();
+00047       receiver->receiveResponce(diff, msg->message);
+00048       \textcolor{keywordflow}{break};
+00049     \textcolor{keywordflow}{case} eGetUpdateMessage:
+00050       Q\_ASSERT\_X(2 * 2 != 4, \textcolor{stringliteral}{"implementation"}, \textcolor{stringliteral}{"not implemented yet"});
+00051       \textcolor{keywordflow}{break};
+00052     \textcolor{keywordflow}{default}:
+00053       receiver->receiveResponce(diff, msg->message);
+00054   \}
+00055 \}
+00056 
+\Hypertarget{a00089_source_l00057}\hyperlink{a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5}{00057} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{messageProccessor} 
+      \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5}{getProccessorForMessage}(
+00058     \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296}{eConnectionType} type) \{
+00059   \textcolor{keywordflow}{switch} (type) \{
+00060     \textcolor{keywordflow}{case} \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296ab02a4c796f7681c9c90e0c0865392828}{eGamer}:
+00061       \textcolor{keywordflow}{return} &\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}\hyperlink{a00209_ac7722494194e946c7d045471858c3aee}{::}\hyperlink{a00209_ac7722494194e946c7d045471858c3aee}{proccessGamerMessage};
+00062     \textcolor{keywordflow}{case} \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296af8a067d45287f02c8cd709a3495eb581}{eWatcher}:
+00063       \textcolor{keywordflow}{return} &\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}\hyperlink{a00209_a26ac1e61f11a51a84b6f2e770808d162}{::}\hyperlink{a00209_a26ac1e61f11a51a84b6f2e770808d162}{proccessWatcherMessage};
+00064   \}
+00065   Q\_ASSERT\_X(2 * 2 != 4, \textcolor{stringliteral}{"missing branch "},
+00066              \textcolor{stringliteral}{"missing brunch for eConnectionType"});
+00067 \}
+00068 
+\Hypertarget{a00089_source_l00069}\hyperlink{a00209_a5a20009c07c887a9cf69381f62da5009}{00069} \textcolor{keywordtype}{void} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_a5a20009c07c887a9cf69381f62da5009}{run}() \{
+00070   \hyperlink{a00201}{mailMessage}* msg;
+00071   qInfo() << \textcolor{stringliteral}{"starting main loop"};
+00072   \textcolor{keywordflow}{while} (\hyperlink{a00209_a03ce2a112152dc80acce53528cc65daf}{isWork}) \{
+00073     \textcolor{keywordflow}{while} ((msg = nextMessage()) != nullptr) \{
+00074       qInfo() << TAG << \textcolor{stringliteral}{"receive new messahe "} << (*msg);
+00075       \textcolor{keyword}{auto} fun = getProccessorForMessage(msg->message->connectionType);
+00076       (\textcolor{keyword}{this}->*fun)(msg, msg->sender);
+00077     \}
+00078     msleep(100);
+00079   \}
+00080 \}
+00081 
+\Hypertarget{a00089_source_l00082}\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{00082} QList<DiffElement*>* MainGameLoop::getAllMapAsDiff() \{
+00083   QList<DiffElement*>* result = \textcolor{keyword}{new} QList<DiffElement*>();
+00084   DiffElement* item;
+00085   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < map->getCount(); i++)
+00086     result->append(
+00087         \textcolor{keyword}{new} DiffElement(eDiffType::eNew, map->getElementAtPosition(i)));
+00088   \textcolor{keywordflow}{return} result;
+00089 \}
+00090 
+\Hypertarget{a00089_source_l00091}\hyperlink{a00209_aeeabdbe46a5aeb891d7da7fd9430d0cb}{00091} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::~\hyperlink{a00209_aeeabdbe46a5aeb891d7da7fd9430d0cb}{MainGameLoop}() \{
+00092   \textcolor{keyword}{delete} \hyperlink{a00209_ae0ccec14d7db91cf6db41349a73b41a7}{map};
+00093   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < gamersItems.size(); i++) \{
+00094     \textcolor{keyword}{delete} gamersItems.at(i);
+00095   \}
+00096 \}
+00097 
+\Hypertarget{a00089_source_l00098}\hyperlink{a00209_a2329f4e9c9a4ad9ecbed39d5c297245f}{00098} \textcolor{keywordtype}{void} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_a2329f4e9c9a4ad9ecbed39d5c297245f}{startLooper}() \{
+00099   \textcolor{keyword}{this}->start();
+00100 \}
+00101 
+00102 \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}* \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00209_a2578ca393ef9030407e5b3ac17b9f6ab}{instance} = nullptr;
+00103 
+\Hypertarget{a00089_source_l00104}\hyperlink{a00213_a6b58de3576e4b204fc38073794dfa1d2}{00104} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{GamerInformation}::
+      \hyperlink{a00213_a6b58de3576e4b204fc38073794dfa1d2}{GamerInformation}(\hyperlink{a00165}{IMap}* map) \{
+00105   name = \textcolor{stringliteral}{""};
+00106   lifeCount = limits::defaultBasisEnergy;
+00107   QSizeF* size = map->getSize();
+00108   \textcolor{keywordtype}{float} rand1 = \textcolor{keyword}{static\_cast}<\textcolor{keywordtype}{float}>(rand()) / \textcolor{keyword}{static\_cast}<\textcolor{keywordtype}{float}>(RAND\_MAX);
+00109   \textcolor{keywordtype}{float} rand2 = \textcolor{keyword}{static\_cast}<\textcolor{keywordtype}{float}>(rand()) / \textcolor{keyword}{static\_cast}<\textcolor{keywordtype}{float}>(RAND\_MAX);
+00110   position = QVector3D(size->width() * rand1, size->height() * rand2, 0);
+00111 
+00112   personalDiff = \textcolor{keyword}{new} QList<DiffElement*>();
+00113 \}
+00114 
+\Hypertarget{a00089_source_l00115}\hyperlink{a00213_a19842dcddbd89a64210977394060ca3a}{00115} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}::\hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{GamerInformation}::~
+      \hyperlink{a00213_a19842dcddbd89a64210977394060ca3a}{GamerInformation}() \{
+00116   \textcolor{keyword}{delete} personalDiff;
+00117 \}
+\end{DoxyCode}

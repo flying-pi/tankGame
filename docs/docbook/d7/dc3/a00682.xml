@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dc3/a00682">
+<title>IBaseGameElement class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d2d/a00047">&quot;ibasegameelement.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for IBaseGameElement</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dba/a00681.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for IBaseGameElement</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/d9b/a00680.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Захищені дані</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QVector3D * position</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>InfinityDouble * helth</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>InfinityDouble * weight</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>InfinityDouble * transitWeight</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QByteArray * additionalData</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int rVision</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int type</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dc3/a00682_1ae72e1c7b4ecb3cf88e2a86ff4a331e88">IBaseGameElement</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1ae2be75da1a2a9edfabe993770e24654a">nextStep</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QVector3D * <link linkend="d7/dc3/a00682_1a3159c02c1118989e3476b52d89a52401">getPosition</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="d7/dc3/a00682_1a639bd1e233821ff606bb8fe2931f6ee7">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d8/dcb/a00706">InfinityDouble</link> * <link linkend="d7/dc3/a00682_1a13a00e39ece3e20e3f5e049224da8d40">getHelth</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d8/dcb/a00706">InfinityDouble</link> * <link linkend="d7/dc3/a00682_1a935a07134430bbb44c3214629d607a3d">getWeight</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d8/dcb/a00706">InfinityDouble</link> * <link linkend="d7/dc3/a00682_1a4c74c903e19ada9da9150cf9569b4e9d">getMaxTransitWeight</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QString * <link linkend="d7/dc3/a00682_1a01051b9a502128a82f9a168a14d1ecdc">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QByteArray * <link linkend="d7/dc3/a00682_1aaf3cdf5f4e893704c9f17c524a1f0a8c">getAdditionalData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d7/dc3/a00682_1a01bfcab29a22628978a22b0f7db58623">~IBaseGameElement</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1a54dc1a743fac99db03c3f47b5c6d69c4">setPosition</link> (
+QVector3D * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1a2f95e7a61b5db7f2fbbfd32ff786f58c">setHelth</link> (
+<link linkend="d8/dcb/a00706">InfinityDouble</link> * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1a4b5e42aa7985c9bf959f0275cbc1bac7">setWeight</link> (
+<link linkend="d8/dcb/a00706">InfinityDouble</link> * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1ac480b8140b5b290f49b4b96a47291180">setTransitWeight</link> (
+<link linkend="d8/dcb/a00706">InfinityDouble</link> * value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1a324cba2176155a50b5a2239eb0a8b6a0">setType</link> (
+int value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1a874f246d3249a989750e3db85ea4bfcd">setName</link> (
+QString name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1a71d8528482d5be16100ad56dbfd4aae9">setAdditionakData</link> (
+QByteArray * data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d7/dc3/a00682_1a2719e14051c30f39ca60f4998e48abf9">setRVision</link> (
+int _rVison)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="d7/dc3/a00682_1a4437ee7dcdb6e3e3c58c8b00d8bb0500">getRVision</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Компонентні дані</title>
+        </section>
+            <section xml:id="d7/dc3/a00682_1ae72e1c7b4ecb3cf88e2a86ff4a331e88">
+                <title>IBaseGameElement::IBaseGameElement ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1ae2be75da1a2a9edfabe993770e24654a">
+                <title>virtual void IBaseGameElement::nextStep ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a3159c02c1118989e3476b52d89a52401">
+                <title>virtual QVector3D* IBaseGameElement::getPosition ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a639bd1e233821ff606bb8fe2931f6ee7">
+                <title>virtual int IBaseGameElement::getType ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a13a00e39ece3e20e3f5e049224da8d40">
+                <title>virtual InfinityDouble* IBaseGameElement::getHelth ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a935a07134430bbb44c3214629d607a3d">
+                <title>virtual InfinityDouble* IBaseGameElement::getWeight ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a4c74c903e19ada9da9150cf9569b4e9d">
+                <title>virtual InfinityDouble* IBaseGameElement::getMaxTransitWeight ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a01051b9a502128a82f9a168a14d1ecdc">
+                <title>virtual QString* IBaseGameElement::getName ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1aaf3cdf5f4e893704c9f17c524a1f0a8c">
+                <title>virtual QByteArray* IBaseGameElement::getAdditionalData ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a01bfcab29a22628978a22b0f7db58623">
+                <title>virtual IBaseGameElement::~IBaseGameElement ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a54dc1a743fac99db03c3f47b5c6d69c4">
+                <title>virtual void IBaseGameElement::setPosition (QVector3D *value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a2f95e7a61b5db7f2fbbfd32ff786f58c">
+                <title>virtual void IBaseGameElement::setHelth (InfinityDouble *value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a4b5e42aa7985c9bf959f0275cbc1bac7">
+                <title>virtual void IBaseGameElement::setWeight (InfinityDouble *value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1ac480b8140b5b290f49b4b96a47291180">
+                <title>virtual void IBaseGameElement::setTransitWeight (InfinityDouble *value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a324cba2176155a50b5a2239eb0a8b6a0">
+                <title>virtual void IBaseGameElement::setType (int value)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a874f246d3249a989750e3db85ea4bfcd">
+                <title>virtual void IBaseGameElement::setName (QString name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a71d8528482d5be16100ad56dbfd4aae9">
+                <title>virtual void IBaseGameElement::setAdditionakData (QByteArray *data)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a2719e14051c30f39ca60f4998e48abf9">
+                <title>virtual void IBaseGameElement::setRVision (int _rVison)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/dc3/a00682_1a4437ee7dcdb6e3e3c58c8b00d8bb0500">
+                <title>virtual int IBaseGameElement::getRVision ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

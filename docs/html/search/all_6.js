@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['gamerinformation',['GamerInformation',['../d1/de1/a00213.html',1,'MainGameLoop::GamerInformation'],['../d1/de1/a00213.html#a6b58de3576e4b204fc38073794dfa1d2',1,'MainGameLoop::GamerInformation::GamerInformation()']]],
+  ['gamersitems',['gamersItems',['../d3/de5/a00209.html#a7e240933ce2cf3b29a05c5061aa5226b',1,'MainGameLoop']]],
+  ['gamerslist',['gamersList',['../d3/de5/a00209.html#aac8195bc3183cb0cabe65f1ff813fbfb',1,'MainGameLoop']]],
+  ['generatebullet',['generateBullet',['../d1/db7/a00157.html#a901c01a2908f900b4cd45e791d27b0d3',1,'BaseTank']]],
+  ['getadditionaldata',['getAdditionalData',['../d2/df5/a00137.html#aaf3cdf5f4e893704c9f17c524a1f0a8c',1,'IBaseGameElement::getAdditionalData()'],['../da/d1e/a00149.html#aaf8b691c26fbbda7878c22dfda32ebe4',1,'BaseBasis::getAdditionalData()'],['../da/d01/a00153.html#a307a62b59328f9e2a0530f559aba0dcb',1,'BaseBulet::getAdditionalData()'],['../d1/db7/a00157.html#aeecdd72e10d3996ee6c72c59f8bf69d8',1,'BaseTank::getAdditionalData()']]],
+  ['getallmapasdiff',['getAllMapAsDiff',['../d3/de5/a00209.html#ac4cd47d8b350ae45ea09aaecad11a684',1,'MainGameLoop']]],
+  ['getbulder',['getBulder',['../dc/dfe/a00125.html#a2bbd5504e2e67fa95a701f77cd438f4d',1,'SimpleConnection']]],
+  ['getcount',['getCount',['../d0/d48/a00165.html#a021e64b05ecb6558ed1d663676f82971',1,'IMap::getCount()'],['../de/d53/a00169.html#a78e72bacec177f3512323c5fc7db11f3',1,'ListBseMap::getCount()']]],
+  ['getelementatposition',['getElementAtPosition',['../d0/d48/a00165.html#a9fce1fb4ad8fac181fbbce3ce31da0a0',1,'IMap::getElementAtPosition()'],['../de/d53/a00169.html#a6725c6e4231705df32b1074b0b5fdda5',1,'ListBseMap::getElementAtPosition()']]],
+  ['getenergy',['getEnergy',['../da/d1e/a00149.html#acdc9310424ab117e3490e032028a2a7d',1,'BaseBasis']]],
+  ['gethelth',['getHelth',['../d2/df5/a00137.html#a13a00e39ece3e20e3f5e049224da8d40',1,'IBaseGameElement']]],
+  ['getlooperinstance',['getLooperInstance',['../d3/de5/a00209.html#ae4df98e12ba90efd73b144455d9fd52d',1,'MainGameLoop']]],
+  ['getmaxtransitweight',['getMaxTransitWeight',['../d2/df5/a00137.html#a4c74c903e19ada9da9150cf9569b4e9d',1,'IBaseGameElement']]],
+  ['getname',['getName',['../d2/df5/a00137.html#a01051b9a502128a82f9a168a14d1ecdc',1,'IBaseGameElement']]],
+  ['getposition',['getPosition',['../d2/df5/a00137.html#a3159c02c1118989e3476b52d89a52401',1,'IBaseGameElement']]],
+  ['getproccessorformessage',['getProccessorForMessage',['../d3/de5/a00209.html#ab9de0ceedab969b5f7fd9e1131bc4cd5',1,'MainGameLoop']]],
+  ['getrandomgrass',['getRandomGrass',['../df/d24/a00217.html#a8961b80aa1df5f628bd4e28e66a51d0b',1,'MapIniter']]],
+  ['getrvision',['getRVision',['../d2/df5/a00137.html#a4437ee7dcdb6e3e3c58c8b00d8bb0500',1,'IBaseGameElement']]],
+  ['getserverinstance',['getServerInstance',['../d8/d64/a00181.html#ad64d541093e285a983911f22ab9a0bff',1,'ServerConnection']]],
+  ['getsize',['getSize',['../d0/d48/a00165.html#a183f2d7ba8ec154d0338e999f195d0c8',1,'IMap::getSize()'],['../de/d53/a00169.html#ae58cec494eba5e73b55bfb2f68fc3b52',1,'ListBseMap::getSize()']]],
+  ['gettype',['getType',['../d2/df5/a00137.html#a639bd1e233821ff606bb8fe2931f6ee7',1,'IBaseGameElement']]],
+  ['getweight',['getWeight',['../d2/df5/a00137.html#a935a07134430bbb44c3214629d607a3d',1,'IBaseGameElement']]],
+  ['grass',['grass',['../d7/d3f/a00173.html#a4b226d02ce54a5d320cf3dc99b7b8433',1,'Field::grass()'],['../d4/d3e/a00116.html#a6dfdff0673d9c105ab375a71621be666',1,'staticBockTypes::grass()']]]
+];

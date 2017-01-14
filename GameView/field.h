@@ -3,6 +3,8 @@
 #include <QGLWidget>
 #include <ibasegameelement.h>
 
+#include <diffs/diffelement.h>
+
 class Field : public QGLWidget {
   Q_OBJECT
  public:

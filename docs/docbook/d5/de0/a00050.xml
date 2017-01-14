@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/de0/a00050">
+    <title>imap.cpp File Reference</title>
+    <programlisting>#include &quot;imap.h&quot;</programlisting>
+<para>Include dependency diagram for imap.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d79/a00051.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for imap.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d84/a00052.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/imap.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="dc/dee/a00053">imap.h</link>&quot;</emphasis>
+3 
+<link linkend="d0/d48/a00165_1ac705a2e065b5c4604e43a44b488d798a">4 </link><link linkend="d0/d48/a00165_1ac705a2e065b5c4604e43a44b488d798a">IMap::IMap</link>()
+5 {
+6 
+7 }
+    </computeroutput></literallayout>
+</section>

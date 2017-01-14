@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/da1/a00879">
+    <title>main.cpp File Reference</title>
+    <programlisting>#include &quot;mainwindow.h&quot;</programlisting>
+    <programlisting>#include &lt;QApplication&gt;</programlisting>
+<para>Include dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d8f/a00880.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d41/a00881.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Функції</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d2/da1/a00879_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (
+int argc, char * argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Детальний опис</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/GameView/main.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d2/d1f/a00083">mainwindow.h</link>&quot;</emphasis>
+2 <emphasis class="preprocessor">#include&#32;&lt;QApplication&gt;</emphasis>
+3 
+<link linkend="d2/da1/a00879_1a0ddf1224851353fc92bfbff6f499fa97">4 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="d2/da1/a00879_1a0ddf1224851353fc92bfbff6f499fa97">main</link>(<emphasis class="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis class="keywordtype">char</emphasis>*&#32;argv[])&#32;{
+5 &#32;&#32;QApplication&#32;a(argc,&#32;argv);
+6 
+7 &#32;&#32;qSetMessagePattern(
+8 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="stringliteral">&quot;%{time&#32;boot}&#32;::&#32;[%{type}::%{appname}&#32;in&#32;%{file}:%{line}&#32;th:%{threadid}]&#32;&quot;</emphasis>
+9 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="stringliteral">&quot;message::&#32;&quot;</emphasis>
+10 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="stringliteral">&quot;%{message}&#32;&quot;</emphasis>
+11 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="stringliteral">&quot;%{backtrace&#32;[separator=\&quot;\n\t\&quot;]}&quot;</emphasis>);
+12 &#32;&#32;<emphasis class="comment">//&#32;&#32;qSetMessagePattern(&quot;%{time&#32;boot}&#32;::&#32;%{message}&quot;);</emphasis>
+13 &#32;&#32;<link linkend="db/d7c/a00722">MainWindow</link>&#32;w;
+14 &#32;&#32;w.show();
+15 
+16 &#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;a.exec();
+17 }
+    </computeroutput></literallayout>
+</section>

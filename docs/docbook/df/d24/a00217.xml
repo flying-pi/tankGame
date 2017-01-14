@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d24/a00217">
+<title>MapIniter class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d1/d44/a00098">&quot;mapiniter.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for MapIniter</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d43/a00216.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MapIniter</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/dd5/a00215.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d24/a00217_1a1137dec968988621ea18091fdf379987">MapIniter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d0/d48/a00165">IMap</link> * <link linkend="df/d24/a00217_1ae6dfbed9cc8569db78442c0bfe57e252">initSimapleMap</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="d2/df5/a00137">IBaseGameElement</link> * <link linkend="df/d24/a00217_1a8961b80aa1df5f628bd4e28e66a51d0b">getRandomGrass</link> (
+double maxWidth, double maxHeigth)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="df/d24/a00217_1a1137dec968988621ea18091fdf379987">
+                <title>MapIniter::MapIniter ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d24/a00217_1ae6dfbed9cc8569db78442c0bfe57e252">
+                <title>IMap * MapIniter::initSimapleMap ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d24/a00217_1a8961b80aa1df5f628bd4e28e66a51d0b">
+                <title>IBaseGameElement * MapIniter::getRandomGrass (double maxWidth, double maxHeigth)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -3,4 +3,5 @@ TEMPLATE = subdirs
 SUBDIRS += \
     GameView \
     Core \
-    Server
+    Server \
+    simpleGamer

@@ -1,0 +1,144 @@
+\hypertarget{a00047_source}{}\section{ibasegameelement.\+h}
+\label{a00047_source}\index{Core/ibasegameelement.\+h@{Core/ibasegameelement.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{ifndef} \textcolor{preprocessor}{IBASEGAMEELEMENT\_H}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{define} \textcolor{preprocessor}{IBASEGAMEELEMENT\_H}
+00003 
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QObject}\textcolor{preprocessor}{>}
+00005 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00059}{"infinitydouble.h"}
+00006 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QPointF}\textcolor{preprocessor}{>}
+00007 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QByteArray}\textcolor{preprocessor}{>}
+00008 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QDataStream}\textcolor{preprocessor}{>}
+00009 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QString}\textcolor{preprocessor}{>}
+00010 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QTime}\textcolor{preprocessor}{>}
+00011 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QVector3D}\textcolor{preprocessor}{>}
+00012 
+\Hypertarget{a00047_source_l00013}\hyperlink{a00047_ab32e61d383765a32bc5f9efebb4b9f55a431f77ddbb89863e0f6dbf088b85628c}{00013} \textcolor{keyword}{enum} \hyperlink{a00047_ab32e61d383765a32bc5f9efebb4b9f55}{eDiffType} \{ \hyperlink{a00047_ab32e61d383765a32bc5f9efebb4b9f55a431f77ddbb89863e0f6dbf088b85628c}{eNew}, \hyperlink{a00047_ab32e61d383765a32bc5f9efebb4b9f55a81da2210193d7fc78e7084b58a1c4e0c}{eChange}, \hyperlink{a00047_ab32e61d383765a32bc5f9efebb4b9f55acef5c6e771d3a07f656e07a13a20ba35}{eDeleted} \};
+\Hypertarget{a00047_source_l00014}\hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1bafa8be91a43861bfbfc5c5c0a2ba4898e30}{00014} \textcolor{keyword}{enum} \hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1baf}{eBaseGameElementType} \{ \hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1bafa107c023644773dc2cde1d0047d6bc79c}{eGrass}, 
+      \hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1bafa8be91a43861bfbfc5c5c0a2ba4898e30}{eSimpleTank}, \hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1bafa18b2b8475de0a17c5561231466d40c7d}{eBasis} \};
+00015 \textcolor{keyword}{class} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement};
+00016 
+\Hypertarget{a00047_source_l00017}\hyperlink{a00137}{00017} \textcolor{keyword}{class} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement} : \textcolor{keyword}{public} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{QObject} \{
+00018   \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{Q\_OBJECT}
+00019  \textcolor{keyword}{public}:
+\Hypertarget{a00047_source_l00020}\hyperlink{a00137_ae72e1c7b4ecb3cf88e2a86ff4a331e88}{00020}   \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}() \{
+00021     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{helth} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{InfinityDouble}::\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{FromValue}(1);
+00022     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{weight} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{InfinityDouble}::\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{FromValue}(0);
+00023     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{transitWeight} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{InfinityDouble}::\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{FromValue}(0);
+00024     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{position} = \textcolor{keyword}{new} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{QVector3D}(0, 0, 0);
+00025     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{name} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{QString}::\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{number}(\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{QTime}::\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{currentTime}().
+      \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{msec}());
+00026     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{additionalData} = \textcolor{keyword}{new} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{QByteArray}();
+00027   \}
+00028 
+\Hypertarget{a00047_source_l00029}\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{00029}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{nextStep}()\{\};
+00030 
+\Hypertarget{a00047_source_l00031}\hyperlink{a00137_a3159c02c1118989e3476b52d89a52401}{00031}   \textcolor{keyword}{virtual} \hyperlink{a00137_a3159c02c1118989e3476b52d89a52401}{QVector3D}* \hyperlink{a00137_a3159c02c1118989e3476b52d89a52401}{getPosition}() \{ \textcolor{keywordflow}{return} position; \}
+\Hypertarget{a00047_source_l00032}\hyperlink{a00137_a639bd1e233821ff606bb8fe2931f6ee7}{00032}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{a00137_a639bd1e233821ff606bb8fe2931f6ee7}{getType}() \{ \textcolor{keywordflow}{return} \hyperlink{a00137_a73a4ca23072b617f3d17004e3c671bca}{type}; \}
+\Hypertarget{a00047_source_l00033}\hyperlink{a00137_a13a00e39ece3e20e3f5e049224da8d40}{00033}   \textcolor{keyword}{virtual} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* \hyperlink{a00137_a13a00e39ece3e20e3f5e049224da8d40}{getHelth}() \{ \textcolor{keywordflow}{return} helth; \}
+\Hypertarget{a00047_source_l00034}\hyperlink{a00137_a935a07134430bbb44c3214629d607a3d}{00034}   \textcolor{keyword}{virtual} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* \hyperlink{a00137_a935a07134430bbb44c3214629d607a3d}{getWeight}() \{ \textcolor{keywordflow}{return} weight; \}
+\Hypertarget{a00047_source_l00035}\hyperlink{a00137_a4c74c903e19ada9da9150cf9569b4e9d}{00035}   \textcolor{keyword}{virtual} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* \hyperlink{a00137_a4c74c903e19ada9da9150cf9569b4e9d}{getMaxTransitWeight}() \{ \textcolor{keywordflow}{return} 
+      transitWeight; \}
+\Hypertarget{a00047_source_l00036}\hyperlink{a00137_a01051b9a502128a82f9a168a14d1ecdc}{00036}   \textcolor{keyword}{virtual} \hyperlink{a00137_a01051b9a502128a82f9a168a14d1ecdc}{QString}* \hyperlink{a00137_a01051b9a502128a82f9a168a14d1ecdc}{getName}() \{ \textcolor{keywordflow}{return} &name; \}
+\Hypertarget{a00047_source_l00037}\hyperlink{a00137_aaf3cdf5f4e893704c9f17c524a1f0a8c}{00037}   \textcolor{keyword}{virtual} \hyperlink{a00137_aaf3cdf5f4e893704c9f17c524a1f0a8c}{QByteArray}* \hyperlink{a00137_aaf3cdf5f4e893704c9f17c524a1f0a8c}{getAdditionalData}() \{ \textcolor{keywordflow}{return} additionalData; \}
+00038 
+\Hypertarget{a00047_source_l00039}\hyperlink{a00137_a085503f71c16e737fb172c9cef329c2f}{00039}   \textcolor{keyword}{friend} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{operator}<<(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream},
+00040                                  \textcolor{keyword}{const} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{IBaseGameElement}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}) \{
+00041     \textcolor{keywordflow}{return} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream} << (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{position}) << (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{helth})
+00042                   << (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{weight}) << (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{transitWeight})
+00043                   << (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{additionalData}) << 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{type} << \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{name}
+00044                   << \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{rVision};
+00045   \}
+\Hypertarget{a00047_source_l00046}\hyperlink{a00137_aed5ed6630f457a8cc55c01a605067300}{00046}   \textcolor{keyword}{friend} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{operator}>>(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream},
+00047                                  \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{IBaseGameElement}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}) \{
+00048     \textcolor{keywordflow}{return} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream} >> (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{position}) >> (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{helth}) >>
+00049            (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{weight}) >> (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{transitWeight}) >>
+00050            (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{additionalData}) >> \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{type} >> \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{name} >> \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{rVision};
+00051     ;
+00052   \}
+00053 
+\Hypertarget{a00047_source_l00054}\hyperlink{a00137_a01bfcab29a22628978a22b0f7db58623}{00054}   \textcolor{keyword}{virtual} ~\hyperlink{a00137_a01bfcab29a22628978a22b0f7db58623}{IBaseGameElement}() \{
+00055     \textcolor{keyword}{delete} helth;
+00056     \textcolor{keyword}{delete} weight;
+00057     \textcolor{keyword}{delete} transitWeight;
+00058     \textcolor{keyword}{delete} position;
+00059   \}
+00060 
+\Hypertarget{a00047_source_l00061}\hyperlink{a00137_a54dc1a743fac99db03c3f47b5c6d69c4}{00061}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_a54dc1a743fac99db03c3f47b5c6d69c4}{setPosition}(QVector3D* value) \{ \textcolor{keyword}{this}->position = value; \}
+00062 
+\Hypertarget{a00047_source_l00063}\hyperlink{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}{00063}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}{setHelth}(\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* value) \{ \textcolor{keyword}{this}->helth = value; \}
+00064 
+\Hypertarget{a00047_source_l00065}\hyperlink{a00137_a4b5e42aa7985c9bf959f0275cbc1bac7}{00065}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_a4b5e42aa7985c9bf959f0275cbc1bac7}{setWeight}(\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* value) \{ \textcolor{keyword}{this}->weight = value; \}
+00066 
+\Hypertarget{a00047_source_l00067}\hyperlink{a00137_ac480b8140b5b290f49b4b96a47291180}{00067}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_ac480b8140b5b290f49b4b96a47291180}{setTransitWeight}(\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* value) \{
+00068     \textcolor{keyword}{this}->transitWeight = value;
+00069   \}
+00070 
+\Hypertarget{a00047_source_l00071}\hyperlink{a00137_a324cba2176155a50b5a2239eb0a8b6a0}{00071}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_a324cba2176155a50b5a2239eb0a8b6a0}{setType}(\textcolor{keywordtype}{int} value) \{ \textcolor{keyword}{this}\hyperlink{a00137_a73a4ca23072b617f3d17004e3c671bca}{->}\hyperlink{a00137_a73a4ca23072b617f3d17004e3c671bca}{type} = value; \}
+00072 
+\Hypertarget{a00047_source_l00073}\hyperlink{a00137_a874f246d3249a989750e3db85ea4bfcd}{00073}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_a874f246d3249a989750e3db85ea4bfcd}{setName}(QString name) \{ \textcolor{keyword}{this}->name = name; \}
+00074 
+\Hypertarget{a00047_source_l00075}\hyperlink{a00137_a71d8528482d5be16100ad56dbfd4aae9}{00075}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_a71d8528482d5be16100ad56dbfd4aae9}{setAdditionakData}(QByteArray* data) \{
+00076     \textcolor{keyword}{this}->additionalData = data;
+00077   \}
+00078 
+\Hypertarget{a00047_source_l00079}\hyperlink{a00137_a2719e14051c30f39ca60f4998e48abf9}{00079}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00137_a2719e14051c30f39ca60f4998e48abf9}{setRVision}(\textcolor{keywordtype}{int} \_rVison) \{ \hyperlink{a00137_ae0ad3c240950eba352aeb04e6a9296b4}{rVision} = \_rVison; \}
+00080 
+\Hypertarget{a00047_source_l00081}\hyperlink{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}{00081}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}{getRVision}() \{ \textcolor{keywordflow}{return} \hyperlink{a00137_ae0ad3c240950eba352aeb04e6a9296b4}{rVision}; \}
+00082 
+00083  \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{signals}:
+00084 
+00085  \textcolor{keyword}{public} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{slots}:
+00086 
+00087  \textcolor{keyword}{protected}:
+\Hypertarget{a00047_source_l00088}\hyperlink{a00137_afe080b1942ec40832e94cb884ec87456}{00088}   \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{QVector3D}* \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{position} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{nullptr};
+\Hypertarget{a00047_source_l00089}\hyperlink{a00137_a440cf9e7d61c33482ab256a6e944b34d}{00089}   \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* \hyperlink{a00137_a440cf9e7d61c33482ab256a6e944b34d}{helth} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{nullptr};
+\Hypertarget{a00047_source_l00090}\hyperlink{a00137_a99901016531fd27b9b197dc88d3bfa4a}{00090}   \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* \hyperlink{a00137_a99901016531fd27b9b197dc88d3bfa4a}{weight} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{nullptr};
+\Hypertarget{a00047_source_l00091}\hyperlink{a00137_a865c937433f7d46665ca17e5adccd9df}{00091}   \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}* \hyperlink{a00137_a865c937433f7d46665ca17e5adccd9df}{transitWeight} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{nullptr};
+\Hypertarget{a00047_source_l00092}\hyperlink{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91}{00092}   \hyperlink{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91}{QByteArray}* \hyperlink{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91}{additionalData} = \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{nullptr};
+\Hypertarget{a00047_source_l00093}\hyperlink{a00137_ae0ad3c240950eba352aeb04e6a9296b4}{00093}   \textcolor{keywordtype}{int} \hyperlink{a00137_ae0ad3c240950eba352aeb04e6a9296b4}{rVision} = 1;
+00094 
+\Hypertarget{a00047_source_l00095}\hyperlink{a00137_a73a4ca23072b617f3d17004e3c671bca}{00095}   \textcolor{keywordtype}{int} \hyperlink{a00137_a73a4ca23072b617f3d17004e3c671bca}{type} = -1;
+\Hypertarget{a00047_source_l00096}\hyperlink{a00137_af35fba4ed599605c3d78b3c3a71fa467}{00096}   \hyperlink{a00137_af35fba4ed599605c3d78b3c3a71fa467}{QString} \hyperlink{a00137_af35fba4ed599605c3d78b3c3a71fa467}{name};
+00097 \};
+00098 
+\Hypertarget{a00047_source_l00099}\hyperlink{a00141}{00099} \textcolor{keyword}{class} \hyperlink{a00141}{DiffElement} \{
+00100  \textcolor{keyword}{public}:
+\Hypertarget{a00047_source_l00101}\hyperlink{a00141_abb725fa0a448bf536959a5c469556599}{00101}   \hyperlink{a00141_abb725fa0a448bf536959a5c469556599}{DiffElement}() \{ \hyperlink{a00141_a656245277c76d03d7c20a55c54db6fef}{data} = \textcolor{keyword}{new} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}(); \}
+\Hypertarget{a00047_source_l00102}\hyperlink{a00141_a82e8ecd785a9d06708c42f128b7aaf09}{00102}   \hyperlink{a00141_a82e8ecd785a9d06708c42f128b7aaf09}{DiffElement}(\hyperlink{a00047_ab32e61d383765a32bc5f9efebb4b9f55}{eDiffType} type, \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}* data) \{
+00103     \textcolor{keyword}{this}\hyperlink{a00141_ad5d4aeee742d315da4f48e7f0b0218db}{->}\hyperlink{a00141_ad5d4aeee742d315da4f48e7f0b0218db}{type} = type;
+00104     \textcolor{keyword}{this}\hyperlink{a00141_a656245277c76d03d7c20a55c54db6fef}{->}\hyperlink{a00141_a656245277c76d03d7c20a55c54db6fef}{data} = data;
+00105   \}
+00106 
+\Hypertarget{a00047_source_l00107}\hyperlink{a00141_a68d5973a4f23de0696d5c164b9a14397}{00107}   \textcolor{keyword}{friend} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{operator}<<(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream},
+00108                                  \textcolor{keyword}{const} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{DiffElement}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}) \{
+00109     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream} << ((\textcolor{keywordtype}{int})\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{type});
+00110     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{IBaseGameElement}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{gameElement} = (*\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{data});
+00111     \textcolor{keywordflow}{return} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream} << \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{gameElement};
+00112   \}
+\Hypertarget{a00047_source_l00113}\hyperlink{a00141_ac0d28f7b0a0c877592716bf643a1d8bd}{00113}   \textcolor{keyword}{friend} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{operator}>>(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream}, \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{DiffElement}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}) \{
+00114     \textcolor{keywordtype}{int} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{type};
+00115     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{result} = \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream} >> \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{type} >> (*
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{data});
+00116     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{type} = (\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{eDiffType})\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{type};
+00117     \textcolor{keywordflow}{return} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{result};
+00118   \}
+00119 
+\Hypertarget{a00047_source_l00120}\hyperlink{a00141_ad5d4aeee742d315da4f48e7f0b0218db}{00120}   \hyperlink{a00047_ab32e61d383765a32bc5f9efebb4b9f55}{eDiffType} \hyperlink{a00141_ad5d4aeee742d315da4f48e7f0b0218db}{type};
+\Hypertarget{a00047_source_l00121}\hyperlink{a00141_a656245277c76d03d7c20a55c54db6fef}{00121}   \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}* \hyperlink{a00141_a656245277c76d03d7c20a55c54db6fef}{data};
+00122 \};
+00123 
+00124 \textcolor{preprocessor}{#}\textcolor{preprocessor}{endif}  \textcolor{comment}{// IBASEGAMEELEMENT\_H}
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+<map id="IBaseGameElement" name="IBaseGameElement">
+<area shape="rect" id="node3" href="$da/d3a/a00694.html" title="{BaseBasis\n|# energy\l|+ BaseBasis()\l+ setType()\l+ getAdditionalData()\l+ setAdditionakData()\l+ getEnergy()\l+ setEnergy()\l}" alt="" coords="5,756,207,939"/>
+<area shape="rect" id="node4" href="$df/dbb/a00698.html" title="{BaseBulet\n|# lifetime\l# demage\l# direction\l# speed\l|+ BaseBulet()\l+ getAdditionalData()\l+ setAdditionakData()\l}" alt="" coords="231,756,432,939"/>
+<area shape="rect" id="node5" href="$dd/d85/a00702.html" title="{BaseTank\n|# direction\l# speed\l# fireType\l|+ BaseTank()\l+ setType()\l+ generateBullet()\l+ setAdditionakData()\l+ getAdditionalData()\l}" alt="" coords="456,747,657,948"/>
+</map>

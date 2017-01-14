@@ -1,0 +1,24 @@
+\hypertarget{a00098_source}{}\section{mapiniter.\+h}
+\label{a00098_source}\index{Server/mapiniter.\+h@{Server/mapiniter.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{ifndef} \textcolor{preprocessor}{MAPINITER\_H}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{define} \textcolor{preprocessor}{MAPINITER\_H}
+00003 
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00053}{"imap.h"}
+00005 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"maps/listbsemap.h"}
+00006 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00047}{"ibasegameelement.h"}
+00007 
+\Hypertarget{a00098_source_l00008}\hyperlink{a00217}{00008} \textcolor{keyword}{class} \hyperlink{a00217}{MapIniter}
+00009 \{
+00010 \textcolor{keyword}{public}:
+00011     \hyperlink{a00217_a1137dec968988621ea18091fdf379987}{MapIniter}();
+00012     \hyperlink{a00165}{IMap} *\hyperlink{a00217_ae6dfbed9cc8569db78442c0bfe57e252}{initSimapleMap}();
+00013 
+00014 \textcolor{keyword}{protected}:
+00015     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement} *\hyperlink{a00217_a8961b80aa1df5f628bd4e28e66a51d0b}{getRandomGrass}(\textcolor{keywordtype}{double} maxWidth,\textcolor{keywordtype}{double} maxHeigth);
+00016 
+00017 \};
+00018 
+00019 \textcolor{preprocessor}{#}\textcolor{preprocessor}{endif} \textcolor{comment}{// MAPINITER\_H}
+\end{DoxyCode}

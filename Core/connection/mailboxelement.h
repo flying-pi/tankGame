@@ -7,6 +7,7 @@
 #include <QMutex>
 #include <QQueue>
 #include <qtconcurrentrun.h>
+#include "diffs/diffcard.h"
 
 using namespace QtConcurrent;
 
@@ -18,34 +19,7 @@ class MailReceiver {
   virtual void sendMail(MessageForServer* message,
                         MailSender* sender,
                         int type,
-                        bool isReplace = true) {
-    run(QThreadPool::globalInstance(), [=] {
-      qInfo() << "MailReceiver::sendMail - befor mutex";
-      isQueueLock = true;
-      mutex.lock();
-      qInfo() << "MailReceiver::sendMail - in mutex";
-      qInfo() << "MailReceiver :: adding new message item in to queue";
-      mailMessage* msg;
-      if (isReplace && messages.length() != 0) {
-        for (int i = 0; i < messages.length(); i++) {
-          msg = messages.at(i);
-          if ((msg->sender == sender && msg->type == type) ||
-              i == messages.length() - 1) {
-            messages.removeAt(i);
-            messages.insert(i,
-                            new mailMessage(message, sender, type, isReplace));
-            break;
-          }
-        }
-      } else
-        messages.push_back(new mailMessage(message, sender, type, isReplace));
-      mailMessage* test = messages.last();
-      qInfo() << "getting new message in queue :: " << (*messages.last());
-      mutex.unlock();
-      isQueueLock = false;
-      qInfo() << "MailReceiver::sendMail - after mutex";
-    });
-  }
+                        bool isReplace = true);
 
  protected:
   class mailMessage {
@@ -57,12 +31,7 @@ class MailReceiver {
     mailMessage(MessageForServer* message,
                 MailSender* sender,
                 int type,
-                bool isReplace = true) {
-      this->message = message;
-      this->sender = sender;
-      this->type = type;
-      this->isReplace = isReplace;
-    }
+                bool isReplace = true);
     friend QDebug operator<<(QDebug debug, const mailMessage& c) {
       QDebugStateSaver saver(debug);
 
@@ -79,24 +48,12 @@ class MailReceiver {
   QMutex mutex;
   volatile bool isQueueLock = false;
 
-  virtual mailMessage* nextMessage() {
-    if (isQueueLock)
-      return nullptr;
-    mutex.lock();
-    mailMessage* result = nullptr;
-    if (messages.length() > 0) {
-      qInfo() << "enqueue message";
-      result = messages.takeFirst();
-    }
-    mutex.unlock();
-    return result;
-  }
+  virtual mailMessage* nextMessage();
 };
 
 class MailSender {
  public:
-  virtual void receiveResponce(QList<DiffElement*>* diff,
-                               MessageForServer* message) = 0;
+  virtual void receiveResponce(DiffCard* diff, MessageForServer* message) = 0;
   virtual void setDefaultReceiver(MailReceiver* receiver) {
     this->receiver = receiver;
   }

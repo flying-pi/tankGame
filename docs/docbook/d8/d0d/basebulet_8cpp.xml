@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d0d/basebulet_8cpp">
+    <title>basebulet.cpp File Reference</title>
+    <programlisting>#include &quot;basebulet.h&quot;</programlisting>
+<para>Include dependency diagram for basebulet.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d47/basebulet_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for basebulet.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/dba/basebulet_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/GameElements/basebulet.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d3/da1/basebulet_8h">basebulet.h</link>&quot;</emphasis>
+2 
+<link linkend="d3/d84/classBaseBulet_1abdfda473d6ddd2a2fb35783dfa5ef836">3 </link><link linkend="d3/d84/classBaseBulet_1abdfda473d6ddd2a2fb35783dfa5ef836">BaseBulet::BaseBulet</link>()&#32;{}
+4 
+<link linkend="d3/d84/classBaseBulet_1a307a62b59328f9e2a0530f559aba0dcb">5 </link>QByteArray*&#32;<link linkend="d3/d84/classBaseBulet_1a307a62b59328f9e2a0530f559aba0dcb">BaseBulet::getAdditionalData</link>()&#32;{}
+6 
+<link linkend="d3/d84/classBaseBulet_1ae97774994602a89562688f97339b9eb3">7 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d3/d84/classBaseBulet_1ae97774994602a89562688f97339b9eb3">BaseBulet::setAdditionakData</link>(QByteArray*&#32;data)&#32;{}
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,27 @@
+\hypertarget{a00056_source}{}\section{infinitydouble.\+cpp}
+\label{a00056_source}\index{Core/infinitydouble.\+cpp@{Core/infinitydouble.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00059}{"infinitydouble.h"}
+00002 
+\Hypertarget{a00056_source_l00003}\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{00003} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}::InfinityDouble()
+00004 \{
+00005 
+00006 \}
+00007 
+\Hypertarget{a00056_source_l00008}\hyperlink{a00161_adb0a2fa93aa5f90a93c3f4303436913a}{00008} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble} *\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}::\hyperlink{a00161_adb0a2fa93aa5f90a93c3f4303436913a}{FromValue}(\textcolor{keywordtype}{double} w)
+00009 \{
+00010     \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble} *result = \textcolor{keyword}{new} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}();
+00011     result\hyperlink{a00161_a41b95322310121af834ac42159fff654}{->}\hyperlink{a00161_a41b95322310121af834ac42159fff654}{w} = w;
+00012     result\hyperlink{a00161_a435ef98a3b05725db8c963f7f41e32ef}{->}\hyperlink{a00161_a435ef98a3b05725db8c963f7f41e32ef}{isInfinity} = \textcolor{keyword}{false};
+00013     \textcolor{keywordflow}{return} result;
+00014 \}
+00015 
+\Hypertarget{a00056_source_l00016}\hyperlink{a00161_a67fae871f96708313bedc644630ac8bc}{00016} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble} *\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}::
+      \hyperlink{a00161_a67fae871f96708313bedc644630ac8bc}{InfinityValue}()
+00017 \{
+00018     \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble} *result=\textcolor{keyword}{new} \hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}();
+00019     result\hyperlink{a00161_a435ef98a3b05725db8c963f7f41e32ef}{->}\hyperlink{a00161_a435ef98a3b05725db8c963f7f41e32ef}{isInfinity} = \textcolor{keyword}{true};
+00020     \textcolor{keywordflow}{return} result;
+00021 \}
+\end{DoxyCode}

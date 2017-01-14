@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d3e/a00116">
+<title>staticBockTypes</title>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="d4/d3e/a00116_1a6dfdff0673d9c105ab375a71621be666">grass</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

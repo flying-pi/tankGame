@@ -1,0 +1,191 @@
+\hypertarget{a00133}{}\section{Simple\+Connection\+:\+:Receiver Class Reference}
+\label{a00133}\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+
+
+{\ttfamily \#include \char`\"{}simpleconnection.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Simple\+Connection\+:\+:Receiver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{d5/deb/a00132}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Connection\+:\+:Receiver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d7/d06/a00131}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00133_a188daa54b2ed047298df6b889dad5004}{Receiver} (Q\+Tcp\+Socket $\ast$\hyperlink{a00133_a2a61dfb0c5aaff07952e9cc933329fe4}{socket}, \hyperlink{a00125}{Simple\+Connection} $\ast$\hyperlink{a00133_a86812570e3dd426878732f5ea4ae3b9e}{parent\+Thread}, Q\+Object $\ast$parent=0)
+\item 
+virtual \hyperlink{a00133_ad751c9c2c8152a039876b65197a6b512}{$\sim$\+Receiver} ()
+\item 
+bool \hyperlink{a00133_a7cd5d65acac04d9eaa59817f15ddae62}{ist\+Thread\+Start} ()
+\item 
+void \hyperlink{a00133_ab77d06e9677b12631ece8695a319e062}{stop} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00133_a8bcc914a839e71786071f655ce5afe7e}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Tcp\+Socket $\ast$ \hyperlink{a00133_a2a61dfb0c5aaff07952e9cc933329fe4}{socket}
+\item 
+Q\+Data\+Stream $\ast$ \hyperlink{a00133_aa4c39c627b02662a6f68885aa8fca85b}{in}
+\item 
+\hyperlink{a00125}{Simple\+Connection} $\ast$ \hyperlink{a00133_a86812570e3dd426878732f5ea4ae3b9e}{parent\+Thread}
+\item 
+volatile bool \hyperlink{a00133_ac47df189e93600b9bda2e1dca4e092c9}{is\+Start} = false
+\item 
+volatile bool \hyperlink{a00133_acc9d38bc97267217323908d6aaae5972}{is\+Work} = true
+\item 
+volatile bool \hyperlink{a00133_a7ed726c394f5e48761a19ccecc988173}{is\+Loop\+Active} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{a00008_source_l00096}{96} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00133_a188daa54b2ed047298df6b889dad5004}\label{a00133_a188daa54b2ed047298df6b889dad5004}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!Receiver@{Receiver}}
+\index{Receiver@{Receiver}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{Receiver()}{Receiver()}}
+{\footnotesize\ttfamily Simple\+Connection\+::\+Receiver\+::\+Receiver (\begin{DoxyParamCaption}\item[{Q\+Tcp\+Socket $\ast$}]{socket,  }\item[{\hyperlink{a00125}{Simple\+Connection} $\ast$}]{parent\+Thread,  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00005_source_l00116}{116} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00133_ad751c9c2c8152a039876b65197a6b512}\label{a00133_ad751c9c2c8152a039876b65197a6b512}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!````~Receiver@{$\sim$\+Receiver}}
+\index{````~Receiver@{$\sim$\+Receiver}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{$\sim$\+Receiver()}{~Receiver()}}
+{\footnotesize\ttfamily Simple\+Connection\+::\+Receiver\+::$\sim$\+Receiver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00125}{125} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00133_a7cd5d65acac04d9eaa59817f15ddae62}\label{a00133_a7cd5d65acac04d9eaa59817f15ddae62}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!ist\+Thread\+Start@{ist\+Thread\+Start}}
+\index{ist\+Thread\+Start@{ist\+Thread\+Start}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{ist\+Thread\+Start()}{istThreadStart()}}
+{\footnotesize\ttfamily bool Simple\+Connection\+::\+Receiver\+::ist\+Thread\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00005_source_l00129}{129} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00133_a8bcc914a839e71786071f655ce5afe7e}\label{a00133_a8bcc914a839e71786071f655ce5afe7e}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!run@{run}}
+\index{run@{run}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Simple\+Connection\+::\+Receiver\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00141}{141} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00133_ab77d06e9677b12631ece8695a319e062}\label{a00133_ab77d06e9677b12631ece8695a319e062}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!stop@{stop}}
+\index{stop@{stop}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Simple\+Connection\+::\+Receiver\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00005_source_l00134}{134} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/de8/a00133_ab77d06e9677b12631ece8695a319e062_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00133_aa4c39c627b02662a6f68885aa8fca85b}\label{a00133_aa4c39c627b02662a6f68885aa8fca85b}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!in@{in}}
+\index{in@{in}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{in}{in}}
+{\footnotesize\ttfamily Q\+Data\+Stream$\ast$ Simple\+Connection\+::\+Receiver\+::in\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00107}{107} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00133_a7ed726c394f5e48761a19ccecc988173}\label{a00133_a7ed726c394f5e48761a19ccecc988173}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!is\+Loop\+Active@{is\+Loop\+Active}}
+\index{is\+Loop\+Active@{is\+Loop\+Active}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{is\+Loop\+Active}{isLoopActive}}
+{\footnotesize\ttfamily volatile bool Simple\+Connection\+::\+Receiver\+::is\+Loop\+Active = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00111}{111} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00133_ac47df189e93600b9bda2e1dca4e092c9}\label{a00133_ac47df189e93600b9bda2e1dca4e092c9}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!is\+Start@{is\+Start}}
+\index{is\+Start@{is\+Start}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{is\+Start}{isStart}}
+{\footnotesize\ttfamily volatile bool Simple\+Connection\+::\+Receiver\+::is\+Start = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00109}{109} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00133_acc9d38bc97267217323908d6aaae5972}\label{a00133_acc9d38bc97267217323908d6aaae5972}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!is\+Work@{is\+Work}}
+\index{is\+Work@{is\+Work}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{is\+Work}{isWork}}
+{\footnotesize\ttfamily volatile bool Simple\+Connection\+::\+Receiver\+::is\+Work = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00110}{110} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00133_a86812570e3dd426878732f5ea4ae3b9e}\label{a00133_a86812570e3dd426878732f5ea4ae3b9e}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!parent\+Thread@{parent\+Thread}}
+\index{parent\+Thread@{parent\+Thread}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{parent\+Thread}{parentThread}}
+{\footnotesize\ttfamily \hyperlink{a00125}{Simple\+Connection}$\ast$ Simple\+Connection\+::\+Receiver\+::parent\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00108}{108} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00133_a2a61dfb0c5aaff07952e9cc933329fe4}\label{a00133_a2a61dfb0c5aaff07952e9cc933329fe4}} 
+\index{Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}!socket@{socket}}
+\index{socket@{socket}!Simple\+Connection\+::\+Receiver@{Simple\+Connection\+::\+Receiver}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Q\+Tcp\+Socket$\ast$ Simple\+Connection\+::\+Receiver\+::socket\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00106}{106} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+

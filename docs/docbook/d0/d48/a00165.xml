@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d48/a00165">
+<title>IMap class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dee/a00053">&quot;imap.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for IMap</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/ddf/a00164.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for IMap</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dae/a00163.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d48/a00165_1ac705a2e065b5c4604e43a44b488d798a">IMap</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual QSizeF * <link linkend="d0/d48/a00165_1a183f2d7ba8ec154d0338e999f195d0c8">getSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d48/a00165_1a2d44fb3d3798e08bebcd25ad5f1787f4">insertElement</link> (
+<link linkend="d2/df5/a00137">IBaseGameElement</link> * element, QVector3D point)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d0/d48/a00165_1aa4feb51c5d024c99d4c57ccf5d2ff82d">proccessAllInR</link> (
+<link linkend="d2/df5/a00137">IBaseGameElement</link> * element, double r, bool(&amp;)(<link linkend="d2/df5/a00137">IBaseGameElement</link> *element) mapOperator)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="d0/d48/a00165_1a021e64b05ecb6558ed1d663676f82971">getCount</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d2/df5/a00137">IBaseGameElement</link> * <link linkend="d0/d48/a00165_1a9fce1fb4ad8fac181fbbce3ce31da0a0">getElementAtPosition</link> (
+int pos)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="d0/d48/a00165_1ac705a2e065b5c4604e43a44b488d798a">
+                <title>IMap::IMap ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d48/a00165_1a183f2d7ba8ec154d0338e999f195d0c8">
+                <title>virtual QSizeF* IMap::getSize ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d48/a00165_1a2d44fb3d3798e08bebcd25ad5f1787f4">
+                <title>virtual void IMap::insertElement (IBaseGameElement *element, QVector3D point)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d48/a00165_1aa4feb51c5d024c99d4c57ccf5d2ff82d">
+                <title>virtual void IMap::proccessAllInR (IBaseGameElement *element, double r, bool(&amp;mapOperator)(IBaseGameElement *element))=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d48/a00165_1a021e64b05ecb6558ed1d663676f82971">
+                <title>virtual int IMap::getCount ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d0/d48/a00165_1a9fce1fb4ad8fac181fbbce3ce31da0a0">
+                <title>virtual IBaseGameElement* IMap::getElementAtPosition (int pos)=0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d8c/a00035">
+    <title>basebulet.h File Reference</title>
+    <programlisting>#include &quot;../ibasegameelement.h&quot;</programlisting>
+<para>Include dependency diagram for basebulet.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d8c/a00036.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for basebulet.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/dc6/a00037.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d01/a00153">BaseBulet</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/GameElements/basebulet.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;BASEBULET_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;BASEBULET_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&quot;../ibasegameelement.h&quot;</emphasis>
+5 
+<link linkend="da/d01/a00153">6 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="da/d01/a00153">BaseBulet</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/df5/a00137">IBaseGameElement</link>&#32;{
+7 &#32;<emphasis class="keyword">public</emphasis>:
+8 &#32;&#32;<link linkend="da/d01/a00153_1abdfda473d6ddd2a2fb35783dfa5ef836">BaseBulet</link>();
+9 
+10 &#32;<emphasis class="keyword">protected</emphasis>:
+<link linkend="da/d01/a00153_1a9ad5db3e6e5d664e1ca4390285d43782">11 </link>&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="da/d01/a00153_1a9ad5db3e6e5d664e1ca4390285d43782">lifetime</link>&#32;=&#32;0;
+<link linkend="da/d01/a00153_1af945a06780b38cebab807ff1ad63eb7a">12 </link>&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="da/d01/a00153_1af945a06780b38cebab807ff1ad63eb7a">demage</link>&#32;=&#32;0;
+<link linkend="da/d01/a00153_1a16b71d8fb0386d4b048ca96c8c806896">13 </link>&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="da/d01/a00153_1a16b71d8fb0386d4b048ca96c8c806896">direction</link>;
+<link linkend="da/d01/a00153_1ad90bbbab47b5e3b8fa1a683210d026d7">14 </link>&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="da/d01/a00153_1ad90bbbab47b5e3b8fa1a683210d026d7">speed</link>;
+15 
+16 &#32;&#32;<emphasis class="comment">//&#32;IBaseGameElement&#32;interface</emphasis>
+17 &#32;<emphasis class="keyword">public</emphasis>:
+18 &#32;&#32;QByteArray*&#32;<link linkend="da/d01/a00153_1a307a62b59328f9e2a0530f559aba0dcb">getAdditionalData</link>();
+19 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="da/d01/a00153_1ae97774994602a89562688f97339b9eb3">setAdditionakData</link>(QByteArray*&#32;data);
+20 };
+21 
+22 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;BASEBULET_H</emphasis>
+    </computeroutput></literallayout>
+</section>

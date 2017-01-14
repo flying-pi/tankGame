@@ -48,5 +48,5 @@ void ServerConnection::run() {
   }
 }
 
-void ServerConnection::receiveResponce(QList<DiffElement*>* diff,
+void ServerConnection::receiveResponce(DiffCard* diff,
                                        MessageForServer* message) {}

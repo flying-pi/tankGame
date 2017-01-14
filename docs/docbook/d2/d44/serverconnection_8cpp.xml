@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d44/serverconnection_8cpp">
+    <title>serverconnection.cpp File Reference</title>
+    <programlisting>#include &quot;serverconnection.h&quot;</programlisting>
+    <programlisting>#include &quot;coreconst.h&quot;</programlisting>
+<para>Include dependency diagram for serverconnection.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dd7/serverconnection_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for serverconnection.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d82/serverconnection_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Server/serverconnection.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="dd/d06/serverconnection_8h">serverconnection.h</link>&quot;</emphasis>
+2 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d7/dc7/coreconst_8h">coreconst.h</link>&quot;</emphasis>
+3 
+4 <link linkend="d5/d24/classServerConnection">ServerConnection</link>*&#32;<link linkend="d5/d24/classServerConnection_1adbbe8ffe6ee71b0aee4db9b6e689ba2a">ServerConnection::instance</link>&#32;=&#32;<emphasis class="keyword">nullptr</emphasis>;
+5 
+<link linkend="d5/d24/classServerConnection_1af919491d0e2ff066b0a58cc50fc0d90d">6 </link><link linkend="d5/d24/classServerConnection_1af919491d0e2ff066b0a58cc50fc0d90d">ServerConnection::~ServerConnection</link>()&#32;{
+7 &#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="d5/d24/classServerConnection_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">connections</link>-&gt;size();&#32;i++)
+8 &#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;<link linkend="d5/d24/classServerConnection_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">connections</link>-&gt;at(i);
+9 &#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;<link linkend="d5/d24/classServerConnection_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">connections</link>;
+10 }
+11 
+<link linkend="d5/d24/classServerConnection_1a0adf644e7715ddbb83a53651b0804dec">12 </link><link linkend="d5/d24/classServerConnection_1a0adf644e7715ddbb83a53651b0804dec">ServerConnection::ServerConnection</link>()&#32;{
+13 &#32;&#32;<link linkend="d5/d24/classServerConnection_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">connections</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;QList&lt;ServerWorker*&gt;();
+14 }
+15 
+<link linkend="d5/d24/classServerConnection_1af558fe509b60eb019281316513f6d188">16 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d5/d24/classServerConnection_1af558fe509b60eb019281316513f6d188">ServerConnection::onWorkerStop</link>(<link linkend="da/d78/classServerWorker">ServerWorker</link>*&#32;worker)&#32;{
+17 &#32;&#32;<link linkend="d5/d24/classServerConnection_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">connections</link>-&gt;removeAll(worker);
+18 &#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;worker;
+19 }
+20 
+<link linkend="d5/d24/classServerConnection_1a1d45a6a7b2370c82ed2849959bb18c2a">21 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d5/d24/classServerConnection_1a1d45a6a7b2370c82ed2849959bb18c2a">ServerConnection::startServer</link>()&#32;{
+22 &#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this-&gt;isRunning())
+23 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>;
+24 &#32;&#32;this-&gt;start(Priority::NormalPriority);
+25 }
+26 
+<link linkend="d5/d24/classServerConnection_1ac7f219a30789e91afa079ab5e49529bd">27 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d5/d24/classServerConnection_1ac7f219a30789e91afa079ab5e49529bd">ServerConnection::run</link>()&#32;{
+28 &#32;&#32;<link linkend="d5/d24/classServerConnection_1aee9a8e6c0f1d25fc2fcb4662631c0c74">server</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;QTcpServer();
+29 &#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!<link linkend="d5/d24/classServerConnection_1aee9a8e6c0f1d25fc2fcb4662631c0c74">server</link>-&gt;listen(QHostAddress::Any,&#32;<link linkend="de/dc0/namespaceDefaultServerParams_1a7ac0709dc92e311b3524c365a2a05d96">DefaultServerParams::port</link>))&#32;{
+30 &#32;&#32;&#32;&#32;emit&#32;<link linkend="d5/d24/classServerConnection_1ae97f8eaa15a3da8f069ad502e89039ae">onServerError</link>(<link linkend="dd/d06/serverconnection_8h_1a65727a063024ff0dedf1ac2f087f4165af21059407733b78da140dbc07981a44a">serverError::canNotStartServer</link>);
+31 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>;
+32 &#32;&#32;}
+33 &#32;&#32;qDebug()&#32;&lt;&lt;&#32;<link linkend="d5/d24/classServerConnection_1aee9a8e6c0f1d25fc2fcb4662631c0c74">server</link>-&gt;isListening();
+34 &#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;isAppareNewConnection;
+35 &#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(<emphasis class="keyword">true</emphasis>)&#32;{
+36 &#32;&#32;&#32;&#32;isAppareNewConnection&#32;=&#32;<link linkend="d5/d24/classServerConnection_1aee9a8e6c0f1d25fc2fcb4662631c0c74">server</link>-&gt;waitForNewConnection(100);
+37 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(isAppareNewConnection)&#32;{
+38 &#32;&#32;&#32;&#32;&#32;&#32;QTcpSocket*&#32;newConnection&#32;=&#32;<link linkend="d5/d24/classServerConnection_1aee9a8e6c0f1d25fc2fcb4662631c0c74">server</link>-&gt;nextPendingConnection();
+39 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(newConnection&#32;==&#32;<emphasis class="keyword">nullptr</emphasis>)
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">continue</emphasis>;
+41 &#32;&#32;&#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;appare&#32;new&#32;connection&#32;&#32;::&#32;&quot;</emphasis>
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&lt;&lt;&#32;newConnection-&gt;peerAddress().toString();
+43 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker">ServerWorker</link>*&#32;newWorker&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="da/d78/classServerWorker">ServerWorker</link>(newConnection);
+44 &#32;&#32;&#32;&#32;&#32;&#32;newWorker-&gt;<link linkend="de/d1e/classMailSender_1aa85db0004c26606c5ac294e5de000b96">setDefaultReceiver</link>(this-&gt;<link linkend="de/d1e/classMailSender_1aa57ce2f74f8ad76abb38974f85b97ac5">receiver</link>);
+45 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d5/d24/classServerConnection_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">connections</link>-&gt;append(newWorker);
+46 &#32;&#32;&#32;&#32;&#32;&#32;newWorker-&gt;start();
+47 &#32;&#32;&#32;&#32;}
+48 &#32;&#32;}
+49 }
+50 
+<link linkend="d5/d24/classServerConnection_1afd1dd14f38c6c1d1efa719af1a9d9851">51 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d5/d24/classServerConnection_1afd1dd14f38c6c1d1efa719af1a9d9851">ServerConnection::receiveResponce</link>(QList&lt;DiffElement*&gt;*&#32;diff,
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="db/dbc/classMessageForServer">MessageForServer</link>*&#32;message)&#32;{}
+    </computeroutput></literallayout>
+</section>

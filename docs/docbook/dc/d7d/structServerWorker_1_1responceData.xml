@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d7d/structServerWorker_1_1responceData">
+<title>ServerWorker::responceData struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/dfb/serverworker_8h">&quot;serverworker.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for ServerWorker::responceData</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d4/dc3/structServerWorker_1_1responceData__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ServerWorker::responceData</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d48/structServerWorker_1_1responceData__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QList&lt; DiffElement * &gt; * diff</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MessageForServer * messag</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d7d/structServerWorker_1_1responceData_1a7a5eda32e5aa3266882ecc57d89ff798">responceData</link> (
+QList&lt; <link linkend="d7/d78/classDiffElement">DiffElement</link> *&gt; * diff, <link linkend="db/dbc/classMessageForServer">MessageForServer</link> * messag)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d7d/structServerWorker_1_1responceData_1a7a5eda32e5aa3266882ecc57d89ff798">
+                <title>ServerWorker::responceData::responceData (QList&lt; DiffElement *&gt; *diff, MessageForServer *messag)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d6/d1a/classMainWindow">
+<title>MainWindow class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d9/d53/mainwindow_8h">&quot;mainwindow.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for MainWindow</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/d96/classMainWindow__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MainWindow</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d2/d38/classMainWindow__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SimpleConnection connection</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Ui::MainWindow * ui</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d1a/classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db">MainWindow</link> (
+QWidget * parent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d6/d1a/classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d6/d1a/classMainWindow_1abfedef9edae209df536e8c1c7cf0e7ae">connectToServer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d6/d1a/classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db">
+                <title>MainWindow::MainWindow (QWidget *parent=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d1a/classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7">
+                <title>MainWindow::~MainWindow ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d6/d1a/classMainWindow_1abfedef9edae209df536e8c1c7cf0e7ae">
+                <title>void MainWindow::connectToServer ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

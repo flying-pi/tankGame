@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/de0/core_8cpp">
+    <title>core.cpp File Reference</title>
+    <programlisting>#include &quot;core.h&quot;</programlisting>
+<para>Include dependency diagram for core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d1/de4/core_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d62/core_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/core.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d5/dc4/core_8h">core.h</link>&quot;</emphasis>
+2 
+3 
+<link linkend="db/d6d/classCore_1a14e63188e0aa7c4a6f72d5501384d1f9">4 </link><link linkend="db/d6d/classCore_1a14e63188e0aa7c4a6f72d5501384d1f9">Core::Core</link>()
+5 {
+6 }
+    </computeroutput></literallayout>
+</section>

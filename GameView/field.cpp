@@ -63,7 +63,7 @@ QImage loadTexture2(char* filename, GLuint& textureID) {
 }
 
 void Field::initRes() {
-  loadTexture2(":/res/grass.png", grass);
+  loadTexture2((char*)":/res/grass.png", grass);
 }
 
 void Field::drawGrass(float x, float y) {

@@ -1,0 +1,12 @@
+<map id="MainGameLoop::MainGameLoop" name="MainGameLoop::MainGameLoop">
+<area shape="rect" id="node2" href="$df/d24/a00217.html#a1137dec968988621ea18091fdf379987" title="MapIniter::MapIniter" alt="" coords="376,64,563,95"/>
+<area shape="rect" id="node3" href="$df/d24/a00217.html#ae6dfbed9cc8569db78442c0bfe57e252" title="MapIniter::initSimapleMap" alt="" coords="351,119,588,149"/>
+<area shape="rect" id="node4" href="$d2/df5/a00137.html#ae2be75da1a2a9edfabe993770e24654a" title="IBaseGameElement::nextStep" alt="" coords="943,5,1216,36"/>
+<area shape="rect" id="node5" href="$df/d24/a00217.html#a8961b80aa1df5f628bd4e28e66a51d0b" title="MapIniter::getRandomGrass" alt="" coords="636,145,892,176"/>
+<area shape="rect" id="node6" href="$d2/df5/a00137.html#a2f95e7a61b5db7f2fbbfd32ff786f58c" title="IBaseGameElement::setHelth" alt="" coords="946,60,1213,91"/>
+<area shape="rect" id="node7" href="$d6/d7d/a00161.html#a8d33637f68b523cf2b21abd1509c47bf" title="InfinityDouble::Infinity\lDouble" alt="" coords="1268,167,1466,216"/>
+<area shape="rect" id="node8" href="$d6/d7d/a00161.html#a67fae871f96708313bedc644630ac8bc" title="InfinityDouble::Infinity\lValue" alt="" coords="980,167,1179,216"/>
+<area shape="rect" id="node9" href="$d2/df5/a00137.html#ac480b8140b5b290f49b4b96a47291180" title="IBaseGameElement::setTransit\lWeight" alt="" coords="940,240,1220,289"/>
+<area shape="rect" id="node10" href="$d6/d7d/a00161.html#adb0a2fa93aa5f90a93c3f4303436913a" title="InfinityDouble::FromValue" alt="" coords="962,313,1197,344"/>
+<area shape="rect" id="node11" href="$d2/df5/a00137.html#a324cba2176155a50b5a2239eb0a8b6a0" title="IBaseGameElement::setType" alt="" coords="948,368,1212,399"/>
+</map>

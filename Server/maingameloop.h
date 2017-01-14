@@ -5,7 +5,14 @@
 #include "connection/mailboxelement.h"
 #include <QThread>
 #include <functional>
+#include "GameElements/basetank.h"
+#include "coreconst.h"
+#include "GameElements/basebasis.h"
+#include "diffs/diffcard.h"
 
+// clever clean, whait for stop all thread
+
+// clean diffs
 class MainGameLoop : public MailReceiver, public QThread {
  public:
   ~MainGameLoop();
@@ -29,13 +36,43 @@ class MainGameLoop : public MailReceiver, public QThread {
   void proccessWatcherMessage(mailMessage* msg, MailSender* receiver);
   messageProccessor getProccessorForMessage(eConnectionType type);
 
-  // QThread interface
  protected:
+  class GamerInformation {
+   public:
+    QString name;
+    uint64_t lifeCount;
+    QVector3D position;
+    MailSender* sender;
+    QList<IBaseGameElement*>* minion;
+    DiffCard* personalDiff;
+    GamerInformation(IMap* map);
+    ~GamerInformation();
+  };
+
+  class WathcerInformation {
+   public:
+    MailSender* sender;
+    WathcerInformation() {}
+  };
+
   void run();
   bool isWork = true;
-  QList<DiffElement*>* getAllMapAsDiff();
+  DiffCard* getAllMapAsDiff();
+  QList<DiffElement*>* getInitDiffsForGamer(BaseBasis* basis);
   QList<MailSender*> watchers;
-  QList<MailSender*> gamers;
+  /**
+   * list of client as gamers
+   * @brief gamersList
+   */
+  QList<GamerInformation*> gamersList;
+  /**
+   * list of gamer object; Each list represent game element of each gamer;
+   * firs element of each gamer object is basis
+   * @brief gamersItems
+   */
+  QList<QList<IBaseGameElement*>*> gamersItems;
+
+  uint64_t time;
 };
 
 #endif  // MAINGAMELOOP_H

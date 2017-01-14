@@ -12,6 +12,11 @@ class BaseBulet : public IBaseGameElement {
   double demage = 0;
   double direction;
   double speed;
+
+  // IBaseGameElement interface
+ public:
+  QByteArray* getAdditionalData();
+  void setAdditionakData(QByteArray* data);
 };
 
 #endif  // BASEBULET_H

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/df2/infinitydouble_8h">
+    <title>infinitydouble.h File Reference</title>
+    <programlisting>#include &lt;QDataStream&gt;</programlisting>
+<para>Include dependency diagram for infinitydouble.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d79/infinitydouble_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for infinitydouble.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/d36/infinitydouble_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/dc5/classInfinityDouble">InfinityDouble</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/infinitydouble.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;WEIGHT_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;WEIGHT_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&lt;QDataStream&gt;</emphasis>
+5 
+6 
+7 
+<link linkend="d2/dc5/classInfinityDouble">8 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="d2/dc5/classInfinityDouble">InfinityDouble</link>:<emphasis class="keyword">public</emphasis>&#32;QObject
+9 {
+10 &#32;&#32;&#32;&#32;Q_OBJECT
+11 
+<link linkend="d2/dc5/classInfinityDouble_1ac679f673051abba09b475da2f8aff522">12 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">friend</emphasis>&#32;QDataStream&amp;&#32;<link linkend="d2/dc5/classInfinityDouble_1ac679f673051abba09b475da2f8aff522">operator &lt;&lt; </link>(QDataStream&amp;&#32;stream,&#32;<emphasis class="keyword">const</emphasis>&#32;<link linkend="d2/dc5/classInfinityDouble">InfinityDouble</link>&amp;&#32;myclass)
+13 &#32;&#32;&#32;&#32;{
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;stream&#32;&lt;&lt;&#32;myclass.<link linkend="d2/dc5/classInfinityDouble_1a435ef98a3b05725db8c963f7f41e32ef">isInfinity</link>&#32;&lt;&lt;&#32;myclass.<link linkend="d2/dc5/classInfinityDouble_1a41b95322310121af834ac42159fff654">w</link>;
+15 &#32;&#32;&#32;&#32;}
+16 
+<link linkend="d2/dc5/classInfinityDouble_1a6ccd429a9269b6aeb8d45f3579caf3b0">17 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">friend</emphasis>&#32;QDataStream&amp;&#32;<link linkend="d2/dc5/classInfinityDouble_1a6ccd429a9269b6aeb8d45f3579caf3b0">operator &gt;&gt; </link>(QDataStream&amp;&#32;stream,&#32;<link linkend="d2/dc5/classInfinityDouble">InfinityDouble</link>&amp;&#32;myclass)
+18 &#32;&#32;&#32;&#32;{
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;stream&#32;&gt;&gt;&#32;myclass.<link linkend="d2/dc5/classInfinityDouble_1a435ef98a3b05725db8c963f7f41e32ef">isInfinity</link>&#32;&gt;&gt;&#32;myclass.<link linkend="d2/dc5/classInfinityDouble_1a41b95322310121af834ac42159fff654">w</link>;
+20 &#32;&#32;&#32;&#32;}
+21 
+22 <emphasis class="keyword">private</emphasis>:
+23 &#32;&#32;&#32;&#32;<link linkend="d2/dc5/classInfinityDouble_1a8d33637f68b523cf2b21abd1509c47bf">InfinityDouble</link>();
+<link linkend="d2/dc5/classInfinityDouble_1a41b95322310121af834ac42159fff654">24 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="d2/dc5/classInfinityDouble_1a41b95322310121af834ac42159fff654">w</link>;
+<link linkend="d2/dc5/classInfinityDouble_1a435ef98a3b05725db8c963f7f41e32ef">25 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="d2/dc5/classInfinityDouble_1a435ef98a3b05725db8c963f7f41e32ef">isInfinity</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+26 
+27 
+28 <emphasis class="keyword">public</emphasis>:
+29 &#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d2/dc5/classInfinityDouble">InfinityDouble</link>&#32;*<link linkend="d2/dc5/classInfinityDouble_1adb0a2fa93aa5f90a93c3f4303436913a">FromValue</link>(<emphasis class="keywordtype">double</emphasis>&#32;w);
+30 &#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d2/dc5/classInfinityDouble">InfinityDouble</link>&#32;*<link linkend="d2/dc5/classInfinityDouble_1a67fae871f96708313bedc644630ac8bc">InfinityValue</link>();
+31 
+32 
+33 
+34 
+35 };
+36 
+37 <emphasis class="preprocessor">#endif&#32;//&#32;WEIGHT_H</emphasis>
+    </computeroutput></literallayout>
+</section>

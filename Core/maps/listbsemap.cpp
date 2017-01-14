@@ -15,17 +15,17 @@ QSizeF* ListBseMap::getSize() {
   delete size;
 }
 
-void ListBseMap::insertElement(IBaseGameElement* element, QVector3D point) {
+void ListBseMap::insertElement(IBaseGameElement* element, QVector3D* point) {
   items->append(element);
 }
 
 void ListBseMap::proccessAllInR(IBaseGameElement* element,
                                 double r,
-                                bool (&mapOperator)(IBaseGameElement*)) {
+                                mapOperator op) {
   for (int i = 0; i < items->size(); i++) {
     IBaseGameElement* el = items->at(i);
     if (element != el && distanceBetweenElement(el, element))
-      mapOperator(el);
+      op(el);
   }
 }
 

@@ -25,7 +25,12 @@ SOURCES += core.cpp \
     maps/listbsemap.cpp \
     connection/simpleconnection.cpp \
     GameElements/basetank.cpp \
-    GameElements/basebulet.cpp
+    GameElements/basebulet.cpp \
+    GameElements/basebasis.cpp \
+    diffs/diffcard.cpp \
+    diffs/diffelement.cpp \
+    diffs/simplediffcard.cpp \
+    connection/mailboxelement.cpp
 
 HEADERS += core.h\
         core_global.h \
@@ -38,7 +43,12 @@ HEADERS += core.h\
     connection/mailboxelement.h \
     util/baseutil.h \
     GameElements/basetank.h \
-    GameElements/basebulet.h
+    GameElements/basebulet.h \
+    coreutil.h \
+    GameElements/basebasis.h \
+    diffs/diffcard.h \
+    diffs/diffelement.h \
+    diffs/simplediffcard.h
 
 unix {
     target.path = /usr/lib

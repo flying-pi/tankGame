@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d16/a00029">
+    <title>basebasis.h File Reference</title>
+    <programlisting>#include &quot;../ibasegameelement.h&quot;</programlisting>
+<para>Include dependency diagram for basebasis.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d79/a00030.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for basebasis.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d61/a00031.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d1e/a00149">BaseBasis</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/GameElements/basebasis.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;BASEBASIS_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;BASEBASIS_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&quot;../ibasegameelement.h&quot;</emphasis>
+5 
+<link linkend="da/d1e/a00149">6 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="da/d1e/a00149">BaseBasis</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/df5/a00137">IBaseGameElement</link>&#32;{
+7 &#32;<emphasis class="keyword">public</emphasis>:
+8 &#32;&#32;<link linkend="da/d1e/a00149_1aa3c0b1cd0f29db8b63bb22dbfb78bbc5">BaseBasis</link>();
+9 &#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="da/d1e/a00149_1ac31b2ea48f47f1bc2baaf1971243b506">setType</link>(<emphasis class="keywordtype">int</emphasis>&#32;value)&#32;<emphasis class="keyword">override</emphasis>;
+10 &#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;QByteArray*&#32;<link linkend="da/d1e/a00149_1aaf8b691c26fbbda7878c22dfda32ebe4">getAdditionalData</link>();
+11 &#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="da/d1e/a00149_1a17b5facef5ea0c9bb9c558a90831d6f9">setAdditionakData</link>(QByteArray*&#32;data);
+12 
+<link linkend="da/d1e/a00149_1acdc9310424ab117e3490e032028a2a7d">13 </link>&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="da/d1e/a00149_1acdc9310424ab117e3490e032028a2a7d">getEnergy</link>()&#32;{&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="da/d1e/a00149_1a59708d348b0218ba9f91c02361524963">energy</link>;&#32;}
+<link linkend="da/d1e/a00149_1a8f4de08926ac9bf0968af49f1ac1279e">14 </link>&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="da/d1e/a00149_1a8f4de08926ac9bf0968af49f1ac1279e">setEnergy</link>(<emphasis class="keywordtype">int</emphasis>&#32;_enery)&#32;{&#32;this-&gt;<link linkend="da/d1e/a00149_1a59708d348b0218ba9f91c02361524963">energy</link>&#32;=&#32;_enery;&#32;}
+15 
+16 &#32;<emphasis class="keyword">protected</emphasis>:
+<link linkend="da/d1e/a00149_1a59708d348b0218ba9f91c02361524963">17 </link>&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="da/d1e/a00149_1a59708d348b0218ba9f91c02361524963">energy</link>&#32;=&#32;100;
+18 };
+19 
+20 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;BASEBASIS_H</emphasis>
+    </computeroutput></literallayout>
+</section>

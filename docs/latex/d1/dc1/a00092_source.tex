@@ -1,0 +1,76 @@
+\hypertarget{a00092_source}{}\section{maingameloop.\+h}
+\label{a00092_source}\index{Server/maingameloop.\+h@{Server/maingameloop.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{ifndef} \textcolor{preprocessor}{MAINGAMELOOP\_H}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{define} \textcolor{preprocessor}{MAINGAMELOOP\_H}
+00003 
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00053}{"imap.h"}
+00005 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"connection/mailboxelement.h"}
+00006 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QThread}\textcolor{preprocessor}{>}
+00007 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{functional}\textcolor{preprocessor}{>}
+00008 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"GameElements/basetank.h"}
+00009 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00020}{"coreconst.h"}
+00010 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"GameElements/basebasis.h"}
+00011 
+\Hypertarget{a00092_source_l00012}\hyperlink{a00209}{00012} \textcolor{keyword}{class} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop} : \textcolor{keyword}{public} \hyperlink{a00197_ace6950e3788bb037f23ce8668ef83829}{MailReceiver}, \textcolor{keyword}{public} 
+      \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{QThread} \{
+00013  \textcolor{keyword}{public}:
+00014   ~\hyperlink{a00209_aeeabdbe46a5aeb891d7da7fd9430d0cb}{MainGameLoop}();
+\Hypertarget{a00092_source_l00015}\hyperlink{a00209_ae4df98e12ba90efd73b144455d9fd52d}{00015}   \textcolor{keyword}{inline} \textcolor{keyword}{static} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}* \hyperlink{a00209_ae4df98e12ba90efd73b144455d9fd52d}{getLooperInstance}() \{
+00016     \textcolor{keywordflow}{if} (instance == nullptr) \{
+00017       instance = \textcolor{keyword}{new} MainGameLoop();
+00018     \}
+00019     \textcolor{keywordflow}{return} \hyperlink{a00209_a2578ca393ef9030407e5b3ac17b9f6ab}{instance};
+00020   \}
+00021 
+00022   \textcolor{keywordtype}{void} \hyperlink{a00209_a2329f4e9c9a4ad9ecbed39d5c297245f}{startLooper}();
+00023 
+00024  \textcolor{keyword}{private}:
+\Hypertarget{a00092_source_l00025}\hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{00025}   \textcolor{keyword}{typedef} \textcolor{keywordtype}{void} (\hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{MainGameLoop}::*\hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{messageProccessor})(
+      \hyperlink{a00197_ace6950e3788bb037f23ce8668ef83829}{MailReceiver}::\hyperlink{a00201}{mailMessage}*,
+00026                                                   \hyperlink{a00205}{MailSender}*);
+\Hypertarget{a00092_source_l00027}\hyperlink{a00209_a2578ca393ef9030407e5b3ac17b9f6ab}{00027}   \textcolor{keyword}{static} \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MainGameLoop}* \hyperlink{a00209_a2578ca393ef9030407e5b3ac17b9f6ab}{instance};
+\Hypertarget{a00092_source_l00028}\hyperlink{a00209_ae0ccec14d7db91cf6db41349a73b41a7}{00028}   \hyperlink{a00165}{IMap}* \hyperlink{a00209_ae0ccec14d7db91cf6db41349a73b41a7}{map};
+00029   \hyperlink{a00209_a0632599cb00fa2c86ba1c71904c1f59f}{MainGameLoop}();
+00030 
+00031   \textcolor{keywordtype}{void} \hyperlink{a00209_ac7722494194e946c7d045471858c3aee}{proccessGamerMessage}(\hyperlink{a00201}{mailMessage}* msg, 
+      \hyperlink{a00205}{MailSender}* receiver);
+00032   \textcolor{keywordtype}{void} \hyperlink{a00209_a26ac1e61f11a51a84b6f2e770808d162}{proccessWatcherMessage}(\hyperlink{a00201}{mailMessage}* msg, 
+      \hyperlink{a00205}{MailSender}* receiver);
+00033   \hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{messageProccessor} \hyperlink{a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5}{getProccessorForMessage}(
+      \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296}{eConnectionType} type);
+00034 
+00035  \textcolor{keyword}{protected}:
+\Hypertarget{a00092_source_l00036}\hyperlink{a00213}{00036}   \textcolor{keyword}{class} \hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{GamerInformation} \{
+00037    \textcolor{keyword}{public}:
+\Hypertarget{a00092_source_l00038}\hyperlink{a00213_ad0a83bddcdd3756585fd5068a4316bde}{00038}     \hyperlink{a00213_ad0a83bddcdd3756585fd5068a4316bde}{QString} \hyperlink{a00213_ad0a83bddcdd3756585fd5068a4316bde}{name};
+\Hypertarget{a00092_source_l00039}\hyperlink{a00213_a94caf02405370097d83973a79e110f4d}{00039}     \hyperlink{a00213_a94caf02405370097d83973a79e110f4d}{uint64\_t} \hyperlink{a00213_a94caf02405370097d83973a79e110f4d}{lifeCount};
+\Hypertarget{a00092_source_l00040}\hyperlink{a00213_a2cc12f0aed9d64271513fbce1615d73e}{00040}     \hyperlink{a00213_a2cc12f0aed9d64271513fbce1615d73e}{QVector3D} \hyperlink{a00213_a2cc12f0aed9d64271513fbce1615d73e}{position};
+\Hypertarget{a00092_source_l00041}\hyperlink{a00213_aebab9469416fa837ba9140f2bf2b280d}{00041}     \hyperlink{a00205}{MailSender}* \hyperlink{a00213_aebab9469416fa837ba9140f2bf2b280d}{sender};
+\Hypertarget{a00092_source_l00042}\hyperlink{a00213_adbf87a495da3003c15451e0ecad3bf14}{00042}     \hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{QList}<\hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{IBaseGameElement}*>* \hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{minion};
+\Hypertarget{a00092_source_l00043}\hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{00043}     \hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{QList}<\hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{DiffElement}*>* \hyperlink{a00213_a4c89a46d22105667ff462e4e944daaac}{personalDiff};
+00044     \hyperlink{a00213_a6b58de3576e4b204fc38073794dfa1d2}{GamerInformation}(\hyperlink{a00165}{IMap}* map);
+00045     ~\hyperlink{a00213_a19842dcddbd89a64210977394060ca3a}{GamerInformation}();
+00046   \};
+00047 
+00048   \textcolor{keywordtype}{void} \hyperlink{a00209_a5a20009c07c887a9cf69381f62da5009}{run}();
+\Hypertarget{a00092_source_l00049}\hyperlink{a00209_a03ce2a112152dc80acce53528cc65daf}{00049}   \textcolor{keywordtype}{bool} \hyperlink{a00209_a03ce2a112152dc80acce53528cc65daf}{isWork} = \textcolor{keyword}{true};
+00050   \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{QList}<\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{DiffElement}*>* \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{getAllMapAsDiff}();
+\Hypertarget{a00092_source_l00051}\hyperlink{a00209_a14693d2e6fdac35ab6af44a9080871f2}{00051}   \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{QList}<\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{MailSender}*> \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{watchers};
+00052   \textcolor{comment}{/**}
+00053 \textcolor{comment}{   * list of client as gamers}
+00054 \textcolor{comment}{   * @brief gamersList}
+00055 \textcolor{comment}{   */}
+\Hypertarget{a00092_source_l00056}\hyperlink{a00209_aac8195bc3183cb0cabe65f1ff813fbfb}{00056}   \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{QList}<\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{GamerInformation}*> \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{gamersList};
+00057   \textcolor{comment}{/**}
+00058 \textcolor{comment}{   * list of gamer object; Each list represent game element of each gamer;}
+00059 \textcolor{comment}{   * firs element of each gamer object is basis}
+00060 \textcolor{comment}{   * @brief gamersItems}
+00061 \textcolor{comment}{   */}
+\Hypertarget{a00092_source_l00062}\hyperlink{a00209_a7e240933ce2cf3b29a05c5061aa5226b}{00062}   \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{QList}<\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{QList}<\hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{IBaseGameElement}*>*> 
+      \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{gamersItems};
+00063 \};
+00064 
+00065 \textcolor{preprocessor}{#}\textcolor{preprocessor}{endif}  \textcolor{comment}{// MAINGAMELOOP\_H}
+\end{DoxyCode}

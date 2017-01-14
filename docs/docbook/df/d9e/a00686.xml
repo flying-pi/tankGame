@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d9e/a00686">
+<title>DiffElement class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/d2d/a00047">&quot;ibasegameelement.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for DiffElement</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/df1/a00685.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for DiffElement</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/db4/a00684.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Загальнодоступні атрибути</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>eDiffType type</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>IBaseGameElement * data</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d9e/a00686_1abb725fa0a448bf536959a5c469556599">DiffElement</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d9e/a00686_1a82e8ecd785a9d06708c42f128b7aaf09">DiffElement</link> (
+<link linkend="d6/d2d/a00047_1ab32e61d383765a32bc5f9efebb4b9f55">eDiffType</link> type, <link linkend="d7/dc3/a00682">IBaseGameElement</link> * data)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Компонентні дані</title>
+        </section>
+            <section xml:id="df/d9e/a00686_1abb725fa0a448bf536959a5c469556599">
+                <title>DiffElement::DiffElement ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d9e/a00686_1a82e8ecd785a9d06708c42f128b7aaf09">
+                <title>DiffElement::DiffElement (eDiffType type, IBaseGameElement *data)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

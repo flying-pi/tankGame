@@ -1,0 +1,3 @@
+<map id="BaseTank" name="BaseTank">
+<area shape="rect" id="node2" href="$d2/df5/a00137.html" title="{IBaseGameElement\n|# position\l# helth\l# weight\l# transitWeight\l# additionalData\l# rVision\l# type\l# name\l|+ IBaseGameElement()\l+ nextStep()\l+ getPosition()\l+ getType()\l+ getHelth()\l+ getWeight()\l+ getMaxTransitWeight()\l+ getName()\l+ getAdditionalData()\l+ ~IBaseGameElement()\l+ setPosition()\l+ setHelth()\l+ setWeight()\l+ setTransitWeight()\l+ setType()\l+ setName()\l+ setAdditionakData()\l+ setRVision()\l+ getRVision()\l}" alt="" coords="5,143,233,699"/>
+</map>

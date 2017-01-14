@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d32/a00041">
+    <title>basetank.h File Reference</title>
+    <programlisting>#include &quot;../ibasegameelement.h&quot;</programlisting>
+    <programlisting>#include &quot;basebulet.h&quot;</programlisting>
+<para>Include dependency diagram for basetank.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/db6/a00042.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for basetank.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/d42/a00043.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/db7/a00157">BaseTank</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/GameElements/basetank.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;BASETANK_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;BASETANK_H</emphasis>
+3 <emphasis class="preprocessor">#include&#32;&quot;../ibasegameelement.h&quot;</emphasis>
+4 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d4/d8c/a00035">basebulet.h</link>&quot;</emphasis>
+5 
+<link linkend="d1/db7/a00157">6 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="d1/db7/a00157">BaseTank</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d2/df5/a00137">IBaseGameElement</link>&#32;{
+7 &#32;<emphasis class="keyword">public</emphasis>:
+8 &#32;&#32;<link linkend="d1/db7/a00157_1ab09f29abaec12417480cae3a5f900a41">BaseTank</link>();
+9 
+10 &#32;<emphasis class="keyword">public</emphasis>:
+11 &#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d1/db7/a00157_1a455ad8853248e1976e9d817eb55f102a">setType</link>(<emphasis class="keywordtype">int</emphasis>&#32;value)&#32;<emphasis class="keyword">override</emphasis>;
+12 &#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<link linkend="da/d01/a00153">BaseBulet</link>&#32;<link linkend="d1/db7/a00157_1a901c01a2908f900b4cd45e791d27b0d3">generateBullet</link>();
+13 &#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d1/db7/a00157_1a7e61943b1d601b7ff3206857f5198e66">setAdditionakData</link>(QByteArray*&#32;data);
+14 &#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;QByteArray*&#32;<link linkend="d1/db7/a00157_1aeecdd72e10d3996ee6c72c59f8bf69d8">getAdditionalData</link>();
+15 
+16 &#32;<emphasis class="keyword">protected</emphasis>:
+<link linkend="d1/db7/a00157_1a647e1404ae554cb46d9168f988e05e9e">17 </link>&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="d1/db7/a00157_1a647e1404ae554cb46d9168f988e05e9e">direction</link>&#32;=&#32;0;
+<link linkend="d1/db7/a00157_1a075d8661441062552aa5fb22f88ab023">18 </link>&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="d1/db7/a00157_1a075d8661441062552aa5fb22f88ab023">speed</link>&#32;=&#32;0;
+<link linkend="d1/db7/a00157_1a927e84e94d984793d55d0048b123ae15">25 </link>&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="d1/db7/a00157_1a927e84e94d984793d55d0048b123ae15">fireType</link>&#32;=&#32;0;
+26 };
+27 
+28 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;BASETANK_H</emphasis>
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/da3/a00115">
+<title>limits</title>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const uint64_t <link linkend="d2/da3/a00115_1a1fe7215d57cdf80c6fbd71a16853dcd2">maxCountOfItems</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const uint64_t <link linkend="d2/da3/a00115_1a5ece0bc57b69f35c537f34cc06b620f5">defaultBasisEnergy</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const uint64_t <link linkend="d2/da3/a00115_1aa57018b6545bade5e6f69133071a1342">maxRadiusVisionOfBasis</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

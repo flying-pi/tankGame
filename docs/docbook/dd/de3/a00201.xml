@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/de3/a00201">
+<title>MailReceiver::mailMessage class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d46/a00002">&quot;mailboxelement.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for MailReceiver::mailMessage</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/db1/a00200.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MailReceiver::mailMessage</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d72/a00199.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MessageForServer * message</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MailSender * sender</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int type</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isReplace</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/de3/a00201_1a0eaa6fb90637fea832337d73b9a83d4d">mailMessage</link> (
+<link linkend="d8/dfa/a00121">MessageForServer</link> * message, <link linkend="d5/d13/a00205">MailSender</link> * sender, int type, bool isReplace)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dd/de3/a00201_1a0eaa6fb90637fea832337d73b9a83d4d">
+                <title>MailReceiver::mailMessage::mailMessage (MessageForServer *message, MailSender *sender, int type, bool isReplace=true)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

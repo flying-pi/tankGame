@@ -1,0 +1,167 @@
+\hypertarget{a00193}{}\section{Server\+Worker\+:\+:Receiver\+Thread Class Reference}
+\label{a00193}\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+
+
+{\ttfamily \#include \char`\"{}serverworker.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Server\+Worker\+:\+:Receiver\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{dd/da2/a00192}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Server\+Worker\+:\+:Receiver\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/dd0/a00191}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00193_a4d4ad81a3aa7b6b71eb8d9345f9b7924}{Receiver\+Thread} (\hyperlink{a00185}{Server\+Worker} $\ast$parent, Q\+Tcp\+Socket $\ast$\hyperlink{a00193_a9dde916368513ce6a9548e923d2334fb}{socket})
+\item 
+virtual \hyperlink{a00193_a301c367fce51a745fef83c7c200f7eeb}{$\sim$\+Receiver\+Thread} ()
+\item 
+void \hyperlink{a00193_ab4b5a368d07b2670c72be1a04404f76d}{stop} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00193_ac4363547096e15a9a70e588e010855f9}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Tcp\+Socket $\ast$ \hyperlink{a00193_a9dde916368513ce6a9548e923d2334fb}{socket}
+\item 
+\hyperlink{a00185}{Server\+Worker} $\ast$ \hyperlink{a00193_a4fe56856b2917d124163c057319419ac}{parent\+Thread}
+\item 
+Q\+Data\+Stream $\ast$ \hyperlink{a00193_a15a77c31da23a15968944100e884b88e}{in}
+\item 
+bool \hyperlink{a00193_a2b37a2d966c912535eb3463bc0d60a22}{is\+Work} = true
+\item 
+Q\+Mutex \hyperlink{a00193_abd3ff6eaea0f4da20eeb987a57cbda4f}{receiver\+Mutex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{a00110_source_l00041}{41} of file \hyperlink{a00110_source}{serverworker.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00193_a4d4ad81a3aa7b6b71eb8d9345f9b7924}\label{a00193_a4d4ad81a3aa7b6b71eb8d9345f9b7924}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!Receiver\+Thread@{Receiver\+Thread}}
+\index{Receiver\+Thread@{Receiver\+Thread}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{Receiver\+Thread()}{ReceiverThread()}}
+{\footnotesize\ttfamily Server\+Worker\+::\+Receiver\+Thread\+::\+Receiver\+Thread (\begin{DoxyParamCaption}\item[{\hyperlink{a00185}{Server\+Worker} $\ast$}]{parent,  }\item[{Q\+Tcp\+Socket $\ast$}]{socket }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00107_source_l00078}{78} of file \hyperlink{a00107_source}{serverworker.\+cpp}.
+
+\mbox{\Hypertarget{a00193_a301c367fce51a745fef83c7c200f7eeb}\label{a00193_a301c367fce51a745fef83c7c200f7eeb}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!````~Receiver\+Thread@{$\sim$\+Receiver\+Thread}}
+\index{````~Receiver\+Thread@{$\sim$\+Receiver\+Thread}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{$\sim$\+Receiver\+Thread()}{~ReceiverThread()}}
+{\footnotesize\ttfamily Server\+Worker\+::\+Receiver\+Thread\+::$\sim$\+Receiver\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \hyperlink{a00107_source_l00085}{85} of file \hyperlink{a00107_source}{serverworker.\+cpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00193_ac4363547096e15a9a70e588e010855f9}\label{a00193_ac4363547096e15a9a70e588e010855f9}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!run@{run}}
+\index{run@{run}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Server\+Worker\+::\+Receiver\+Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00107_source_l00095}{95} of file \hyperlink{a00107_source}{serverworker.\+cpp}.
+
+\mbox{\Hypertarget{a00193_ab4b5a368d07b2670c72be1a04404f76d}\label{a00193_ab4b5a368d07b2670c72be1a04404f76d}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!stop@{stop}}
+\index{stop@{stop}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Server\+Worker\+::\+Receiver\+Thread\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00107_source_l00089}{89} of file \hyperlink{a00107_source}{serverworker.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df4/a00193_ab4b5a368d07b2670c72be1a04404f76d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00193_a15a77c31da23a15968944100e884b88e}\label{a00193_a15a77c31da23a15968944100e884b88e}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!in@{in}}
+\index{in@{in}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{in}{in}}
+{\footnotesize\ttfamily Q\+Data\+Stream$\ast$ Server\+Worker\+::\+Receiver\+Thread\+::in\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00110_source_l00052}{52} of file \hyperlink{a00110_source}{serverworker.\+h}.
+
+\mbox{\Hypertarget{a00193_a2b37a2d966c912535eb3463bc0d60a22}\label{a00193_a2b37a2d966c912535eb3463bc0d60a22}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!is\+Work@{is\+Work}}
+\index{is\+Work@{is\+Work}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{is\+Work}{isWork}}
+{\footnotesize\ttfamily bool Server\+Worker\+::\+Receiver\+Thread\+::is\+Work = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00110_source_l00053}{53} of file \hyperlink{a00110_source}{serverworker.\+h}.
+
+\mbox{\Hypertarget{a00193_a4fe56856b2917d124163c057319419ac}\label{a00193_a4fe56856b2917d124163c057319419ac}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!parent\+Thread@{parent\+Thread}}
+\index{parent\+Thread@{parent\+Thread}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{parent\+Thread}{parentThread}}
+{\footnotesize\ttfamily \hyperlink{a00185}{Server\+Worker}$\ast$ Server\+Worker\+::\+Receiver\+Thread\+::parent\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00110_source_l00051}{51} of file \hyperlink{a00110_source}{serverworker.\+h}.
+
+\mbox{\Hypertarget{a00193_abd3ff6eaea0f4da20eeb987a57cbda4f}\label{a00193_abd3ff6eaea0f4da20eeb987a57cbda4f}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!receiver\+Mutex@{receiver\+Mutex}}
+\index{receiver\+Mutex@{receiver\+Mutex}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{receiver\+Mutex}{receiverMutex}}
+{\footnotesize\ttfamily Q\+Mutex Server\+Worker\+::\+Receiver\+Thread\+::receiver\+Mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00110_source_l00054}{54} of file \hyperlink{a00110_source}{serverworker.\+h}.
+
+\mbox{\Hypertarget{a00193_a9dde916368513ce6a9548e923d2334fb}\label{a00193_a9dde916368513ce6a9548e923d2334fb}} 
+\index{Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}!socket@{socket}}
+\index{socket@{socket}!Server\+Worker\+::\+Receiver\+Thread@{Server\+Worker\+::\+Receiver\+Thread}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Q\+Tcp\+Socket$\ast$ Server\+Worker\+::\+Receiver\+Thread\+::socket\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00110_source_l00050}{50} of file \hyperlink{a00110_source}{serverworker.\+h}.
+

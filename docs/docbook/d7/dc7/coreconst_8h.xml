@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dc7/coreconst_8h">
+    <title>coreconst.h File Reference</title>
+    <programlisting>#include &lt;Qt&gt;</programlisting>
+<para>Include dependency diagram for coreconst.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dca/coreconst_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for coreconst.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d64/coreconst_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/dc0/namespaceDefaultServerParams">DefaultServerParams</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d32/namespacelimits">limits</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/coreconst.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;CONST_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;CONST_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&lt;Qt&gt;</emphasis>
+5 
+<link linkend="de/dc0/namespaceDefaultServerParams">6 </link><emphasis class="keyword">namespace&#32;</emphasis><link linkend="de/dc0/namespaceDefaultServerParams">DefaultServerParams</link>&#32;{
+<link linkend="de/dc0/namespaceDefaultServerParams_1a7ac0709dc92e311b3524c365a2a05d96">7 </link><emphasis class="keyword">const</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="de/dc0/namespaceDefaultServerParams_1a7ac0709dc92e311b3524c365a2a05d96">port</link>&#32;=&#32;23856;
+8 }
+9 
+<link linkend="d4/d32/namespacelimits">10 </link><emphasis class="keyword">namespace&#32;</emphasis><link linkend="d4/d32/namespacelimits">limits</link>&#32;{
+<link linkend="d4/d32/namespacelimits_1a1fe7215d57cdf80c6fbd71a16853dcd2">11 </link><emphasis class="keyword">const</emphasis>&#32;uint64_t&#32;<link linkend="d4/d32/namespacelimits_1a1fe7215d57cdf80c6fbd71a16853dcd2">maxCountOfItems</link>&#32;=&#32;18446744073709551615;
+<link linkend="d4/d32/namespacelimits_1a5ece0bc57b69f35c537f34cc06b620f5">12 </link><emphasis class="keyword">const</emphasis>&#32;uint64_t&#32;<link linkend="d4/d32/namespacelimits_1a5ece0bc57b69f35c537f34cc06b620f5">defaultBasisEnergy</link>&#32;=&#32;1000;
+<link linkend="d4/d32/namespacelimits_1aa57018b6545bade5e6f69133071a1342">13 </link><emphasis class="keyword">const</emphasis>&#32;uint64_t&#32;<link linkend="d4/d32/namespacelimits_1aa57018b6545bade5e6f69133071a1342">maxRadiusVisionOfBasis</link>&#32;=&#32;100;
+14 }
+15 
+16 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;CONST_H</emphasis>
+    </computeroutput></literallayout>
+</section>

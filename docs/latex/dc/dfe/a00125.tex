@@ -1,0 +1,264 @@
+\hypertarget{a00125}{}\section{Simple\+Connection Class Reference}
+\label{a00125}\index{Simple\+Connection@{Simple\+Connection}}
+
+
+{\ttfamily \#include \char`\"{}simpleconnection.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Simple\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{da/d72/a00124}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{de/d36/a00123}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{a00129}{Message\+Builder}
+\item 
+class \hyperlink{a00133}{Receiver}
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00125_acd96d2282378dd8262c96604ede3715f}{on\+Diff\+Receive} (Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$$>$ $\ast$diffs)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00125_a2bcb23e4dcb42f9149d6c66b326fc475}{Simple\+Connection} (Q\+Host\+Address \hyperlink{a00125_afd0b4e345d57b690f1a1e12c4816e268}{adress}, Q\+Object $\ast$parent=0)
+\item 
+virtual \hyperlink{a00125_a61b33627900c86ffa7f7936acae2873a}{$\sim$\+Simple\+Connection} ()
+\item 
+void \hyperlink{a00125_a47370c85490330b8e1dd64af9e70b683}{open\+Connection} ()
+\item 
+void \hyperlink{a00125_ab580ce17f2b9632414475a49dff64cce}{send\+Diff} (Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$$>$ $\ast$diffs)
+\item 
+\hyperlink{a00129}{Message\+Builder} $\ast$ \hyperlink{a00125_a2bbd5504e2e67fa95a701f77cd438f4d}{get\+Bulder} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{on\+Socket\+Error} (Q\+Abstract\+Socket\+::\+Socket\+Error error)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00125_a35045483589d14a436ee83346365ce70}{run} ()
+\item 
+void \hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{add\+Message} (\hyperlink{a00129}{Message\+Builder} $\ast$\hyperlink{a00125_aadfc449afe00e48e200ae5f94bc9f2f7}{messages})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+volatile bool \hyperlink{a00125_a45a1e7ba5a9538bd382d24d364d0bbe5}{is\+Work} = true
+\item 
+Q\+Host\+Address \hyperlink{a00125_afd0b4e345d57b690f1a1e12c4816e268}{adress}
+\item 
+Q\+Tcp\+Socket $\ast$ \hyperlink{a00125_aee87a3e761deb38bce08ebb30cd73362}{socket}
+\item 
+Q\+Data\+Stream $\ast$ \hyperlink{a00125_a8db5848b9d5d30739d609feb973b86d2}{out}
+\item 
+Q\+Mutex \hyperlink{a00125_acb6f6147828cec46cc69459f0de82cb0}{mutex}
+\item 
+Q\+Queue$<$ \hyperlink{a00121}{Message\+For\+Server} $\ast$ $>$ \hyperlink{a00125_aadfc449afe00e48e200ae5f94bc9f2f7}{messages}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{a00008_source_l00050}{50} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00125_a2bcb23e4dcb42f9149d6c66b326fc475}\label{a00125_a2bcb23e4dcb42f9149d6c66b326fc475}} 
+\index{Simple\+Connection@{Simple\+Connection}!Simple\+Connection@{Simple\+Connection}}
+\index{Simple\+Connection@{Simple\+Connection}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{Simple\+Connection()}{SimpleConnection()}}
+{\footnotesize\ttfamily Simple\+Connection\+::\+Simple\+Connection (\begin{DoxyParamCaption}\item[{Q\+Host\+Address}]{adress,  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00005}{5} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00125_a61b33627900c86ffa7f7936acae2873a}\label{a00125_a61b33627900c86ffa7f7936acae2873a}} 
+\index{Simple\+Connection@{Simple\+Connection}!````~Simple\+Connection@{$\sim$\+Simple\+Connection}}
+\index{````~Simple\+Connection@{$\sim$\+Simple\+Connection}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{$\sim$\+Simple\+Connection()}{~SimpleConnection()}}
+{\footnotesize\ttfamily Simple\+Connection\+::$\sim$\+Simple\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00010}{10} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00125_a0e40869759ba98f1964257d9c507b733}\label{a00125_a0e40869759ba98f1964257d9c507b733}} 
+\index{Simple\+Connection@{Simple\+Connection}!add\+Message@{add\+Message}}
+\index{add\+Message@{add\+Message}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{add\+Message()}{addMessage()}}
+{\footnotesize\ttfamily void Simple\+Connection\+::add\+Message (\begin{DoxyParamCaption}\item[{\hyperlink{a00129}{Message\+Builder} $\ast$}]{messages }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00064}{64} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dfe/a00125_a0e40869759ba98f1964257d9c507b733_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00125_a2bbd5504e2e67fa95a701f77cd438f4d}\label{a00125_a2bbd5504e2e67fa95a701f77cd438f4d}} 
+\index{Simple\+Connection@{Simple\+Connection}!get\+Bulder@{get\+Bulder}}
+\index{get\+Bulder@{get\+Bulder}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{get\+Bulder()}{getBulder()}}
+{\footnotesize\ttfamily \hyperlink{a00129}{Simple\+Connection\+::\+Message\+Builder} $\ast$ Simple\+Connection\+::get\+Bulder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00005_source_l00019}{19} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dfe/a00125_a2bbd5504e2e67fa95a701f77cd438f4d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00125_acd96d2282378dd8262c96604ede3715f}\label{a00125_acd96d2282378dd8262c96604ede3715f}} 
+\index{Simple\+Connection@{Simple\+Connection}!on\+Diff\+Receive@{on\+Diff\+Receive}}
+\index{on\+Diff\+Receive@{on\+Diff\+Receive}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{on\+Diff\+Receive}{onDiffReceive}}
+{\footnotesize\ttfamily void Simple\+Connection\+::on\+Diff\+Receive (\begin{DoxyParamCaption}\item[{Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$$>$ $\ast$}]{diffs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{a00125_a8360af71c89a54be93430b746d5fae08}\label{a00125_a8360af71c89a54be93430b746d5fae08}} 
+\index{Simple\+Connection@{Simple\+Connection}!on\+Socket\+Error@{on\+Socket\+Error}}
+\index{on\+Socket\+Error@{on\+Socket\+Error}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{on\+Socket\+Error}{onSocketError}}
+{\footnotesize\ttfamily void Simple\+Connection\+::on\+Socket\+Error (\begin{DoxyParamCaption}\item[{Q\+Abstract\+Socket\+::\+Socket\+Error}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00023}{23} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00125_a47370c85490330b8e1dd64af9e70b683}\label{a00125_a47370c85490330b8e1dd64af9e70b683}} 
+\index{Simple\+Connection@{Simple\+Connection}!open\+Connection@{open\+Connection}}
+\index{open\+Connection@{open\+Connection}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{open\+Connection()}{openConnection()}}
+{\footnotesize\ttfamily void Simple\+Connection\+::open\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00005_source_l00015}{15} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00125_a35045483589d14a436ee83346365ce70}\label{a00125_a35045483589d14a436ee83346365ce70}} 
+\index{Simple\+Connection@{Simple\+Connection}!run@{run}}
+\index{run@{run}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Simple\+Connection\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00029}{29} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/dfe/a00125_a35045483589d14a436ee83346365ce70_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00125_ab580ce17f2b9632414475a49dff64cce}\label{a00125_ab580ce17f2b9632414475a49dff64cce}} 
+\index{Simple\+Connection@{Simple\+Connection}!send\+Diff@{send\+Diff}}
+\index{send\+Diff@{send\+Diff}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{send\+Diff()}{sendDiff()}}
+{\footnotesize\ttfamily void Simple\+Connection\+::send\+Diff (\begin{DoxyParamCaption}\item[{Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$$>$ $\ast$}]{diffs }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00005_source_l00087}{87} of file \hyperlink{a00005_source}{simpleconnection.\+cpp}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00125_afd0b4e345d57b690f1a1e12c4816e268}\label{a00125_afd0b4e345d57b690f1a1e12c4816e268}} 
+\index{Simple\+Connection@{Simple\+Connection}!adress@{adress}}
+\index{adress@{adress}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{adress}{adress}}
+{\footnotesize\ttfamily Q\+Host\+Address Simple\+Connection\+::adress\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00086}{86} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00125_a45a1e7ba5a9538bd382d24d364d0bbe5}\label{a00125_a45a1e7ba5a9538bd382d24d364d0bbe5}} 
+\index{Simple\+Connection@{Simple\+Connection}!is\+Work@{is\+Work}}
+\index{is\+Work@{is\+Work}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{is\+Work}{isWork}}
+{\footnotesize\ttfamily volatile bool Simple\+Connection\+::is\+Work = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00084}{84} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00125_aadfc449afe00e48e200ae5f94bc9f2f7}\label{a00125_aadfc449afe00e48e200ae5f94bc9f2f7}} 
+\index{Simple\+Connection@{Simple\+Connection}!messages@{messages}}
+\index{messages@{messages}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{messages}{messages}}
+{\footnotesize\ttfamily Q\+Queue$<$\hyperlink{a00121}{Message\+For\+Server}$\ast$$>$ Simple\+Connection\+::messages\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00092}{92} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00125_acb6f6147828cec46cc69459f0de82cb0}\label{a00125_acb6f6147828cec46cc69459f0de82cb0}} 
+\index{Simple\+Connection@{Simple\+Connection}!mutex@{mutex}}
+\index{mutex@{mutex}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily Q\+Mutex Simple\+Connection\+::mutex\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00091}{91} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00125_a8db5848b9d5d30739d609feb973b86d2}\label{a00125_a8db5848b9d5d30739d609feb973b86d2}} 
+\index{Simple\+Connection@{Simple\+Connection}!out@{out}}
+\index{out@{out}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily Q\+Data\+Stream$\ast$ Simple\+Connection\+::out\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00089}{89} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+
+\mbox{\Hypertarget{a00125_aee87a3e761deb38bce08ebb30cd73362}\label{a00125_aee87a3e761deb38bce08ebb30cd73362}} 
+\index{Simple\+Connection@{Simple\+Connection}!socket@{socket}}
+\index{socket@{socket}!Simple\+Connection@{Simple\+Connection}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily Q\+Tcp\+Socket$\ast$ Simple\+Connection\+::socket\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00008_source_l00087}{87} of file \hyperlink{a00008_source}{simpleconnection.\+h}.
+

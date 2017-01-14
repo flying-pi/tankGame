@@ -1,0 +1,178 @@
+\hypertarget{a00005_source}{}\section{simpleconnection.\+cpp}
+\label{a00005_source}\index{Core/connection/simpleconnection.\+cpp@{Core/connection/simpleconnection.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00008}{"simpleconnection.h"}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"../coreconst.h"}
+00003 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QMetaEnum}\textcolor{preprocessor}{>}
+00004 
+\Hypertarget{a00005_source_l00005}\hyperlink{a00125_a2bcb23e4dcb42f9149d6c66b326fc475}{00005} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::SimpleConnection(QHostAddress adress, QObject* parent)
+00006     : QThread(parent) \{
+00007   \textcolor{keyword}{this}->adress = adress;
+00008 \}
+00009 
+\Hypertarget{a00005_source_l00010}\hyperlink{a00125_a61b33627900c86ffa7f7936acae2873a}{00010} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::~\hyperlink{a00125_a61b33627900c86ffa7f7936acae2873a}{SimpleConnection}() \{
+00011   \textcolor{keyword}{delete} socket;
+00012   \textcolor{keyword}{delete} out;
+00013 \}
+00014 
+\Hypertarget{a00005_source_l00015}\hyperlink{a00125_a47370c85490330b8e1dd64af9e70b683}{00015} \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00125_a47370c85490330b8e1dd64af9e70b683}{openConnection}() \{
+00016   \textcolor{keyword}{this}->start();
+00017 \}
+00018 
+\Hypertarget{a00005_source_l00019}\hyperlink{a00125_a2bbd5504e2e67fa95a701f77cd438f4d}{00019} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00129}{MessageBuilder}* 
+      \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00125_a2bbd5504e2e67fa95a701f77cd438f4d}{getBulder}() \{
+00020   \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{a00129}{MessageBuilder}\hyperlink{a00129_a872f905bf802df170dc7d1e0e9e75105}{(}\textcolor{keyword}{this}\hyperlink{a00129_a872f905bf802df170dc7d1e0e9e75105}{)};
+00021 \}
+00022 
+\Hypertarget{a00005_source_l00023}\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{00023} \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::onSocketError(QAbstractSocket::SocketError err) \{
+00024   qCritical() << err;
+00025   \hyperlink{a00125_a45a1e7ba5a9538bd382d24d364d0bbe5}{isWork} = \textcolor{keyword}{false};
+00026   \textcolor{comment}{// TODO add something}
+00027 \}
+00028 
+\Hypertarget{a00005_source_l00029}\hyperlink{a00125_a35045483589d14a436ee83346365ce70}{00029} \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00125_a35045483589d14a436ee83346365ce70}{run}() \{
+00030   socket = \textcolor{keyword}{new} QTcpSocket();
+00031   connect(socket, SIGNAL(error(QAbstractSocket::SocketError)), \textcolor{keyword}{this},
+00032           SLOT(onSocketError(QAbstractSocket::SocketError)),
+00033           Qt::DirectConnection);
+00034   socket->connectToHost(adress, DefaultServerParams::port);
+00035   isWork = socket->waitForConnected();
+00036   qDebug() << \textcolor{stringliteral}{"Connect to server on "} << socket->peerAddress().toString() << \textcolor{stringliteral}{":"}
+00037            << socket->peerPort();
+00038   out = \textcolor{keyword}{new} QDataStream();
+00039   out->setDevice(socket);
+00040   out->setVersion(QDataStream::Qt\_5\_7);
+00041 
+00042   \hyperlink{a00133}{Receiver}* receiver = \textcolor{keyword}{new} Receiver(socket, \textcolor{keyword}{this});
+00043   \textcolor{keywordflow}{while} (!receiver->istThreadStart())
+00044     qInfo() << \textcolor{stringliteral}{"whaiting for receiver loop start........"};
+00045 
+00046   qInfo() << \textcolor{stringliteral}{"starting sending to server message loop"};
+00047   \textcolor{keywordflow}{while} (\hyperlink{a00125_a45a1e7ba5a9538bd382d24d364d0bbe5}{isWork}) \{
+00048     \textcolor{keywordflow}{if} (messages.length() > 0) \{
+00049       MessageForServer* newMessage = messages.takeFirst();
+00050       out->startTransaction();
+00051       (*out) << (*newMessage);
+00052       out->commitTransaction();
+00053       socket->flush();
+00054       qInfo() << \textcolor{stringliteral}{"sending some message for server"};
+00055       \textcolor{keywordflow}{continue};
+00056     \} \textcolor{keywordflow}{else} \{
+00057       msleep(100);
+00058     \}
+00059   \}
+00060   receiver\hyperlink{a00133_ab77d06e9677b12631ece8695a319e062}{->}\hyperlink{a00133_ab77d06e9677b12631ece8695a319e062}{stop}\hyperlink{a00133_ab77d06e9677b12631ece8695a319e062}{(}\hyperlink{a00133_ab77d06e9677b12631ece8695a319e062}{)};
+00061   \textcolor{keyword}{delete} receiver;
+00062 \}
+00063 
+\Hypertarget{a00005_source_l00064}\hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{00064} \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{addMessage}(
+      \hyperlink{a00129}{MessageBuilder}* message) \{
+00065   mutex.lock();
+00066   \textcolor{keyword}{this}->messages.push\_back(message->message);
+00067   \textcolor{keyword}{delete} message;
+00068   mutex.unlock();
+00069 \}
+00070 
+\Hypertarget{a00005_source_l00071}\hyperlink{a00129_a872f905bf802df170dc7d1e0e9e75105}{00071} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00129}{MessageBuilder}::
+      \hyperlink{a00129_a872f905bf802df170dc7d1e0e9e75105}{MessageBuilder}(\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}* sender) \{
+00072   \textcolor{keyword}{this}\hyperlink{a00129_a377817a44c6b088e5027365f8d6c8c8f}{->}\hyperlink{a00129_a377817a44c6b088e5027365f8d6c8c8f}{parent} = sender;
+00073   \textcolor{keyword}{this}\hyperlink{a00129_a7a57d1afb561f7fe4b813e611c3269a7}{->}\hyperlink{a00129_a7a57d1afb561f7fe4b813e611c3269a7}{message} = \textcolor{keyword}{new} \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{MessageForServer}();
+00074 \}
+00075 
+00076 \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00129}{MessageBuilder}*
+\Hypertarget{a00005_source_l00077}\hyperlink{a00129_ae54a2b522f87b6cbab31d9ee27f29264}{00077} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00129}{MessageBuilder}::
+      \hyperlink{a00129_ae54a2b522f87b6cbab31d9ee27f29264}{asFirstMessage}(\hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296}{eConnectionType} type) \{
+00078   \textcolor{keyword}{this}->message->connectionType = type;
+00079   \textcolor{keyword}{this}\hyperlink{a00129_a7a57d1afb561f7fe4b813e611c3269a7}{->}\hyperlink{a00129_a7a57d1afb561f7fe4b813e611c3269a7}{message}\hyperlink{a00121_a77e3d9ee30093b40db7f2d8f5d7590aa}{->}\hyperlink{a00121_a77e3d9ee30093b40db7f2d8f5d7590aa}{messageType} = \hyperlink{a00008_a700ed30d49bfe436323e17539d3a0010aeab6dec369184e6c7d133812064686f9}{eFirstMessae};
+00080   \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+00081 \}
+00082 
+\Hypertarget{a00005_source_l00083}\hyperlink{a00129_ac39d9787cbea1c6d81a7cdbc736c9061}{00083} \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::\hyperlink{a00129}{MessageBuilder}::
+      \hyperlink{a00129_ac39d9787cbea1c6d81a7cdbc736c9061}{build}() \{
+00084   \hyperlink{a00129_a377817a44c6b088e5027365f8d6c8c8f}{parent}\hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{->}\hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{addMessage}\hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{(}\textcolor{keyword}{this}\hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{)};
+00085 \}
+00086 
+\Hypertarget{a00005_source_l00087}\hyperlink{a00125_ab580ce17f2b9632414475a49dff64cce}{00087} \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}::sendDiff(QList<DiffElement*>* diffs) \{
+00088   emit onDiffReceive(diffs);
+00089 \}
+00090 
+\Hypertarget{a00005_source_l00091}\hyperlink{a00121_a9b98301583759754caf829cc1ed1520d}{00091} QString MessageForServer::toString() \{
+00092   \textcolor{keywordflow}{return} \textcolor{stringliteral}{"MessageForServer :: connectionType = "} + stringify(connectionType) +
+00093          \textcolor{stringliteral}{"; messageType = "} + stringify(messageType);
+00094 \}
+00095 
+\Hypertarget{a00005_source_l00096}\hyperlink{a00008_aabd3ff178ce3faed55804cc56f78fc6a}{00096} QString stringify(eConnectionType e) \{
+00097   \textcolor{keywordflow}{switch} (e) \{
+00098     \textcolor{keywordflow}{case} eGamer:
+00099       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"eGamer"};
+00100     \textcolor{keywordflow}{case} eWatcher:
+00101       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"eWatcher"};
+00102   \}
+00103   \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+00104 \}
+00105 
+\Hypertarget{a00005_source_l00106}\hyperlink{a00008_abb3e44449c2fd1fa9275c1d4273c66f9}{00106} QString stringify(eMessageType e) \{
+00107   \textcolor{keywordflow}{switch} (e) \{
+00108     \textcolor{keywordflow}{case} eFirstMessae:
+00109       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"eFirstMessae"};
+00110     \textcolor{keywordflow}{case} eGetUpdateMessage:
+00111       \textcolor{keywordflow}{return} \textcolor{stringliteral}{"eGetUpdateMessage"};
+00112   \}
+00113   \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};
+00114 \}
+00115 
+\Hypertarget{a00005_source_l00116}\hyperlink{a00133_a188daa54b2ed047298df6b889dad5004}{00116} SimpleConnection::Receiver::Receiver(QTcpSocket* socket,
+00117                                      SimpleConnection* parentThread,
+00118                                      QObject* parent)
+00119     : QThread(parent) \{
+00120   \textcolor{keyword}{this}->socket = socket;
+00121   \textcolor{keyword}{this}->parentThread = parentThread;
+00122   \textcolor{keyword}{this}->start();
+00123 \}
+00124 
+\Hypertarget{a00005_source_l00125}\hyperlink{a00133_ad751c9c2c8152a039876b65197a6b512}{00125} SimpleConnection::Receiver::~Receiver() \{
+00126   \textcolor{keyword}{delete} in;
+00127 \}
+00128 
+\Hypertarget{a00005_source_l00129}\hyperlink{a00133_a7cd5d65acac04d9eaa59817f15ddae62}{00129} \textcolor{keywordtype}{bool} SimpleConnection::Receiver::istThreadStart() \{
+00130   \textcolor{keywordflow}{return} isStart;
+00131   msleep(100);
+00132 \}
+00133 
+\Hypertarget{a00005_source_l00134}\hyperlink{a00133_ab77d06e9677b12631ece8695a319e062}{00134} \textcolor{keywordtype}{void} SimpleConnection::Receiver::stop() \{
+00135   isWork = \textcolor{keyword}{false};
+00136   \textcolor{keywordflow}{while} (isLoopActive) \{
+00137     msleep(100);
+00138   \}
+00139 \}
+00140 
+\Hypertarget{a00005_source_l00141}\hyperlink{a00133_a8bcc914a839e71786071f655ce5afe7e}{00141} \textcolor{keywordtype}{void} SimpleConnection::Receiver::run() \{
+00142   in = \textcolor{keyword}{new} QDataStream();
+00143   in->setDevice(socket);
+00144   in->setVersion(QDataStream::Qt\_5\_7);
+00145 
+00146   qInfo() << \textcolor{stringliteral}{"starting message receiver loop"};
+00147   \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+00148     isLoopActive = \textcolor{keyword}{true};
+00149     \textcolor{keywordflow}{if} (!isWork)
+00150       \textcolor{keywordflow}{break};
+00151     isStart = \textcolor{keyword}{true};
+00152     socket->waitForReadyRead(-1);
+00153     qInfo() << \textcolor{stringliteral}{"starting reading some response"};
+00154     MessageForServer sendedMessage;
+00155     (*in) >> sendedMessage;
+00156     \textcolor{keywordtype}{int} diffsLenth;
+00157     (*in) >> diffsLenth;
+00158     QList<DiffElement*>* result = \textcolor{keyword}{new} QList<DiffElement*>();
+00159     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < diffsLenth; i++) \{
+00160       DiffElement* newItem = \textcolor{keyword}{new} DiffElement();
+00161       (*in) >> (*newItem);
+00162       result->append(newItem);
+00163     \}
+00164     parentThread->sendDiff(result);
+00165     qInfo() << \textcolor{stringliteral}{"something read from server"};
+00166   \}
+00167   isLoopActive = \textcolor{keyword}{false};
+00168 \}
+\end{DoxyCode}

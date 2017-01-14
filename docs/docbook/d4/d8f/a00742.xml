@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d8f/a00742">
+<title>MailReceiver class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d46/a00002">&quot;mailboxelement.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for MailReceiver</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/da3/a00741.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MailReceiver</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dc/dce/a00740.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Класи </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/dfa/a00746">MailReceiver::mailMessage</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Захищені дані</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QQueue&lt; mailMessage * &gt; messages</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QMutex mutex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>volatile bool isQueueLock</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d4/d8f/a00742_1a0efada2a49e9a841430a8b6f71b6803d">sendMail</link> (
+<link linkend="d9/d41/a00666">MessageForServer</link> * message, <link linkend="d9/db0/a00750">MailSender</link> * sender, int type, bool isReplace)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="d4/dfa/a00746">mailMessage</link> * <link linkend="d4/d8f/a00742_1a127a70ec582190f90979cb72b8cba72c">nextMessage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Компонентні дані</title>
+        </section>
+            <section xml:id="d4/d8f/a00742_1a0efada2a49e9a841430a8b6f71b6803d">
+                <title>virtual void MailReceiver::sendMail (MessageForServer *message, MailSender *sender, int type, bool isReplace=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d8f/a00742_1a127a70ec582190f90979cb72b8cba72c">
+                <title>virtual mailMessage* MailReceiver::nextMessage ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

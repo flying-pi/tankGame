@@ -1,0 +1,188 @@
+\hypertarget{a00169}{}\section{List\+Bse\+Map Class Reference}
+\label{a00169}\index{List\+Bse\+Map@{List\+Bse\+Map}}
+
+
+{\ttfamily \#include \char`\"{}listbsemap.\+h\char`\"{}}
+
+
+
+Inheritance diagram for List\+Bse\+Map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{dd/da7/a00168}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for List\+Bse\+Map\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{dc/de6/a00167}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00169_aa9b6a13fa97af5ed567966cb8a1bc55f}{List\+Bse\+Map} (double width, double heigth)
+\item 
+\hyperlink{a00169_a186089a0e91ae5e4d2c76ab03b240842}{$\sim$\+List\+Bse\+Map} ()
+\item 
+Q\+SizeF $\ast$ \hyperlink{a00169_ae58cec494eba5e73b55bfb2f68fc3b52}{get\+Size} ()
+\item 
+void \hyperlink{a00169_a7aeae2bf692effb329f9a34604a6c286}{insert\+Element} (\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$element, Q\+Vector3D point)
+\item 
+void \hyperlink{a00169_a634c821cf280b64eb56ceac190635b1a}{proccess\+All\+InR} (\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$element, double r, bool(\&map\+Operator)(\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$))
+\item 
+int \hyperlink{a00169_a78e72bacec177f3512323c5fc7db11f3}{get\+Count} ()
+\item 
+\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$ \hyperlink{a00169_a6725c6e4231705df32b1074b0b5fdda5}{get\+Element\+At\+Position} (int pos)
+\item 
+virtual void \hyperlink{a00165_aa4feb51c5d024c99d4c57ccf5d2ff82d}{proccess\+All\+InR} (\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$element, double r, bool(\&map\+Operator)(\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$element))=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+List$<$ \hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$ $>$ $\ast$ \hyperlink{a00169_a72a6386e492d05685e86f7fb858e3b32}{items}
+\item 
+Q\+SizeF $\ast$ \hyperlink{a00169_abbb51f80961cecea1bec63612c5b0fd1}{size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{a00065_source_l00007}{7} of file \hyperlink{a00065_source}{listbsemap.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00169_aa9b6a13fa97af5ed567966cb8a1bc55f}\label{a00169_aa9b6a13fa97af5ed567966cb8a1bc55f}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!List\+Bse\+Map@{List\+Bse\+Map}}
+\index{List\+Bse\+Map@{List\+Bse\+Map}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{List\+Bse\+Map()}{ListBseMap()}}
+{\footnotesize\ttfamily List\+Bse\+Map\+::\+List\+Bse\+Map (\begin{DoxyParamCaption}\item[{double}]{width,  }\item[{double}]{heigth }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00062_source_l00004}{4} of file \hyperlink{a00062_source}{listbsemap.\+cpp}.
+
+\mbox{\Hypertarget{a00169_a186089a0e91ae5e4d2c76ab03b240842}\label{a00169_a186089a0e91ae5e4d2c76ab03b240842}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!````~List\+Bse\+Map@{$\sim$\+List\+Bse\+Map}}
+\index{````~List\+Bse\+Map@{$\sim$\+List\+Bse\+Map}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{$\sim$\+List\+Bse\+Map()}{~ListBseMap()}}
+{\footnotesize\ttfamily List\+Bse\+Map\+::$\sim$\+List\+Bse\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00062_source_l00009}{9} of file \hyperlink{a00062_source}{listbsemap.\+cpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00169_a78e72bacec177f3512323c5fc7db11f3}\label{a00169_a78e72bacec177f3512323c5fc7db11f3}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily int List\+Bse\+Map\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{a00165_a021e64b05ecb6558ed1d663676f82971}{I\+Map}.
+
+
+
+Definition at line \hyperlink{a00062_source_l00032}{32} of file \hyperlink{a00062_source}{listbsemap.\+cpp}.
+
+\mbox{\Hypertarget{a00169_a6725c6e4231705df32b1074b0b5fdda5}\label{a00169_a6725c6e4231705df32b1074b0b5fdda5}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!get\+Element\+At\+Position@{get\+Element\+At\+Position}}
+\index{get\+Element\+At\+Position@{get\+Element\+At\+Position}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{get\+Element\+At\+Position()}{getElementAtPosition()}}
+{\footnotesize\ttfamily \hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$ List\+Bse\+Map\+::get\+Element\+At\+Position (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{a00165_a9fce1fb4ad8fac181fbbce3ce31da0a0}{I\+Map}.
+
+
+
+Definition at line \hyperlink{a00062_source_l00036}{36} of file \hyperlink{a00062_source}{listbsemap.\+cpp}.
+
+\mbox{\Hypertarget{a00169_ae58cec494eba5e73b55bfb2f68fc3b52}\label{a00169_ae58cec494eba5e73b55bfb2f68fc3b52}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily Q\+SizeF $\ast$ List\+Bse\+Map\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{a00165_a183f2d7ba8ec154d0338e999f195d0c8}{I\+Map}.
+
+
+
+Definition at line \hyperlink{a00062_source_l00014}{14} of file \hyperlink{a00062_source}{listbsemap.\+cpp}.
+
+\mbox{\Hypertarget{a00169_a7aeae2bf692effb329f9a34604a6c286}\label{a00169_a7aeae2bf692effb329f9a34604a6c286}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!insert\+Element@{insert\+Element}}
+\index{insert\+Element@{insert\+Element}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{insert\+Element()}{insertElement()}}
+{\footnotesize\ttfamily void List\+Bse\+Map\+::insert\+Element (\begin{DoxyParamCaption}\item[{\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$}]{element,  }\item[{Q\+Vector3D}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{a00165_a2d44fb3d3798e08bebcd25ad5f1787f4}{I\+Map}.
+
+
+
+Definition at line \hyperlink{a00062_source_l00018}{18} of file \hyperlink{a00062_source}{listbsemap.\+cpp}.
+
+\mbox{\Hypertarget{a00165_aa4feb51c5d024c99d4c57ccf5d2ff82d}\label{a00165_aa4feb51c5d024c99d4c57ccf5d2ff82d}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!proccess\+All\+InR@{proccess\+All\+InR}}
+\index{proccess\+All\+InR@{proccess\+All\+InR}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{proccess\+All\+In\+R()}{proccessAllInR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void I\+Map\+::proccess\+All\+InR (\begin{DoxyParamCaption}\item[{\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$}]{element,  }\item[{double}]{r,  }\item[{bool(\&)(\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$element)}]{map\+Operator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}, {\ttfamily [inherited]}}
+
+\mbox{\Hypertarget{a00169_a634c821cf280b64eb56ceac190635b1a}\label{a00169_a634c821cf280b64eb56ceac190635b1a}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!proccess\+All\+InR@{proccess\+All\+InR}}
+\index{proccess\+All\+InR@{proccess\+All\+InR}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{proccess\+All\+In\+R()}{proccessAllInR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void List\+Bse\+Map\+::proccess\+All\+InR (\begin{DoxyParamCaption}\item[{\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$}]{element,  }\item[{double}]{r,  }\item[{bool(\&)(\hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$)}]{map\+Operator }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00062_source_l00022}{22} of file \hyperlink{a00062_source}{listbsemap.\+cpp}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/d53/a00169_a634c821cf280b64eb56ceac190635b1a_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00169_a72a6386e492d05685e86f7fb858e3b32}\label{a00169_a72a6386e492d05685e86f7fb858e3b32}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!items@{items}}
+\index{items@{items}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily Q\+List$<$\hyperlink{a00137}{I\+Base\+Game\+Element}$\ast$$>$$\ast$ List\+Bse\+Map\+::items\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00065_source_l00022}{22} of file \hyperlink{a00065_source}{listbsemap.\+h}.
+
+\mbox{\Hypertarget{a00169_abbb51f80961cecea1bec63612c5b0fd1}\label{a00169_abbb51f80961cecea1bec63612c5b0fd1}} 
+\index{List\+Bse\+Map@{List\+Bse\+Map}!size@{size}}
+\index{size@{size}!List\+Bse\+Map@{List\+Bse\+Map}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily Q\+SizeF$\ast$ List\+Bse\+Map\+::size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00065_source_l00023}{23} of file \hyperlink{a00065_source}{listbsemap.\+h}.
+

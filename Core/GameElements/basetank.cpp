@@ -1,7 +1,7 @@
 #include "basetank.h"
 #include <QDataStream>
 
-BaseTank::BaseTank() {}
+BaseTank::BaseTank() : IBaseGameElement() {}
 
 void BaseTank::setType(int value) {
   if (value != ((int)eSimpleTank)) {

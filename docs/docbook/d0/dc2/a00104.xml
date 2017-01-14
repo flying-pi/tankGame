@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dc2/a00104">
+    <title>serverconnection.h File Reference</title>
+    <programlisting>#include &lt;QThread&gt;</programlisting>
+    <programlisting>#include &lt;QTcpServer&gt;</programlisting>
+    <programlisting>#include &lt;QList&gt;</programlisting>
+    <programlisting>#include &quot;serverworker.h&quot;</programlisting>
+    <programlisting>#include &quot;connection/mailboxelement.h&quot;</programlisting>
+<para>Include dependency diagram for serverconnection.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d3/d32/a00105.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for serverconnection.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/d70/a00106.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/d64/a00181">ServerConnection</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="d0/dc2/a00104_1a65727a063024ff0dedf1ac2f087f4165">serverError</link> {
+<link linkend="d0/dc2/a00104_1a65727a063024ff0dedf1ac2f087f4165af21059407733b78da140dbc07981a44a">canNotStartServer</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Server/serverconnection.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;SERVERCONNECTION_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;SERVERCONNECTION_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&lt;QThread&gt;</emphasis>
+5 <emphasis class="preprocessor">#include&#32;&lt;QTcpServer&gt;</emphasis>
+6 <emphasis class="preprocessor">#include&#32;&lt;QList&gt;</emphasis>
+7 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d4/d81/a00110">serverworker.h</link>&quot;</emphasis>
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d7/d46/a00002">connection/mailboxelement.h</link>&quot;</emphasis>
+9 
+<link linkend="d0/dc2/a00104_1a65727a063024ff0dedf1ac2f087f4165">10 </link><emphasis class="keyword">enum</emphasis>&#32;<link linkend="d0/dc2/a00104_1a65727a063024ff0dedf1ac2f087f4165">serverError</link>&#32;{&#32;<link linkend="d0/dc2/a00104_1a65727a063024ff0dedf1ac2f087f4165af21059407733b78da140dbc07981a44a">canNotStartServer</link>&#32;};
+11 
+<link linkend="d8/d64/a00181">12 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="d8/d64/a00181">ServerConnection</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;QThread,&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d5/d13/a00205">MailSender</link>&#32;{
+13 &#32;<emphasis class="keyword">public</emphasis>:
+14 &#32;&#32;Q_OBJECT
+15 
+16 &#32;<emphasis class="keyword">public</emphasis>:
+17 &#32;&#32;<link linkend="d8/d64/a00181_1af919491d0e2ff066b0a58cc50fc0d90d">~ServerConnection</link>();
+<link linkend="d8/d64/a00181_1ad64d541093e285a983911f22ab9a0bff">18 </link>&#32;&#32;<emphasis class="keyword">inline</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d8/d64/a00181">ServerConnection</link>*&#32;<link linkend="d8/d64/a00181_1ad64d541093e285a983911f22ab9a0bff">getServerInstance</link>()&#32;{
+19 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="d8/d64/a00181_1adbbe8ffe6ee71b0aee4db9b6e689ba2a">instance</link>&#32;==&#32;<emphasis class="keyword">nullptr</emphasis>)
+20 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d8/d64/a00181_1adbbe8ffe6ee71b0aee4db9b6e689ba2a">instance</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d8/d64/a00181_1a0adf644e7715ddbb83a53651b0804dec">ServerConnection</link>();
+21 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="d8/d64/a00181_1adbbe8ffe6ee71b0aee4db9b6e689ba2a">instance</link>;
+22 &#32;&#32;}
+23 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d8/d64/a00181_1a1d45a6a7b2370c82ed2849959bb18c2a">startServer</link>();
+24 
+25 &#32;signals:
+26 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d8/d64/a00181_1ae97f8eaa15a3da8f069ad502e89039ae">onServerError</link>(<link linkend="d0/dc2/a00104_1a65727a063024ff0dedf1ac2f087f4165">serverError</link>&#32;error);
+27 
+28 &#32;<emphasis class="keyword">protected</emphasis>:
+<link linkend="d8/d64/a00181_1adbbe8ffe6ee71b0aee4db9b6e689ba2a">29 </link>&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d8/d64/a00181">ServerConnection</link>*&#32;<link linkend="d8/d64/a00181_1adbbe8ffe6ee71b0aee4db9b6e689ba2a">instance</link>;
+30 &#32;&#32;<link linkend="d8/d64/a00181_1a0adf644e7715ddbb83a53651b0804dec">ServerConnection</link>();
+<link linkend="d8/d64/a00181_1aee9a8e6c0f1d25fc2fcb4662631c0c74">31 </link>&#32;&#32;QTcpServer*&#32;<link linkend="d8/d64/a00181_1aee9a8e6c0f1d25fc2fcb4662631c0c74">server</link>;
+<link linkend="d8/d64/a00181_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">32 </link>&#32;&#32;QList&lt;ServerWorker*&gt;*&#32;<link linkend="d8/d64/a00181_1a7d9e1b1ac7c2d57b439ab5918e7c31d0">connections</link>;
+33 &#32;<emphasis class="keyword">protected</emphasis>&#32;slots:
+34 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d8/d64/a00181_1af558fe509b60eb019281316513f6d188">onWorkerStop</link>(<link linkend="de/df3/a00185">ServerWorker</link>*&#32;worker);
+35 
+36 &#32;&#32;<emphasis class="comment">//&#32;QThread&#32;interface</emphasis>
+37 &#32;<emphasis class="keyword">protected</emphasis>:
+38 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d8/d64/a00181_1ac7f219a30789e91afa079ab5e49529bd">run</link>();
+39 
+40 &#32;&#32;<emphasis class="comment">//&#32;MailSender&#32;interface</emphasis>
+41 &#32;<emphasis class="keyword">public</emphasis>:
+42 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d8/d64/a00181_1afd1dd14f38c6c1d1efa719af1a9d9851">receiveResponce</link>(QList&lt;DiffElement*&gt;*&#32;diff,&#32;<link linkend="d8/dfa/a00121">MessageForServer</link>*&#32;message);
+43 };
+44 
+45 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;SERVERCONNECTION_H</emphasis>
+    </computeroutput></literallayout>
+</section>

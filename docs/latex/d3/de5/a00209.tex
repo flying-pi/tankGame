@@ -1,0 +1,398 @@
+\hypertarget{a00209}{}\section{Main\+Game\+Loop Class Reference}
+\label{a00209}\index{Main\+Game\+Loop@{Main\+Game\+Loop}}
+
+
+{\ttfamily \#include \char`\"{}maingameloop.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Main\+Game\+Loop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{dc/d31/a00208}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Game\+Loop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{de/dd2/a00207}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{a00213}{Gamer\+Information}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00209_aeeabdbe46a5aeb891d7da7fd9430d0cb}{$\sim$\+Main\+Game\+Loop} ()
+\item 
+void \hyperlink{a00209_a2329f4e9c9a4ad9ecbed39d5c297245f}{start\+Looper} ()
+\item 
+virtual void \hyperlink{a00197_a0efada2a49e9a841430a8b6f71b6803d}{send\+Mail} (\hyperlink{a00121}{Message\+For\+Server} $\ast$message, \hyperlink{a00205}{Mail\+Sender} $\ast$sender, int type, bool is\+Replace=true)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{a00209}{Main\+Game\+Loop} $\ast$ \hyperlink{a00209_ae4df98e12ba90efd73b144455d9fd52d}{get\+Looper\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00209_a5a20009c07c887a9cf69381f62da5009}{run} ()
+\item 
+Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$ $>$ $\ast$ \hyperlink{a00209_ac4cd47d8b350ae45ea09aaecad11a684}{get\+All\+Map\+As\+Diff} ()
+\item 
+virtual \hyperlink{a00201}{mail\+Message} $\ast$ \hyperlink{a00197_a127a70ec582190f90979cb72b8cba72c}{next\+Message} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{a00209_a03ce2a112152dc80acce53528cc65daf}{is\+Work} = true
+\item 
+Q\+List$<$ \hyperlink{a00205}{Mail\+Sender} $\ast$ $>$ \hyperlink{a00209_a14693d2e6fdac35ab6af44a9080871f2}{watchers}
+\item 
+Q\+List$<$ \hyperlink{a00213}{Gamer\+Information} $\ast$ $>$ \hyperlink{a00209_aac8195bc3183cb0cabe65f1ff813fbfb}{gamers\+List}
+\begin{DoxyCompactList}\small\item\em gamers\+List \end{DoxyCompactList}\item 
+Q\+List$<$ Q\+List$<$ \hyperlink{a00137}{I\+Base\+Game\+Element} $\ast$ $>$ $\ast$ $>$ \hyperlink{a00209_a7e240933ce2cf3b29a05c5061aa5226b}{gamers\+Items}
+\begin{DoxyCompactList}\small\item\em gamers\+Items \end{DoxyCompactList}\item 
+Q\+Queue$<$ \hyperlink{a00201}{mail\+Message} $\ast$ $>$ \hyperlink{a00197_ace6950e3788bb037f23ce8668ef83829}{messages}
+\item 
+Q\+Mutex \hyperlink{a00197_a116d4905d302bdb69c00b54b621dd827}{mutex}
+\item 
+volatile bool \hyperlink{a00197_a33c370cb3c6292cd800008a67002a67f}{is\+Queue\+Lock} = false
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void(Main\+Game\+Loop\+::$\ast$ \hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{message\+Proccessor}) (\hyperlink{a00201}{Mail\+Receiver\+::mail\+Message} $\ast$, \hyperlink{a00205}{Mail\+Sender} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00209_a0632599cb00fa2c86ba1c71904c1f59f}{Main\+Game\+Loop} ()
+\item 
+void \hyperlink{a00209_ac7722494194e946c7d045471858c3aee}{proccess\+Gamer\+Message} (\hyperlink{a00201}{mail\+Message} $\ast$msg, \hyperlink{a00205}{Mail\+Sender} $\ast$receiver)
+\item 
+void \hyperlink{a00209_a26ac1e61f11a51a84b6f2e770808d162}{proccess\+Watcher\+Message} (\hyperlink{a00201}{mail\+Message} $\ast$msg, \hyperlink{a00205}{Mail\+Sender} $\ast$receiver)
+\item 
+\hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{message\+Proccessor} \hyperlink{a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5}{get\+Proccessor\+For\+Message} (\hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296}{e\+Connection\+Type} type)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00165}{I\+Map} $\ast$ \hyperlink{a00209_ae0ccec14d7db91cf6db41349a73b41a7}{map}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{a00209}{Main\+Game\+Loop} $\ast$ \hyperlink{a00209_a2578ca393ef9030407e5b3ac17b9f6ab}{instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{a00092_source_l00012}{12} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}\label{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!message\+Proccessor@{message\+Proccessor}}
+\index{message\+Proccessor@{message\+Proccessor}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{message\+Proccessor}{messageProccessor}}
+{\footnotesize\ttfamily typedef void(Main\+Game\+Loop\+::$\ast$ Main\+Game\+Loop\+::message\+Proccessor) (\hyperlink{a00201}{Mail\+Receiver\+::mail\+Message} $\ast$, \hyperlink{a00205}{Mail\+Sender} $\ast$)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{a00092_source_l00025}{25} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00209_aeeabdbe46a5aeb891d7da7fd9430d0cb}\label{a00209_aeeabdbe46a5aeb891d7da7fd9430d0cb}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!````~Main\+Game\+Loop@{$\sim$\+Main\+Game\+Loop}}
+\index{````~Main\+Game\+Loop@{$\sim$\+Main\+Game\+Loop}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{$\sim$\+Main\+Game\+Loop()}{~MainGameLoop()}}
+{\footnotesize\ttfamily Main\+Game\+Loop\+::$\sim$\+Main\+Game\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00089_source_l00091}{91} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+\mbox{\Hypertarget{a00209_a0632599cb00fa2c86ba1c71904c1f59f}\label{a00209_a0632599cb00fa2c86ba1c71904c1f59f}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{Main\+Game\+Loop()}{MainGameLoop()}}
+{\footnotesize\ttfamily Main\+Game\+Loop\+::\+Main\+Game\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{a00089_source_l00008}{8} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_a0632599cb00fa2c86ba1c71904c1f59f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00209_ac4cd47d8b350ae45ea09aaecad11a684}\label{a00209_ac4cd47d8b350ae45ea09aaecad11a684}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!get\+All\+Map\+As\+Diff@{get\+All\+Map\+As\+Diff}}
+\index{get\+All\+Map\+As\+Diff@{get\+All\+Map\+As\+Diff}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{get\+All\+Map\+As\+Diff()}{getAllMapAsDiff()}}
+{\footnotesize\ttfamily Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$ $>$ $\ast$ Main\+Game\+Loop\+::get\+All\+Map\+As\+Diff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00089_source_l00082}{82} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_ac4cd47d8b350ae45ea09aaecad11a684_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00209_ae4df98e12ba90efd73b144455d9fd52d}\label{a00209_ae4df98e12ba90efd73b144455d9fd52d}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!get\+Looper\+Instance@{get\+Looper\+Instance}}
+\index{get\+Looper\+Instance@{get\+Looper\+Instance}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{get\+Looper\+Instance()}{getLooperInstance()}}
+{\footnotesize\ttfamily static \hyperlink{a00209}{Main\+Game\+Loop}$\ast$ Main\+Game\+Loop\+::get\+Looper\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \hyperlink{a00092_source_l00015}{15} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_ae4df98e12ba90efd73b144455d9fd52d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5}\label{a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!get\+Proccessor\+For\+Message@{get\+Proccessor\+For\+Message}}
+\index{get\+Proccessor\+For\+Message@{get\+Proccessor\+For\+Message}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{get\+Proccessor\+For\+Message()}{getProccessorForMessage()}}
+{\footnotesize\ttfamily \hyperlink{a00209_a3aecf6efe74a0fe8b40e2d28bf4032ba}{Main\+Game\+Loop\+::message\+Proccessor} Main\+Game\+Loop\+::get\+Proccessor\+For\+Message (\begin{DoxyParamCaption}\item[{\hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296}{e\+Connection\+Type}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{a00089_source_l00057}{57} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00197_a127a70ec582190f90979cb72b8cba72c}\label{a00197_a127a70ec582190f90979cb72b8cba72c}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!next\+Message@{next\+Message}}
+\index{next\+Message@{next\+Message}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{next\+Message()}{nextMessage()}}
+{\footnotesize\ttfamily virtual \hyperlink{a00201}{mail\+Message}$\ast$ Mail\+Receiver\+::next\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00002_source_l00082}{82} of file \hyperlink{a00002_source}{mailboxelement.\+h}.
+
+\mbox{\Hypertarget{a00209_ac7722494194e946c7d045471858c3aee}\label{a00209_ac7722494194e946c7d045471858c3aee}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!proccess\+Gamer\+Message@{proccess\+Gamer\+Message}}
+\index{proccess\+Gamer\+Message@{proccess\+Gamer\+Message}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{proccess\+Gamer\+Message()}{proccessGamerMessage()}}
+{\footnotesize\ttfamily void Main\+Game\+Loop\+::proccess\+Gamer\+Message (\begin{DoxyParamCaption}\item[{\hyperlink{a00201}{Mail\+Receiver\+::mail\+Message} $\ast$}]{msg,  }\item[{\hyperlink{a00205}{Mail\+Sender} $\ast$}]{receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{a00089_source_l00011}{11} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_ac7722494194e946c7d045471858c3aee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_ac7722494194e946c7d045471858c3aee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00209_a26ac1e61f11a51a84b6f2e770808d162}\label{a00209_a26ac1e61f11a51a84b6f2e770808d162}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!proccess\+Watcher\+Message@{proccess\+Watcher\+Message}}
+\index{proccess\+Watcher\+Message@{proccess\+Watcher\+Message}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{proccess\+Watcher\+Message()}{proccessWatcherMessage()}}
+{\footnotesize\ttfamily void Main\+Game\+Loop\+::proccess\+Watcher\+Message (\begin{DoxyParamCaption}\item[{\hyperlink{a00201}{Mail\+Receiver\+::mail\+Message} $\ast$}]{msg,  }\item[{\hyperlink{a00205}{Mail\+Sender} $\ast$}]{receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{a00089_source_l00039}{39} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_a26ac1e61f11a51a84b6f2e770808d162_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00209_a5a20009c07c887a9cf69381f62da5009}\label{a00209_a5a20009c07c887a9cf69381f62da5009}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!run@{run}}
+\index{run@{run}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Main\+Game\+Loop\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00089_source_l00069}{69} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+\mbox{\Hypertarget{a00197_a0efada2a49e9a841430a8b6f71b6803d}\label{a00197_a0efada2a49e9a841430a8b6f71b6803d}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!send\+Mail@{send\+Mail}}
+\index{send\+Mail@{send\+Mail}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{send\+Mail()}{sendMail()}}
+{\footnotesize\ttfamily virtual void Mail\+Receiver\+::send\+Mail (\begin{DoxyParamCaption}\item[{\hyperlink{a00121}{Message\+For\+Server} $\ast$}]{message,  }\item[{\hyperlink{a00205}{Mail\+Sender} $\ast$}]{sender,  }\item[{int}]{type,  }\item[{bool}]{is\+Replace = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00002_source_l00018}{18} of file \hyperlink{a00002_source}{mailboxelement.\+h}.
+
+\mbox{\Hypertarget{a00209_a2329f4e9c9a4ad9ecbed39d5c297245f}\label{a00209_a2329f4e9c9a4ad9ecbed39d5c297245f}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!start\+Looper@{start\+Looper}}
+\index{start\+Looper@{start\+Looper}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{start\+Looper()}{startLooper()}}
+{\footnotesize\ttfamily void Main\+Game\+Loop\+::start\+Looper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00089_source_l00098}{98} of file \hyperlink{a00089_source}{maingameloop.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/de5/a00209_a2329f4e9c9a4ad9ecbed39d5c297245f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00209_a7e240933ce2cf3b29a05c5061aa5226b}\label{a00209_a7e240933ce2cf3b29a05c5061aa5226b}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!gamers\+Items@{gamers\+Items}}
+\index{gamers\+Items@{gamers\+Items}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{gamers\+Items}{gamersItems}}
+{\footnotesize\ttfamily Q\+List$<$Q\+List$<$\hyperlink{a00137}{I\+Base\+Game\+Element}$\ast$$>$$\ast$$>$ Main\+Game\+Loop\+::gamers\+Items\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+gamers\+Items 
+
+list of gamer object; Each list represent game element of each gamer; firs element of each gamer object is basis 
+
+Definition at line \hyperlink{a00092_source_l00062}{62} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+\mbox{\Hypertarget{a00209_aac8195bc3183cb0cabe65f1ff813fbfb}\label{a00209_aac8195bc3183cb0cabe65f1ff813fbfb}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!gamers\+List@{gamers\+List}}
+\index{gamers\+List@{gamers\+List}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{gamers\+List}{gamersList}}
+{\footnotesize\ttfamily Q\+List$<$\hyperlink{a00213}{Gamer\+Information}$\ast$$>$ Main\+Game\+Loop\+::gamers\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+gamers\+List 
+
+list of client as gamers 
+
+Definition at line \hyperlink{a00092_source_l00056}{56} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+\mbox{\Hypertarget{a00209_a2578ca393ef9030407e5b3ac17b9f6ab}\label{a00209_a2578ca393ef9030407e5b3ac17b9f6ab}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!instance@{instance}}
+\index{instance@{instance}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{a00209}{Main\+Game\+Loop} $\ast$ Main\+Game\+Loop\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{a00092_source_l00027}{27} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+\mbox{\Hypertarget{a00197_a33c370cb3c6292cd800008a67002a67f}\label{a00197_a33c370cb3c6292cd800008a67002a67f}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!is\+Queue\+Lock@{is\+Queue\+Lock}}
+\index{is\+Queue\+Lock@{is\+Queue\+Lock}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{is\+Queue\+Lock}{isQueueLock}}
+{\footnotesize\ttfamily volatile bool Mail\+Receiver\+::is\+Queue\+Lock = false\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00002_source_l00080}{80} of file \hyperlink{a00002_source}{mailboxelement.\+h}.
+
+\mbox{\Hypertarget{a00209_a03ce2a112152dc80acce53528cc65daf}\label{a00209_a03ce2a112152dc80acce53528cc65daf}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!is\+Work@{is\+Work}}
+\index{is\+Work@{is\+Work}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{is\+Work}{isWork}}
+{\footnotesize\ttfamily bool Main\+Game\+Loop\+::is\+Work = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00092_source_l00049}{49} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+\mbox{\Hypertarget{a00209_ae0ccec14d7db91cf6db41349a73b41a7}\label{a00209_ae0ccec14d7db91cf6db41349a73b41a7}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!map@{map}}
+\index{map@{map}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \hyperlink{a00165}{I\+Map}$\ast$ Main\+Game\+Loop\+::map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \hyperlink{a00092_source_l00028}{28} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+
+\mbox{\Hypertarget{a00197_ace6950e3788bb037f23ce8668ef83829}\label{a00197_ace6950e3788bb037f23ce8668ef83829}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!messages@{messages}}
+\index{messages@{messages}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{messages}{messages}}
+{\footnotesize\ttfamily Q\+Queue$<$\hyperlink{a00201}{mail\+Message}$\ast$$>$ Mail\+Receiver\+::messages\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00002_source_l00078}{78} of file \hyperlink{a00002_source}{mailboxelement.\+h}.
+
+\mbox{\Hypertarget{a00197_a116d4905d302bdb69c00b54b621dd827}\label{a00197_a116d4905d302bdb69c00b54b621dd827}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!mutex@{mutex}}
+\index{mutex@{mutex}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{mutex}{mutex}}
+{\footnotesize\ttfamily Q\+Mutex Mail\+Receiver\+::mutex\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00002_source_l00079}{79} of file \hyperlink{a00002_source}{mailboxelement.\+h}.
+
+\mbox{\Hypertarget{a00209_a14693d2e6fdac35ab6af44a9080871f2}\label{a00209_a14693d2e6fdac35ab6af44a9080871f2}} 
+\index{Main\+Game\+Loop@{Main\+Game\+Loop}!watchers@{watchers}}
+\index{watchers@{watchers}!Main\+Game\+Loop@{Main\+Game\+Loop}}
+\subsubsection{\texorpdfstring{watchers}{watchers}}
+{\footnotesize\ttfamily Q\+List$<$\hyperlink{a00205}{Mail\+Sender}$\ast$$>$ Main\+Game\+Loop\+::watchers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00092_source_l00051}{51} of file \hyperlink{a00092_source}{maingameloop.\+h}.
+

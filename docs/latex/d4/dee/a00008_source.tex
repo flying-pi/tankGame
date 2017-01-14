@@ -1,0 +1,134 @@
+\hypertarget{a00008_source}{}\section{simpleconnection.\+h}
+\label{a00008_source}\index{Core/connection/simpleconnection.\+h@{Core/connection/simpleconnection.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{ifndef} \textcolor{preprocessor}{SIMPLECONNECTION\_H}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{define} \textcolor{preprocessor}{SIMPLECONNECTION\_H}
+00003 
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QHostAddress}\textcolor{preprocessor}{>}
+00005 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QObject}\textcolor{preprocessor}{>}
+00006 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QThread}\textcolor{preprocessor}{>}
+00007 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QQueue}\textcolor{preprocessor}{>}
+00008 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QTcpSocket}\textcolor{preprocessor}{>}
+00009 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QDataStream}\textcolor{preprocessor}{>}
+00010 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{ibasegameelement}\textcolor{preprocessor}{.}\textcolor{preprocessor}{h}\textcolor{preprocessor}{>}
+00011 
+\Hypertarget{a00008_source_l00012}\hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296af8a067d45287f02c8cd709a3495eb581}{00012} \textcolor{keyword}{enum} \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296}{eConnectionType} \{ \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296ab02a4c796f7681c9c90e0c0865392828}{eGamer}, \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296af8a067d45287f02c8cd709a3495eb581}{eWatcher} \};
+\Hypertarget{a00008_source_l00013}\hyperlink{a00008_a700ed30d49bfe436323e17539d3a0010}{00013} \textcolor{keyword}{enum} \hyperlink{a00008_a700ed30d49bfe436323e17539d3a0010}{eMessageType} \{ \hyperlink{a00008_a700ed30d49bfe436323e17539d3a0010aeab6dec369184e6c7d133812064686f9}{eFirstMessae}, 
+      \hyperlink{a00008_a700ed30d49bfe436323e17539d3a0010a0bc33fe8075a87a68af6a432b13d7b66}{eGetUpdateMessage} \};
+00014 
+00015 \hyperlink{a00008_aabd3ff178ce3faed55804cc56f78fc6a}{QString} \hyperlink{a00008_aabd3ff178ce3faed55804cc56f78fc6a}{stringify}(\hyperlink{a00008_aabd3ff178ce3faed55804cc56f78fc6a}{eConnectionType} \hyperlink{a00008_aabd3ff178ce3faed55804cc56f78fc6a}{e});
+00016 \hyperlink{a00008_abb3e44449c2fd1fa9275c1d4273c66f9}{QString} \hyperlink{a00008_abb3e44449c2fd1fa9275c1d4273c66f9}{stringify}(\hyperlink{a00008_abb3e44449c2fd1fa9275c1d4273c66f9}{eMessageType} \hyperlink{a00008_abb3e44449c2fd1fa9275c1d4273c66f9}{e});
+00017 
+\Hypertarget{a00008_source_l00018}\hyperlink{a00121}{00018} \textcolor{keyword}{class} \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{MessageForServer} : \textcolor{keyword}{public} \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{QObject} \{
+00019   \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{Q\_OBJECT}
+00020 
+00021  \textcolor{keyword}{public}:
+\Hypertarget{a00008_source_l00022}\hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{00022}   \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{eConnectionType} \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{connectionType};
+\Hypertarget{a00008_source_l00023}\hyperlink{a00121_a77e3d9ee30093b40db7f2d8f5d7590aa}{00023}   \hyperlink{a00008_a700ed30d49bfe436323e17539d3a0010}{eMessageType} \hyperlink{a00121_a77e3d9ee30093b40db7f2d8f5d7590aa}{messageType};
+00024 
+\Hypertarget{a00008_source_l00025}\hyperlink{a00121_a0562e6e482b8c98c43d4351d63fe9a97}{00025}   \textcolor{keyword}{friend} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{operator}<<(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream},
+00026                                  \textcolor{keyword}{const} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{MessageForServer}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}) \{
+00027     \textcolor{keywordflow}{return} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream} << ((\textcolor{keywordtype}{int})\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{connectionType})
+00028                   << ((\textcolor{keywordtype}{int})\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{messageType});
+00029   \}
+\Hypertarget{a00008_source_l00030}\hyperlink{a00121_a80c0e129812710b29e5cabd9e412387b}{00030}   \textcolor{keyword}{friend} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{operator}>>(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream},
+00031                                  \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{MessageForServer}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}) \{
+00032     \textcolor{keywordtype}{int} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{con};
+00033     \textcolor{keywordtype}{int} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{msg};
+00034     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDataStream}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{result} = (\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{stream} >> \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{con} >> \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{msg});
+00035     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{connectionType} = (\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{eConnectionType})
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{con};
+00036     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{myclass}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{messageType} = (\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{eMessageType})\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{msg};
+00037     \textcolor{keywordflow}{return} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{result};
+00038   \}
+00039 
+\Hypertarget{a00008_source_l00040}\hyperlink{a00121_ab72134ee0c57b530f11fe2f24c205979}{00040}   \textcolor{keyword}{friend} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDebug} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{operator}<<(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDebug} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{debug}, 
+      \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{MessageForServer}& \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{c}) \{
+00041     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{QDebugStateSaver} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{saver}(\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{debug});
+00042     \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{debug}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{nospace}() << \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{c}.\hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{toString}();
+00043 
+00044     \textcolor{keywordflow}{return} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{debug};
+00045   \}
+00046 
+00047   \hyperlink{a00121_a9b98301583759754caf829cc1ed1520d}{QString} \hyperlink{a00121_a9b98301583759754caf829cc1ed1520d}{toString}();
+00048 \};
+00049 
+\Hypertarget{a00008_source_l00050}\hyperlink{a00125}{00050} \textcolor{keyword}{class} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection} : \textcolor{keyword}{public} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{QThread} \{
+00051   \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{Q\_OBJECT}
+00052  \textcolor{keyword}{public}:
+00053   \textcolor{keyword}{explicit} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}(\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{QHostAddress} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{adress}, 
+      \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{QObject}* \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{parent} = 0);
+00054   \textcolor{keyword}{virtual} ~\hyperlink{a00125_a61b33627900c86ffa7f7936acae2873a}{SimpleConnection}();
+00055   \textcolor{keywordtype}{void} \hyperlink{a00125_a47370c85490330b8e1dd64af9e70b683}{openConnection}();
+00056   \textcolor{keywordtype}{void} \hyperlink{a00125_ab580ce17f2b9632414475a49dff64cce}{sendDiff}(\hyperlink{a00125_ab580ce17f2b9632414475a49dff64cce}{QList}<\hyperlink{a00125_ab580ce17f2b9632414475a49dff64cce}{DiffElement}*>* \hyperlink{a00125_ab580ce17f2b9632414475a49dff64cce}{diffs});
+00057 
+\Hypertarget{a00008_source_l00058}\hyperlink{a00129}{00058}   \textcolor{keyword}{class} \hyperlink{a00129}{MessageBuilder} \{
+\Hypertarget{a00008_source_l00059}\hyperlink{a00129_a7539cf9ee12d3fa81d3d8702d8646c89}{00059}     \textcolor{keyword}{friend} \textcolor{keyword}{class} \hyperlink{a00201_a5082ba525e6289ae6fc923e40c68192f}{SimpleConnection};
+00060 
+00061     \hyperlink{a00129_a872f905bf802df170dc7d1e0e9e75105}{MessageBuilder}(\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}* sender);
+00062 
+00063    \textcolor{keyword}{public}:
+00064     \hyperlink{a00129}{MessageBuilder}* \hyperlink{a00129_ae54a2b522f87b6cbab31d9ee27f29264}{asFirstMessage}(
+      \hyperlink{a00008_ab66d8802c50493de7d50e181d6f8e296}{eConnectionType} type);
+00065     \textcolor{keywordtype}{void} \hyperlink{a00129_ac39d9787cbea1c6d81a7cdbc736c9061}{build}();
+00066 
+00067    \textcolor{keyword}{private}:
+\Hypertarget{a00008_source_l00068}\hyperlink{a00129_a7a57d1afb561f7fe4b813e611c3269a7}{00068}     \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{MessageForServer}* \hyperlink{a00129_a7a57d1afb561f7fe4b813e611c3269a7}{message};
+\Hypertarget{a00008_source_l00069}\hyperlink{a00129_a377817a44c6b088e5027365f8d6c8c8f}{00069}     \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}* \hyperlink{a00129_a377817a44c6b088e5027365f8d6c8c8f}{parent};
+00070   \};
+00071 
+00072   \hyperlink{a00129}{MessageBuilder}* \hyperlink{a00125_a2bbd5504e2e67fa95a701f77cd438f4d}{getBulder}();
+00073 
+00074  \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{signals}:
+00075   \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{onDiffReceive}(\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{QList}<\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{DiffElement}*>* 
+      \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{diffs});
+00076 
+00077  \textcolor{keyword}{public} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{slots}:
+00078 
+00079  \textcolor{keyword}{protected} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{slots}:
+00080   \textcolor{keywordtype}{void} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{onSocketError}(\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{QAbstractSocket}::
+      \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SocketError} \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{error});
+00081 
+00082   \textcolor{comment}{// QThread interface}
+00083  \textcolor{keyword}{protected}:
+\Hypertarget{a00008_source_l00084}\hyperlink{a00125_a45a1e7ba5a9538bd382d24d364d0bbe5}{00084}   \textcolor{keyword}{volatile} \textcolor{keywordtype}{bool} \hyperlink{a00125_a45a1e7ba5a9538bd382d24d364d0bbe5}{isWork} = \textcolor{keyword}{true};
+00085   \textcolor{keywordtype}{void} \hyperlink{a00125_a35045483589d14a436ee83346365ce70}{run}();
+\Hypertarget{a00008_source_l00086}\hyperlink{a00125_afd0b4e345d57b690f1a1e12c4816e268}{00086}   \hyperlink{a00125_afd0b4e345d57b690f1a1e12c4816e268}{QHostAddress} \hyperlink{a00125_afd0b4e345d57b690f1a1e12c4816e268}{adress};
+\Hypertarget{a00008_source_l00087}\hyperlink{a00125_aee87a3e761deb38bce08ebb30cd73362}{00087}   \hyperlink{a00125_aee87a3e761deb38bce08ebb30cd73362}{QTcpSocket}* \hyperlink{a00125_aee87a3e761deb38bce08ebb30cd73362}{socket};
+00088 
+\Hypertarget{a00008_source_l00089}\hyperlink{a00125_a8db5848b9d5d30739d609feb973b86d2}{00089}   \hyperlink{a00125_a8db5848b9d5d30739d609feb973b86d2}{QDataStream}* \hyperlink{a00125_a8db5848b9d5d30739d609feb973b86d2}{out};
+00090 
+\Hypertarget{a00008_source_l00091}\hyperlink{a00125_acb6f6147828cec46cc69459f0de82cb0}{00091}   \hyperlink{a00125_acb6f6147828cec46cc69459f0de82cb0}{QMutex} \hyperlink{a00125_acb6f6147828cec46cc69459f0de82cb0}{mutex};
+\Hypertarget{a00008_source_l00092}\hyperlink{a00125_aadfc449afe00e48e200ae5f94bc9f2f7}{00092}   \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{QQueue}<\hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{MessageForServer}*> \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{messages};
+00093 
+00094   \textcolor{keywordtype}{void} \hyperlink{a00125_a0e40869759ba98f1964257d9c507b733}{addMessage}(\hyperlink{a00129}{MessageBuilder}* messages);
+00095 
+\Hypertarget{a00008_source_l00096}\hyperlink{a00133}{00096}   \textcolor{keyword}{class} \hyperlink{a00133}{Receiver} : \textcolor{keyword}{public} \hyperlink{a00133}{QThread} \{
+00097    \textcolor{keyword}{public}:
+00098     \hyperlink{a00133_a188daa54b2ed047298df6b889dad5004}{Receiver}(QTcpSocket* socket,
+00099              \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}* parentThread,
+00100              QObject* parent = 0);
+00101     \textcolor{keyword}{virtual} ~\hyperlink{a00133_ad751c9c2c8152a039876b65197a6b512}{Receiver}();
+00102     \textcolor{keywordtype}{bool} \hyperlink{a00133_a7cd5d65acac04d9eaa59817f15ddae62}{istThreadStart}();
+00103     \textcolor{keywordtype}{void} \hyperlink{a00133_ab77d06e9677b12631ece8695a319e062}{stop}();
+00104 
+00105    \textcolor{keyword}{protected}:
+\Hypertarget{a00008_source_l00106}\hyperlink{a00133_a2a61dfb0c5aaff07952e9cc933329fe4}{00106}     \hyperlink{a00133_a2a61dfb0c5aaff07952e9cc933329fe4}{QTcpSocket}* \hyperlink{a00133_a2a61dfb0c5aaff07952e9cc933329fe4}{socket};
+\Hypertarget{a00008_source_l00107}\hyperlink{a00133_aa4c39c627b02662a6f68885aa8fca85b}{00107}     \hyperlink{a00133_aa4c39c627b02662a6f68885aa8fca85b}{QDataStream}* \hyperlink{a00133_aa4c39c627b02662a6f68885aa8fca85b}{in};
+\Hypertarget{a00008_source_l00108}\hyperlink{a00133_a86812570e3dd426878732f5ea4ae3b9e}{00108}     \hyperlink{a00125_a8360af71c89a54be93430b746d5fae08}{SimpleConnection}* \hyperlink{a00133_a86812570e3dd426878732f5ea4ae3b9e}{parentThread};
+\Hypertarget{a00008_source_l00109}\hyperlink{a00133_ac47df189e93600b9bda2e1dca4e092c9}{00109}     \textcolor{keyword}{volatile} \textcolor{keywordtype}{bool} \hyperlink{a00133_ac47df189e93600b9bda2e1dca4e092c9}{isStart} = \textcolor{keyword}{false};
+\Hypertarget{a00008_source_l00110}\hyperlink{a00133_acc9d38bc97267217323908d6aaae5972}{00110}     \textcolor{keyword}{volatile} \textcolor{keywordtype}{bool} \hyperlink{a00133_acc9d38bc97267217323908d6aaae5972}{isWork} = \textcolor{keyword}{true};
+\Hypertarget{a00008_source_l00111}\hyperlink{a00133_a7ed726c394f5e48761a19ccecc988173}{00111}     \textcolor{keyword}{volatile} \textcolor{keywordtype}{bool} \hyperlink{a00133_a7ed726c394f5e48761a19ccecc988173}{isLoopActive} = \textcolor{keyword}{false};
+00112 
+00113     \textcolor{comment}{// QThread interface}
+00114    \textcolor{keyword}{protected}:
+00115     \textcolor{keywordtype}{void} \hyperlink{a00133_a8bcc914a839e71786071f655ce5afe7e}{run}();
+00116   \};
+00117 \};
+00118 
+00119 \textcolor{preprocessor}{#}\textcolor{preprocessor}{endif}  \textcolor{comment}{// SIMPLECONNECTION\_H}
+\end{DoxyCode}

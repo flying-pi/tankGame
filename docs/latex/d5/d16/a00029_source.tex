@@ -1,0 +1,25 @@
+\hypertarget{a00029_source}{}\section{basebasis.\+h}
+\label{a00029_source}\index{Core/\+Game\+Elements/basebasis.\+h@{Core/\+Game\+Elements/basebasis.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{ifndef} \textcolor{preprocessor}{BASEBASIS\_H}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{define} \textcolor{preprocessor}{BASEBASIS\_H}
+00003 
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"../ibasegameelement.h"}
+00005 
+\Hypertarget{a00029_source_l00006}\hyperlink{a00149}{00006} \textcolor{keyword}{class} \hyperlink{a00149}{BaseBasis} : \textcolor{keyword}{public} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement} \{
+00007  \textcolor{keyword}{public}:
+00008   \hyperlink{a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5}{BaseBasis}();
+00009   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00149_ac31b2ea48f47f1bc2baaf1971243b506}{setType}(\textcolor{keywordtype}{int} value) \textcolor{keyword}{override};
+00010   \textcolor{keyword}{virtual} \hyperlink{a00149_aaf8b691c26fbbda7878c22dfda32ebe4}{QByteArray}* \hyperlink{a00149_aaf8b691c26fbbda7878c22dfda32ebe4}{getAdditionalData}();
+00011   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00149_a17b5facef5ea0c9bb9c558a90831d6f9}{setAdditionakData}(QByteArray* data);
+00012 
+\Hypertarget{a00029_source_l00013}\hyperlink{a00149_acdc9310424ab117e3490e032028a2a7d}{00013}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{a00149_acdc9310424ab117e3490e032028a2a7d}{getEnergy}() \{ \textcolor{keywordflow}{return} \hyperlink{a00149_a59708d348b0218ba9f91c02361524963}{energy}; \}
+\Hypertarget{a00029_source_l00014}\hyperlink{a00149_a8f4de08926ac9bf0968af49f1ac1279e}{00014}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{a00149_a8f4de08926ac9bf0968af49f1ac1279e}{setEnergy}(\textcolor{keywordtype}{int} \_enery) \{ \textcolor{keyword}{this}\hyperlink{a00149_a59708d348b0218ba9f91c02361524963}{->}\hyperlink{a00149_a59708d348b0218ba9f91c02361524963}{energy} = \_enery; \}
+00015 
+00016  \textcolor{keyword}{protected}:
+\Hypertarget{a00029_source_l00017}\hyperlink{a00149_a59708d348b0218ba9f91c02361524963}{00017}   \textcolor{keywordtype}{int} \hyperlink{a00149_a59708d348b0218ba9f91c02361524963}{energy} = 100;
+00018 \};
+00019 
+00020 \textcolor{preprocessor}{#}\textcolor{preprocessor}{endif}  \textcolor{comment}{// BASEBASIS\_H}
+\end{DoxyCode}

@@ -1,0 +1,3240 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.10)  14 JAN 2017 11:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./refman.tex -output-format=pdf
+(./refman.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count88
+\calc@Bcount=\count89
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count90
+\calc@Cskip=\skip45
+) (./doxygen.sty
+Package: doxygen 
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks14
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count91
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks19
+\minrowclearance=\skip48
+)
+\rownum=\count93
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count94
+\LTcapwidth=\dimen107
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count95
+\LT@rows=\count96
+\c@LT@tables=\count97
+\c@LT@chunks=\count98
+\LT@p@ftn=\toks20
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box32
+\sift@deathcycles=\count99
+\@vwid@loff=\dimen108
+\@vwid@roff=\dimen109
+)
+\c@taburow=\count100
+\tabu@nbcols=\count101
+\tabu@cnt=\count102
+\tabu@Xcol=\count103
+\tabu@alloc=\count104
+\tabu@nested=\count105
+\tabu@target=\dimen110
+\tabu@spreadtarget=\dimen111
+\tabu@naturalX=\dimen112
+\tabucolX=\dimen113
+\tabu@Xsum=\dimen114
+\extrarowdepth=\dimen115
+\abovetabulinesep=\dimen116
+\belowtabulinesep=\dimen117
+\tabustrutrule=\dimen118
+\tabu@thebody=\toks21
+\tabu@footnotes=\toks22
+\tabu@box=\box33
+\tabu@arstrutbox=\box34
+\tabu@hleads=\box35
+\tabu@vleads=\box36
+\tabu@cellskip=\skip53
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen119
+\TX@old@table=\dimen120
+\TX@old@col=\dimen121
+\TX@target=\dimen122
+\TX@delta=\dimen123
+\TX@cols=\count106
+\TX@ftn=\toks23
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen124
+)
+\xrefbox=\box37
+\xreflength=\skip54
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count107
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+)
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box38
+)
+\tc@llx=\dimen127
+\tc@lly=\dimen128
+\tc@urx=\dimen129
+\tc@ury=\dimen130
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen131
+\adjbox@Height=\dimen132
+\adjbox@Depth=\dimen133
+\adjbox@Totalheight=\dimen134
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count108
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+\c@tracingmulticols=\count109
+\mult@box=\box39
+\multicol@leftmargin=\dimen135
+\c@unbalance=\count110
+\c@collectmore=\count111
+\doublecol@number=\count112
+\multicoltolerance=\count113
+\multicolpretolerance=\count114
+\full@width=\dimen136
+\page@free=\dimen137
+\premulticols=\dimen138
+\postmulticols=\dimen139
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box40
+\last@line=\box41
+\maxbalancingoverflow=\dimen140
+\mult@rightbox=\box42
+\mult@grightbox=\box43
+\mult@gfirstbox=\box44
+\mult@firstbox=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\c@columnbadness=\count115
+\c@finalcolumnbadness=\count116
+\last@try=\dimen141
+\multicolovershoot=\dimen142
+\multicolundershoot=\dimen143
+\mult@nat@firstbox=\box63
+\colbreak@box=\box64
+\mc@col@check@num=\count117
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks29
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip57
+\f@ncyO@elh=\skip58
+\f@ncyO@erh=\skip59
+\f@ncyO@olh=\skip60
+\f@ncyO@orh=\skip61
+\f@ncyO@elf=\skip62
+\f@ncyO@erf=\skip63
+\f@ncyO@olf=\skip64
+\f@ncyO@orf=\skip65
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip66
+\bibsep=\skip67
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count121
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 44.
+\cftparskip=\skip68
+\cftbeforetoctitleskip=\skip69
+\cftaftertoctitleskip=\skip70
+\cftbeforepartskip=\skip71
+\cftpartnumwidth=\skip72
+\cftpartindent=\skip73
+\cftbeforechapskip=\skip74
+\cftchapindent=\skip75
+\cftchapnumwidth=\skip76
+\cftbeforesecskip=\skip77
+\cftsecindent=\skip78
+\cftsecnumwidth=\skip79
+\cftbeforesubsecskip=\skip80
+\cftsubsecindent=\skip81
+\cftsubsecnumwidth=\skip82
+\cftbeforesubsubsecskip=\skip83
+\cftsubsubsecindent=\skip84
+\cftsubsubsecnumwidth=\skip85
+\cftbeforeparaskip=\skip86
+\cftparaindent=\skip87
+\cftparanumwidth=\skip88
+\cftbeforesubparaskip=\skip89
+\cftsubparaindent=\skip90
+\cftsubparanumwidth=\skip91
+\cftbeforeloftitleskip=\skip92
+\cftafterloftitleskip=\skip93
+\cftbeforefigskip=\skip94
+\cftfigindent=\skip95
+\cftfignumwidth=\skip96
+\c@lofdepth=\count122
+\c@lotdepth=\count123
+\cftbeforelottitleskip=\skip97
+\cftafterlottitleskip=\skip98
+\cftbeforetabskip=\skip99
+\cfttabindent=\skip100
+\cfttabnumwidth=\skip101
+)
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+
+Writing index file refman.idx
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen152
+\Hy@linkcounter=\count124
+\Hy@pagecounter=\count125
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count126
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing ON on input line 4464.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4691.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2012/07/25 v1.38 Bibliographical back referencing
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+\c@Hy@tempcnt=\count127
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5044.
+\XeTeXLinkMargin=\dimen153
+\Fld@menulength=\count128
+\Field@Width=\dimen154
+\Fld@charsize=\dimen155
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing ON on input line 6311.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
+\Hy@abspage=\count129
+\c@Item=\count130
+\c@Hfootnote=\count131
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
+\Fld@listcount=\count132
+\c@bookmark@seq@number=\count133
+\Hy@SectionHShift=\skip102
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 105.
+Package hyperref Info: Option `unicode' set `true' on input line 105.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen156
+\captionmargin@=\dimen157
+\captionwidth=\dimen158
+\caption@tempdima=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
+)
+\c@ContinuedFloat=\count134
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+))
+No file refman.aux.
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 117.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 117.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 117.
+LaTeX Font Info:    ... okay on input line 117.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 117.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 117.
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count135
+\scratchdimen=\dimen163
+\scratchbox=\box65
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen164
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks31
+) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-31.2056pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box66
+Package backref Info: ** backref set up for natbib ** on input line 117.
+Package hyperref Info: Link coloring ON on input line 117.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count141
+)
+LaTeX Info: Redefining \ref on input line 117.
+LaTeX Info: Redefining \pageref on input line 117.
+LaTeX Info: Redefining \nameref on input line 117.
+\@outlinefile=\write4
+\openout4 = `refman.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Option `pageanchor' set `false' on input line 123.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 123.
+
+Package hyperref Info: Option `unicode' set `true' on input line 123.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 128.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 128.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 128.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 128.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 128.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 130.
+ [1
+
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 135.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 135.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 135.
+\tf@toc=\write5
+\openout5 = `refman.toc'.
+
+ [1
+
+] [2
+
+]
+Package hyperref Info: Option `pageanchor' set `true' on input line 138.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 141.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 141.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 141.
+(./d8/d17/a00114.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 3.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 3.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 6.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 6.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 15.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 15.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+(./d2/da3/a00115.tex [1
+
+]) (./d4/d3e/a00116.tex) (./d3/d00/a00113.tex)
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 146.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 146.
+ [2]
+Chapter 2.
+(./da/d1e/a00149.tex <db/d48/a00148.pdf, id=77, 251.94125pt x 775.89874pt>
+File: db/d48/a00148.pdf Graphic file (type pdf)
+
+<use db/d48/a00148.pdf>
+Package pdftex.def Info: db/d48/a00148.pdf used on input line 14.
+(pdftex.def)             Requested size: 178.5912pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+]
+<d0/d4a/a00147.pdf, id=86, 313.17pt x 923.45pt>
+File: d0/d4a/a00147.pdf Graphic file (type pdf)
+ <use d0/d4a/a00147.pdf>
+Package pdftex.def Info: d0/d4a/a00147.pdf used on input line 24.
+(pdftex.def)             Requested size: 186.52243pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./db/d48/a00148.pdf>] [5 <./d0/d4a/a00147.pdf>]
+<da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_cgraph.pdf, id=171, 477.785pt 
+x 103.38625pt>
+File: da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_cgraph.pdf Graphic file (
+type pdf)
+
+<use da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_cgraph.pdf>
+Package pdftex.def Info: da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_cgraph
+.pdf used on input line 116.
+(pdftex.def)             Requested size: 350.0pt x 75.73477pt.
+
+<da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_icgraph.pdf, id=172, 745.78625
+pt x 117.43875pt>
+File: da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_icgraph.pdf Graphic file 
+(type pdf)
+
+<use da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_icgraph.pdf>
+Package pdftex.def Info: da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_icgrap
+h.pdf used on input line 124.
+(pdftex.def)             Requested size: 350.0pt x 55.11377pt.
+ [6 <./da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_cgraph.pdf>]
+Overfull \hbox (18.34215pt too wide) in paragraph at lines 168--169
+\T1/pcr/m/n/8 virtual [][]Infinity[]Double[][]$\OMS/cmsy/m/n/8 ^^C$ \T1/pcr/m/n
+/8 I[]Base[]Game[]Element[]::get[]Max[]Transit[]Weight ( ) [inline], [virtual],
+ [inherited] 
+ []
+
+[7 <./da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_icgraph.pdf>]
+<d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf, id=277, 1064.9787
+4pt x 362.35374pt>
+File: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgrap
+h.pdf used on input line 239.
+(pdftex.def)             Requested size: 350.0pt x 119.085pt.
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 246.
+ [8]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 260.
+
+<d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf, id=301, 984.67876
+pt x 103.38625pt>
+File: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgrap
+h.pdf used on input line 281.
+(pdftex.def)             Requested size: 350.0pt x 36.7489pt.
+ [9 <./d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf> <./d2/df5/a
+00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf>]
+<d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf, id=352, 994.71625
+pt x 117.43875pt>
+File: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgrap
+h.pdf used on input line 329.
+(pdftex.def)             Requested size: 350.0pt x 41.32278pt.
+ [10 <./d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf>] [11])
+(./da/d01/a00153.tex <d7/d9a/a00152.pdf, id=426, 251.94125pt x 775.89874pt>
+File: d7/d9a/a00152.pdf Graphic file (type pdf)
+
+<use d7/d9a/a00152.pdf>
+Package pdftex.def Info: d7/d9a/a00152.pdf used on input line 14.
+(pdftex.def)             Requested size: 178.5912pt x 550.0pt.
+ [12] <dd/db2/a00151.pdf, id=441, 313.17pt x 923.45pt>
+File: dd/db2/a00151.pdf Graphic file (type pdf)
+
+<use dd/db2/a00151.pdf>
+Package pdftex.def Info: dd/db2/a00151.pdf used on input line 24.
+(pdftex.def)             Requested size: 186.52243pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./d7/d9a/a00152.pdf>] [14 <./dd/db2/a00151.pdf>]pdfTeX warning (ext4): de
+stination with the same identifier (name{a00137_a13a00e39ece3e20e3f5e049224da8d
+40}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.130 ...00137_a13a00e39ece3e20e3f5e049224da8d40}}
+                                                   [15]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a4c74c903e19ada9da9150cf9569b4
+e9d}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 ...00137_a4c74c903e19ada9da9150cf9569b4e9d}}
+                                                  
+Overfull \hbox (18.34215pt too wide) in paragraph at lines 144--145
+\T1/pcr/m/n/8 virtual [][]Infinity[]Double[][]$\OMS/cmsy/m/n/8 ^^C$ \T1/pcr/m/n
+/8 I[]Base[]Game[]Element[]::get[]Max[]Transit[]Weight ( ) [inline], [virtual],
+ [inherited] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a01051
+b9a502128a82f9a168a14d1ecdc}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.150 ...00137_a01051b9a502128a82f9a168a14d1ecdc}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a3159c02c1118989e3476b52d89a52401})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.160 ...00137_a3159c02c1118989e3476b52d89a52401}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.170 ...00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a639bd1e233821ff606bb8fe2931f6ee7})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.180 ...00137_a639bd1e233821ff606bb8fe2931f6ee7}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a935a07134430bbb44c3214629d607a3d})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.190 ...00137_a935a07134430bbb44c3214629d607a3d}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ae2be75da1a2a9edfabe993770e24654a})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.200 ...00137_ae2be75da1a2a9edfabe993770e24654a}}
+                                                   [16]
+File: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgrap
+h.pdf used on input line 215.
+(pdftex.def)             Requested size: 350.0pt x 119.085pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a2f95e
+7a61b5db7f2fbbfd32ff786f58c}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.232 ...00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}}
+                                                  
+File: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgrap
+h.pdf used on input line 247.
+(pdftex.def)             Requested size: 350.0pt x 36.7489pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a874f2
+46d3249a989750e3db85ea4bfcd}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.250 ...00137_a874f246d3249a989750e3db85ea4bfcd}}
+                                                   [17]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a54dc1a743fac99db03c3f47b5c6d6
+9c4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.260 ...00137_a54dc1a743fac99db03c3f47b5c6d69c4}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a2719e14051c30f39ca60f4998e48abf9})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.270 ...00137_a2719e14051c30f39ca60f4998e48abf9}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ac480b8140b5b290f49b4b96a47291180})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.280 ...00137_ac480b8140b5b290f49b4b96a47291180}}
+                                                  
+File: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgrap
+h.pdf used on input line 295.
+(pdftex.def)             Requested size: 350.0pt x 41.32278pt.
+ [18]
+<d2/df5/a00137_a324cba2176155a50b5a2239eb0a8b6a0_icgraph.pdf, id=614, 982.67125
+pt x 103.38625pt>
+File: d2/df5/a00137_a324cba2176155a50b5a2239eb0a8b6a0_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_a324cba2176155a50b5a2239eb0a8b6a0_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_a324cba2176155a50b5a2239eb0a8b6a0_icgrap
+h.pdf used on input line 317.
+(pdftex.def)             Requested size: 350.0pt x 36.82304pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a4b5e4
+2aa7985c9bf959f0275cbc1bac7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.320 ...00137_a4b5e42aa7985c9bf959f0275cbc1bac7}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.333 ...00137_a4d3547697d3bd0c2d65c83b07b3f8f91}}
+                                                   [19 <./d2/df5/a00137_a324cba
+2176155a50b5a2239eb0a8b6a0_icgraph.pdf>]pdfTeX warning (ext4): destination with
+ the same identifier (name{a00137_a440cf9e7d61c33482ab256a6e944b34d}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.363 ...00137_a440cf9e7d61c33482ab256a6e944b34d}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_af35fba4ed599605c3d78b3c3a71fa467})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.383 ...00137_af35fba4ed599605c3d78b3c3a71fa467}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_afe080b1942ec40832e94cb884ec87456})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.393 ...00137_afe080b1942ec40832e94cb884ec87456}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ae0ad3c240950eba352aeb04e6a9296b4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.403 ...00137_ae0ad3c240950eba352aeb04e6a9296b4}}
+                                                   [20]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a865c937433f7d46665ca17e5adccd
+9df}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.423 ...00137_a865c937433f7d46665ca17e5adccd9df}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a73a4ca23072b617f3d17004e3c671bca})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.433 ...00137_a73a4ca23072b617f3d17004e3c671bca}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a99901016531fd27b9b197dc88d3bfa4a})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.443 ...00137_a99901016531fd27b9b197dc88d3bfa4a}}
+                                                  ) (./d1/db7/a00157.tex
+<d2/d34/a00156.pdf, id=683, 251.94125pt x 789.95125pt>
+File: d2/d34/a00156.pdf Graphic file (type pdf)
+ <use d2/d34/a00156.pdf>
+Package pdftex.def Info: d2/d34/a00156.pdf used on input line 14.
+(pdftex.def)             Requested size: 175.41196pt x 550.0pt.
+
+[21] <d3/df8/a00155.pdf, id=697, 313.17pt x 937.5025pt>
+File: d3/df8/a00155.pdf Graphic file (type pdf)
+
+<use d3/df8/a00155.pdf>
+Package pdftex.def Info: d3/df8/a00155.pdf used on input line 24.
+(pdftex.def)             Requested size: 183.72218pt x 550.0pt.
+
+Underfull \vbox (badness 2269) has occurred while \output is active []
+
+ [22 <./d2/d34/a00156.pdf>] [23 <./d3/df8/a00155.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 76.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 76.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 76.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 76.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 76.
+
+<d1/db7/a00157_ab09f29abaec12417480cae3a5f900a41_cgraph.pdf, id=784, 468.75125p
+t x 103.38625pt>
+File: d1/db7/a00157_ab09f29abaec12417480cae3a5f900a41_cgraph.pdf Graphic file (
+type pdf)
+
+<use d1/db7/a00157_ab09f29abaec12417480cae3a5f900a41_cgraph.pdf>
+Package pdftex.def Info: d1/db7/a00157_ab09f29abaec12417480cae3a5f900a41_cgraph
+.pdf used on input line 118.
+(pdftex.def)             Requested size: 350.0pt x 77.194pt.
+ [24 <./d1/db7/a00157_ab09f29abaec12417480cae3a5f900a41_cgraph.pdf>]pdfTeX warn
+ing (ext4): destination with the same identifier (name{a00137_a13a00e39ece3e20e
+3f5e049224da8d40}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.148 ...00137_a13a00e39ece3e20e3f5e049224da8d40}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a4c74c903e19ada9da9150cf9569b4e9d})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.158 ...00137_a4c74c903e19ada9da9150cf9569b4e9d}}
+                                                  
+Overfull \hbox (18.34215pt too wide) in paragraph at lines 162--163
+\T1/pcr/m/n/8 virtual [][]Infinity[]Double[][]$\OMS/cmsy/m/n/8 ^^C$ \T1/pcr/m/n
+/8 I[]Base[]Game[]Element[]::get[]Max[]Transit[]Weight ( ) [inline], [virtual],
+ [inherited] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a01051
+b9a502128a82f9a168a14d1ecdc}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.168 ...00137_a01051b9a502128a82f9a168a14d1ecdc}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a3159c02c1118989e3476b52d89a52401})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.178 ...00137_a3159c02c1118989e3476b52d89a52401}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.188 ...00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a639bd1e233821ff606bb8fe2931f6ee7})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.198 ...00137_a639bd1e233821ff606bb8fe2931f6ee7}}
+                                                   [25]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a935a07134430bbb44c3214629d607
+a3d}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.208 ...00137_a935a07134430bbb44c3214629d607a3d}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ae2be75da1a2a9edfabe993770e24654a})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.218 ...00137_ae2be75da1a2a9edfabe993770e24654a}}
+                                                  
+File: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgrap
+h.pdf used on input line 233.
+(pdftex.def)             Requested size: 350.0pt x 119.085pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a2f95e
+7a61b5db7f2fbbfd32ff786f58c}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.250 ...00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}}
+                                                   [26]
+File: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgrap
+h.pdf used on input line 265.
+(pdftex.def)             Requested size: 350.0pt x 36.7489pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a874f2
+46d3249a989750e3db85ea4bfcd}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.268 ...00137_a874f246d3249a989750e3db85ea4bfcd}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a54dc1a743fac99db03c3f47b5c6d69c4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.278 ...00137_a54dc1a743fac99db03c3f47b5c6d69c4}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a2719e14051c30f39ca60f4998e48abf9})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.288 ...00137_a2719e14051c30f39ca60f4998e48abf9}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ac480b8140b5b290f49b4b96a47291180})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.298 ...00137_ac480b8140b5b290f49b4b96a47291180}}
+                                                  
+File: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgrap
+h.pdf used on input line 313.
+(pdftex.def)             Requested size: 350.0pt x 41.32278pt.
+ [27]pdfTeX warning (ext4): destination with the same identifier (name{a00137_a
+4b5e42aa7985c9bf959f0275cbc1bac7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.330 ...00137_a4b5e42aa7985c9bf959f0275cbc1bac7}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.343 ...00137_a4d3547697d3bd0c2d65c83b07b3f8f91}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a440cf9e7d61c33482ab256a6e944b34d})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.377 ...00137_a440cf9e7d61c33482ab256a6e944b34d}}
+                                                   [28]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_af35fba4ed599605c3d78b3c3a71fa
+467}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.387 ...00137_af35fba4ed599605c3d78b3c3a71fa467}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_afe080b1942ec40832e94cb884ec87456})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.397 ...00137_afe080b1942ec40832e94cb884ec87456}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ae0ad3c240950eba352aeb04e6a9296b4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.407 ...00137_ae0ad3c240950eba352aeb04e6a9296b4}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a865c937433f7d46665ca17e5adccd9df})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.427 ...00137_a865c937433f7d46665ca17e5adccd9df}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a73a4ca23072b617f3d17004e3c671bca})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.437 ...00137_a73a4ca23072b617f3d17004e3c671bca}}
+                                                   [29]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a99901016531fd27b9b197dc88d3bf
+a4a}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.447 ...00137_a99901016531fd27b9b197dc88d3bfa4a}}
+                                                  ) (./da/ddb/a00145.tex
+<d7/dce/a00143.pdf, id=945, 148.555pt x 147.55125pt>
+File: d7/dce/a00143.pdf Graphic file (type pdf)
+ <use d7/dce/a00143.pdf>
+Package pdftex.def Info: d7/dce/a00143.pdf used on input line 14.
+(pdftex.def)             Requested size: 148.0pt x 147.00601pt.
+
+[30 <./d7/dce/a00143.pdf>]) (./d5/d4e/a00141.tex
+<de/d14/a00139.pdf, id=976, 313.17pt x 880.28876pt>
+File: de/d14/a00139.pdf Graphic file (type pdf)
+ <use de/d14/a00139.pdf>
+Package pdftex.def Info: de/d14/a00139.pdf used on input line 14.
+(pdftex.def)             Requested size: 195.67342pt x 550.0pt.
+
+Underfull \vbox (badness 3039) has occurred while \output is active []
+
+ [31]
+[32 <./de/d14/a00139.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 7.19995pt on input line 51.
+
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 51.
+
+
+<d5/d4e/a00141_abb725fa0a448bf536959a5c469556599_cgraph.pdf, id=1035, 489.83pt 
+x 103.38625pt>
+File: d5/d4e/a00141_abb725fa0a448bf536959a5c469556599_cgraph.pdf Graphic file (
+type pdf)
+
+<use d5/d4e/a00141_abb725fa0a448bf536959a5c469556599_cgraph.pdf>
+Package pdftex.def Info: d5/d4e/a00141_abb725fa0a448bf536959a5c469556599_cgraph
+.pdf used on input line 63.
+(pdftex.def)             Requested size: 350.0pt x 73.87485pt.
+ [33 <./d5/d4e/a00141_abb725fa0a448bf536959a5c469556599_cgraph.pdf>]) (./d7/d3f
+/a00173.tex
+<d6/dfb/a00172.pdf, id=1081, 204.765pt x 377.41pt>
+File: d6/dfb/a00172.pdf Graphic file (type pdf)
+ <use d6/dfb/a00172.pdf>
+Package pdftex.def Info: d6/dfb/a00172.pdf used on input line 14.
+(pdftex.def)             Requested size: 204.0pt x 376.0212pt.
+
+[34] <d1/d0d/a00171.pdf, id=1098, 204.765pt x 377.41pt>
+File: d1/d0d/a00171.pdf Graphic file (type pdf)
+
+<use d1/d0d/a00171.pdf>
+Package pdftex.def Info: d1/d0d/a00171.pdf used on input line 24.
+(pdftex.def)             Requested size: 204.0pt x 376.0212pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <./d6/dfb/a00172.pdf>] [36 <./d1/d0d/a00171.pdf>]
+<d7/d3f/a00173_ab3e028578ffc9df6d7d12dbbc83be19f_cgraph.pdf, id=1162, 298.11375
+pt x 103.38625pt>
+File: d7/d3f/a00173_ab3e028578ffc9df6d7d12dbbc83be19f_cgraph.pdf Graphic file (
+type pdf)
+
+<use d7/d3f/a00173_ab3e028578ffc9df6d7d12dbbc83be19f_cgraph.pdf>
+Package pdftex.def Info: d7/d3f/a00173_ab3e028578ffc9df6d7d12dbbc83be19f_cgraph
+.pdf used on input line 86.
+(pdftex.def)             Requested size: 297.0pt x 103.00578pt.
+ [37 <./d7/d3f/a00173_ab3e028578ffc9df6d7d12dbbc83be19f_cgraph.pdf>]
+<d7/d3f/a00173_ac2d8f10e9bccfe3cf51cf534c73cecd4_icgraph.pdf, id=1202, 298.1137
+5pt x 103.38625pt>
+File: d7/d3f/a00173_ac2d8f10e9bccfe3cf51cf534c73cecd4_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d7/d3f/a00173_ac2d8f10e9bccfe3cf51cf534c73cecd4_icgraph.pdf>
+Package pdftex.def Info: d7/d3f/a00173_ac2d8f10e9bccfe3cf51cf534c73cecd4_icgrap
+h.pdf used on input line 137.
+(pdftex.def)             Requested size: 297.0pt x 103.00578pt.
+ [38 <./d7/d3f/a00173_ac2d8f10e9bccfe3cf51cf534c73cecd4_icgraph.pdf>]) (./d1/de
+1/a00213.tex
+<dd/ded/a00211.pdf, id=1243, 317.185pt x 508.90125pt>
+File: dd/ded/a00211.pdf Graphic file (type pdf)
+ <use dd/ded/a00211.pdf>
+Package pdftex.def Info: dd/ded/a00211.pdf used on input line 14.
+(pdftex.def)             Requested size: 316.0pt x 507.04411pt.
+
+[39] [40 <./dd/ded/a00211.pdf>] [41]) (./d2/df5/a00137.tex
+<d0/d5e/a00136.pdf, id=1343, 571.13374pt x 789.95125pt>
+File: d0/d5e/a00136.pdf Graphic file (type pdf)
+
+<use d0/d5e/a00136.pdf>
+Package pdftex.def Info: d0/d5e/a00136.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 484.09949pt.
+ [42]
+<d5/d5b/a00135.pdf, id=1359, 313.17pt x 748.7975pt>
+File: d5/d5b/a00135.pdf Graphic file (type pdf)
+ <use d5/d5b/a00135.pdf>
+Package pdftex.def Info: d5/d5b/a00135.pdf used on input line 24.
+(pdftex.def)             Requested size: 230.03621pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43 <./d0/d5e/a00136.pdf>] [44 <./d5/d5b/a00135.pdf>]
+<d2/df5/a00137_ae72e1c7b4ecb3cf88e2a86ff4a331e88_cgraph.pdf, id=1442, 545.03625
+pt x 117.43875pt>
+File: d2/df5/a00137_ae72e1c7b4ecb3cf88e2a86ff4a331e88_cgraph.pdf Graphic file (
+type pdf)
+
+<use d2/df5/a00137_ae72e1c7b4ecb3cf88e2a86ff4a331e88_cgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ae72e1c7b4ecb3cf88e2a86ff4a331e88_cgraph
+.pdf used on input line 119.
+(pdftex.def)             Requested size: 350.0pt x 75.4132pt.
+ [45 <./d2/df5/a00137_ae72e1c7b4ecb3cf88e2a86ff4a331e88_cgraph.pdf>]pdfTeX warn
+ing (ext4): destination with the same identifier (name{a00137_a13a00e39ece3e20e
+3f5e049224da8d40}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.149 ...00137_a13a00e39ece3e20e3f5e049224da8d40}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a4c74c903e19ada9da9150cf9569b4e9d})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.159 ...00137_a4c74c903e19ada9da9150cf9569b4e9d}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a01051b9a502128a82f9a168a14d1ecdc})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.169 ...00137_a01051b9a502128a82f9a168a14d1ecdc}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a3159c02c1118989e3476b52d89a52401})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.179 ...00137_a3159c02c1118989e3476b52d89a52401}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.189 ...00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a639bd1e233821ff606bb8fe2931f6ee7})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.199 ...00137_a639bd1e233821ff606bb8fe2931f6ee7}}
+                                                   [46]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a935a07134430bbb44c3214629d607
+a3d}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.209 ...00137_a935a07134430bbb44c3214629d607a3d}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ae2be75da1a2a9edfabe993770e24654a})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.219 ...00137_ae2be75da1a2a9edfabe993770e24654a}}
+                                                  
+File: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgrap
+h.pdf used on input line 234.
+(pdftex.def)             Requested size: 350.0pt x 119.085pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a2f95e
+7a61b5db7f2fbbfd32ff786f58c}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.251 ...00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}}
+                                                   [47]
+File: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgrap
+h.pdf used on input line 266.
+(pdftex.def)             Requested size: 350.0pt x 36.7489pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a874f2
+46d3249a989750e3db85ea4bfcd}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.269 ...00137_a874f246d3249a989750e3db85ea4bfcd}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a54dc1a743fac99db03c3f47b5c6d69c4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.279 ...00137_a54dc1a743fac99db03c3f47b5c6d69c4}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a2719e14051c30f39ca60f4998e48abf9})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.289 ...00137_a2719e14051c30f39ca60f4998e48abf9}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ac480b8140b5b290f49b4b96a47291180})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.299 ...00137_ac480b8140b5b290f49b4b96a47291180}}
+                                                  
+File: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgrap
+h.pdf used on input line 314.
+(pdftex.def)             Requested size: 350.0pt x 41.32278pt.
+ [48]pdfTeX warning (ext4): destination with the same identifier (name{a00137_a
+324cba2176155a50b5a2239eb0a8b6a0}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.317 ...00137_a324cba2176155a50b5a2239eb0a8b6a0}}
+                                                  
+File: d2/df5/a00137_a324cba2176155a50b5a2239eb0a8b6a0_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d2/df5/a00137_a324cba2176155a50b5a2239eb0a8b6a0_icgraph.pdf>
+Package pdftex.def Info: d2/df5/a00137_a324cba2176155a50b5a2239eb0a8b6a0_icgrap
+h.pdf used on input line 336.
+(pdftex.def)             Requested size: 350.0pt x 36.82304pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00137_a4b5e4
+2aa7985c9bf959f0275cbc1bac7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.339 ...00137_a4b5e42aa7985c9bf959f0275cbc1bac7}}
+                                                   [49]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a4d3547697d3bd0c2d65c83b07b3f8
+f91}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.375 ...00137_a4d3547697d3bd0c2d65c83b07b3f8f91}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a440cf9e7d61c33482ab256a6e944b34d})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.385 ...00137_a440cf9e7d61c33482ab256a6e944b34d}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_af35fba4ed599605c3d78b3c3a71fa467})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.395 ...00137_af35fba4ed599605c3d78b3c3a71fa467}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_afe080b1942ec40832e94cb884ec87456})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.405 ...00137_afe080b1942ec40832e94cb884ec87456}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_ae0ad3c240950eba352aeb04e6a9296b4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.415 ...00137_ae0ad3c240950eba352aeb04e6a9296b4}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a865c937433f7d46665ca17e5adccd9df})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.425 ...00137_a865c937433f7d46665ca17e5adccd9df}}
+                                                   [50]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00137_a73a4ca23072b617f3d17004e3c671
+bca}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.435 ...00137_a73a4ca23072b617f3d17004e3c671bca}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00137_a99901016531fd27b9b197dc88d3bfa4a})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.445 ...00137_a99901016531fd27b9b197dc88d3bfa4a}}
+                                                  ) (./d0/d48/a00165.tex
+<db/ddf/a00164.pdf, id=1603, 251.94125pt x 419.5675pt>
+File: db/ddf/a00164.pdf Graphic file (type pdf)
+ <use db/ddf/a00164.pdf>
+Package pdftex.def Info: db/ddf/a00164.pdf used on input line 14.
+(pdftex.def)             Requested size: 251.0pt x 418.00435pt.
+
+[51] <dd/dae/a00163.pdf, id=1614, 251.94125pt x 217.81375pt>
+File: dd/dae/a00163.pdf Graphic file (type pdf)
+
+<use dd/dae/a00163.pdf>
+Package pdftex.def Info: dd/dae/a00163.pdf used on input line 24.
+(pdftex.def)             Requested size: 251.0pt x 217.00224pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52 <./db/ddf/a00164.pdf>] [53 <./dd/dae/a00163.pdf>]) (./d6/d7d/a00161.tex
+<de/d38/a00160.pdf, id=1690, 199.74625pt x 293.095pt>
+File: de/d38/a00160.pdf Graphic file (type pdf)
+ <use de/d38/a00160.pdf>
+Package pdftex.def Info: de/d38/a00160.pdf used on input line 14.
+(pdftex.def)             Requested size: 199.0pt x 292.01645pt.
+
+[54] <de/db9/a00159.pdf, id=1705, 199.74625pt x 293.095pt>
+File: de/db9/a00159.pdf Graphic file (type pdf)
+
+<use de/db9/a00159.pdf>
+Package pdftex.def Info: de/db9/a00159.pdf used on input line 24.
+(pdftex.def)             Requested size: 199.0pt x 292.01645pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55 <./de/d38/a00160.pdf>] [56 <./de/db9/a00159.pdf>]
+<d6/d7d/a00161_a8d33637f68b523cf2b21abd1509c47bf_icgraph.pdf, id=1771, 1146.282
+5pt x 197.73875pt>
+File: d6/d7d/a00161_a8d33637f68b523cf2b21abd1509c47bf_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d6/d7d/a00161_a8d33637f68b523cf2b21abd1509c47bf_icgraph.pdf>
+Package pdftex.def Info: d6/d7d/a00161_a8d33637f68b523cf2b21abd1509c47bf_icgrap
+h.pdf used on input line 78.
+(pdftex.def)             Requested size: 350.0pt x 60.37509pt.
+
+<d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_cgraph.pdf, id=1775, 442.65375
+pt x 117.43875pt>
+File: d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_cgraph.pdf Graphic file (
+type pdf)
+
+<use d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_cgraph.pdf>
+Package pdftex.def Info: d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_cgraph
+.pdf used on input line 99.
+(pdftex.def)             Requested size: 350.0pt x 92.86159pt.
+
+<d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_icgraph.pdf, id=1776, 960.5887
+5pt x 103.38625pt>
+File: d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_icgraph.pdf>
+Package pdftex.def Info: d6/d7d/a00161_adb0a2fa93aa5f90a93c3f4303436913a_icgrap
+h.pdf used on input line 107.
+(pdftex.def)             Requested size: 350.0pt x 37.67018pt.
+
+<d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_cgraph.pdf, id=1780, 415.5525p
+t x 117.43875pt>
+File: d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_cgraph.pdf Graphic file (
+type pdf)
+
+<use d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_cgraph.pdf>
+Package pdftex.def Info: d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_cgraph
+.pdf used on input line 125.
+(pdftex.def)             Requested size: 350.0pt x 98.91666pt.
+ [57 <./d6/d7d/a00161_a8d33637f68b523cf2b21abd1509c47bf_icgraph.pdf> <./d6/d7d/
+a00161_adb0a2fa93aa5f90a93c3f4303436913a_cgraph.pdf> <./d6/d7d/a00161_adb0a2fa9
+3aa5f90a93c3f4303436913a_icgraph.pdf>]
+<d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_icgraph.pdf, id=1833, 933.4875
+pt x 117.43875pt>
+File: d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_icgraph.pdf>
+Package pdftex.def Info: d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_icgrap
+h.pdf used on input line 133.
+(pdftex.def)             Requested size: 350.0pt x 44.03224pt.
+ [58 <./d6/d7d/a00161_a67fae871f96708313bedc644630ac8bc_cgraph.pdf> <./d6/d7d/a
+00161_a67fae871f96708313bedc644630ac8bc_icgraph.pdf>]) (./de/d53/a00169.tex
+<dd/da7/a00168.pdf, id=1882, 251.94125pt x 419.5675pt>
+File: dd/da7/a00168.pdf Graphic file (type pdf)
+ <use dd/da7/a00168.pdf>
+Package pdftex.def Info: dd/da7/a00168.pdf used on input line 14.
+(pdftex.def)             Requested size: 251.0pt x 418.00435pt.
+
+<dc/de6/a00167.pdf, id=1883, 251.94125pt x 419.5675pt>
+File: dc/de6/a00167.pdf Graphic file (type pdf)
+ <use dc/de6/a00167.pdf>
+Package pdftex.def Info: dc/de6/a00167.pdf used on input line 24.
+(pdftex.def)             Requested size: 251.0pt x 418.00435pt.
+
+[59 <./dd/da7/a00168.pdf>] [60 <./dc/de6/a00167.pdf>] [61]pdfTeX warning (ext4)
+: destination with the same identifier (name{a00165_aa4feb51c5d024c99d4c57ccf5d
+2ff82d}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 ...00165_aa4feb51c5d024c99d4c57ccf5d2ff82d}}
+                                                  
+<de/d53/a00169_a634c821cf280b64eb56ceac190635b1a_cgraph.pdf, id=1994, 512.91624
+pt x 144.54pt>
+File: de/d53/a00169_a634c821cf280b64eb56ceac190635b1a_cgraph.pdf Graphic file (
+type pdf)
+
+<use de/d53/a00169_a634c821cf280b64eb56ceac190635b1a_cgraph.pdf>
+Package pdftex.def Info: de/d53/a00169_a634c821cf280b64eb56ceac190635b1a_cgraph
+.pdf used on input line 163.
+(pdftex.def)             Requested size: 350.0pt x 98.62994pt.
+ [62 <./de/d53/a00169_a634c821cf280b64eb56ceac190635b1a_cgraph.pdf>]) (./dd/de3
+/a00201.tex
+<d8/d72/a00199.pdf, id=2024, 389.455pt x 452.69125pt>
+File: d8/d72/a00199.pdf Graphic file (type pdf)
+ <use d8/d72/a00199.pdf>
+Package pdftex.def Info: d8/d72/a00199.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 406.84503pt.
+
+[63 <./d8/d72/a00199.pdf>] [64]) (./de/db1/a00197.tex
+<d7/ded/a00196.pdf, id=2108, 282.05376pt x 475.7775pt>
+File: d7/ded/a00196.pdf Graphic file (type pdf)
+ <use d7/ded/a00196.pdf>
+Package pdftex.def Info: d7/ded/a00196.pdf used on input line 14.
+(pdftex.def)             Requested size: 281.0pt x 474.03397pt.
+
+[65] <d3/d2a/a00195.pdf, id=2123, 200.75pt x 189.70876pt>
+File: d3/d2a/a00195.pdf Graphic file (type pdf)
+
+<use d3/d2a/a00195.pdf>
+Package pdftex.def Info: d3/d2a/a00195.pdf used on input line 24.
+(pdftex.def)             Requested size: 200.0pt x 189.01355pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66 <./d7/ded/a00196.pdf>] [67 <./d3/d2a/a00195.pdf>]) (./d5/d13/a00205.tex
+<d1/d72/a00204.pdf, id=2198, 403.5075pt x 377.41pt>
+File: d1/d72/a00204.pdf Graphic file (type pdf)
+ <use d1/d72/a00204.pdf>
+Package pdftex.def Info: d1/d72/a00204.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 327.36505pt.
+
+[68] <de/d79/a00203.pdf, id=2214, 236.885pt x 321.2pt>
+File: de/d79/a00203.pdf Graphic file (type pdf)
+ <use de/d79/a00203.pdf>
+Package pdftex.def Info: de/d79/a00203.pdf used on input line 24.
+(pdftex.def)             Requested size: 236.0pt x 320.00824pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69 <./d1/d72/a00204.pdf>] [70 <./de/d79/a00203.pdf>]) (./d3/de5/a00209.tex
+<dc/d31/a00208.pdf, id=2279, 299.1175pt x 475.7775pt>
+File: dc/d31/a00208.pdf Graphic file (type pdf)
+ <use dc/d31/a00208.pdf>
+Package pdftex.def Info: dc/d31/a00208.pdf used on input line 14.
+(pdftex.def)             Requested size: 298.0pt x 474.03397pt.
+
+[71] <de/dd2/a00207.pdf, id=2294, 480.79625pt x 489.83pt>
+File: de/dd2/a00207.pdf Graphic file (type pdf)
+
+<use de/dd2/a00207.pdf>
+Package pdftex.def Info: de/dd2/a00207.pdf used on input line 24.
+(pdftex.def)             Requested size: 350.0pt x 356.58633pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72 <./dc/d31/a00208.pdf>] [73 <./de/dd2/a00207.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+\T1/pcr/bc/n/8 typedef void(Main[]Game[]Loop[]::$\OMS/cmsy/m/n/8 ^^C$ \T1/pcr/b
+c/n/8 Main[]Game[]Loop[]::message[]Proccessor) ([][]Mail[]Receiver[]::mail[]Mes
+sage[][] $\OMS/cmsy/m/n/8 ^^C$\T1/pcr/bc/n/8 ,
+ []
+
+[74]
+<d3/de5/a00209_a0632599cb00fa2c86ba1c71904c1f59f_cgraph.pdf, id=2415, 1180.41pt
+ x 376.40625pt>
+File: d3/de5/a00209_a0632599cb00fa2c86ba1c71904c1f59f_cgraph.pdf Graphic file (
+type pdf)
+
+<use d3/de5/a00209_a0632599cb00fa2c86ba1c71904c1f59f_cgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_a0632599cb00fa2c86ba1c71904c1f59f_cgraph
+.pdf used on input line 146.
+(pdftex.def)             Requested size: 350.0pt x 111.60173pt.
+
+<d3/de5/a00209_ac4cd47d8b350ae45ea09aaecad11a684_icgraph.pdf, id=2419, 636.3775
+pt x 158.5925pt>
+File: d3/de5/a00209_ac4cd47d8b350ae45ea09aaecad11a684_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d3/de5/a00209_ac4cd47d8b350ae45ea09aaecad11a684_icgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_ac4cd47d8b350ae45ea09aaecad11a684_icgrap
+h.pdf used on input line 167.
+(pdftex.def)             Requested size: 350.0pt x 87.22371pt.
+
+<d3/de5/a00209_ae4df98e12ba90efd73b144455d9fd52d_icgraph.pdf, id=2423, 548.0475
+pt x 103.38625pt>
+File: d3/de5/a00209_ae4df98e12ba90efd73b144455d9fd52d_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d3/de5/a00209_ae4df98e12ba90efd73b144455d9fd52d_icgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_ae4df98e12ba90efd73b144455d9fd52d_icgrap
+h.pdf used on input line 185.
+(pdftex.def)             Requested size: 350.0pt x 66.02657pt.
+ [75 <./d3/de5/a00209_a0632599cb00fa2c86ba1c71904c1f59f_cgraph.pdf> <./d3/de5/a
+00209_ac4cd47d8b350ae45ea09aaecad11a684_icgraph.pdf>]
+<d3/de5/a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5_cgraph.pdf, id=2468, 995.72pt 
+x 213.79875pt>
+File: d3/de5/a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5_cgraph.pdf Graphic file (
+type pdf)
+
+<use d3/de5/a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5_cgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5_cgraph
+.pdf used on input line 203.
+(pdftex.def)             Requested size: 350.0pt x 75.15038pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00197_a127a7
+0ec582190f90979cb72b8cba72c}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.206 ...00197_a127a70ec582190f90979cb72b8cba72c}}
+                                                  
+<d3/de5/a00209_ac7722494194e946c7d045471858c3aee_cgraph.pdf, id=2476, 737.75626
+pt x 117.43875pt>
+File: d3/de5/a00209_ac7722494194e946c7d045471858c3aee_cgraph.pdf Graphic file (
+type pdf)
+
+<use d3/de5/a00209_ac7722494194e946c7d045471858c3aee_cgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_ac7722494194e946c7d045471858c3aee_cgraph
+.pdf used on input line 231.
+(pdftex.def)             Requested size: 350.0pt x 55.71408pt.
+
+<d3/de5/a00209_ac7722494194e946c7d045471858c3aee_icgraph.pdf, id=2477, 553.0662
+5pt x 117.43875pt>
+File: d3/de5/a00209_ac7722494194e946c7d045471858c3aee_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d3/de5/a00209_ac7722494194e946c7d045471858c3aee_icgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_ac7722494194e946c7d045471858c3aee_icgrap
+h.pdf used on input line 239.
+(pdftex.def)             Requested size: 350.0pt x 74.3183pt.
+ [76 <./d3/de5/a00209_ae4df98e12ba90efd73b144455d9fd52d_icgraph.pdf> <./d3/de5/
+a00209_ab9de0ceedab969b5f7fd9e1131bc4cd5_cgraph.pdf>]
+<d3/de5/a00209_a26ac1e61f11a51a84b6f2e770808d162_icgraph.pdf, id=2517, 562.1pt 
+x 117.43875pt>
+File: d3/de5/a00209_a26ac1e61f11a51a84b6f2e770808d162_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d3/de5/a00209_a26ac1e61f11a51a84b6f2e770808d162_icgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_a26ac1e61f11a51a84b6f2e770808d162_icgrap
+h.pdf used on input line 257.
+(pdftex.def)             Requested size: 350.0pt x 73.12485pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00197_a0efad
+a2a49e9a841430a8b6f71b6803d}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.270 ...00197_a0efada2a49e9a841430a8b6f71b6803d}}
+                                                   [77 <./d3/de5/a00209_ac77224
+94194e946c7d045471858c3aee_cgraph.pdf> <./d3/de5/a00209_ac7722494194e946c7d0454
+71858c3aee_icgraph.pdf> <./d3/de5/a00209_a26ac1e61f11a51a84b6f2e770808d162_icgr
+aph.pdf>]
+<d3/de5/a00209_a2329f4e9c9a4ad9ecbed39d5c297245f_icgraph.pdf, id=2574, 501.875p
+t x 103.38625pt>
+File: d3/de5/a00209_a2329f4e9c9a4ad9ecbed39d5c297245f_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d3/de5/a00209_a2329f4e9c9a4ad9ecbed39d5c297245f_icgraph.pdf>
+Package pdftex.def Info: d3/de5/a00209_a2329f4e9c9a4ad9ecbed39d5c297245f_icgrap
+h.pdf used on input line 295.
+(pdftex.def)             Requested size: 350.0pt x 72.10326pt.
+ [78 <./d3/de5/a00209_a2329f4e9c9a4ad9ecbed39d5c297245f_icgraph.pdf>]pdfTeX war
+ning (ext4): destination with the same identifier (name{a00197_a33c370cb3c6292c
+d800008a67002a67f}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.339 ...00197_a33c370cb3c6292cd800008a67002a67f}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00197_ace6950e3788bb037f23ce8668ef83829})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.369 ...00197_ace6950e3788bb037f23ce8668ef83829}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{a00197_a116d4905d302bdb69c00b54b621dd827})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.379 ...00197_a116d4905d302bdb69c00b54b621dd827}}
+                                                  ) (./dd/d4c/a00177.tex
+[79] <d5/de9/a00176.pdf, id=2638, 222.8325pt x 293.095pt>
+File: d5/de9/a00176.pdf Graphic file (type pdf)
+
+<use d5/de9/a00176.pdf>
+Package pdftex.def Info: d5/de9/a00176.pdf used on input line 14.
+(pdftex.def)             Requested size: 222.0pt x 292.00302pt.
+ <de/d45/a00175.pdf, id=2639, 365.365pt x 566.115pt>
+File: de/d45/a00175.pdf Graphic file (type pdf)
+
+<use de/d45/a00175.pdf>
+Package pdftex.def Info: de/d45/a00175.pdf used on input line 24.
+(pdftex.def)             Requested size: 350.0pt x 542.33263pt.
+ [80 <./d5/de9/a00176.pdf>] [81 <./de/d45/a00175.pdf>]
+<dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_cgraph.pdf, id=2696, 510.90875
+pt x 103.38625pt>
+File: dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_cgraph.pdf Graphic file (
+type pdf)
+
+<use dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_cgraph.pdf>
+Package pdftex.def Info: dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_cgraph
+.pdf used on input line 74.
+(pdftex.def)             Requested size: 350.0pt x 70.82387pt.
+
+<dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_icgraph.pdf, id=2697, 347.2975
+pt x 103.38625pt>
+File: dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_icgraph.pdf Graphic file 
+(type pdf)
+
+<use dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_icgraph.pdf>
+Package pdftex.def Info: dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_icgrap
+h.pdf used on input line 82.
+(pdftex.def)             Requested size: 346.0pt x 103.00421pt.
+ [82 <./dd/d4c/a00177_a8b244be8b7b7db1b08de2a2acb9409db_cgraph.pdf> <./dd/d4c/a
+00177_a8b244be8b7b7db1b08de2a2acb9409db_icgraph.pdf>]
+<dd/d4c/a00177_abfedef9edae209df536e8c1c7cf0e7ae_icgraph.pdf, id=2744, 593.2162
+5pt x 103.38625pt>
+File: dd/d4c/a00177_abfedef9edae209df536e8c1c7cf0e7ae_icgraph.pdf Graphic file 
+(type pdf)
+
+<use dd/d4c/a00177_abfedef9edae209df536e8c1c7cf0e7ae_icgraph.pdf>
+Package pdftex.def Info: dd/d4c/a00177_abfedef9edae209df536e8c1c7cf0e7ae_icgrap
+h.pdf used on input line 113.
+(pdftex.def)             Requested size: 350.0pt x 61.0005pt.
+)
+(./df/d24/a00217.tex <d3/dd5/a00215.pdf, id=2750, 227.85126pt x 175.65625pt>
+File: d3/dd5/a00215.pdf Graphic file (type pdf)
+
+<use d3/dd5/a00215.pdf>
+Package pdftex.def Info: d3/dd5/a00215.pdf used on input line 14.
+(pdftex.def)             Requested size: 227.0pt x 175.00449pt.
+ [83 <./dd/d4c/a00177_abfedef9edae209df536e8c1c7cf0e7ae_icgraph.pdf>]
+<df/d24/a00217_a1137dec968988621ea18091fdf379987_icgraph.pdf, id=2788, 481.8pt 
+x 103.38625pt>
+File: df/d24/a00217_a1137dec968988621ea18091fdf379987_icgraph.pdf Graphic file 
+(type pdf)
+
+<use df/d24/a00217_a1137dec968988621ea18091fdf379987_icgraph.pdf>
+Package pdftex.def Info: df/d24/a00217_a1137dec968988621ea18091fdf379987_icgrap
+h.pdf used on input line 54.
+(pdftex.def)             Requested size: 350.0pt x 75.10533pt.
+ [84 <./d3/dd5/a00215.pdf> <./df/d24/a00217_a1137dec968988621ea18091fdf379987_i
+cgraph.pdf>]
+<df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_cgraph.pdf, id=2836, 705.63625
+pt x 376.40625pt>
+File: df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_cgraph.pdf Graphic file (
+type pdf)
+
+<use df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_cgraph.pdf>
+Package pdftex.def Info: df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_cgraph
+.pdf used on input line 75.
+(pdftex.def)             Requested size: 350.0pt x 186.69786pt.
+
+<df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_icgraph.pdf, id=2837, 747.7937
+5pt x 103.38625pt>
+File: df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_icgraph.pdf Graphic file 
+(type pdf)
+
+<use df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_icgraph.pdf>
+Package pdftex.def Info: df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_icgrap
+h.pdf used on input line 83.
+(pdftex.def)             Requested size: 350.0pt x 48.3896pt.
+
+<df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_cgraph.pdf, id=2841, 920.43875
+pt x 376.40625pt>
+File: df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_cgraph.pdf Graphic file (
+type pdf)
+
+<use df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_cgraph.pdf>
+Package pdftex.def Info: df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_cgraph
+.pdf used on input line 101.
+(pdftex.def)             Requested size: 350.0pt x 143.13348pt.
+ [85 <./df/d24/a00217_a8961b80aa1df5f628bd4e28e66a51d0b_cgraph.pdf> <./df/d24/a
+00217_a8961b80aa1df5f628bd4e28e66a51d0b_icgraph.pdf>]
+<df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_icgraph.pdf, id=2877, 518.9387
+5pt x 103.38625pt>
+File: df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_icgraph.pdf Graphic file 
+(type pdf)
+
+<use df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_icgraph.pdf>
+Package pdftex.def Info: df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_icgrap
+h.pdf used on input line 109.
+(pdftex.def)             Requested size: 350.0pt x 69.73221pt.
+)
+(./d9/d47/a00129.tex <df/dcd/a00127.pdf, id=2878, 393.47pt x 580.1675pt>
+File: df/dcd/a00127.pdf Graphic file (type pdf)
+
+<use df/dcd/a00127.pdf>
+Package pdftex.def Info: df/dcd/a00127.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 516.06415pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86 <./df/d24/a00217_ae6dfbed9cc8569db78442c0bfe57e252_cgraph.pdf> <./df/d24/a
+00217_ae6dfbed9cc8569db78442c0bfe57e252_icgraph.pdf>] [87 <./df/dcd/a00127.pdf>
+]
+<d9/d47/a00129_a872f905bf802df170dc7d1e0e9e75105_icgraph.pdf, id=2951, 509.905p
+t x 117.43875pt>
+File: d9/d47/a00129_a872f905bf802df170dc7d1e0e9e75105_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d9/d47/a00129_a872f905bf802df170dc7d1e0e9e75105_icgraph.pdf>
+Package pdftex.def Info: d9/d47/a00129_a872f905bf802df170dc7d1e0e9e75105_icgrap
+h.pdf used on input line 66.
+(pdftex.def)             Requested size: 350.0pt x 80.61348pt.
+
+<d9/d47/a00129_ac39d9787cbea1c6d81a7cdbc736c9061_cgraph.pdf, id=2958, 529.98pt 
+x 117.43875pt>
+File: d9/d47/a00129_ac39d9787cbea1c6d81a7cdbc736c9061_cgraph.pdf Graphic file (
+type pdf)
+
+<use d9/d47/a00129_ac39d9787cbea1c6d81a7cdbc736c9061_cgraph.pdf>
+Package pdftex.def Info: d9/d47/a00129_ac39d9787cbea1c6d81a7cdbc736c9061_cgraph
+.pdf used on input line 97.
+(pdftex.def)             Requested size: 350.0pt x 77.55818pt.
+ [88 <./d9/d47/a00129_a872f905bf802df170dc7d1e0e9e75105_icgraph.pdf>]) (./d8/df
+a/a00121.tex
+<d4/d98/a00120.pdf, id=3000, 215.80624pt x 264.99pt>
+File: d4/d98/a00120.pdf Graphic file (type pdf)
+ <use d4/d98/a00120.pdf>
+Package pdftex.def Info: d4/d98/a00120.pdf used on input line 14.
+(pdftex.def)             Requested size: 215.0pt x 264.00679pt.
+
+[89 <./d9/d47/a00129_ac39d9787cbea1c6d81a7cdbc736c9061_cgraph.pdf>]
+<df/d6a/a00119.pdf, id=3028, 215.80624pt x 264.99pt>
+File: df/d6a/a00119.pdf Graphic file (type pdf)
+ <use df/d6a/a00119.pdf>
+Package pdftex.def Info: df/d6a/a00119.pdf used on input line 24.
+(pdftex.def)             Requested size: 215.0pt x 264.00679pt.
+
+[90 <./d4/d98/a00120.pdf> <./df/d6a/a00119.pdf>] [91]) (./d0/de8/a00133.tex
+<d5/deb/a00132.pdf, id=3113, 274.02374pt x 377.41pt>
+File: d5/deb/a00132.pdf Graphic file (type pdf)
+ <use d5/deb/a00132.pdf>
+Package pdftex.def Info: d5/deb/a00132.pdf used on input line 14.
+(pdftex.def)             Requested size: 273.0pt x 376.02695pt.
+
+[92] <d7/d06/a00131.pdf, id=3128, 349.305pt x 650.43pt>
+File: d7/d06/a00131.pdf Graphic file (type pdf)
+
+<use d7/d06/a00131.pdf>
+Package pdftex.def Info: d7/d06/a00131.pdf used on input line 24.
+(pdftex.def)             Requested size: 295.3916pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [93 <./d5/deb/a00132.pdf>] [94 <./d7/d06/a00131.pdf>] [95]
+<d0/de8/a00133_ab77d06e9677b12631ece8695a319e062_icgraph.pdf, id=3220, 467.7475
+pt x 117.43875pt>
+File: d0/de8/a00133_ab77d06e9677b12631ece8695a319e062_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d0/de8/a00133_ab77d06e9677b12631ece8695a319e062_icgraph.pdf>
+Package pdftex.def Info: d0/de8/a00133_ab77d06e9677b12631ece8695a319e062_icgrap
+h.pdf used on input line 126.
+(pdftex.def)             Requested size: 350.0pt x 87.87991pt.
+ [96 <./d0/de8/a00133_ab77d06e9677b12631ece8695a319e062_icgraph.pdf>]) (./dd/d5
+2/a00221.tex
+<d5/d0b/a00220.pdf, id=3262, 241.90375pt x 293.095pt>
+File: d5/d0b/a00220.pdf Graphic file (type pdf)
+ <use d5/d0b/a00220.pdf>
+Package pdftex.def Info: d5/d0b/a00220.pdf used on input line 10.
+(pdftex.def)             Requested size: 241.0pt x 292.01198pt.
+
+<dd/df3/a00219.pdf, id=3263, 312.16624pt x 411.5375pt>
+File: dd/df3/a00219.pdf Graphic file (type pdf)
+ <use dd/df3/a00219.pdf>
+Package pdftex.def Info: dd/df3/a00219.pdf used on input line 20.
+(pdftex.def)             Requested size: 311.0pt x 410.01056pt.
+
+[97 <./d5/d0b/a00220.pdf>] [98 <./dd/df3/a00219.pdf>]) (./dd/df4/a00193.tex
+<dd/da2/a00192.pdf, id=3343, 290.08376pt x 349.305pt>
+File: dd/da2/a00192.pdf Graphic file (type pdf)
+ <use dd/da2/a00192.pdf>
+Package pdftex.def Info: dd/da2/a00192.pdf used on input line 14.
+(pdftex.def)             Requested size: 289.0pt x 348.0196pt.
+
+[99] <d9/dd0/a00191.pdf, id=3362, 379.4175pt x 711.65875pt>
+File: d9/dd0/a00191.pdf Graphic file (type pdf)
+
+<use d9/dd0/a00191.pdf>
+Package pdftex.def Info: d9/dd0/a00191.pdf used on input line 24.
+(pdftex.def)             Requested size: 293.24078pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100 <./dd/da2/a00192.pdf>] [101 <./d9/dd0/a00191.pdf>]
+<dd/df4/a00193_ab4b5a368d07b2670c72be1a04404f76d_icgraph.pdf, id=3427, 457.71pt
+ x 117.43875pt>
+File: dd/df4/a00193_ab4b5a368d07b2670c72be1a04404f76d_icgraph.pdf Graphic file 
+(type pdf)
+
+<use dd/df4/a00193_ab4b5a368d07b2670c72be1a04404f76d_icgraph.pdf>
+Package pdftex.def Info: dd/df4/a00193_ab4b5a368d07b2670c72be1a04404f76d_icgrap
+h.pdf used on input line 112.
+(pdftex.def)             Requested size: 350.0pt x 89.80629pt.
+ [102])
+(./da/deb/a00189.tex [103 <./dd/df4/a00193_ab4b5a368d07b2670c72be1a04404f76d_ic
+graph.pdf>] <d6/daa/a00187.pdf, id=3488, 278.03876pt x 383.4325pt>
+File: d6/daa/a00187.pdf Graphic file (type pdf)
+
+<use d6/daa/a00187.pdf>
+Package pdftex.def Info: d6/daa/a00187.pdf used on input line 14.
+(pdftex.def)             Requested size: 277.0pt x 382.00398pt.
+ [104 <./d6/daa/a00187.pdf>]) (./d8/d64/a00181.tex
+<d0/d81/a00180.pdf, id=3532, 325.215pt x 377.41pt>
+File: d0/d81/a00180.pdf Graphic file (type pdf)
+ <use d0/d81/a00180.pdf>
+Package pdftex.def Info: d0/d81/a00180.pdf used on input line 14.
+(pdftex.def)             Requested size: 324.0pt x 376.02695pt.
+
+[105] <db/dd9/a00179.pdf, id=3555, 330.23375pt x 523.9575pt>
+File: db/dd9/a00179.pdf Graphic file (type pdf)
+
+<use db/dd9/a00179.pdf>
+Package pdftex.def Info: db/dd9/a00179.pdf used on input line 24.
+(pdftex.def)             Requested size: 329.0pt x 522.02144pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106 <./d0/d81/a00180.pdf>] [107 <./db/dd9/a00179.pdf>]
+<d8/d64/a00181_ad64d541093e285a983911f22ab9a0bff_icgraph.pdf, id=3629, 471.7625
+pt x 117.43875pt>
+File: d8/d64/a00181_ad64d541093e285a983911f22ab9a0bff_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d8/d64/a00181_ad64d541093e285a983911f22ab9a0bff_icgraph.pdf>
+Package pdftex.def Info: d8/d64/a00181_ad64d541093e285a983911f22ab9a0bff_icgrap
+h.pdf used on input line 122.
+(pdftex.def)             Requested size: 350.0pt x 87.12909pt.
+ [108]
+<d8/d64/a00181_af558fe509b60eb019281316513f6d188_icgraph.pdf, id=3659, 500.8712
+5pt x 103.38625pt>
+File: d8/d64/a00181_af558fe509b60eb019281316513f6d188_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d8/d64/a00181_af558fe509b60eb019281316513f6d188_icgraph.pdf>
+Package pdftex.def Info: d8/d64/a00181_af558fe509b60eb019281316513f6d188_icgrap
+h.pdf used on input line 146.
+(pdftex.def)             Requested size: 350.0pt x 72.24683pt.
+ [109 <./d8/d64/a00181_ad64d541093e285a983911f22ab9a0bff_icgraph.pdf> <./d8/d64
+/a00181_af558fe509b60eb019281316513f6d188_icgraph.pdf>]pdfTeX warning (ext4): d
+estination with the same identifier (name{a00205_aa85db0004c26606c5ac294e5de000
+b96}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.173 ...00205_aa85db0004c26606c5ac294e5de000b96}}
+                                                  
+<d8/d64/a00181_a1d45a6a7b2370c82ed2849959bb18c2a_icgraph.pdf, id=3709, 479.7925
+pt x 103.38625pt>
+File: d8/d64/a00181_a1d45a6a7b2370c82ed2849959bb18c2a_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d8/d64/a00181_a1d45a6a7b2370c82ed2849959bb18c2a_icgraph.pdf>
+Package pdftex.def Info: d8/d64/a00181_a1d45a6a7b2370c82ed2849959bb18c2a_icgrap
+h.pdf used on input line 198.
+(pdftex.def)             Requested size: 350.0pt x 75.41927pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00205_aa57ce
+2f74f8ad76abb38974f85b97ac5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.224 ...00205_aa57ce2f74f8ad76abb38974f85b97ac5}}
+                                                   [110 <./d8/d64/a00181_a1d45a
+6a7b2370c82ed2849959bb18c2a_icgraph.pdf>]) (./de/df3/a00185.tex
+<d2/d94/a00184.pdf, id=3746, 325.215pt x 349.305pt>
+File: d2/d94/a00184.pdf Graphic file (type pdf)
+ <use d2/d94/a00184.pdf>
+Package pdftex.def Info: d2/d94/a00184.pdf used on input line 14.
+(pdftex.def)             Requested size: 324.0pt x 348.02495pt.
+
+[111] <dc/d52/a00183.pdf, id=3760, 325.215pt x 509.905pt>
+File: dc/d52/a00183.pdf Graphic file (type pdf)
+
+<use dc/d52/a00183.pdf>
+Package pdftex.def Info: dc/d52/a00183.pdf used on input line 24.
+(pdftex.def)             Requested size: 324.0pt x 508.03642pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112 <./d2/d94/a00184.pdf>] [113 <./dc/d52/a00183.pdf>]
+<de/df3/a00185_ab80ef665f93d81c71a83aa42f8d888df_icgraph.pdf, id=3826, 427.5975
+pt x 103.38625pt>
+File: de/df3/a00185_ab80ef665f93d81c71a83aa42f8d888df_icgraph.pdf Graphic file 
+(type pdf)
+
+<use de/df3/a00185_ab80ef665f93d81c71a83aa42f8d888df_icgraph.pdf>
+Package pdftex.def Info: de/df3/a00185_ab80ef665f93d81c71a83aa42f8d888df_icgrap
+h.pdf used on input line 107.
+(pdftex.def)             Requested size: 350.0pt x 84.62424pt.
+ [114]
+<de/df3/a00185_a8b4f9a11d13f0b4990ae72f87da010df_cgraph.pdf, id=3856, 457.71pt 
+x 117.43875pt>
+File: de/df3/a00185_a8b4f9a11d13f0b4990ae72f87da010df_cgraph.pdf Graphic file (
+type pdf)
+
+<use de/df3/a00185_a8b4f9a11d13f0b4990ae72f87da010df_cgraph.pdf>
+Package pdftex.def Info: de/df3/a00185_a8b4f9a11d13f0b4990ae72f87da010df_cgraph
+.pdf used on input line 139.
+(pdftex.def)             Requested size: 350.0pt x 89.80629pt.
+pdfTeX warning (ext4): destination with the same identifier (name{a00205_aa85db
+0004c26606c5ac294e5de000b96}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 ...00205_aa85db0004c26606c5ac294e5de000b96}}
+                                                   [115 <./de/df3/a00185_ab80ef
+665f93d81c71a83aa42f8d888df_icgraph.pdf> <./de/df3/a00185_a8b4f9a11d13f0b4990ae
+72f87da010df_cgraph.pdf>]pdfTeX warning (ext4): destination with the same ident
+ifier (name{a00205_aa57ce2f74f8ad76abb38974f85b97ac5}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.188 ...00205_aa57ce2f74f8ad76abb38974f85b97ac5}}
+                                                   [116]) (./dc/dfe/a00125.tex
+<da/d72/a00124.pdf, id=3927, 239.89626pt x 419.5675pt>
+File: da/d72/a00124.pdf Graphic file (type pdf)
+ <use da/d72/a00124.pdf>
+Package pdftex.def Info: da/d72/a00124.pdf used on input line 14.
+(pdftex.def)             Requested size: 239.0pt x 418.00435pt.
+
+Underfull \vbox (badness 1648) has occurred while \output is active []
+
+ [117]
+<de/d36/a00123.pdf, id=3940, 239.89626pt x 419.5675pt>
+File: de/d36/a00123.pdf Graphic file (type pdf)
+ <use de/d36/a00123.pdf>
+Package pdftex.def Info: de/d36/a00123.pdf used on input line 24.
+(pdftex.def)             Requested size: 239.0pt x 418.00435pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118 <./da/d72/a00124.pdf>] [119 <./de/d36/a00123.pdf>]
+<dc/dfe/a00125_a0e40869759ba98f1964257d9c507b733_icgraph.pdf, id=4018, 529.98pt
+ x 117.43875pt>
+File: dc/dfe/a00125_a0e40869759ba98f1964257d9c507b733_icgraph.pdf Graphic file 
+(type pdf)
+
+<use dc/dfe/a00125_a0e40869759ba98f1964257d9c507b733_icgraph.pdf>
+Package pdftex.def Info: dc/dfe/a00125_a0e40869759ba98f1964257d9c507b733_icgrap
+h.pdf used on input line 127.
+(pdftex.def)             Requested size: 350.0pt x 77.55818pt.
+ [120]
+<dc/dfe/a00125_a2bbd5504e2e67fa95a701f77cd438f4d_cgraph.pdf, id=4046, 509.905pt
+ x 117.43875pt>
+File: dc/dfe/a00125_a2bbd5504e2e67fa95a701f77cd438f4d_cgraph.pdf Graphic file (
+type pdf)
+
+<use dc/dfe/a00125_a2bbd5504e2e67fa95a701f77cd438f4d_cgraph.pdf>
+Package pdftex.def Info: dc/dfe/a00125_a2bbd5504e2e67fa95a701f77cd438f4d_cgraph
+.pdf used on input line 145.
+(pdftex.def)             Requested size: 350.0pt x 80.61348pt.
+ [121 <./dc/dfe/a00125_a0e40869759ba98f1964257d9c507b733_icgraph.pdf> <./dc/dfe
+/a00125_a2bbd5504e2e67fa95a701f77cd438f4d_cgraph.pdf>]
+<dc/dfe/a00125_a35045483589d14a436ee83346365ce70_cgraph.pdf, id=4091, 467.7475p
+t x 117.43875pt>
+File: dc/dfe/a00125_a35045483589d14a436ee83346365ce70_cgraph.pdf Graphic file (
+type pdf)
+
+<use dc/dfe/a00125_a35045483589d14a436ee83346365ce70_cgraph.pdf>
+Package pdftex.def Info: dc/dfe/a00125_a35045483589d14a436ee83346365ce70_cgraph
+.pdf used on input line 189.
+(pdftex.def)             Requested size: 350.0pt x 87.87991pt.
+ [122 <./dc/dfe/a00125_a35045483589d14a436ee83346365ce70_cgraph.pdf>]) [123] [1
+24
+
+]
+Chapter 3.
+(./d7/d46/a00002.tex <d1/d7c/a00003.pdf, id=4154, 1064.97874pt x 340.27126pt>
+File: d1/d7c/a00003.pdf Graphic file (type pdf)
+
+<use d1/d7c/a00003.pdf>
+Package pdftex.def Info: d1/d7c/a00003.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 111.82776pt.
+ <d0/d0b/a00004.pdf, id=4155, 691.58376pt x 281.05pt>
+File: d0/d0b/a00004.pdf Graphic file (type pdf)
+
+<use d0/d0b/a00004.pdf>
+Package pdftex.def Info: d0/d0b/a00004.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 142.23575pt.
+ [125 <./d1/d7c/a00003.pdf> <./d0/d0b/a00004.pdf>])
+(./d7/d46/a00002_source.tex [126]) (./dd/dad/a00005.tex
+<de/d21/a00006.pdf, id=4282, 829.0975pt x 340.27126pt>
+File: de/d21/a00006.pdf Graphic file (type pdf)
+ <use de/d21/a00006.pdf>
+Package pdftex.def Info: de/d21/a00006.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 143.63985pt.
+
+[127 <./de/d21/a00006.pdf>]) (./dd/dad/a00005_source.tex [128]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [129])
+(./d4/dee/a00008.tex <da/da0/a00009.pdf, id=4408, 979.66pt x 281.05pt>
+File: da/da0/a00009.pdf Graphic file (type pdf)
+
+<use da/da0/a00009.pdf>
+Package pdftex.def Info: da/da0/a00009.pdf used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 100.40599pt.
+ <d7/dec/a00010.pdf, id=4409, 1076.02pt x 340.27126pt>
+File: d7/dec/a00010.pdf Graphic file (type pdf)
+
+<use d7/dec/a00010.pdf>
+Package pdftex.def Info: d7/dec/a00010.pdf used on input line 23.
+(pdftex.def)             Requested size: 350.0pt x 110.6803pt.
+
+Underfull \vbox (badness 3354) has occurred while \output is active []
+
+ [130 <./da/da0/a00009.pdf>]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.1 on input line 73.
+
+[131 <./d7/dec/a00010.pdf>]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.2 on input line 93.
+
+) (./d4/dee/a00008_source.tex [132]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [133])
+(./da/d45/a00011.tex <df/d86/a00012.pdf, id=4666, 202.7575pt x 281.05pt>
+File: df/d86/a00012.pdf Graphic file (type pdf)
+
+<use df/d86/a00012.pdf>
+Package pdftex.def Info: df/d86/a00012.pdf used on input line 9.
+(pdftex.def)             Requested size: 202.0pt x 280.0072pt.
+) (./da/d45/a00011_source.tex) (./d2/de7/a00014.tex
+<dd/d1b/a00015.pdf, id=4669, 202.7575pt x 221.82875pt>
+File: dd/d1b/a00015.pdf Graphic file (type pdf)
+ <use dd/d1b/a00015.pdf>
+Package pdftex.def Info: dd/d1b/a00015.pdf used on input line 9.
+(pdftex.def)             Requested size: 202.0pt x 221.00566pt.
+
+[134 <./df/d86/a00012.pdf>] <d7/d7a/a00016.pdf, id=4691, 321.2pt x 162.6075pt>
+File: d7/d7a/a00016.pdf Graphic file (type pdf)
+
+<use d7/d7a/a00016.pdf>
+Package pdftex.def Info: d7/d7a/a00016.pdf used on input line 17.
+(pdftex.def)             Requested size: 320.0pt x 162.00417pt.
+) (./d2/de7/a00014_source.tex [135 <./dd/d1b/a00015.pdf> <./d7/d7a/a00016.pdf>]
+) (./d4/d51/a00017.tex
+<d1/d2b/a00018.pdf, id=4733, 214.8025pt x 162.6075pt>
+File: d1/d2b/a00018.pdf Graphic file (type pdf)
+ <use d1/d2b/a00018.pdf>
+Package pdftex.def Info: d1/d2b/a00018.pdf used on input line 9.
+(pdftex.def)             Requested size: 214.0pt x 162.00168pt.
+
+<dd/da2/a00019.pdf, id=4734, 321.2pt x 221.82875pt>
+File: dd/da2/a00019.pdf Graphic file (type pdf)
+ <use dd/da2/a00019.pdf>
+Package pdftex.def Info: dd/da2/a00019.pdf used on input line 17.
+(pdftex.def)             Requested size: 320.0pt x 221.00566pt.
+
+[136 <./d1/d2b/a00018.pdf> <./dd/da2/a00019.pdf>]) (./d4/d51/a00017_source.tex)
+(./db/db2/a00020.tex <de/d11/a00021.pdf, id=4772, 203.76125pt x 162.6075pt>
+File: de/d11/a00021.pdf Graphic file (type pdf)
+
+<use de/d11/a00021.pdf>
+Package pdftex.def Info: de/d11/a00021.pdf used on input line 9.
+(pdftex.def)             Requested size: 203.0pt x 162.00665pt.
+
+<d7/de0/a00022.pdf, id=4773, 733.74126pt x 221.82875pt>
+File: d7/de0/a00022.pdf Graphic file (type pdf)
+
+<use d7/de0/a00022.pdf>
+Package pdftex.def Info: d7/de0/a00022.pdf used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 105.81653pt.
+ [137 <./de/d11/a00021.pdf> <./d7/de0/a00022.pdf>])
+(./db/db2/a00020_source.tex) (./d3/d52/a00023.tex
+<dc/de2/a00024.pdf, id=4832, 187.70125pt x 162.6075pt>
+File: dc/de2/a00024.pdf Graphic file (type pdf)
+ <use dc/de2/a00024.pdf>
+Package pdftex.def Info: dc/de2/a00024.pdf used on input line 9.
+(pdftex.def)             Requested size: 187.0pt x 162.00912pt.
+
+<d3/dfe/a00025.pdf, id=4833, 259.97125pt x 162.6075pt>
+File: d3/dfe/a00025.pdf Graphic file (type pdf)
+ <use d3/dfe/a00025.pdf>
+Package pdftex.def Info: d3/dfe/a00025.pdf used on input line 17.
+(pdftex.def)             Requested size: 259.0pt x 161.9992pt.
+
+[138 <./dc/de2/a00024.pdf>] [139 <./d3/dfe/a00025.pdf>])
+(./d3/d52/a00023_source.tex) (./d6/d5b/a00026.tex
+<d0/d33/a00027.pdf, id=4909, 789.95125pt x 340.27126pt>
+File: d0/d33/a00027.pdf Graphic file (type pdf)
+
+<use d0/d33/a00027.pdf>
+Package pdftex.def Info: d0/d33/a00027.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 150.76343pt.
+) (./d6/d5b/a00026_source.tex [140 <./d0/d33/a00027.pdf>]) (./d5/d16/a00029.tex
+ <d5/d79/a00030.pdf, id=4948, 766.865pt x 281.05pt>
+File: d5/d79/a00030.pdf Graphic file (type pdf)
+
+<use d5/d79/a00030.pdf>
+Package pdftex.def Info: d5/d79/a00030.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 128.27248pt.
+
+<df/d61/a00031.pdf, id=4949, 595.22375pt x 221.82875pt>
+File: df/d61/a00031.pdf Graphic file (type pdf)
+
+<use df/d61/a00031.pdf>
+Package pdftex.def Info: df/d61/a00031.pdf used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 130.43777pt.
+) (./d5/d16/a00029_source.tex [141 <./d5/d79/a00030.pdf> <./df/d61/a00031.pdf>]
+) (./dc/d87/a00032.tex
+<d0/dc0/a00033.pdf, id=5004, 766.865pt x 340.27126pt>
+File: d0/dc0/a00033.pdf Graphic file (type pdf)
+ <use d0/dc0/a00033.pdf>
+Package pdftex.def Info: d0/dc0/a00033.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 155.30133pt.
+)
+(./dc/d87/a00032_source.tex) (./d4/d8c/a00035.tex
+<de/d8c/a00036.pdf, id=5016, 766.865pt x 281.05pt>
+File: de/d8c/a00036.pdf Graphic file (type pdf)
+ <use de/d8c/a00036.pdf>
+Package pdftex.def Info: de/d8c/a00036.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 128.27248pt.
+
+[142 <./d0/dc0/a00033.pdf>]
+<d1/dc6/a00037.pdf, id=5040, 728.7225pt x 281.05pt>
+File: d1/dc6/a00037.pdf Graphic file (type pdf)
+ <use d1/dc6/a00037.pdf>
+Package pdftex.def Info: d1/dc6/a00037.pdf used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 134.98393pt.
+)
+(./d4/d8c/a00035_source.tex) (./d8/d41/a00038.tex
+<d3/de7/a00039.pdf, id=5057, 795.97375pt x 399.4925pt>
+File: d3/de7/a00039.pdf Graphic file (type pdf)
+ <use d3/de7/a00039.pdf>
+Package pdftex.def Info: d3/de7/a00039.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 175.66142pt.
+
+[143 <./de/d8c/a00036.pdf> <./d1/dc6/a00037.pdf>]) (./d8/d41/a00038_source.tex)
+(./dd/d32/a00041.tex <d5/db6/a00042.pdf, id=5113, 766.865pt x 340.27126pt>
+File: d5/db6/a00042.pdf Graphic file (type pdf)
+
+<use d5/db6/a00042.pdf>
+Package pdftex.def Info: d5/db6/a00042.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 155.30133pt.
+ [144 <./d3/de7/a00039.pdf>]
+<d6/d42/a00043.pdf, id=5136, 589.20125pt x 221.82875pt>
+File: d6/d42/a00043.pdf Graphic file (type pdf)
+
+<use d6/d42/a00043.pdf>
+Package pdftex.def Info: d6/d42/a00043.pdf used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 131.77141pt.
+) (./dd/d32/a00041_source.tex) (./d5/df9/a00044.tex
+[145 <./d5/db6/a00042.pdf> <./d6/d42/a00043.pdf>]
+<d6/d97/a00045.pdf, id=5189, 766.865pt x 281.05pt>
+File: d6/d97/a00045.pdf Graphic file (type pdf)
+ <use d6/d97/a00045.pdf>
+Package pdftex.def Info: d6/d97/a00045.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 128.27248pt.
+)
+(./d5/df9/a00044_source.tex) (./d6/d2d/a00047.tex
+<d4/dca/a00048.pdf, id=5191, 766.865pt x 221.82875pt>
+File: d4/dca/a00048.pdf Graphic file (type pdf)
+ <use d4/dca/a00048.pdf>
+Package pdftex.def Info: d4/dca/a00048.pdf used on input line 16.
+(pdftex.def)             Requested size: 350.0pt x 101.24362pt.
+
+<d2/dee/a00049.pdf, id=5192, 2321.67375pt x 399.4925pt>
+File: d2/dee/a00049.pdf Graphic file (type pdf)
+
+<use d2/dee/a00049.pdf>
+Package pdftex.def Info: d2/dee/a00049.pdf used on input line 24.
+(pdftex.def)             Requested size: 350.0pt x 60.21997pt.
+ [146 <./d6/d97/a00045.pdf> <./d4/dca/a00048.pdf> <./d2/dee/a00049.pdf>]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.3 on input line 69.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.4 on input line 93.
+
+) (./d6/d2d/a00047_source.tex [147]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [148])
+(./d5/de0/a00050.tex <d2/d79/a00051.pdf, id=5501, 765.86125pt x 340.27126pt>
+File: d2/d79/a00051.pdf Graphic file (type pdf)
+
+<use d2/d79/a00051.pdf>
+Package pdftex.def Info: d2/d79/a00051.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 155.50381pt.
+) (./d5/de0/a00050_source.tex [149 <./d2/d79/a00051.pdf>]) (./dc/dee/a00053.tex
+ <d1/dea/a00054.pdf, id=5528, 765.86125pt x 281.05pt>
+File: d1/dea/a00054.pdf Graphic file (type pdf)
+
+<use d1/dea/a00054.pdf>
+Package pdftex.def Info: d1/dea/a00054.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 128.43973pt.
+ <d4/d6d/a00055.pdf, id=5529, 649.42625pt x 281.05pt>
+File: d4/d6d/a00055.pdf Graphic file (type pdf)
+
+<use d4/d6d/a00055.pdf>
+Package pdftex.def Info: d4/d6d/a00055.pdf used on input line 19.
+(pdftex.def)             Requested size: 350.0pt x 151.46883pt.
+) (./dc/dee/a00053_source.tex [150 <./d1/dea/a00054.pdf> <./d4/d6d/a00055.pdf>]
+) (./d9/d2e/a00056.tex
+<d1/d22/a00057.pdf, id=5578, 238.8925pt x 221.82875pt>
+File: d1/d22/a00057.pdf Graphic file (type pdf)
+ <use d1/d22/a00057.pdf>
+Package pdftex.def Info: d1/d22/a00057.pdf used on input line 9.
+(pdftex.def)             Requested size: 238.0pt x 220.9989pt.
+) (./d9/d2e/a00056_source.tex [151 <./d1/d22/a00057.pdf>]) (./d3/d8b/a00059.tex
+
+<d9/d73/a00060.pdf, id=5621, 224.84pt x 162.6075pt>
+File: d9/d73/a00060.pdf Graphic file (type pdf)
+ <use d9/d73/a00060.pdf>
+Package pdftex.def Info: d9/d73/a00060.pdf used on input line 9.
+(pdftex.def)             Requested size: 224.0pt x 162.00665pt.
+
+<d4/de8/a00061.pdf, id=5622, 2321.67375pt x 458.71375pt>
+File: d4/de8/a00061.pdf Graphic file (type pdf)
+
+<use d4/de8/a00061.pdf>
+Package pdftex.def Info: d4/de8/a00061.pdf used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 69.14706pt.
+) (./d3/d8b/a00059_source.tex [152 <./d9/d73/a00060.pdf> <./d4/de8/a00061.pdf>]
+) (./df/d03/a00062.tex
+<d1/d6f/a00063.pdf, id=5695, 788.9475pt x 399.4925pt>
+File: d1/d6f/a00063.pdf Graphic file (type pdf)
+ <use d1/d6f/a00063.pdf>
+Package pdftex.def Info: d1/d6f/a00063.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 177.22803pt.
+)
+(./df/d03/a00062_source.tex [153 <./d1/d6f/a00063.pdf>]) (./de/de1/a00065.tex
+<d9/db3/a00066.pdf, id=5750, 765.86125pt x 340.27126pt>
+File: d9/db3/a00066.pdf Graphic file (type pdf)
+
+<use d9/db3/a00066.pdf>
+Package pdftex.def Info: d9/db3/a00066.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 155.50381pt.
+
+<dc/ddf/a00067.pdf, id=5751, 508.90125pt x 221.82875pt>
+File: dc/ddf/a00067.pdf Graphic file (type pdf)
+
+<use dc/ddf/a00067.pdf>
+Package pdftex.def Info: dc/ddf/a00067.pdf used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 152.57118pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [154 <./d9/db3/a00066.pdf>]) (./de/de1/a00065_source.tex) (./da/d24/a00068.tex
+
+<d4/d31/a00069.pdf, id=5796, 765.86125pt x 281.05pt>
+File: d4/d31/a00069.pdf Graphic file (type pdf)
+ <use d4/d31/a00069.pdf>
+Package pdftex.def Info: d4/d31/a00069.pdf used on input line 12.
+(pdftex.def)             Requested size: 350.0pt x 128.43973pt.
+
+[155 <./dc/ddf/a00067.pdf>]
+<d2/db1/a00070.pdf, id=5818, 262.9825pt x 162.6075pt>
+File: d2/db1/a00070.pdf Graphic file (type pdf)
+ <use d2/db1/a00070.pdf>
+Package pdftex.def Info: d2/db1/a00070.pdf used on input line 20.
+(pdftex.def)             Requested size: 262.0pt x 162.00665pt.
+
+<da/d24/a00068_a1ab36c07a61bd9f450ed0ac1ba68ed94_icgraph.pdf, id=5826, 481.8pt 
+x 103.38625pt>
+File: da/d24/a00068_a1ab36c07a61bd9f450ed0ac1ba68ed94_icgraph.pdf Graphic file 
+(type pdf)
+
+<use da/d24/a00068_a1ab36c07a61bd9f450ed0ac1ba68ed94_icgraph.pdf>
+Package pdftex.def Info: da/d24/a00068_a1ab36c07a61bd9f450ed0ac1ba68ed94_icgrap
+h.pdf used on input line 46.
+(pdftex.def)             Requested size: 350.0pt x 75.10533pt.
+)
+(./da/d24/a00068_source.tex [156 <./d4/d31/a00069.pdf> <./d2/db1/a00070.pdf> <.
+/da/d24/a00068_a1ab36c07a61bd9f450ed0ac1ba68ed94_icgraph.pdf>])
+(./d0/d89/a00071.tex <d6/d2c/a00072.pdf, id=5880, 766.865pt x 340.27126pt>
+File: d6/d2c/a00072.pdf Graphic file (type pdf)
+
+<use d6/d2c/a00072.pdf>
+Package pdftex.def Info: d6/d2c/a00072.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 155.30133pt.
+) (./d0/d89/a00071_source.tex [157 <./d6/d2c/a00072.pdf>] [158]) (./db/db6/a000
+74.tex
+<d9/da5/a00075.pdf, id=5932, 766.865pt x 281.05pt>
+File: d9/da5/a00075.pdf Graphic file (type pdf)
+ <use d9/da5/a00075.pdf>
+Package pdftex.def Info: d9/da5/a00075.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 128.27248pt.
+
+<db/df8/a00076.pdf, id=5933, 220.825pt x 162.6075pt>
+File: db/df8/a00076.pdf Graphic file (type pdf)
+ <use db/df8/a00076.pdf>
+Package pdftex.def Info: db/df8/a00076.pdf used on input line 18.
+(pdftex.def)             Requested size: 220.0pt x 162.00665pt.
+)
+(./db/db6/a00074_source.tex [159 <./d9/da5/a00075.pdf> <./db/df8/a00076.pdf>])
+(./da/d2e/a00238.tex <d0/d27/a00239.pdf, id=5999, 979.66pt x 399.4925pt>
+File: d0/d27/a00239.pdf Graphic file (type pdf)
+
+<use d0/d27/a00239.pdf>
+Package pdftex.def Info: d0/d27/a00239.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 142.71994pt.
+ [160 <./d0/d27/a00239.pdf>]
+<da/d2e/a00238_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=6026, 593.21625
+pt x 103.38625pt>
+File: da/d2e/a00238_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Graphic file (
+type pdf)
+
+<use da/d2e/a00238_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
+Package pdftex.def Info: da/d2e/a00238_a0ddf1224851353fc92bfbff6f499fa97_cgraph
+.pdf used on input line 36.
+(pdftex.def)             Requested size: 350.0pt x 61.0005pt.
+)
+(./da/d2e/a00238_source.tex) (./d6/db6/a00241.tex
+<d2/dc8/a00242.pdf, id=6031, 1695.33376pt x 517.935pt>
+File: d2/dc8/a00242.pdf Graphic file (type pdf)
+ <use d2/dc8/a00242.pdf>
+Package pdftex.def Info: d2/dc8/a00242.pdf used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 106.92815pt.
+
+[161 <./da/d2e/a00238_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf> <./d2/dc8/a
+00242.pdf>]
+<d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_cgraph.pdf, id=6078, 464.73625
+pt x 185.69376pt>
+File: d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_cgraph.pdf Graphic file (
+type pdf)
+
+<use d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_cgraph.pdf>
+Package pdftex.def Info: d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_cgraph
+.pdf used on input line 47.
+(pdftex.def)             Requested size: 350.0pt x 139.85365pt.
+
+<d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_icgraph.pdf, id=6079, 271.0125
+pt x 103.38625pt>
+File: d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_icgraph.pdf>
+Package pdftex.def Info: d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_icgrap
+h.pdf used on input line 55.
+(pdftex.def)             Requested size: 270.0pt x 103.00421pt.
+
+<d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_cgraph.pdf, id=6082, 417.56pt 
+x 199.74625pt>
+File: d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_cgraph.pdf Graphic file (
+type pdf)
+
+<use d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_cgraph.pdf>
+Package pdftex.def Info: d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_cgraph
+.pdf used on input line 73.
+(pdftex.def)             Requested size: 350.0pt x 167.43823pt.
+ [162 <./d6/db6/a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_cgraph.pdf> <./d6/db6/
+a00241_a3cfb6b17f20d62ad08b9402764f3aa6c_icgraph.pdf>]
+<d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_icgraph.pdf, id=6121, 237.8887
+5pt x 103.38625pt>
+File: d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_icgraph.pdf Graphic file 
+(type pdf)
+
+<use d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_icgraph.pdf>
+Package pdftex.def Info: d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_icgrap
+h.pdf used on input line 81.
+(pdftex.def)             Requested size: 237.0pt x 103.00421pt.
+
+<d6/db6/a00241_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf, id=6124, 548.0475p
+t x 323.2075pt>
+File: d6/db6/a00241_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf Graphic file (
+type pdf)
+
+<use d6/db6/a00241_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>
+Package pdftex.def Info: d6/db6/a00241_a0ddf1224851353fc92bfbff6f499fa97_cgraph
+.pdf used on input line 99.
+(pdftex.def)             Requested size: 350.0pt x 206.41316pt.
+ [163 <./d6/db6/a00241_a29060721f5ddfa26790f0778bde74ff2_cgraph.pdf> <./d6/db6/
+a00241_a29060721f5ddfa26790f0778bde74ff2_icgraph.pdf>]) (./d6/db6/a00241_source
+.tex [164 <./d6/db6/a00241_a0ddf1224851353fc92bfbff6f499fa97_cgraph.pdf>])
+(./da/dec/a00080.tex <d8/d53/a00081.pdf, id=6222, 979.66pt x 399.4925pt>
+File: d8/d53/a00081.pdf Graphic file (type pdf)
+
+<use d8/d53/a00081.pdf>
+Package pdftex.def Info: d8/d53/a00081.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 142.71994pt.
+) (./da/dec/a00080_source.tex) (./d2/d1f/a00083.tex
+<df/d5d/a00084.pdf, id=6236, 979.66pt x 340.27126pt>
+File: df/d5d/a00084.pdf Graphic file (type pdf)
+ <use df/d5d/a00084.pdf>
+Package pdftex.def Info: df/d5d/a00084.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 121.56297pt.
+
+[165 <./d8/d53/a00081.pdf>]
+<df/d13/a00085.pdf, id=6258, 435.6275pt x 162.6075pt>
+File: df/d13/a00085.pdf Graphic file (type pdf)
+ <use df/d13/a00085.pdf>
+Package pdftex.def Info: df/d13/a00085.pdf used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 130.64444pt.
+)
+(./d2/d1f/a00083_source.tex [166 <./df/d5d/a00084.pdf> <./df/d13/a00085.pdf>])
+(./da/d2a/a00086.tex <d1/d1e/a00087.pdf, id=6314, 186.6975pt x 162.6075pt>
+File: d1/d1e/a00087.pdf Graphic file (type pdf)
+
+<use d1/d1e/a00087.pdf>
+Package pdftex.def Info: d1/d1e/a00087.pdf used on input line 9.
+(pdftex.def)             Requested size: 186.0pt x 162.00665pt.
+) (./da/d2a/a00086_source.tex) (./db/dab/a00089.tex
+<d9/dec/a00090.pdf, id=6321, 1220.56pt x 458.71375pt>
+File: d9/dec/a00090.pdf Graphic file (type pdf)
+ <use d9/dec/a00090.pdf>
+Package pdftex.def Info: d9/dec/a00090.pdf used on input line 12.
+(pdftex.def)             Requested size: 350.0pt x 131.5397pt.
+
+[167 <./d1/d1e/a00087.pdf>]) (./db/dab/a00089_source.tex [168 <./d9/dec/a00090.
+pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [169])
+(./d1/dc1/a00092.tex <d4/d7d/a00093.pdf, id=6457, 1205.50375pt x 399.4925pt>
+File: d4/d7d/a00093.pdf Graphic file (type pdf)
+
+<use d4/d7d/a00093.pdf>
+Package pdftex.def Info: d4/d7d/a00093.pdf used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 115.98396pt.
+ <dc/d54/a00094.pdf, id=6458, 397.485pt x 162.6075pt>
+File: dc/d54/a00094.pdf Graphic file (type pdf)
+
+<use dc/d54/a00094.pdf>
+Package pdftex.def Info: dc/d54/a00094.pdf used on input line 23.
+(pdftex.def)             Requested size: 350.0pt x 143.18684pt.
+) (./d1/dc1/a00092_source.tex [170 <./d4/d7d/a00093.pdf> <./dc/d54/a00094.pdf>]
+) (./d9/d77/a00095.tex
+<d9/df8/a00096.pdf, id=6572, 765.86125pt x 458.71375pt>
+File: d9/df8/a00096.pdf Graphic file (type pdf)
+
+<use d9/df8/a00096.pdf>
+Package pdftex.def Info: d9/df8/a00096.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 209.632pt.
+) (./d9/d77/a00095_source.tex [171])
+(./d1/d44/a00098.tex <da/d74/a00099.pdf, id=6627, 765.86125pt x 399.4925pt>
+File: da/d74/a00099.pdf Graphic file (type pdf)
+
+<use da/d74/a00099.pdf>
+Package pdftex.def Info: da/d74/a00099.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 182.5679pt.
+ [172 <./d9/df8/a00096.pdf>]
+<d0/d61/a00100.pdf, id=6647, 423.5825pt x 162.6075pt>
+File: d0/d61/a00100.pdf Graphic file (type pdf)
+ <use d0/d61/a00100.pdf>
+Package pdftex.def Info: d0/d61/a00100.pdf used on input line 19.
+(pdftex.def)             Requested size: 350.0pt x 134.36374pt.
+)
+(./d1/d44/a00098_source.tex) (./d4/d3a/a00101.tex
+<d9/dcc/a00102.pdf, id=6658, 1042.89626pt x 517.935pt>
+File: d9/dcc/a00102.pdf Graphic file (type pdf)
+ <use d9/dcc/a00102.pdf>
+Package pdftex.def Info: d9/dcc/a00102.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 173.81949pt.
+
+[173 <./da/d74/a00099.pdf> <./d0/d61/a00100.pdf>]) (./d4/d3a/a00101_source.tex
+[174 <./d9/dcc/a00102.pdf>]) (./d0/dc2/a00104.tex
+<d3/d32/a00105.pdf, id=6734, 1031.855pt x 458.71375pt>
+File: d3/d32/a00105.pdf Graphic file (type pdf)
+ <use d3/d32/a00105.pdf>
+Package pdftex.def Info: d3/d32/a00105.pdf used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 155.58965pt.
+
+<d7/d70/a00106.pdf, id=6735, 411.5375pt x 162.6075pt>
+File: d7/d70/a00106.pdf Graphic file (type pdf)
+ <use d7/d70/a00106.pdf>
+Package pdftex.def Info: d7/d70/a00106.pdf used on input line 21.
+(pdftex.def)             Requested size: 350.0pt x 138.29395pt.
+
+[175 <./d3/d32/a00105.pdf> <./d7/d70/a00106.pdf>]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.5 on input line 49.
+
+) (./d0/dc2/a00104_source.tex) (./df/d98/a00107.tex
+<d1/dd6/a00108.pdf, id=6817, 933.4875pt x 458.71375pt>
+File: d1/dd6/a00108.pdf Graphic file (type pdf)
+ <use d1/dd6/a00108.pdf>
+Package pdftex.def Info: d1/dd6/a00108.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 171.98923pt.
+
+[176]) (./df/d98/a00107_source.tex [177 <./d1/dd6/a00108.pdf>])
+(./d4/d81/a00110.tex <dd/d6d/a00111.pdf, id=6892, 1034.86626pt x 399.4925pt>
+File: dd/d6d/a00111.pdf Graphic file (type pdf)
+
+<use dd/d6d/a00111.pdf>
+Package pdftex.def Info: dd/d6d/a00111.pdf used on input line 12.
+(pdftex.def)             Requested size: 350.0pt x 135.11244pt.
+ [178]
+<db/d57/a00112.pdf, id=6899, 503.8825pt x 221.82875pt>
+File: db/d57/a00112.pdf Graphic file (type pdf)
+ <use db/d57/a00112.pdf>
+Package pdftex.def Info: db/d57/a00112.pdf used on input line 20.
+(pdftex.def)             Requested size: 350.0pt x 154.0842pt.
+) (./d4/d81/a00110_source.tex [179 <./dd/d6d/a00111.pdf> <./db/d57/a00112.pdf>]
+) [180]
+No file refman.ind.
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
+(./refman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+
+
+Package rerunfilecheck Warning: File `refman.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `refman.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  9C189E10CF150F6B173BF0F4B3E17757;109014.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
+ ) 
+Here is how much of TeX's memory you used:
+ 17970 strings out of 493014
+ 285469 string characters out of 6133350
+ 310582 words of memory out of 5000000
+ 19047 multiletter control sequences out of 15000+600000
+ 66398 words of font info for 91 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 53i,16n,92p,1982b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/h
+elvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic
+/uhvro8a.pfb>
+Output written on refman.pdf (184 pages, 2430222 bytes).
+PDF statistics:
+ 7398 PDF objects out of 7423 (max. 8388607)
+ 6667 compressed objects within 67 object streams
+ 1631 named destinations out of 1728 (max. 500000)
+ 776 words of extra memory for PDF output out of 10000 (max. 10000000)
+

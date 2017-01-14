@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/db1/a00730">
+<title>ServerWorker class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d4/d81/a00110">&quot;serverworker.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for ServerWorker</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/d52/a00729.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ServerWorker</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d3b/a00728.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Класи </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/da6/a00738">ServerWorker::ReceiverThread</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/dc0/a00734">ServerWorker::responceData</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Захищені дані</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QTcpSocket * socket</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>volatile bool isWork</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QDataStream * out</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QMutex workerMutex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QQueue&lt; responceData &gt; responceMessage</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MailReceiver * receiver</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d2/db1/a00730_1aa8aee43d415cf337417a1d1f180ef03a">ServerWorker</link> (
+QTcpSocket * socket)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db1/a00730_1a2cfa275ffeff3aeee19058e8155763f5">receiveResponce</link> (
+QList&lt; <link linkend="df/d9e/a00686">DiffElement</link> *&gt; * diff, <link linkend="d9/d41/a00666">MessageForServer</link> * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/db0/a00750_1aa85db0004c26606c5ac294e5de000b96">setDefaultReceiver</link> (
+<link linkend="d4/d8f/a00742">MailReceiver</link> * receiver)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d2/db1/a00730_1a8b4f9a11d13f0b4990ae72f87da010df">run</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Компонентні дані</title>
+        </section>
+            <section xml:id="d2/db1/a00730_1aa8aee43d415cf337417a1d1f180ef03a">
+                <title>ServerWorker::ServerWorker (QTcpSocket *socket)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db1/a00730_1a2cfa275ffeff3aeee19058e8155763f5">
+                <title>void ServerWorker::receiveResponce (QList&lt; DiffElement *&gt; *diff, MessageForServer *message)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/db0/a00750_1aa85db0004c26606c5ac294e5de000b96">
+                <title>virtual void MailSender::setDefaultReceiver (MailReceiver *receiver)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d2/db1/a00730_1a8b4f9a11d13f0b4990ae72f87da010df">
+                <title>void ServerWorker::run ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

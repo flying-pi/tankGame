@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d2/d1f/a00083">
+    <title>mainwindow.h File Reference</title>
+    <programlisting>#include &lt;QMainWindow&gt;</programlisting>
+    <programlisting>#include &quot;connection/simpleconnection.h&quot;</programlisting>
+<para>Include dependency diagram for mainwindow.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d5d/a00084.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for mainwindow.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d13/a00085.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dd/d4c/a00177">MainWindow</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d3/d00/a00113">Ui</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/GameView/mainwindow.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;MAINWINDOW_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;MAINWINDOW_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&lt;QMainWindow&gt;</emphasis>
+5 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d4/dee/a00008">connection/simpleconnection.h</link>&quot;</emphasis>
+6 
+<link linkend="d3/d00/a00113">7 </link><emphasis class="keyword">namespace&#32;</emphasis><link linkend="d3/d00/a00113">Ui</link>&#32;{
+8 <emphasis class="keyword">class&#32;</emphasis><link linkend="dd/d4c/a00177">MainWindow</link>;
+9 }
+10 
+<link linkend="dd/d4c/a00177">11 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="dd/d4c/a00177">MainWindow</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;QMainWindow&#32;{
+12 &#32;&#32;Q_OBJECT
+13 
+14 &#32;<emphasis class="keyword">public</emphasis>:
+15 &#32;&#32;<emphasis class="keyword">explicit</emphasis>&#32;<link linkend="dd/d4c/a00177">MainWindow</link>(QWidget*&#32;parent&#32;=&#32;0);
+16 &#32;&#32;~<link linkend="dd/d4c/a00177">MainWindow</link>();
+17 
+18 &#32;<emphasis class="keyword">protected</emphasis>:
+19 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;connectToServer();
+<link linkend="dd/d4c/a00177_1a8235680bc39bc64e5686dfcaccabf72f">20 </link>&#32;&#32;<link linkend="dc/dfe/a00125">SimpleConnection</link>&#32;<link linkend="dd/d4c/a00177_1a8235680bc39bc64e5686dfcaccabf72f">connection</link>;
+21 
+22 &#32;<emphasis class="keyword">private</emphasis>:
+<link linkend="dd/d4c/a00177_1a35466a70ed47252a0191168126a352a5">23 </link>&#32;&#32;Ui::MainWindow*&#32;<link linkend="dd/d4c/a00177_1a35466a70ed47252a0191168126a352a5">ui</link>;
+24 };
+25 
+26 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;MAINWINDOW_H</emphasis>
+    </computeroutput></literallayout>
+</section>

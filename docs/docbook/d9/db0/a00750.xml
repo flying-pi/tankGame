@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/db0/a00750">
+<title>MailSender class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d7/d46/a00002">&quot;mailboxelement.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for MailSender</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/de8/a00749.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MailSender</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d3d/a00748.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Захищені дані</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MailReceiver * receiver</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/db0/a00750_1aba34437231a62861737e97d50f85e7e8">receiveResponce</link> (
+QList&lt; <link linkend="df/d9e/a00686">DiffElement</link> *&gt; * diff, <link linkend="d9/d41/a00666">MessageForServer</link> * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d9/db0/a00750_1aa85db0004c26606c5ac294e5de000b96">setDefaultReceiver</link> (
+<link linkend="d4/d8f/a00742">MailReceiver</link> * receiver)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Компонентні дані</title>
+        </section>
+            <section xml:id="d9/db0/a00750_1aba34437231a62861737e97d50f85e7e8">
+                <title>virtual void MailSender::receiveResponce (QList&lt; DiffElement *&gt; *diff, MessageForServer *message)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/db0/a00750_1aa85db0004c26606c5ac294e5de000b96">
+                <title>virtual void MailSender::setDefaultReceiver (MailReceiver *receiver)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

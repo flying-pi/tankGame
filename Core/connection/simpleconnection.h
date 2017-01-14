@@ -8,6 +8,7 @@
 #include <QTcpSocket>
 #include <QDataStream>
 #include <ibasegameelement.h>
+#include "diffs/diffelement.h"
 
 enum eConnectionType { eGamer, eWatcher };
 enum eMessageType { eFirstMessae, eGetUpdateMessage };

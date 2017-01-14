@@ -20,17 +20,17 @@ void ServerWorker::run() {
       qInfo() << "getting some message for sending";
       out->startTransaction();
       (*out) << (*data.messag);
-      (*out) << data.diff->length();
-      for (int i = 0; i < data.diff->length(); i++)
+      (*out) << data.diff->getCountOfDiff();
+      for (int i = 0; i < data.diff->getCountOfDiff(); i++)
         (*out) << (*data.diff->at(i));
       out->commitTransaction();
       socket->flush();
       qInfo() << "send  response to client";
-      for (int i = 0; i < data.diff->length(); i++) {
+      for (int i = 0; i < data.diff->getCountOfDiff(); i++) {
         delete data.diff->at(i);
-        data.diff->removeAt(i);
         i--;
       }
+      data.diff->clear();
       delete data.diff;
       delete data.messag;
     }
@@ -45,7 +45,7 @@ void ServerWorker::run() {
 class receiveRespnceThread : public QThread {
  public:
   QMutex* mutex;
-  QList<DiffElement*>* diff;
+  DiffCard* diff;
   MessageForServer* message;
   QQueue<ServerWorker::responceData>* responceMessage;
 
@@ -58,8 +58,7 @@ class receiveRespnceThread : public QThread {
   }
 };
 
-void ServerWorker::receiveResponce(QList<DiffElement*>* diff,
-                                   MessageForServer* message) {
+void ServerWorker::receiveResponce(DiffCard* diff, MessageForServer* message) {
   qInfo() << "getting responce for client from map loop";
 
   //  receiveRespnceThread r;

@@ -23,12 +23,12 @@ class ServerWorker : public QThread, public MailSender {
  protected:
   struct responceData {
    public:
-    responceData(QList<DiffElement*>* diff, MessageForServer* messag) {
+    responceData(DiffCard* diff, MessageForServer* messag) {
       this->diff = diff;
       this->messag = messag;
     }
 
-    QList<DiffElement*>* diff;
+    DiffCard* diff;
     MessageForServer* messag;
   };
 
@@ -56,7 +56,7 @@ class ServerWorker : public QThread, public MailSender {
 
   // MailSender interface
  public:
-  void receiveResponce(QList<DiffElement*>* diff, MessageForServer* message);
+  void receiveResponce(DiffCard* diff, MessageForServer* message);
 };
 
 #endif  // SERVERWORKER_H

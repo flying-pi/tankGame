@@ -1,0 +1,243 @@
+\hypertarget{a00181}{}\section{Server\+Connection Class Reference}
+\label{a00181}\index{Server\+Connection@{Server\+Connection}}
+
+
+{\ttfamily \#include \char`\"{}serverconnection.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Server\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{d0/d81/a00180}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Server\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{db/dd9/a00179}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00181_ae97f8eaa15a3da8f069ad502e89039ae}{on\+Server\+Error} (\hyperlink{a00104_a65727a063024ff0dedf1ac2f087f4165}{server\+Error} error)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00181_af919491d0e2ff066b0a58cc50fc0d90d}{$\sim$\+Server\+Connection} ()
+\item 
+void \hyperlink{a00181_a1d45a6a7b2370c82ed2849959bb18c2a}{start\+Server} ()
+\item 
+void \hyperlink{a00181_afd1dd14f38c6c1d1efa719af1a9d9851}{receive\+Responce} (Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$$>$ $\ast$diff, \hyperlink{a00121}{Message\+For\+Server} $\ast$message)
+\item 
+virtual void \hyperlink{a00205_aa85db0004c26606c5ac294e5de000b96}{set\+Default\+Receiver} (\hyperlink{a00197}{Mail\+Receiver} $\ast$\hyperlink{a00205_aa57ce2f74f8ad76abb38974f85b97ac5}{receiver})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{a00181}{Server\+Connection} $\ast$ \hyperlink{a00181_ad64d541093e285a983911f22ab9a0bff}{get\+Server\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{a00181_af558fe509b60eb019281316513f6d188}{on\+Worker\+Stop} (\hyperlink{a00185}{Server\+Worker} $\ast$worker)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00181_a0adf644e7715ddbb83a53651b0804dec}{Server\+Connection} ()
+\item 
+void \hyperlink{a00181_ac7f219a30789e91afa079ab5e49529bd}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Tcp\+Server $\ast$ \hyperlink{a00181_aee9a8e6c0f1d25fc2fcb4662631c0c74}{server}
+\item 
+Q\+List$<$ \hyperlink{a00185}{Server\+Worker} $\ast$ $>$ $\ast$ \hyperlink{a00181_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections}
+\item 
+\hyperlink{a00197}{Mail\+Receiver} $\ast$ \hyperlink{a00205_aa57ce2f74f8ad76abb38974f85b97ac5}{receiver}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{a00181}{Server\+Connection} $\ast$ \hyperlink{a00181_adbbe8ffe6ee71b0aee4db9b6e689ba2a}{instance} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{a00104_source_l00012}{12} of file \hyperlink{a00104_source}{serverconnection.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00181_af919491d0e2ff066b0a58cc50fc0d90d}\label{a00181_af919491d0e2ff066b0a58cc50fc0d90d}} 
+\index{Server\+Connection@{Server\+Connection}!````~Server\+Connection@{$\sim$\+Server\+Connection}}
+\index{````~Server\+Connection@{$\sim$\+Server\+Connection}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{$\sim$\+Server\+Connection()}{~ServerConnection()}}
+{\footnotesize\ttfamily Server\+Connection\+::$\sim$\+Server\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00101_source_l00006}{6} of file \hyperlink{a00101_source}{serverconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00181_a0adf644e7715ddbb83a53651b0804dec}\label{a00181_a0adf644e7715ddbb83a53651b0804dec}} 
+\index{Server\+Connection@{Server\+Connection}!Server\+Connection@{Server\+Connection}}
+\index{Server\+Connection@{Server\+Connection}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{Server\+Connection()}{ServerConnection()}}
+{\footnotesize\ttfamily Server\+Connection\+::\+Server\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00101_source_l00012}{12} of file \hyperlink{a00101_source}{serverconnection.\+cpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00181_ad64d541093e285a983911f22ab9a0bff}\label{a00181_ad64d541093e285a983911f22ab9a0bff}} 
+\index{Server\+Connection@{Server\+Connection}!get\+Server\+Instance@{get\+Server\+Instance}}
+\index{get\+Server\+Instance@{get\+Server\+Instance}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{get\+Server\+Instance()}{getServerInstance()}}
+{\footnotesize\ttfamily static \hyperlink{a00181}{Server\+Connection}$\ast$ Server\+Connection\+::get\+Server\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \hyperlink{a00104_source_l00018}{18} of file \hyperlink{a00104_source}{serverconnection.\+h}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d64/a00181_ad64d541093e285a983911f22ab9a0bff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00181_ae97f8eaa15a3da8f069ad502e89039ae}\label{a00181_ae97f8eaa15a3da8f069ad502e89039ae}} 
+\index{Server\+Connection@{Server\+Connection}!on\+Server\+Error@{on\+Server\+Error}}
+\index{on\+Server\+Error@{on\+Server\+Error}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{on\+Server\+Error}{onServerError}}
+{\footnotesize\ttfamily void Server\+Connection\+::on\+Server\+Error (\begin{DoxyParamCaption}\item[{\hyperlink{a00104_a65727a063024ff0dedf1ac2f087f4165}{server\+Error}}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{a00181_af558fe509b60eb019281316513f6d188}\label{a00181_af558fe509b60eb019281316513f6d188}} 
+\index{Server\+Connection@{Server\+Connection}!on\+Worker\+Stop@{on\+Worker\+Stop}}
+\index{on\+Worker\+Stop@{on\+Worker\+Stop}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{on\+Worker\+Stop}{onWorkerStop}}
+{\footnotesize\ttfamily void Server\+Connection\+::on\+Worker\+Stop (\begin{DoxyParamCaption}\item[{\hyperlink{a00185}{Server\+Worker} $\ast$}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Definition at line \hyperlink{a00101_source_l00016}{16} of file \hyperlink{a00101_source}{serverconnection.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d64/a00181_af558fe509b60eb019281316513f6d188_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00181_afd1dd14f38c6c1d1efa719af1a9d9851}\label{a00181_afd1dd14f38c6c1d1efa719af1a9d9851}} 
+\index{Server\+Connection@{Server\+Connection}!receive\+Responce@{receive\+Responce}}
+\index{receive\+Responce@{receive\+Responce}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{receive\+Responce()}{receiveResponce()}}
+{\footnotesize\ttfamily void Server\+Connection\+::receive\+Responce (\begin{DoxyParamCaption}\item[{Q\+List$<$ \hyperlink{a00141}{Diff\+Element} $\ast$$>$ $\ast$}]{diff,  }\item[{\hyperlink{a00121}{Message\+For\+Server} $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{a00205_aba34437231a62861737e97d50f85e7e8}{Mail\+Sender}.
+
+
+
+Definition at line \hyperlink{a00101_source_l00051}{51} of file \hyperlink{a00101_source}{serverconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00181_ac7f219a30789e91afa079ab5e49529bd}\label{a00181_ac7f219a30789e91afa079ab5e49529bd}} 
+\index{Server\+Connection@{Server\+Connection}!run@{run}}
+\index{run@{run}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Server\+Connection\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00101_source_l00027}{27} of file \hyperlink{a00101_source}{serverconnection.\+cpp}.
+
+\mbox{\Hypertarget{a00205_aa85db0004c26606c5ac294e5de000b96}\label{a00205_aa85db0004c26606c5ac294e5de000b96}} 
+\index{Server\+Connection@{Server\+Connection}!set\+Default\+Receiver@{set\+Default\+Receiver}}
+\index{set\+Default\+Receiver@{set\+Default\+Receiver}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{set\+Default\+Receiver()}{setDefaultReceiver()}}
+{\footnotesize\ttfamily virtual void Mail\+Sender\+::set\+Default\+Receiver (\begin{DoxyParamCaption}\item[{\hyperlink{a00197}{Mail\+Receiver} $\ast$}]{receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00002_source_l00100}{100} of file \hyperlink{a00002_source}{mailboxelement.\+h}.
+
+\mbox{\Hypertarget{a00181_a1d45a6a7b2370c82ed2849959bb18c2a}\label{a00181_a1d45a6a7b2370c82ed2849959bb18c2a}} 
+\index{Server\+Connection@{Server\+Connection}!start\+Server@{start\+Server}}
+\index{start\+Server@{start\+Server}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{start\+Server()}{startServer()}}
+{\footnotesize\ttfamily void Server\+Connection\+::start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00101_source_l00021}{21} of file \hyperlink{a00101_source}{serverconnection.\+cpp}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d8/d64/a00181_a1d45a6a7b2370c82ed2849959bb18c2a_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00181_a7d9e1b1ac7c2d57b439ab5918e7c31d0}\label{a00181_a7d9e1b1ac7c2d57b439ab5918e7c31d0}} 
+\index{Server\+Connection@{Server\+Connection}!connections@{connections}}
+\index{connections@{connections}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{connections}{connections}}
+{\footnotesize\ttfamily Q\+List$<$\hyperlink{a00185}{Server\+Worker}$\ast$$>$$\ast$ Server\+Connection\+::connections\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00104_source_l00032}{32} of file \hyperlink{a00104_source}{serverconnection.\+h}.
+
+\mbox{\Hypertarget{a00181_adbbe8ffe6ee71b0aee4db9b6e689ba2a}\label{a00181_adbbe8ffe6ee71b0aee4db9b6e689ba2a}} 
+\index{Server\+Connection@{Server\+Connection}!instance@{instance}}
+\index{instance@{instance}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{a00181}{Server\+Connection} $\ast$ Server\+Connection\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00104_source_l00029}{29} of file \hyperlink{a00104_source}{serverconnection.\+h}.
+
+\mbox{\Hypertarget{a00205_aa57ce2f74f8ad76abb38974f85b97ac5}\label{a00205_aa57ce2f74f8ad76abb38974f85b97ac5}} 
+\index{Server\+Connection@{Server\+Connection}!receiver@{receiver}}
+\index{receiver@{receiver}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{receiver}{receiver}}
+{\footnotesize\ttfamily \hyperlink{a00197}{Mail\+Receiver}$\ast$ Mail\+Sender\+::receiver\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00002_source_l00105}{105} of file \hyperlink{a00002_source}{mailboxelement.\+h}.
+
+\mbox{\Hypertarget{a00181_aee9a8e6c0f1d25fc2fcb4662631c0c74}\label{a00181_aee9a8e6c0f1d25fc2fcb4662631c0c74}} 
+\index{Server\+Connection@{Server\+Connection}!server@{server}}
+\index{server@{server}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily Q\+Tcp\+Server$\ast$ Server\+Connection\+::server\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00104_source_l00031}{31} of file \hyperlink{a00104_source}{serverconnection.\+h}.
+

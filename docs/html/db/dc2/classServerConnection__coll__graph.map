@@ -1,0 +1,4 @@
+<map id="ServerConnection" name="ServerConnection">
+<area shape="rect" id="node3" href="$de/d1e/classMailSender.html" title="{MailSender\n||+ receiveResponce()\l+ setDefaultReceiver()\l}" alt="" coords="129,217,337,325"/>
+<area shape="rect" id="node4" href="$d7/d58/classMailReceiver.html" title="{MailReceiver\n|# messages\l# mutex\l# isQueueLock\l|+ sendMail()\l# nextMessage()\l}" alt="" coords="153,5,313,151"/>
+</map>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/dd1/maingameloop_8h">
+    <title>maingameloop.h File Reference</title>
+    <programlisting>#include &quot;imap.h&quot;</programlisting>
+    <programlisting>#include &quot;connection/mailboxelement.h&quot;</programlisting>
+    <programlisting>#include &lt;QThread&gt;</programlisting>
+    <programlisting>#include &lt;functional&gt;</programlisting>
+    <programlisting>#include &quot;GameElements/basetank.h&quot;</programlisting>
+    <programlisting>#include &quot;coreconst.h&quot;</programlisting>
+    <programlisting>#include &quot;GameElements/basebasis.h&quot;</programlisting>
+<para>Include dependency diagram for maingameloop.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d8/dc8/maingameloop_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for maingameloop.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../dd/dde/maingameloop_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d2/d11/classMainGameLoop">MainGameLoop</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d8a/classMainGameLoop_1_1GamerInformation">MainGameLoop::GamerInformation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Server/maingameloop.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;MAINGAMELOOP_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;MAINGAMELOOP_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d4/dcf/imap_8h">imap.h</link>&quot;</emphasis>
+5 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d2/d35/mailboxelement_8h">connection/mailboxelement.h</link>&quot;</emphasis>
+6 <emphasis class="preprocessor">#include&#32;&lt;QThread&gt;</emphasis>
+7 <emphasis class="preprocessor">#include&#32;&lt;functional&gt;</emphasis>
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d4/dfd/basetank_8h">GameElements/basetank.h</link>&quot;</emphasis>
+9 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d7/dc7/coreconst_8h">coreconst.h</link>&quot;</emphasis>
+10 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d2/d78/basebasis_8h">GameElements/basebasis.h</link>&quot;</emphasis>
+11 
+12 <emphasis class="comment">//&#32;TODO&#32;продумать&#32;удаление&#32;-&#32;сначала&#32;дождатся&#32;завершения&#32;всех&#32;процесов&#32;а&#32;потом</emphasis>
+13 <emphasis class="comment">//&#32;уже&#32;начать&#32;чистить&#32;ресурсы</emphasis>
+14 
+<link linkend="d2/d11/classMainGameLoop">15 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="d2/d11/classMainGameLoop">MainGameLoop</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="d7/d58/classMailReceiver">MailReceiver</link>,&#32;<emphasis class="keyword">public</emphasis>&#32;QThread&#32;{
+16 &#32;<emphasis class="keyword">public</emphasis>:
+17 &#32;&#32;<link linkend="d2/d11/classMainGameLoop_1aeeabdbe46a5aeb891d7da7fd9430d0cb">~MainGameLoop</link>();
+<link linkend="d2/d11/classMainGameLoop_1ae4df98e12ba90efd73b144455d9fd52d">18 </link>&#32;&#32;<emphasis class="keyword">inline</emphasis>&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop">MainGameLoop</link>*&#32;<link linkend="d2/d11/classMainGameLoop_1ae4df98e12ba90efd73b144455d9fd52d">getLooperInstance</link>()&#32;{
+19 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="d2/d11/classMainGameLoop_1a2578ca393ef9030407e5b3ac17b9f6ab">instance</link>&#32;==&#32;<emphasis class="keyword">nullptr</emphasis>)&#32;{
+20 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d2/d11/classMainGameLoop_1a2578ca393ef9030407e5b3ac17b9f6ab">instance</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop_1a0632599cb00fa2c86ba1c71904c1f59f">MainGameLoop</link>();
+21 &#32;&#32;&#32;&#32;}
+22 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop_1a2578ca393ef9030407e5b3ac17b9f6ab">instance</link>;
+23 &#32;&#32;}
+24 
+25 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop_1a2329f4e9c9a4ad9ecbed39d5c297245f">startLooper</link>();
+26 
+27 &#32;<emphasis class="keyword">private</emphasis>:
+<link linkend="d2/d11/classMainGameLoop_1a3aecf6efe74a0fe8b40e2d28bf4032ba">28 </link>&#32;&#32;<emphasis class="keyword">typedef</emphasis>&#32;void&#32;(<link linkend="d2/d11/classMainGameLoop">MainGameLoop</link>::*<link linkend="d2/d11/classMainGameLoop_1a3aecf6efe74a0fe8b40e2d28bf4032ba">messageProccessor</link>)(<link linkend="df/d91/classMailReceiver_1_1mailMessage">MailReceiver::mailMessage</link>*,
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="de/d1e/classMailSender">MailSender</link>*);
+<link linkend="d2/d11/classMainGameLoop_1a2578ca393ef9030407e5b3ac17b9f6ab">30 </link>&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop">MainGameLoop</link>*&#32;<link linkend="d2/d11/classMainGameLoop_1a2578ca393ef9030407e5b3ac17b9f6ab">instance</link>;
+<link linkend="d2/d11/classMainGameLoop_1ae0ccec14d7db91cf6db41349a73b41a7">31 </link>&#32;&#32;<link linkend="de/d12/classIMap">IMap</link>*&#32;<link linkend="d2/d11/classMainGameLoop_1ae0ccec14d7db91cf6db41349a73b41a7">map</link>;
+32 &#32;&#32;<link linkend="d2/d11/classMainGameLoop_1a0632599cb00fa2c86ba1c71904c1f59f">MainGameLoop</link>();
+33 
+34 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop_1ac7722494194e946c7d045471858c3aee">proccessGamerMessage</link>(<link linkend="df/d91/classMailReceiver_1_1mailMessage">mailMessage</link>*&#32;msg,&#32;<link linkend="de/d1e/classMailSender">MailSender</link>*&#32;receiver);
+35 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop_1a26ac1e61f11a51a84b6f2e770808d162">proccessWatcherMessage</link>(<link linkend="df/d91/classMailReceiver_1_1mailMessage">mailMessage</link>*&#32;msg,&#32;<link linkend="de/d1e/classMailSender">MailSender</link>*&#32;receiver);
+36 &#32;&#32;<link linkend="d2/d11/classMainGameLoop_1a3aecf6efe74a0fe8b40e2d28bf4032ba">messageProccessor</link>&#32;<link linkend="d2/d11/classMainGameLoop_1ab9de0ceedab969b5f7fd9e1131bc4cd5">getProccessorForMessage</link>(<link linkend="d1/d70/simpleconnection_8h_1ab66d8802c50493de7d50e181d6f8e296">eConnectionType</link>&#32;type);
+37 
+38 &#32;<emphasis class="keyword">protected</emphasis>:
+<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation">39 </link>&#32;&#32;<emphasis class="keyword">class&#32;</emphasis><link linkend="df/d8a/classMainGameLoop_1_1GamerInformation">GamerInformation</link>&#32;{
+40 &#32;&#32;&#32;<emphasis class="keyword">public</emphasis>:
+<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1ad0a83bddcdd3756585fd5068a4316bde">41 </link>&#32;&#32;&#32;&#32;QString&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1ad0a83bddcdd3756585fd5068a4316bde">name</link>;
+<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a94caf02405370097d83973a79e110f4d">42 </link>&#32;&#32;&#32;&#32;uint64_t&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a94caf02405370097d83973a79e110f4d">lifeCount</link>;
+<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a2cc12f0aed9d64271513fbce1615d73e">43 </link>&#32;&#32;&#32;&#32;QVector3D&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a2cc12f0aed9d64271513fbce1615d73e">position</link>;
+<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1aebab9469416fa837ba9140f2bf2b280d">44 </link>&#32;&#32;&#32;&#32;<link linkend="de/d1e/classMailSender">MailSender</link>*&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1aebab9469416fa837ba9140f2bf2b280d">sender</link>;
+<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1adbf87a495da3003c15451e0ecad3bf14">45 </link>&#32;&#32;&#32;&#32;QList&lt;IBaseGameElement*&gt;*&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1adbf87a495da3003c15451e0ecad3bf14">minion</link>;
+<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a4c89a46d22105667ff462e4e944daaac">46 </link>&#32;&#32;&#32;&#32;QList&lt;DiffElement*&gt;*&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a4c89a46d22105667ff462e4e944daaac">personalDiff</link>;
+47 &#32;&#32;&#32;&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a6b58de3576e4b204fc38073794dfa1d2">GamerInformation</link>(<link linkend="de/d12/classIMap">IMap</link>*&#32;map);
+48 &#32;&#32;&#32;&#32;<link linkend="df/d8a/classMainGameLoop_1_1GamerInformation_1a19842dcddbd89a64210977394060ca3a">~GamerInformation</link>();
+49 &#32;&#32;};
+50 
+51 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop_1a5a20009c07c887a9cf69381f62da5009">run</link>();
+<link linkend="d2/d11/classMainGameLoop_1a03ce2a112152dc80acce53528cc65daf">52 </link>&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="d2/d11/classMainGameLoop_1a03ce2a112152dc80acce53528cc65daf">isWork</link>&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+53 &#32;&#32;QList&lt;DiffElement*&gt;*&#32;<link linkend="d2/d11/classMainGameLoop_1ac4cd47d8b350ae45ea09aaecad11a684">getAllMapAsDiff</link>();
+<link linkend="d2/d11/classMainGameLoop_1a14693d2e6fdac35ab6af44a9080871f2">54 </link>&#32;&#32;QList&lt;MailSender*&gt;&#32;<link linkend="d2/d11/classMainGameLoop_1a14693d2e6fdac35ab6af44a9080871f2">watchers</link>;
+<link linkend="d2/d11/classMainGameLoop_1aac8195bc3183cb0cabe65f1ff813fbfb">59 </link>&#32;&#32;QList&lt;GamerInformation*&gt;&#32;<link linkend="d2/d11/classMainGameLoop_1aac8195bc3183cb0cabe65f1ff813fbfb">gamersList</link>;
+<link linkend="d2/d11/classMainGameLoop_1a7e240933ce2cf3b29a05c5061aa5226b">65 </link>&#32;&#32;QList&lt;QList&lt;IBaseGameElement*&gt;*&gt;&#32;<link linkend="d2/d11/classMainGameLoop_1a7e240933ce2cf3b29a05c5061aa5226b">gamersItems</link>;
+66 };
+67 
+68 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;MAINGAMELOOP_H</emphasis>
+    </computeroutput></literallayout>
+</section>

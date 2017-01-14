@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dab/a00089">
+    <title>maingameloop.cpp File Reference</title>
+    <programlisting>#include &quot;maingameloop.h&quot;</programlisting>
+    <programlisting>#include &quot;mapiniter.h&quot;</programlisting>
+    <programlisting>#include &lt;QtGlobal&gt;</programlisting>
+    <programlisting>#include &lt;coreutil.h&gt;</programlisting>
+<para>Include dependency diagram for maingameloop.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/dec/a00090.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for maingameloop.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../da/d82/a00091.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QString <link linkend="db/dab/a00089_1a3670baaac428449f4299429202343042">TAG</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Server/maingameloop.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d1/dc1/a00092">maingameloop.h</link>&quot;</emphasis>
+2 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d1/d44/a00098">mapiniter.h</link>&quot;</emphasis>
+3 <emphasis class="preprocessor">#include&#32;&lt;QtGlobal&gt;</emphasis>
+4 <emphasis class="preprocessor">#include&#32;&lt;<link linkend="d3/d52/a00023">coreutil.h</link>&gt;</emphasis>
+5 
+<link linkend="db/dab/a00089_1a3670baaac428449f4299429202343042">6 </link>QString&#32;<link linkend="db/dab/a00089_1a3670baaac428449f4299429202343042">TAG</link>&#32;=&#32;<emphasis class="stringliteral">&quot;MainGameLoop&quot;</emphasis>;
+7 
+<link linkend="d3/de5/a00209_1a0632599cb00fa2c86ba1c71904c1f59f">8 </link><link linkend="d3/de5/a00209_1a0632599cb00fa2c86ba1c71904c1f59f">MainGameLoop::MainGameLoop</link>()&#32;{
+9 &#32;&#32;<link linkend="d3/de5/a00209_1ae0ccec14d7db91cf6db41349a73b41a7">map</link>&#32;=&#32;<link linkend="df/d24/a00217">MapIniter</link>().<link linkend="df/d24/a00217_1ae6dfbed9cc8569db78442c0bfe57e252">initSimapleMap</link>();
+10 }
+<link linkend="d3/de5/a00209_1ac7722494194e946c7d045471858c3aee">11 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d3/de5/a00209_1ac7722494194e946c7d045471858c3aee">MainGameLoop::proccessGamerMessage</link>(<link linkend="dd/de3/a00201">MailReceiver::mailMessage</link>*&#32;msg,
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d5/d13/a00205">MailSender</link>*&#32;receiver)&#32;{
+13 &#32;&#32;<link linkend="d1/de1/a00213">GamerInformation</link>*&#32;currentGamer&#32;=&#32;<emphasis class="keyword">nullptr</emphasis>;
+14 &#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;isAlredyExist&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+15 &#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="d3/de5/a00209_1aac8195bc3183cb0cabe65f1ff813fbfb">gamersList</link>.size();&#32;i++)&#32;{
+16 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="d3/de5/a00209_1aac8195bc3183cb0cabe65f1ff813fbfb">gamersList</link>.at(i)-&gt;sender&#32;==&#32;receiver)&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;isAlredyExist&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+18 &#32;&#32;&#32;&#32;&#32;&#32;currentGamer&#32;=&#32;<link linkend="d3/de5/a00209_1aac8195bc3183cb0cabe65f1ff813fbfb">gamersList</link>.at(i);
+19 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+20 &#32;&#32;&#32;&#32;}
+21 &#32;&#32;}
+22 &#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!isAlredyExist)&#32;{
+23 &#32;&#32;&#32;&#32;currentGamer-&gt;<link linkend="d1/de1/a00213_1ad0a83bddcdd3756585fd5068a4316bde">name</link>&#32;=&#32;<link linkend="d3/d52/a00023_1ac67899e626a301d63a108c03193ca4e1">codingNum</link>(<link linkend="d3/de5/a00209_1aac8195bc3183cb0cabe65f1ff813fbfb">gamersList</link>.size());
+24 &#32;&#32;&#32;&#32;currentGamer-&gt;<link linkend="d1/de1/a00213_1aebab9469416fa837ba9140f2bf2b280d">sender</link>&#32;=&#32;receiver;
+25 &#32;&#32;&#32;&#32;<link linkend="d3/de5/a00209_1aac8195bc3183cb0cabe65f1ff813fbfb">gamersList</link>.append(currentGamer);
+26 
+27 &#32;&#32;&#32;&#32;<link linkend="d3/de5/a00209_1a7e240933ce2cf3b29a05c5061aa5226b">gamersItems</link>.append(<emphasis class="keyword">new</emphasis>&#32;QList&lt;IBaseGameElement*&gt;());
+28 
+29 &#32;&#32;&#32;&#32;<link linkend="da/d1e/a00149">BaseBasis</link>*&#32;basis&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="da/d1e/a00149">BaseBasis</link>();
+30 &#32;&#32;&#32;&#32;basis-&gt;<link linkend="d2/df5/a00137_1a54dc1a743fac99db03c3f47b5c6d69c4">setPosition</link>(&amp;currentGamer-&gt;<link linkend="d1/de1/a00213_1a2cc12f0aed9d64271513fbce1615d73e">position</link>);
+31 &#32;&#32;&#32;&#32;basis-&gt;<link linkend="da/d1e/a00149_1a8f4de08926ac9bf0968af49f1ac1279e">setEnergy</link>(currentGamer-&gt;<link linkend="d1/de1/a00213_1a94caf02405370097d83973a79e110f4d">lifeCount</link>);
+32 &#32;&#32;&#32;&#32;<link linkend="d3/de5/a00209_1ae0ccec14d7db91cf6db41349a73b41a7">map</link>-&gt;<link linkend="d0/d48/a00165_1a2d44fb3d3798e08bebcd25ad5f1787f4">insertElement</link>(basis,&#32;basis-&gt;<link linkend="d2/df5/a00137_1a3159c02c1118989e3476b52d89a52401">getPosition</link>());
+33 
+34 &#32;&#32;&#32;&#32;<link linkend="d3/de5/a00209_1a7e240933ce2cf3b29a05c5061aa5226b">gamersItems</link>.last()-&gt;append(basis);
+35 &#32;&#32;&#32;&#32;currentGamer-&gt;<link linkend="d1/de1/a00213_1adbf87a495da3003c15451e0ecad3bf14">minion</link>&#32;=&#32;<link linkend="d3/de5/a00209_1a7e240933ce2cf3b29a05c5061aa5226b">gamersItems</link>.last();
+36 &#32;&#32;}
+37 }
+38 
+<link linkend="d3/de5/a00209_1a26ac1e61f11a51a84b6f2e770808d162">39 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d3/de5/a00209_1a26ac1e61f11a51a84b6f2e770808d162">MainGameLoop::proccessWatcherMessage</link>(<link linkend="dd/de3/a00201">MailReceiver::mailMessage</link>*&#32;msg,
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="d5/d13/a00205">MailSender</link>*&#32;receiver)&#32;{
+41 &#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!<link linkend="d3/de5/a00209_1a14693d2e6fdac35ab6af44a9080871f2">watchers</link>.contains(receiver))
+42 &#32;&#32;&#32;&#32;<link linkend="d3/de5/a00209_1a14693d2e6fdac35ab6af44a9080871f2">watchers</link>.append(receiver);
+43 &#32;&#32;QList&lt;DiffElement*&gt;*&#32;diff;
+44 &#32;&#32;<emphasis class="keywordflow">switch</emphasis>&#32;(msg-&gt;<link linkend="dd/de3/a00201_1aa5878557546468fcfb65e099a5d4bf7d">message</link>-&gt;<link linkend="d8/dfa/a00121_1a77e3d9ee30093b40db7f2d8f5d7590aa">messageType</link>)&#32;{
+45 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<link linkend="d4/dee/a00008_1a700ed30d49bfe436323e17539d3a0010aeab6dec369184e6c7d133812064686f9">eFirstMessae</link>:
+46 &#32;&#32;&#32;&#32;&#32;&#32;diff&#32;=&#32;<link linkend="d3/de5/a00209_1ac4cd47d8b350ae45ea09aaecad11a684">getAllMapAsDiff</link>();
+47 &#32;&#32;&#32;&#32;&#32;&#32;receiver-&gt;<link linkend="d5/d13/a00205_1aba34437231a62861737e97d50f85e7e8">receiveResponce</link>(diff,&#32;msg-&gt;<link linkend="dd/de3/a00201_1aa5878557546468fcfb65e099a5d4bf7d">message</link>);
+48 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+49 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<link linkend="d4/dee/a00008_1a700ed30d49bfe436323e17539d3a0010a0bc33fe8075a87a68af6a432b13d7b66">eGetUpdateMessage</link>:
+50 &#32;&#32;&#32;&#32;&#32;&#32;Q_ASSERT_X(2&#32;*&#32;2&#32;!=&#32;4,&#32;<emphasis class="stringliteral">&quot;implementation&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;not&#32;implemented&#32;yet&quot;</emphasis>);
+51 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+52 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">default</emphasis>:
+53 &#32;&#32;&#32;&#32;&#32;&#32;receiver-&gt;<link linkend="d5/d13/a00205_1aba34437231a62861737e97d50f85e7e8">receiveResponce</link>(diff,&#32;msg-&gt;<link linkend="dd/de3/a00201_1aa5878557546468fcfb65e099a5d4bf7d">message</link>);
+54 &#32;&#32;}
+55 }
+56 
+<link linkend="d3/de5/a00209_1ab9de0ceedab969b5f7fd9e1131bc4cd5">57 </link><link linkend="d3/de5/a00209_1a3aecf6efe74a0fe8b40e2d28bf4032ba">MainGameLoop::messageProccessor</link>&#32;<link linkend="d3/de5/a00209_1ab9de0ceedab969b5f7fd9e1131bc4cd5">MainGameLoop::getProccessorForMessage</link>(
+58 &#32;&#32;&#32;&#32;<link linkend="d4/dee/a00008_1ab66d8802c50493de7d50e181d6f8e296">eConnectionType</link>&#32;type)&#32;{
+59 &#32;&#32;<emphasis class="keywordflow">switch</emphasis>&#32;(type)&#32;{
+60 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<link linkend="d4/dee/a00008_1ab66d8802c50493de7d50e181d6f8e296ab02a4c796f7681c9c90e0c0865392828">eGamer</link>:
+61 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;&amp;<link linkend="d3/de5/a00209_1ac7722494194e946c7d045471858c3aee">MainGameLoop::proccessGamerMessage</link>;
+62 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">case</emphasis>&#32;<link linkend="d4/dee/a00008_1ab66d8802c50493de7d50e181d6f8e296af8a067d45287f02c8cd709a3495eb581">eWatcher</link>:
+63 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;&amp;<link linkend="d3/de5/a00209_1a26ac1e61f11a51a84b6f2e770808d162">MainGameLoop::proccessWatcherMessage</link>;
+64 &#32;&#32;}
+65 &#32;&#32;Q_ASSERT_X(2&#32;*&#32;2&#32;!=&#32;4,&#32;<emphasis class="stringliteral">&quot;missing&#32;branch&#32;&quot;</emphasis>,
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="stringliteral">&quot;missing&#32;brunch&#32;for&#32;eConnectionType&quot;</emphasis>);
+67 }
+68 
+<link linkend="d3/de5/a00209_1a5a20009c07c887a9cf69381f62da5009">69 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d3/de5/a00209_1a5a20009c07c887a9cf69381f62da5009">MainGameLoop::run</link>()&#32;{
+70 &#32;&#32;<link linkend="dd/de3/a00201">mailMessage</link>*&#32;msg;
+71 &#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;starting&#32;main&#32;loop&quot;</emphasis>;
+72 &#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(<link linkend="d3/de5/a00209_1a03ce2a112152dc80acce53528cc65daf">isWork</link>)&#32;{
+73 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;((msg&#32;=&#32;<link linkend="de/db1/a00197_1a127a70ec582190f90979cb72b8cba72c">nextMessage</link>())&#32;!=&#32;<emphasis class="keyword">nullptr</emphasis>)&#32;{
+74 &#32;&#32;&#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<link linkend="db/dab/a00089_1a3670baaac428449f4299429202343042">TAG</link>&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;receive&#32;new&#32;messahe&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;(*msg);
+75 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">auto</emphasis>&#32;fun&#32;=&#32;<link linkend="d3/de5/a00209_1ab9de0ceedab969b5f7fd9e1131bc4cd5">getProccessorForMessage</link>(msg-&gt;message-&gt;connectionType);
+76 &#32;&#32;&#32;&#32;&#32;&#32;(this-&gt;*fun)(msg,&#32;msg-&gt;sender);
+77 &#32;&#32;&#32;&#32;}
+78 &#32;&#32;&#32;&#32;msleep(100);
+79 &#32;&#32;}
+80 }
+81 
+<link linkend="d3/de5/a00209_1ac4cd47d8b350ae45ea09aaecad11a684">82 </link>QList&lt;DiffElement*&gt;*&#32;<link linkend="d3/de5/a00209_1ac4cd47d8b350ae45ea09aaecad11a684">MainGameLoop::getAllMapAsDiff</link>()&#32;{
+83 &#32;&#32;QList&lt;DiffElement*&gt;*&#32;result&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;QList&lt;DiffElement*&gt;();
+84 &#32;&#32;<link linkend="d5/d4e/a00141">DiffElement</link>*&#32;item;
+85 &#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="d3/de5/a00209_1ae0ccec14d7db91cf6db41349a73b41a7">map</link>-&gt;<link linkend="d0/d48/a00165_1a021e64b05ecb6558ed1d663676f82971">getCount</link>();&#32;i++)
+86 &#32;&#32;&#32;&#32;result-&gt;append(
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d5/d4e/a00141">DiffElement</link>(<link linkend="d6/d2d/a00047_1ab32e61d383765a32bc5f9efebb4b9f55a431f77ddbb89863e0f6dbf088b85628c">eDiffType::eNew</link>,&#32;<link linkend="d3/de5/a00209_1ae0ccec14d7db91cf6db41349a73b41a7">map</link>-&gt;<link linkend="d0/d48/a00165_1a9fce1fb4ad8fac181fbbce3ce31da0a0">getElementAtPosition</link>(i)));
+88 &#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;result;
+89 }
+90 
+<link linkend="d3/de5/a00209_1aeeabdbe46a5aeb891d7da7fd9430d0cb">91 </link><link linkend="d3/de5/a00209_1aeeabdbe46a5aeb891d7da7fd9430d0cb">MainGameLoop::~MainGameLoop</link>()&#32;{
+92 &#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;<link linkend="d3/de5/a00209_1ae0ccec14d7db91cf6db41349a73b41a7">map</link>;
+93 &#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="d3/de5/a00209_1a7e240933ce2cf3b29a05c5061aa5226b">gamersItems</link>.size();&#32;i++)&#32;{
+94 &#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;<link linkend="d3/de5/a00209_1a7e240933ce2cf3b29a05c5061aa5226b">gamersItems</link>.at(i);
+95 &#32;&#32;}
+96 }
+97 
+<link linkend="d3/de5/a00209_1a2329f4e9c9a4ad9ecbed39d5c297245f">98 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d3/de5/a00209_1a2329f4e9c9a4ad9ecbed39d5c297245f">MainGameLoop::startLooper</link>()&#32;{
+99 &#32;&#32;this-&gt;start();
+100 }
+101 
+102 <link linkend="d3/de5/a00209">MainGameLoop</link>*&#32;<link linkend="d3/de5/a00209_1a2578ca393ef9030407e5b3ac17b9f6ab">MainGameLoop::instance</link>&#32;=&#32;<emphasis class="keyword">nullptr</emphasis>;
+103 
+<link linkend="d1/de1/a00213_1a6b58de3576e4b204fc38073794dfa1d2">104 </link><link linkend="d1/de1/a00213_1a6b58de3576e4b204fc38073794dfa1d2">MainGameLoop::GamerInformation::GamerInformation</link>(<link linkend="d0/d48/a00165">IMap</link>*&#32;<link linkend="d3/de5/a00209_1ae0ccec14d7db91cf6db41349a73b41a7">map</link>)&#32;{
+105 &#32;&#32;name&#32;=&#32;<emphasis class="stringliteral">&quot;&quot;</emphasis>;
+106 &#32;&#32;lifeCount&#32;=&#32;<link linkend="d2/da3/a00115_1a5ece0bc57b69f35c537f34cc06b620f5">limits::defaultBasisEnergy</link>;
+107 &#32;&#32;QSizeF*&#32;size&#32;=&#32;map-&gt;<link linkend="d0/d48/a00165_1a183f2d7ba8ec154d0338e999f195d0c8">getSize</link>();
+108 &#32;&#32;<emphasis class="keywordtype">float</emphasis>&#32;rand1&#32;=&#32;<emphasis class="keyword">static_cast&lt;</emphasis><emphasis class="keywordtype">float</emphasis><emphasis class="keyword">&gt;</emphasis>(rand())&#32;/&#32;static_cast&lt;float&gt;(RAND_MAX);
+109 &#32;&#32;<emphasis class="keywordtype">float</emphasis>&#32;rand2&#32;=&#32;<emphasis class="keyword">static_cast&lt;</emphasis><emphasis class="keywordtype">float</emphasis><emphasis class="keyword">&gt;</emphasis>(rand())&#32;/&#32;static_cast&lt;float&gt;(RAND_MAX);
+110 &#32;&#32;position&#32;=&#32;QVector3D(size-&gt;width()&#32;*&#32;rand1,&#32;size-&gt;height()&#32;*&#32;rand2,&#32;0);
+111 
+112 &#32;&#32;personalDiff&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;QList&lt;DiffElement*&gt;();
+113 }
+114 
+<link linkend="d1/de1/a00213_1a19842dcddbd89a64210977394060ca3a">115 </link><link linkend="d1/de1/a00213_1a19842dcddbd89a64210977394060ca3a">MainGameLoop::GamerInformation::~GamerInformation</link>()&#32;{
+116 &#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;personalDiff;
+117 }
+    </computeroutput></literallayout>
+</section>

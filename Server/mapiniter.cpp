@@ -9,7 +9,7 @@ IMap* MapIniter::initSimapleMap() {
   IMap* result = new ListBseMap(mapW, mapH);
   for (int i = 0; i < 1000; i++) {
     IBaseGameElement* item = getRandomGrass(mapW, mapH);
-    result->insertElement(item, *item->getPosition());
+    result->insertElement(item, item->getPosition());
   }
   return result;
 }

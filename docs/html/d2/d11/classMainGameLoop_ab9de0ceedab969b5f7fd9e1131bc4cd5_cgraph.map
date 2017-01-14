@@ -1,0 +1,7 @@
+<map id="MainGameLoop::getProccessorForMessage" name="MainGameLoop::getProccessorForMessage">
+<area shape="rect" id="node2" href="$d2/d11/classMainGameLoop.html#ac4cd47d8b350ae45ea09aaecad11a684" title="MainGameLoop::getAllMapAsDiff" alt="" coords="343,5,640,36"/>
+<area shape="rect" id="node3" href="$d2/d11/classMainGameLoop.html#ac7722494194e946c7d045471858c3aee" title="MainGameLoop::proccessGamer\lMessage" alt="" coords="343,60,639,109"/>
+<area shape="rect" id="node6" href="$d2/d11/classMainGameLoop.html#a26ac1e61f11a51a84b6f2e770808d162" title="MainGameLoop::proccessWatcher\lMessage" alt="" coords="337,133,645,183"/>
+<area shape="rect" id="node4" href="$d8/d5e/classBaseBasis.html#aa3c0b1cd0f29db8b63bb22dbfb78bbc5" title="BaseBasis::BaseBasis" alt="" coords="693,69,901,100"/>
+<area shape="rect" id="node5" href="$de/d2b/classIBaseGameElement.html#ae2be75da1a2a9edfabe993770e24654a" title="IBaseGameElement::nextStep" alt="" coords="949,69,1222,100"/>
+</map>

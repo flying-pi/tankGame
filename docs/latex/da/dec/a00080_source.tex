@@ -1,0 +1,26 @@
+\hypertarget{a00080_source}{}\section{mainwindow.\+cpp}
+\label{a00080_source}\index{Game\+View/mainwindow.\+cpp@{Game\+View/mainwindow.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00083}{"mainwindow.h"}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"ui\_mainwindow.h"}
+00003 
+\Hypertarget{a00080_source_l00004}\hyperlink{a00177_a8b244be8b7b7db1b08de2a2acb9409db}{00004} \hyperlink{a00177_a8b244be8b7b7db1b08de2a2acb9409db}{MainWindow}::MainWindow(QWidget* parent)
+00005     : QMainWindow(parent),
+00006       ui(\textcolor{keyword}{new} Ui::MainWindow),
+00007       connection(QHostAddress::LocalHost, \textcolor{keyword}{this}) \{
+00008   ui->setupUi(\textcolor{keyword}{this});
+00009   \hyperlink{a00177_abfedef9edae209df536e8c1c7cf0e7ae}{connectToServer}\hyperlink{a00177_abfedef9edae209df536e8c1c7cf0e7ae}{(}\hyperlink{a00177_abfedef9edae209df536e8c1c7cf0e7ae}{)};
+00010 \}
+00011 
+\Hypertarget{a00080_source_l00012}\hyperlink{a00177_ae98d00a93bc118200eeef9f9bba1dba7}{00012} \hyperlink{a00177_a8b244be8b7b7db1b08de2a2acb9409db}{MainWindow}::~\hyperlink{a00177_ae98d00a93bc118200eeef9f9bba1dba7}{MainWindow}() \{
+00013   \textcolor{keyword}{delete} \hyperlink{a00177_a35466a70ed47252a0191168126a352a5}{ui};
+00014 \}
+00015 
+\Hypertarget{a00080_source_l00016}\hyperlink{a00177_abfedef9edae209df536e8c1c7cf0e7ae}{00016} \textcolor{keywordtype}{void} \hyperlink{a00177_a8b244be8b7b7db1b08de2a2acb9409db}{MainWindow}::\hyperlink{a00177_abfedef9edae209df536e8c1c7cf0e7ae}{connectToServer}() \{
+00017   connection.openConnection();
+00018   connection.getBulder()->asFirstMessage(eConnectionType::eWatcher)->build();
+00019   connect(&connection, SIGNAL(onDiffReceive(QList<DiffElement*>*)),
+00020           ui->gameField, SLOT(onDiffReceive(QList<DiffElement*>*)));
+00021 \}
+\end{DoxyCode}

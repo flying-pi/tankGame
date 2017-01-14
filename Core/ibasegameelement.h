@@ -10,8 +10,7 @@
 #include <QTime>
 #include <QVector3D>
 
-enum eDiffType { eNew, eChange, eDeleted };
-enum eBaseGameElementType { eGrass, eSimpleTank };
+enum eBaseGameElementType { eGrass, eSimpleTank, eBasis };
 class IBaseGameElement;
 
 class IBaseGameElement : public QObject {
@@ -40,13 +39,15 @@ class IBaseGameElement : public QObject {
                                  const IBaseGameElement& myclass) {
     return stream << (*myclass.position) << (*myclass.helth)
                   << (*myclass.weight) << (*myclass.transitWeight)
-                  << (*myclass.additionalData) << myclass.type << myclass.name;
+                  << (*myclass.additionalData) << myclass.type << myclass.name
+                  << myclass.rVision;
   }
   friend QDataStream& operator>>(QDataStream& stream,
                                  IBaseGameElement& myclass) {
     return stream >> (*myclass.position) >> (*myclass.helth) >>
            (*myclass.weight) >> (*myclass.transitWeight) >>
-           (*myclass.additionalData) >> myclass.type >> myclass.name;
+           (*myclass.additionalData) >> myclass.type >> myclass.name >>
+           myclass.rVision;
     ;
   }
 
@@ -75,6 +76,10 @@ class IBaseGameElement : public QObject {
     this->additionalData = data;
   }
 
+  virtual void setRVision(int _rVison) { rVision = _rVison; }
+
+  virtual int getRVision() { return rVision; }
+
  signals:
 
  public slots:
@@ -85,34 +90,10 @@ class IBaseGameElement : public QObject {
   InfinityDouble* weight = nullptr;
   InfinityDouble* transitWeight = nullptr;
   QByteArray* additionalData = nullptr;
+  int rVision = 1;
 
   int type = -1;
-  QString name;  //цифровий підпис свій/не свій
-};
-
-class DiffElement {
- public:
-  DiffElement() { data = new IBaseGameElement(); }
-  DiffElement(eDiffType type, IBaseGameElement* data) {
-    this->type = type;
-    this->data = data;
-  }
-
-  friend QDataStream& operator<<(QDataStream& stream,
-                                 const DiffElement& myclass) {
-    stream << ((int)myclass.type);
-    IBaseGameElement& gameElement = (*myclass.data);
-    return stream << gameElement;
-  }
-  friend QDataStream& operator>>(QDataStream& stream, DiffElement& myclass) {
-    int type;
-    QDataStream& result = stream >> type >> (*myclass.data);
-    myclass.type = (eDiffType)type;
-    return result;
-  }
-
-  eDiffType type;
-  IBaseGameElement* data;
+  QString name;
 };
 
 #endif  // IBASEGAMEELEMENT_H

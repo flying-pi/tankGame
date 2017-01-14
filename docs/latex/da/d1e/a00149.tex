@@ -1,0 +1,448 @@
+\hypertarget{a00149}{}\section{Base\+Basis Class Reference}
+\label{a00149}\index{Base\+Basis@{Base\+Basis}}
+
+
+{\ttfamily \#include \char`\"{}basebasis.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Base\+Basis\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{db/d48/a00148}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Basis\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/d4a/a00147}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5}{Base\+Basis} ()
+\item 
+virtual void \hyperlink{a00149_ac31b2ea48f47f1bc2baaf1971243b506}{set\+Type} (int value) override
+\item 
+virtual Q\+Byte\+Array $\ast$ \hyperlink{a00149_aaf8b691c26fbbda7878c22dfda32ebe4}{get\+Additional\+Data} ()
+\item 
+virtual void \hyperlink{a00149_a17b5facef5ea0c9bb9c558a90831d6f9}{set\+Additionak\+Data} (Q\+Byte\+Array $\ast$data)
+\item 
+virtual int \hyperlink{a00149_acdc9310424ab117e3490e032028a2a7d}{get\+Energy} ()
+\item 
+virtual void \hyperlink{a00149_a8f4de08926ac9bf0968af49f1ac1279e}{set\+Energy} (int \+\_\+enery)
+\item 
+virtual void \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{next\+Step} ()
+\item 
+virtual Q\+Vector3D $\ast$ \hyperlink{a00137_a3159c02c1118989e3476b52d89a52401}{get\+Position} ()
+\item 
+virtual int \hyperlink{a00137_a639bd1e233821ff606bb8fe2931f6ee7}{get\+Type} ()
+\item 
+virtual \hyperlink{a00161}{Infinity\+Double} $\ast$ \hyperlink{a00137_a13a00e39ece3e20e3f5e049224da8d40}{get\+Helth} ()
+\item 
+virtual \hyperlink{a00161}{Infinity\+Double} $\ast$ \hyperlink{a00137_a935a07134430bbb44c3214629d607a3d}{get\+Weight} ()
+\item 
+virtual \hyperlink{a00161}{Infinity\+Double} $\ast$ \hyperlink{a00137_a4c74c903e19ada9da9150cf9569b4e9d}{get\+Max\+Transit\+Weight} ()
+\item 
+virtual Q\+String $\ast$ \hyperlink{a00137_a01051b9a502128a82f9a168a14d1ecdc}{get\+Name} ()
+\item 
+virtual void \hyperlink{a00137_a54dc1a743fac99db03c3f47b5c6d69c4}{set\+Position} (Q\+Vector3D $\ast$value)
+\item 
+virtual void \hyperlink{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}{set\+Helth} (\hyperlink{a00161}{Infinity\+Double} $\ast$value)
+\item 
+virtual void \hyperlink{a00137_a4b5e42aa7985c9bf959f0275cbc1bac7}{set\+Weight} (\hyperlink{a00161}{Infinity\+Double} $\ast$value)
+\item 
+virtual void \hyperlink{a00137_ac480b8140b5b290f49b4b96a47291180}{set\+Transit\+Weight} (\hyperlink{a00161}{Infinity\+Double} $\ast$value)
+\item 
+virtual void \hyperlink{a00137_a874f246d3249a989750e3db85ea4bfcd}{set\+Name} (Q\+String \hyperlink{a00137_af35fba4ed599605c3d78b3c3a71fa467}{name})
+\item 
+virtual void \hyperlink{a00137_a2719e14051c30f39ca60f4998e48abf9}{set\+R\+Vision} (int \+\_\+r\+Vison)
+\item 
+virtual int \hyperlink{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}{get\+R\+Vision} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{a00149_a59708d348b0218ba9f91c02361524963}{energy} = 100
+\item 
+Q\+Vector3D $\ast$ \hyperlink{a00137_afe080b1942ec40832e94cb884ec87456}{position} = nullptr
+\item 
+\hyperlink{a00161}{Infinity\+Double} $\ast$ \hyperlink{a00137_a440cf9e7d61c33482ab256a6e944b34d}{helth} = nullptr
+\item 
+\hyperlink{a00161}{Infinity\+Double} $\ast$ \hyperlink{a00137_a99901016531fd27b9b197dc88d3bfa4a}{weight} = nullptr
+\item 
+\hyperlink{a00161}{Infinity\+Double} $\ast$ \hyperlink{a00137_a865c937433f7d46665ca17e5adccd9df}{transit\+Weight} = nullptr
+\item 
+Q\+Byte\+Array $\ast$ \hyperlink{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91}{additional\+Data} = nullptr
+\item 
+int \hyperlink{a00137_ae0ad3c240950eba352aeb04e6a9296b4}{r\+Vision} = 1
+\item 
+int \hyperlink{a00137_a73a4ca23072b617f3d17004e3c671bca}{type} = -\/1
+\item 
+Q\+String \hyperlink{a00137_af35fba4ed599605c3d78b3c3a71fa467}{name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{a00029_source_l00006}{6} of file \hyperlink{a00029_source}{basebasis.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5}\label{a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5}} 
+\index{Base\+Basis@{Base\+Basis}!Base\+Basis@{Base\+Basis}}
+\index{Base\+Basis@{Base\+Basis}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{Base\+Basis()}{BaseBasis()}}
+{\footnotesize\ttfamily Base\+Basis\+::\+Base\+Basis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00026_source_l00004}{4} of file \hyperlink{a00026_source}{basebasis.\+cpp}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d1e/a00149_aa3c0b1cd0f29db8b63bb22dbfb78bbc5_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00149_aaf8b691c26fbbda7878c22dfda32ebe4}\label{a00149_aaf8b691c26fbbda7878c22dfda32ebe4}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Additional\+Data@{get\+Additional\+Data}}
+\index{get\+Additional\+Data@{get\+Additional\+Data}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Additional\+Data()}{getAdditionalData()}}
+{\footnotesize\ttfamily Q\+Byte\+Array $\ast$ Base\+Basis\+::get\+Additional\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{a00137_aaf3cdf5f4e893704c9f17c524a1f0a8c}{I\+Base\+Game\+Element}.
+
+
+
+Definition at line \hyperlink{a00026_source_l00017}{17} of file \hyperlink{a00026_source}{basebasis.\+cpp}.
+
+\mbox{\Hypertarget{a00149_acdc9310424ab117e3490e032028a2a7d}\label{a00149_acdc9310424ab117e3490e032028a2a7d}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Energy@{get\+Energy}}
+\index{get\+Energy@{get\+Energy}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Energy()}{getEnergy()}}
+{\footnotesize\ttfamily virtual int Base\+Basis\+::get\+Energy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \hyperlink{a00029_source_l00013}{13} of file \hyperlink{a00029_source}{basebasis.\+h}.
+
+\mbox{\Hypertarget{a00137_a13a00e39ece3e20e3f5e049224da8d40}\label{a00137_a13a00e39ece3e20e3f5e049224da8d40}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Helth@{get\+Helth}}
+\index{get\+Helth@{get\+Helth}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Helth()}{getHelth()}}
+{\footnotesize\ttfamily virtual \hyperlink{a00161}{Infinity\+Double}$\ast$ I\+Base\+Game\+Element\+::get\+Helth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00033}{33} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a4c74c903e19ada9da9150cf9569b4e9d}\label{a00137_a4c74c903e19ada9da9150cf9569b4e9d}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Max\+Transit\+Weight@{get\+Max\+Transit\+Weight}}
+\index{get\+Max\+Transit\+Weight@{get\+Max\+Transit\+Weight}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Max\+Transit\+Weight()}{getMaxTransitWeight()}}
+{\footnotesize\ttfamily virtual \hyperlink{a00161}{Infinity\+Double}$\ast$ I\+Base\+Game\+Element\+::get\+Max\+Transit\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00035}{35} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a01051b9a502128a82f9a168a14d1ecdc}\label{a00137_a01051b9a502128a82f9a168a14d1ecdc}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily virtual Q\+String$\ast$ I\+Base\+Game\+Element\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00036}{36} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a3159c02c1118989e3476b52d89a52401}\label{a00137_a3159c02c1118989e3476b52d89a52401}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily virtual Q\+Vector3D$\ast$ I\+Base\+Game\+Element\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00031}{31} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}\label{a00137_a4437ee7dcdb6e3e3c58c8b00d8bb0500}} 
+\index{Base\+Basis@{Base\+Basis}!get\+R\+Vision@{get\+R\+Vision}}
+\index{get\+R\+Vision@{get\+R\+Vision}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+R\+Vision()}{getRVision()}}
+{\footnotesize\ttfamily virtual int I\+Base\+Game\+Element\+::get\+R\+Vision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00081}{81} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a639bd1e233821ff606bb8fe2931f6ee7}\label{a00137_a639bd1e233821ff606bb8fe2931f6ee7}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual int I\+Base\+Game\+Element\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00032}{32} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a935a07134430bbb44c3214629d607a3d}\label{a00137_a935a07134430bbb44c3214629d607a3d}} 
+\index{Base\+Basis@{Base\+Basis}!get\+Weight@{get\+Weight}}
+\index{get\+Weight@{get\+Weight}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{get\+Weight()}{getWeight()}}
+{\footnotesize\ttfamily virtual \hyperlink{a00161}{Infinity\+Double}$\ast$ I\+Base\+Game\+Element\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00034}{34} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_ae2be75da1a2a9edfabe993770e24654a}\label{a00137_ae2be75da1a2a9edfabe993770e24654a}} 
+\index{Base\+Basis@{Base\+Basis}!next\+Step@{next\+Step}}
+\index{next\+Step@{next\+Step}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{next\+Step()}{nextStep()}}
+{\footnotesize\ttfamily virtual void I\+Base\+Game\+Element\+::next\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00029}{29} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df5/a00137_ae2be75da1a2a9edfabe993770e24654a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00149_a17b5facef5ea0c9bb9c558a90831d6f9}\label{a00149_a17b5facef5ea0c9bb9c558a90831d6f9}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Additionak\+Data@{set\+Additionak\+Data}}
+\index{set\+Additionak\+Data@{set\+Additionak\+Data}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Additionak\+Data()}{setAdditionakData()}}
+{\footnotesize\ttfamily void Base\+Basis\+::set\+Additionak\+Data (\begin{DoxyParamCaption}\item[{Q\+Byte\+Array $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{a00137_a71d8528482d5be16100ad56dbfd4aae9}{I\+Base\+Game\+Element}.
+
+
+
+Definition at line \hyperlink{a00026_source_l00023}{23} of file \hyperlink{a00026_source}{basebasis.\+cpp}.
+
+\mbox{\Hypertarget{a00149_a8f4de08926ac9bf0968af49f1ac1279e}\label{a00149_a8f4de08926ac9bf0968af49f1ac1279e}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Energy@{set\+Energy}}
+\index{set\+Energy@{set\+Energy}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Energy()}{setEnergy()}}
+{\footnotesize\ttfamily virtual void Base\+Basis\+::set\+Energy (\begin{DoxyParamCaption}\item[{int}]{\+\_\+enery }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \hyperlink{a00029_source_l00014}{14} of file \hyperlink{a00029_source}{basebasis.\+h}.
+
+\mbox{\Hypertarget{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}\label{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Helth@{set\+Helth}}
+\index{set\+Helth@{set\+Helth}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Helth()}{setHelth()}}
+{\footnotesize\ttfamily virtual void I\+Base\+Game\+Element\+::set\+Helth (\begin{DoxyParamCaption}\item[{\hyperlink{a00161}{Infinity\+Double} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00063}{63} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df5/a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00137_a874f246d3249a989750e3db85ea4bfcd}\label{a00137_a874f246d3249a989750e3db85ea4bfcd}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily virtual void I\+Base\+Game\+Element\+::set\+Name (\begin{DoxyParamCaption}\item[{Q\+String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00073}{73} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a54dc1a743fac99db03c3f47b5c6d69c4}\label{a00137_a54dc1a743fac99db03c3f47b5c6d69c4}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily virtual void I\+Base\+Game\+Element\+::set\+Position (\begin{DoxyParamCaption}\item[{Q\+Vector3D $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00061}{61} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a2719e14051c30f39ca60f4998e48abf9}\label{a00137_a2719e14051c30f39ca60f4998e48abf9}} 
+\index{Base\+Basis@{Base\+Basis}!set\+R\+Vision@{set\+R\+Vision}}
+\index{set\+R\+Vision@{set\+R\+Vision}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+R\+Vision()}{setRVision()}}
+{\footnotesize\ttfamily virtual void I\+Base\+Game\+Element\+::set\+R\+Vision (\begin{DoxyParamCaption}\item[{int}]{\+\_\+r\+Vison }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00079}{79} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_ac480b8140b5b290f49b4b96a47291180}\label{a00137_ac480b8140b5b290f49b4b96a47291180}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Transit\+Weight@{set\+Transit\+Weight}}
+\index{set\+Transit\+Weight@{set\+Transit\+Weight}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Transit\+Weight()}{setTransitWeight()}}
+{\footnotesize\ttfamily virtual void I\+Base\+Game\+Element\+::set\+Transit\+Weight (\begin{DoxyParamCaption}\item[{\hyperlink{a00161}{Infinity\+Double} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00067}{67} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d2/df5/a00137_ac480b8140b5b290f49b4b96a47291180_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00149_ac31b2ea48f47f1bc2baaf1971243b506}\label{a00149_ac31b2ea48f47f1bc2baaf1971243b506}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Type()}{setType()}}
+{\footnotesize\ttfamily void Base\+Basis\+::set\+Type (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \hyperlink{a00137_a324cba2176155a50b5a2239eb0a8b6a0}{I\+Base\+Game\+Element}.
+
+
+
+Definition at line \hyperlink{a00026_source_l00010}{10} of file \hyperlink{a00026_source}{basebasis.\+cpp}.
+
+\mbox{\Hypertarget{a00137_a4b5e42aa7985c9bf959f0275cbc1bac7}\label{a00137_a4b5e42aa7985c9bf959f0275cbc1bac7}} 
+\index{Base\+Basis@{Base\+Basis}!set\+Weight@{set\+Weight}}
+\index{set\+Weight@{set\+Weight}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{set\+Weight()}{setWeight()}}
+{\footnotesize\ttfamily virtual void I\+Base\+Game\+Element\+::set\+Weight (\begin{DoxyParamCaption}\item[{\hyperlink{a00161}{Infinity\+Double} $\ast$}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00065}{65} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91}\label{a00137_a4d3547697d3bd0c2d65c83b07b3f8f91}} 
+\index{Base\+Basis@{Base\+Basis}!additional\+Data@{additional\+Data}}
+\index{additional\+Data@{additional\+Data}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{additional\+Data}{additionalData}}
+{\footnotesize\ttfamily Q\+Byte\+Array$\ast$ I\+Base\+Game\+Element\+::additional\+Data = nullptr\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00092}{92} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00149_a59708d348b0218ba9f91c02361524963}\label{a00149_a59708d348b0218ba9f91c02361524963}} 
+\index{Base\+Basis@{Base\+Basis}!energy@{energy}}
+\index{energy@{energy}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{energy}{energy}}
+{\footnotesize\ttfamily int Base\+Basis\+::energy = 100\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00029_source_l00017}{17} of file \hyperlink{a00029_source}{basebasis.\+h}.
+
+\mbox{\Hypertarget{a00137_a440cf9e7d61c33482ab256a6e944b34d}\label{a00137_a440cf9e7d61c33482ab256a6e944b34d}} 
+\index{Base\+Basis@{Base\+Basis}!helth@{helth}}
+\index{helth@{helth}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{helth}{helth}}
+{\footnotesize\ttfamily \hyperlink{a00161}{Infinity\+Double}$\ast$ I\+Base\+Game\+Element\+::helth = nullptr\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00089}{89} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_af35fba4ed599605c3d78b3c3a71fa467}\label{a00137_af35fba4ed599605c3d78b3c3a71fa467}} 
+\index{Base\+Basis@{Base\+Basis}!name@{name}}
+\index{name@{name}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily Q\+String I\+Base\+Game\+Element\+::name\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00096}{96} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_afe080b1942ec40832e94cb884ec87456}\label{a00137_afe080b1942ec40832e94cb884ec87456}} 
+\index{Base\+Basis@{Base\+Basis}!position@{position}}
+\index{position@{position}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily Q\+Vector3D$\ast$ I\+Base\+Game\+Element\+::position = nullptr\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00088}{88} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_ae0ad3c240950eba352aeb04e6a9296b4}\label{a00137_ae0ad3c240950eba352aeb04e6a9296b4}} 
+\index{Base\+Basis@{Base\+Basis}!r\+Vision@{r\+Vision}}
+\index{r\+Vision@{r\+Vision}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{r\+Vision}{rVision}}
+{\footnotesize\ttfamily int I\+Base\+Game\+Element\+::r\+Vision = 1\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00093}{93} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a865c937433f7d46665ca17e5adccd9df}\label{a00137_a865c937433f7d46665ca17e5adccd9df}} 
+\index{Base\+Basis@{Base\+Basis}!transit\+Weight@{transit\+Weight}}
+\index{transit\+Weight@{transit\+Weight}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{transit\+Weight}{transitWeight}}
+{\footnotesize\ttfamily \hyperlink{a00161}{Infinity\+Double}$\ast$ I\+Base\+Game\+Element\+::transit\+Weight = nullptr\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00091}{91} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a73a4ca23072b617f3d17004e3c671bca}\label{a00137_a73a4ca23072b617f3d17004e3c671bca}} 
+\index{Base\+Basis@{Base\+Basis}!type@{type}}
+\index{type@{type}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily int I\+Base\+Game\+Element\+::type = -\/1\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00095}{95} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+
+\mbox{\Hypertarget{a00137_a99901016531fd27b9b197dc88d3bfa4a}\label{a00137_a99901016531fd27b9b197dc88d3bfa4a}} 
+\index{Base\+Basis@{Base\+Basis}!weight@{weight}}
+\index{weight@{weight}!Base\+Basis@{Base\+Basis}}
+\subsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily \hyperlink{a00161}{Infinity\+Double}$\ast$ I\+Base\+Game\+Element\+::weight = nullptr\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00047_source_l00090}{90} of file \hyperlink{a00047_source}{ibasegameelement.\+h}.
+

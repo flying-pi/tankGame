@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d45/a00011">
+    <title>core.cpp File Reference</title>
+    <programlisting>#include &quot;core.h&quot;</programlisting>
+<para>Include dependency diagram for core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../df/d86/a00012.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for core.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dd4/a00013.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Core/core.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d2/de7/a00014">core.h</link>&quot;</emphasis>
+2 
+3 
+<link linkend="da/ddb/a00145_1a14e63188e0aa7c4a6f72d5501384d1f9">4 </link><link linkend="da/ddb/a00145_1a14e63188e0aa7c4a6f72d5501384d1f9">Core::Core</link>()
+5 {
+6 }
+    </computeroutput></literallayout>
+</section>

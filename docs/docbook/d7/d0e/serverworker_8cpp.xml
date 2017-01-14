@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d0e/serverworker_8cpp">
+    <title>serverworker.cpp File Reference</title>
+    <programlisting>#include &quot;serverworker.h&quot;</programlisting>
+    <programlisting>#include &lt;connection/simpleconnection.h&gt;</programlisting>
+    <programlisting>#include &lt;QThread&gt;</programlisting>
+<para>Include dependency diagram for serverworker.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/d60/serverworker_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for serverworker.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d6/da3/serverworker_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d0/dc8/classreceiveRespnceThread">receiveRespnceThread</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Server/serverworker.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d8/dfb/serverworker_8h">serverworker.h</link>&quot;</emphasis>
+2 
+3 <emphasis class="preprocessor">#include&#32;&lt;<link linkend="d1/d70/simpleconnection_8h">connection/simpleconnection.h</link>&gt;</emphasis>
+4 <emphasis class="preprocessor">#include&#32;&lt;QThread&gt;</emphasis>
+5 
+<link linkend="da/d78/classServerWorker_1aa8aee43d415cf337417a1d1f180ef03a">6 </link><link linkend="da/d78/classServerWorker_1aa8aee43d415cf337417a1d1f180ef03a">ServerWorker::ServerWorker</link>(QTcpSocket*&#32;socket)&#32;{
+7 &#32;&#32;this-&gt;socket&#32;=&#32;<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>;
+8 }
+9 
+<link linkend="da/d78/classServerWorker_1a8b4f9a11d13f0b4990ae72f87da010df">10 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="da/d78/classServerWorker_1a8b4f9a11d13f0b4990ae72f87da010df">ServerWorker::run</link>()&#32;{
+11 &#32;&#32;<link linkend="da/d78/classServerWorker_1aa17ea4dcd487fd8bd6aab748d496a561">out</link>&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;QDataStream(<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>);
+12 &#32;&#32;<link linkend="da/d78/classServerWorker_1aa17ea4dcd487fd8bd6aab748d496a561">out</link>-&gt;setVersion(QDataStream::Qt_5_7);
+13 
+14 &#32;&#32;<link linkend="d8/d48/classServerWorker_1_1ReceiverThread">ReceiverThread</link>*&#32;th&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="d8/d48/classServerWorker_1_1ReceiverThread">ReceiverThread</link>(<emphasis class="keyword">this</emphasis>,&#32;<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>);
+15 
+16 &#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(this-&gt;<link linkend="da/d78/classServerWorker_1a237b637e43a66980b16463bab0b38ce4">isWork</link>)&#32;{
+17 &#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a7284c375ebf78a1dc24fbd801755e783">workerMutex</link>.lock();
+18 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(<link linkend="da/d78/classServerWorker_1ac3d49b227a605c95f42569531f8dbe89">responceMessage</link>.length()&#32;&gt;&#32;0)&#32;{
+19 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="dc/d7d/structServerWorker_1_1responceData">responceData</link>&#32;data&#32;=&#32;<link linkend="da/d78/classServerWorker_1ac3d49b227a605c95f42569531f8dbe89">responceMessage</link>.takeFirst();
+20 &#32;&#32;&#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;getting&#32;some&#32;message&#32;for&#32;sending&quot;</emphasis>;
+21 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1aa17ea4dcd487fd8bd6aab748d496a561">out</link>-&gt;startTransaction();
+22 &#32;&#32;&#32;&#32;&#32;&#32;(*out)&#32;&lt;&lt;&#32;(*data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1a0915cfbfe5884aecde59303745ced47b">messag</link>);
+23 &#32;&#32;&#32;&#32;&#32;&#32;(*out)&#32;&lt;&lt;&#32;data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1abcaa9482893ea18f129f3b821e4b4ec8">diff</link>-&gt;length();
+24 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1abcaa9482893ea18f129f3b821e4b4ec8">diff</link>-&gt;length();&#32;i++)
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(*<link linkend="da/d78/classServerWorker_1aa17ea4dcd487fd8bd6aab748d496a561">out</link>)&#32;&lt;&lt;&#32;(*data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1abcaa9482893ea18f129f3b821e4b4ec8">diff</link>-&gt;at(i));
+26 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1aa17ea4dcd487fd8bd6aab748d496a561">out</link>-&gt;commitTransaction();
+27 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>-&gt;flush();
+28 &#32;&#32;&#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;send&#32;&#32;response&#32;to&#32;client&quot;</emphasis>;
+29 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1abcaa9482893ea18f129f3b821e4b4ec8">diff</link>-&gt;length();&#32;i++)&#32;{
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1abcaa9482893ea18f129f3b821e4b4ec8">diff</link>-&gt;at(i);
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1abcaa9482893ea18f129f3b821e4b4ec8">diff</link>-&gt;removeAt(i);
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i--;
+33 &#32;&#32;&#32;&#32;&#32;&#32;}
+34 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1abcaa9482893ea18f129f3b821e4b4ec8">diff</link>;
+35 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;data.<link linkend="dc/d7d/structServerWorker_1_1responceData_1a0915cfbfe5884aecde59303745ced47b">messag</link>;
+36 &#32;&#32;&#32;&#32;}
+37 &#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a7284c375ebf78a1dc24fbd801755e783">workerMutex</link>.unlock();
+38 &#32;&#32;}
+39 &#32;&#32;th-&gt;<link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1ab4b5a368d07b2670c72be1a04404f76d">stop</link>();
+40 &#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;th;
+41 &#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;worker&#32;has&#32;stoped&quot;</emphasis>;
+42 &#32;&#32;emit&#32;<link linkend="da/d78/classServerWorker_1ab80ef665f93d81c71a83aa42f8d888df">onStop</link>(<emphasis class="keyword">this</emphasis>);
+43 }
+44 
+<link linkend="d0/dc8/classreceiveRespnceThread">45 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="d0/dc8/classreceiveRespnceThread">receiveRespnceThread</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;QThread&#32;{
+46 &#32;<emphasis class="keyword">public</emphasis>:
+<link linkend="d0/dc8/classreceiveRespnceThread_1a1945dd1b371f3efa9a07df815c868f96">47 </link>&#32;&#32;QMutex*&#32;<link linkend="d0/dc8/classreceiveRespnceThread_1a1945dd1b371f3efa9a07df815c868f96">mutex</link>;
+<link linkend="d0/dc8/classreceiveRespnceThread_1a77d9cc109e9ebeb4f55d5b753621d0f1">48 </link>&#32;&#32;QList&lt;DiffElement*&gt;*&#32;<link linkend="d0/dc8/classreceiveRespnceThread_1a77d9cc109e9ebeb4f55d5b753621d0f1">diff</link>;
+<link linkend="d0/dc8/classreceiveRespnceThread_1aa3512ecc40fc7e23890c11c08ea4838c">49 </link>&#32;&#32;<link linkend="db/dbc/classMessageForServer">MessageForServer</link>*&#32;<link linkend="d0/dc8/classreceiveRespnceThread_1aa3512ecc40fc7e23890c11c08ea4838c">message</link>;
+<link linkend="d0/dc8/classreceiveRespnceThread_1a7f0a11ce86c12c80ca4305eaac48a285">50 </link>&#32;&#32;QQueue&lt;ServerWorker::responceData&gt;*&#32;<link linkend="d0/dc8/classreceiveRespnceThread_1a7f0a11ce86c12c80ca4305eaac48a285">responceMessage</link>;
+51 
+52 &#32;&#32;<emphasis class="comment">//&#32;QThread&#32;interface</emphasis>
+53 &#32;<emphasis class="keyword">protected</emphasis>:
+<link linkend="d0/dc8/classreceiveRespnceThread_1a2087ccd86d00beff7c383049435c93bd">54 </link>&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d0/dc8/classreceiveRespnceThread_1a2087ccd86d00beff7c383049435c93bd">run</link>()&#32;{
+55 &#32;&#32;&#32;&#32;mutex-&gt;lock();
+56 &#32;&#32;&#32;&#32;responceMessage-&gt;push_back(<link linkend="dc/d7d/structServerWorker_1_1responceData">ServerWorker::responceData</link>(diff,&#32;message));
+57 &#32;&#32;&#32;&#32;mutex-&gt;unlock();
+58 &#32;&#32;}
+59 };
+60 
+<link linkend="da/d78/classServerWorker_1a2cfa275ffeff3aeee19058e8155763f5">61 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="da/d78/classServerWorker_1a2cfa275ffeff3aeee19058e8155763f5">ServerWorker::receiveResponce</link>(QList&lt;DiffElement*&gt;*&#32;diff,
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="db/dbc/classMessageForServer">MessageForServer</link>*&#32;message)&#32;{
+63 &#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;getting&#32;responce&#32;for&#32;client&#32;from&#32;map&#32;loop&quot;</emphasis>;
+64 
+65 &#32;&#32;<emphasis class="comment">//&#32;&#32;receiveRespnceThread&#32;r;</emphasis>
+66 &#32;&#32;<emphasis class="comment">//&#32;&#32;r.mutex&#32;=&#32;workerMutex;</emphasis>
+67 
+68 &#32;&#32;QtConcurrent::run(QThreadPool::globalInstance(),&#32;[=]&#32;{
+69 &#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;ServerWorker::receiveResponce&#32;-&#32;befor&#32;mutex&quot;</emphasis>;
+70 &#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a7284c375ebf78a1dc24fbd801755e783">workerMutex</link>.lock();
+71 &#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;ServerWorker::receiveResponce&#32;-&#32;in&#32;mutex&quot;</emphasis>;
+72 &#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1ac3d49b227a605c95f42569531f8dbe89">responceMessage</link>.push_back(<link linkend="dc/d7d/structServerWorker_1_1responceData">responceData</link>(diff,&#32;message));
+73 &#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a7284c375ebf78a1dc24fbd801755e783">workerMutex</link>.unlock();
+74 &#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;ServerWorker::receiveResponce&#32;-&#32;after&#32;mutex&quot;</emphasis>;
+75 &#32;&#32;});
+76 }
+77 
+<link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1a4d4ad81a3aa7b6b71eb8d9345f9b7924">78 </link><link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1a4d4ad81a3aa7b6b71eb8d9345f9b7924">ServerWorker::ReceiverThread::ReceiverThread</link>(<link linkend="da/d78/classServerWorker">ServerWorker</link>*&#32;parent,
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;QTcpSocket*&#32;<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>)&#32;{
+80 &#32;&#32;this-&gt;socket&#32;=&#32;<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>;
+81 &#32;&#32;this-&gt;parentThread&#32;=&#32;parent;
+82 &#32;&#32;this-&gt;start();
+83 }
+84 
+<link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1a301c367fce51a745fef83c7c200f7eeb">85 </link><link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1a301c367fce51a745fef83c7c200f7eeb">ServerWorker::ReceiverThread::~ReceiverThread</link>()&#32;{
+86 &#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;in;
+87 }
+88 
+<link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1ab4b5a368d07b2670c72be1a04404f76d">89 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1ab4b5a368d07b2670c72be1a04404f76d">ServerWorker::ReceiverThread::stop</link>()&#32;{
+90 &#32;&#32;receiverMutex.lock();
+91 &#32;&#32;<link linkend="da/d78/classServerWorker_1a237b637e43a66980b16463bab0b38ce4">isWork</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+92 &#32;&#32;receiverMutex.unlock();
+93 }
+94 
+<link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1ac4363547096e15a9a70e588e010855f9">95 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d8/d48/classServerWorker_1_1ReceiverThread_1ac4363547096e15a9a70e588e010855f9">ServerWorker::ReceiverThread::run</link>()&#32;{
+96 &#32;&#32;in&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;QDataStream(<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>);
+97 &#32;&#32;in-&gt;setVersion(QDataStream::Qt_5_7);
+98 
+99 &#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;starting&#32;receiving&#32;thread&quot;</emphasis>;
+100 
+101 &#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(<emphasis class="keyword">true</emphasis>)&#32;{
+102 &#32;&#32;&#32;&#32;receiverMutex.lock();
+103 &#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>-&gt;waitForReadyRead(-1);
+104 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>-&gt;state()&#32;==&#32;QTcpSocket::UnconnectedState&#32;||
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a8f7ef6413cb2697dff4a71835fa5b93d">socket</link>-&gt;state()&#32;==&#32;QAbstractSocket::ClosingState)
+106 &#32;&#32;&#32;&#32;&#32;&#32;<link linkend="da/d78/classServerWorker_1a237b637e43a66980b16463bab0b38ce4">isWork</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+107 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!<link linkend="da/d78/classServerWorker_1a237b637e43a66980b16463bab0b38ce4">isWork</link>)&#32;{
+108 &#32;&#32;&#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;stoping&#32;receiver&#32;loop&quot;</emphasis>;
+109 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+110 &#32;&#32;&#32;&#32;}
+111 &#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;ready&#32;read&#32;from&#32;client&quot;</emphasis>;
+112 &#32;&#32;&#32;&#32;<link linkend="db/dbc/classMessageForServer">MessageForServer</link>*&#32;newMessage&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="db/dbc/classMessageForServer">MessageForServer</link>();
+113 &#32;&#32;&#32;&#32;(*in)&#32;&gt;&gt;&#32;(*newMessage);
+114 &#32;&#32;&#32;&#32;qInfo()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;get&#32;new&#32;message&#32;on&#32;server&#32;::&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;(*newMessage).toString();
+115 &#32;&#32;&#32;&#32;parentThread-&gt;receiver-&gt;sendMail(newMessage,&#32;parentThread,
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;newMessage-&gt;messageType);
+117 &#32;&#32;&#32;&#32;receiverMutex.unlock();
+118 &#32;&#32;}
+119 }
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,31 @@
+<map id="Core/ibasegameelement.h" name="Core/ibasegameelement.h">
+<area shape="rect" id="node2" href="$d4/dee/a00008.html" title="Core/connection/simpleconnection.h" alt="" coords="387,84,709,115"/>
+<area shape="rect" id="node7" href="$d7/d46/a00002.html" title="Core/connection/mailboxelement.h" alt="" coords="690,163,999,193"/>
+<area shape="rect" id="node15" href="$d5/d16/a00029.html" title="Core/GameElements/basebasis.h" alt="" coords="1230,84,1531,115"/>
+<area shape="rect" id="node17" href="$d4/d8c/a00035.html" title="Core/GameElements/basebulet.h" alt="" coords="1754,84,2052,115"/>
+<area shape="rect" id="node19" href="$dd/d32/a00041.html" title="Core/GameElements/basetank.h" alt="" coords="1758,163,2050,193"/>
+<area shape="rect" id="node21" href="$d5/df9/a00044.html" title="Core/ibasegameelement.cpp" alt="" coords="2522,84,2782,115"/>
+<area shape="rect" id="node22" href="$dc/dee/a00053.html" title="Core/imap.h" alt="" coords="2176,84,2299,115"/>
+<area shape="rect" id="node26" href="$d1/d44/a00098.html" title="Server/mapiniter.h" alt="" coords="2094,241,2267,272"/>
+<area shape="rect" id="node28" href="$da/d24/a00068.html" title="Core/util/baseutil.h" alt="" coords="2323,84,2499,115"/>
+<area shape="rect" id="node29" href="$db/db6/a00074.html" title="GameView/field.h" alt="" coords="2806,84,2973,115"/>
+<area shape="rect" id="node3" href="$dd/dad/a00005.html" title="Core/connection/simpleconnection.cpp" alt="" coords="5,163,347,193"/>
+<area shape="rect" id="node4" href="$d2/d1f/a00083.html" title="GameView/mainwindow.h" alt="" coords="431,163,666,193"/>
+<area shape="rect" id="node12" href="$df/d98/a00107.html" title="Server/serverworker.cpp" alt="" coords="531,320,755,351"/>
+<area shape="rect" id="node5" href="$da/d2e/a00238.html" title="GameView/main.cpp" alt="" coords="700,241,893,272"/>
+<area shape="rect" id="node6" href="$da/dec/a00080.html" title="GameView/mainwindow.cpp" alt="" coords="421,241,676,272"/>
+<area shape="rect" id="node8" href="$d4/d81/a00110.html" title="Server/serverworker.h" alt="" coords="917,241,1121,272"/>
+<area shape="rect" id="node9" href="$d0/dc2/a00104.html" title="Server/serverconnection.h" alt="" coords="1038,320,1277,351"/>
+<area shape="rect" id="node13" href="$d1/dc1/a00092.html" title="Server/maingameloop.h" alt="" coords="1488,241,1707,272"/>
+<area shape="rect" id="node10" href="$d6/db6/a00241.html" title="Server/main.cpp" alt="" coords="1319,399,1476,429"/>
+<area shape="rect" id="node11" href="$d4/d3a/a00101.html" title="Server/serverconnection.cpp" alt="" coords="1028,399,1287,429"/>
+<area shape="rect" id="node14" href="$db/dab/a00089.html" title="Server/maingameloop.cpp" alt="" coords="1573,320,1812,351"/>
+<area shape="rect" id="node16" href="$d6/d5b/a00026.html" title="Core/GameElements/basebasis.cpp" alt="" coords="1023,163,1343,193"/>
+<area shape="rect" id="node18" href="$dc/d87/a00032.html" title="Core/GameElements/basebulet.cpp" alt="" coords="1418,163,1735,193"/>
+<area shape="rect" id="node20" href="$d8/d41/a00038.html" title="Core/GameElements/basetank.cpp" alt="" coords="1748,241,2060,272"/>
+<area shape="rect" id="node23" href="$d5/de0/a00050.html" title="Core/imap.cpp" alt="" coords="2228,163,2370,193"/>
+<area shape="rect" id="node24" href="$de/de1/a00065.html" title="Core/maps/listbsemap.h" alt="" coords="2394,163,2617,193"/>
+<area shape="rect" id="node25" href="$df/d03/a00062.html" title="Core/maps/listbsemap.cpp" alt="" coords="2458,241,2700,272"/>
+<area shape="rect" id="node27" href="$d9/d77/a00095.html" title="Server/mapiniter.cpp" alt="" coords="2084,320,2277,351"/>
+<area shape="rect" id="node30" href="$d0/d89/a00071.html" title="GameView/field.cpp" alt="" coords="2796,163,2983,193"/>
+</map>

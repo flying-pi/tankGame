@@ -1,0 +1,125 @@
+\hypertarget{a00107_source}{}\section{serverworker.\+cpp}
+\label{a00107_source}\index{Server/serverworker.\+cpp@{Server/serverworker.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00110}{"serverworker.h"}
+00002 
+00003 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{connection}\textcolor{preprocessor}{/}\textcolor{preprocessor}{simpleconnection}\textcolor{preprocessor}{.}\textcolor{preprocessor}{h}\textcolor{preprocessor}{>}
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QThread}\textcolor{preprocessor}{>}
+00005 
+\Hypertarget{a00107_source_l00006}\hyperlink{a00185_aa8aee43d415cf337417a1d1f180ef03a}{00006} \hyperlink{a00185_ab80ef665f93d81c71a83aa42f8d888df}{ServerWorker}::\hyperlink{a00185_aa8aee43d415cf337417a1d1f180ef03a}{ServerWorker}(QTcpSocket* socket) \{
+00007   \textcolor{keyword}{this}->socket = socket;
+00008 \}
+00009 
+\Hypertarget{a00107_source_l00010}\hyperlink{a00185_a8b4f9a11d13f0b4990ae72f87da010df}{00010} \textcolor{keywordtype}{void} \hyperlink{a00185_ab80ef665f93d81c71a83aa42f8d888df}{ServerWorker}::\hyperlink{a00185_a8b4f9a11d13f0b4990ae72f87da010df}{run}() \{
+00011   out = \textcolor{keyword}{new} QDataStream(socket);
+00012   out->setVersion(QDataStream::Qt\_5\_7);
+00013 
+00014   \hyperlink{a00193}{ReceiverThread}* th = \textcolor{keyword}{new} ReceiverThread(\textcolor{keyword}{this}, socket);
+00015 
+00016   \textcolor{keywordflow}{while} (\textcolor{keyword}{this}\hyperlink{a00185_a237b637e43a66980b16463bab0b38ce4}{->}\hyperlink{a00185_a237b637e43a66980b16463bab0b38ce4}{isWork}) \{
+00017     workerMutex.lock();
+00018     \textcolor{keywordflow}{while} (responceMessage.length() > 0) \{
+00019       responceData data = responceMessage.takeFirst();
+00020       qInfo() << \textcolor{stringliteral}{"getting some message for sending"};
+00021       out->startTransaction();
+00022       (*out) << (*data.messag);
+00023       (*out) << data.diff->length();
+00024       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.diff->length(); i++)
+00025         (*out) << (*data.diff->at(i));
+00026       out->commitTransaction();
+00027       socket->flush();
+00028       qInfo() << \textcolor{stringliteral}{"send  response to client"};
+00029       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.diff->length(); i++) \{
+00030         \textcolor{keyword}{delete} data.diff->at(i);
+00031         data.diff->removeAt(i);
+00032         i--;
+00033       \}
+00034       \textcolor{keyword}{delete} data.diff;
+00035       \textcolor{keyword}{delete} data.messag;
+00036     \}
+00037     workerMutex.unlock();
+00038   \}
+00039   th\hyperlink{a00193_ab4b5a368d07b2670c72be1a04404f76d}{->}\hyperlink{a00193_ab4b5a368d07b2670c72be1a04404f76d}{stop}\hyperlink{a00193_ab4b5a368d07b2670c72be1a04404f76d}{(}\hyperlink{a00193_ab4b5a368d07b2670c72be1a04404f76d}{)};
+00040   \textcolor{keyword}{delete} th;
+00041   qInfo() << \textcolor{stringliteral}{"worker has stoped"};
+00042   emit onStop(\textcolor{keyword}{this});
+00043 \}
+00044 
+\Hypertarget{a00107_source_l00045}\hyperlink{a00221}{00045} \textcolor{keyword}{class} \hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{receiveRespnceThread} : \textcolor{keyword}{public} \hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{QThread} \{
+00046  \textcolor{keyword}{public}:
+\Hypertarget{a00107_source_l00047}\hyperlink{a00221_a1945dd1b371f3efa9a07df815c868f96}{00047}   \hyperlink{a00221_a1945dd1b371f3efa9a07df815c868f96}{QMutex}* \hyperlink{a00221_a1945dd1b371f3efa9a07df815c868f96}{mutex};
+\Hypertarget{a00107_source_l00048}\hyperlink{a00221_a77d9cc109e9ebeb4f55d5b753621d0f1}{00048}   \hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{QList}<\hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{DiffElement}*>* \hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{diff};
+\Hypertarget{a00107_source_l00049}\hyperlink{a00221_aa3512ecc40fc7e23890c11c08ea4838c}{00049}   \hyperlink{a00121_a32f7c4034883ac363ca247c8a2843040}{MessageForServer}* \hyperlink{a00221_aa3512ecc40fc7e23890c11c08ea4838c}{message};
+\Hypertarget{a00107_source_l00050}\hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{00050}   \hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{QQueue}<\hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{ServerWorker}::\hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{responceData}>* 
+      \hyperlink{a00221_a7f0a11ce86c12c80ca4305eaac48a285}{responceMessage};
+00051 
+00052   \textcolor{comment}{// QThread interface}
+00053  \textcolor{keyword}{protected}:
+\Hypertarget{a00107_source_l00054}\hyperlink{a00221_a2087ccd86d00beff7c383049435c93bd}{00054}   \textcolor{keywordtype}{void} \hyperlink{a00221_a2087ccd86d00beff7c383049435c93bd}{run}() \{
+00055     mutex->lock();
+00056     responceMessage->push\_back(ServerWorker::responceData(diff, message));
+00057     mutex->unlock();
+00058   \}
+00059 \};
+00060 
+\Hypertarget{a00107_source_l00061}\hyperlink{a00185_a2cfa275ffeff3aeee19058e8155763f5}{00061} \textcolor{keywordtype}{void} \hyperlink{a00185_ab80ef665f93d81c71a83aa42f8d888df}{ServerWorker}::receiveResponce(QList<DiffElement*>* diff,
+00062                                    MessageForServer* message) \{
+00063   qInfo() << \textcolor{stringliteral}{"getting responce for client from map loop"};
+00064 
+00065   \textcolor{comment}{//  receiveRespnceThread r;}
+00066   \textcolor{comment}{//  r.mutex = workerMutex;}
+00067 
+00068   QtConcurrent::run(QThreadPool::globalInstance(), [=] \{
+00069     qInfo() << \textcolor{stringliteral}{"ServerWorker::receiveResponce - befor mutex"};
+00070     workerMutex.lock();
+00071     qInfo() << \textcolor{stringliteral}{"ServerWorker::receiveResponce - in mutex"};
+00072     responceMessage.push\_back(responceData(diff, message));
+00073     workerMutex.unlock();
+00074     qInfo() << \textcolor{stringliteral}{"ServerWorker::receiveResponce - after mutex"};
+00075   \});
+00076 \}
+00077 
+\Hypertarget{a00107_source_l00078}\hyperlink{a00193_a4d4ad81a3aa7b6b71eb8d9345f9b7924}{00078} ServerWorker::ReceiverThread::ReceiverThread(ServerWorker* parent,
+00079                                              QTcpSocket* socket) \{
+00080   \textcolor{keyword}{this}->socket = socket;
+00081   \textcolor{keyword}{this}->parentThread = parent;
+00082   \textcolor{keyword}{this}->start();
+00083 \}
+00084 
+\Hypertarget{a00107_source_l00085}\hyperlink{a00193_a301c367fce51a745fef83c7c200f7eeb}{00085} ServerWorker::ReceiverThread::~ReceiverThread() \{
+00086   \textcolor{keyword}{delete} in;
+00087 \}
+00088 
+\Hypertarget{a00107_source_l00089}\hyperlink{a00193_ab4b5a368d07b2670c72be1a04404f76d}{00089} \textcolor{keywordtype}{void} ServerWorker::ReceiverThread::stop() \{
+00090   receiverMutex.lock();
+00091   isWork = \textcolor{keyword}{false};
+00092   receiverMutex.unlock();
+00093 \}
+00094 
+\Hypertarget{a00107_source_l00095}\hyperlink{a00193_ac4363547096e15a9a70e588e010855f9}{00095} \textcolor{keywordtype}{void} ServerWorker::ReceiverThread::run() \{
+00096   in = \textcolor{keyword}{new} QDataStream(socket);
+00097   in->setVersion(QDataStream::Qt\_5\_7);
+00098 
+00099   qInfo() << \textcolor{stringliteral}{"starting receiving thread"};
+00100 
+00101   \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+00102     receiverMutex.lock();
+00103     socket->waitForReadyRead(-1);
+00104     \textcolor{keywordflow}{if} (socket->state() == QTcpSocket::UnconnectedState ||
+00105         socket->state() == QAbstractSocket::ClosingState)
+00106       isWork = \textcolor{keyword}{false};
+00107     \textcolor{keywordflow}{if} (!isWork) \{
+00108       qInfo() << \textcolor{stringliteral}{"stoping receiver loop"};
+00109       \textcolor{keywordflow}{break};
+00110     \}
+00111     qInfo() << \textcolor{stringliteral}{"ready read from client"};
+00112     MessageForServer* newMessage = \textcolor{keyword}{new} MessageForServer();
+00113     (*in) >> (*newMessage);
+00114     qInfo() << \textcolor{stringliteral}{"get new message on server :: "} << (*newMessage).toString();
+00115     parentThread->receiver->sendMail(newMessage, parentThread,
+00116                                      newMessage->messageType);
+00117     receiverMutex.unlock();
+00118   \}
+00119 \}
+\end{DoxyCode}

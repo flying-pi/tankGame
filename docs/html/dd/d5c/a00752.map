@@ -1,0 +1,4 @@
+<map id="MainGameLoop" name="MainGameLoop">
+<area shape="rect" id="node2" href="$d4/d8f/a00742.html" title="{MailReceiver\n|# messages\l# mutex\l# isQueueLock\l|+ sendMail()\l# nextMessage()\l}" alt="" coords="5,24,166,169"/>
+<area shape="rect" id="node4" href="$d4/deb/a00710.html" title="{IMap\n||+ IMap()\l+ getSize()\l+ insertElement()\l+ proccessAllInR()\l+ getCount()\l+ getElementAtPosition()\l}" alt="" coords="309,5,537,188"/>
+</map>

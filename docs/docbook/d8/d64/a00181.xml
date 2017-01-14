@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d64/a00181">
+<title>ServerConnection class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d0/dc2/a00104">&quot;serverconnection.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for ServerConnection</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d0/d81/a00180.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for ServerConnection</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/dd9/a00179.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static ServerConnection * instance</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QTcpServer * server</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>QList&lt; ServerWorker * &gt; * connections</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>MailReceiver * receiver</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d64/a00181_1af919491d0e2ff066b0a58cc50fc0d90d">~ServerConnection</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d64/a00181_1a1d45a6a7b2370c82ed2849959bb18c2a">startServer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d64/a00181_1afd1dd14f38c6c1d1efa719af1a9d9851">receiveResponce</link> (
+QList&lt; <link linkend="d5/d4e/a00141">DiffElement</link> *&gt; * diff, <link linkend="d8/dfa/a00121">MessageForServer</link> * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="d5/d13/a00205_1aa85db0004c26606c5ac294e5de000b96">setDefaultReceiver</link> (
+<link linkend="de/db1/a00197">MailReceiver</link> * receiver)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="d8/d64/a00181">ServerConnection</link> * <link linkend="d8/d64/a00181_1ad64d541093e285a983911f22ab9a0bff">getServerInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d64/a00181_1a0adf644e7715ddbb83a53651b0804dec">ServerConnection</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/d64/a00181_1ac7f219a30789e91afa079ab5e49529bd">run</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/d64/a00181_1af919491d0e2ff066b0a58cc50fc0d90d">
+                <title>ServerConnection::~ServerConnection ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d64/a00181_1a1d45a6a7b2370c82ed2849959bb18c2a">
+                <title>void ServerConnection::startServer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d64/a00181_1afd1dd14f38c6c1d1efa719af1a9d9851">
+                <title>void ServerConnection::receiveResponce (QList&lt; DiffElement *&gt; *diff, MessageForServer *message)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d13/a00205_1aa85db0004c26606c5ac294e5de000b96">
+                <title>virtual void MailSender::setDefaultReceiver (MailReceiver *receiver)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d64/a00181_1ad64d541093e285a983911f22ab9a0bff">
+                <title>static ServerConnection* ServerConnection::getServerInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d64/a00181_1a0adf644e7715ddbb83a53651b0804dec">
+                <title>ServerConnection::ServerConnection ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/d64/a00181_1ac7f219a30789e91afa079ab5e49529bd">
+                <title>void ServerConnection::run ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

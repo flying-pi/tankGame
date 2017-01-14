@@ -1,0 +1,11 @@
+/docs
+
+*.usr
+
+Core/*.usr
+
+Server/*.usr
+
+GameView/*.usr
+
+simpleGamer/*.usr

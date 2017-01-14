@@ -1,0 +1,4 @@
+<map id="MailSender" name="MailSender">
+<area shape="rect" id="node2" href="$d6/d59/a00726.html" title="{ServerConnection\n|# server\l# connections\l# instance\l|+ ~ServerConnection()\l+ startServer()\l+ receiveResponce()\l+ getServerInstance()\l# ServerConnection()\l# run()\l# onWorkerStop()\l}" alt="" coords="5,161,216,400"/>
+<area shape="rect" id="node3" href="$d2/db1/a00730.html" title="{ServerWorker\n|# socket\l# isWork\l# out\l# workerMutex\l# responceMessage\l|+ ServerWorker()\l+ receiveResponce()\l# run()\l}" alt="" coords="240,180,434,381"/>
+</map>

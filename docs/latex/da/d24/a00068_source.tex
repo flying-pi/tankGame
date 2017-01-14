@@ -1,0 +1,23 @@
+\hypertarget{a00068_source}{}\section{baseutil.\+h}
+\label{a00068_source}\index{Core/util/baseutil.\+h@{Core/util/baseutil.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QPoint}\textcolor{preprocessor}{>}
+00002 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{<}\textcolor{preprocessor}{QPointF}\textcolor{preprocessor}{>}
+00003 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"../ibasegameelement.h"}
+00004 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \textcolor{preprocessor}{"math.h"}
+00005 
+\Hypertarget{a00068_source_l00006}\hyperlink{a00068_a1ab36c07a61bd9f450ed0ac1ba68ed94}{00006} \textcolor{keywordtype}{double} \hyperlink{a00068_a1ab36c07a61bd9f450ed0ac1ba68ed94}{distanceBetweenElement}(\hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}* el1, 
+      \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}* el2) \{
+00007   \textcolor{keywordflow}{if} (el1 == NULL || el2 == NULL)
+00008     \textcolor{keywordflow}{return} 0;
+00009   \textcolor{keywordflow}{if} (el1 == el2)
+00010     \textcolor{keywordflow}{return} 0;
+00011   QVector3D* p1 = el1->getPosition();
+00012   QVector3D* p2 = el2->getPosition();
+00013   \textcolor{keywordtype}{double} dx = p1->x() - p2->x();
+00014   \textcolor{keywordtype}{double} dy = p1->y() - p2->x();
+00015   \textcolor{keywordtype}{double} dz = p1->z() - p2->z();
+00016   \textcolor{keywordflow}{return} sqrt(dx * dx + dy * dy + dz * dz);
+00017 \}
+\end{DoxyCode}

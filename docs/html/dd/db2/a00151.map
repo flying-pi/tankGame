@@ -1,0 +1,4 @@
+<map id="BaseBulet" name="BaseBulet">
+<area shape="rect" id="node2" href="$d2/df5/a00137.html" title="{IBaseGameElement\n|# position\l# additionalData\l# rVision\l# type\l# name\l|+ IBaseGameElement()\l+ nextStep()\l+ getPosition()\l+ getType()\l+ getHelth()\l+ getWeight()\l+ getMaxTransitWeight()\l+ getName()\l+ getAdditionalData()\l+ ~IBaseGameElement()\l+ setPosition()\l+ setHelth()\l+ setWeight()\l+ setTransitWeight()\l+ setType()\l+ setName()\l+ setAdditionakData()\l+ setRVision()\l+ getRVision()\l}" alt="" coords="5,393,233,893"/>
+<area shape="rect" id="node4" href="$d6/d7d/a00161.html" title="{InfinityDouble\n|&#45; w\l&#45; isInfinity\l|+ FromValue()\l+ InfinityValue()\l&#45; InfinityDouble()\l}" alt="" coords="135,144,293,289"/>
+</map>

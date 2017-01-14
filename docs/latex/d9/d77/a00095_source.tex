@@ -1,0 +1,36 @@
+\hypertarget{a00095_source}{}\section{mapiniter.\+cpp}
+\label{a00095_source}\index{Server/mapiniter.\+cpp@{Server/mapiniter.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#}\textcolor{preprocessor}{include} \hyperlink{a00098}{"mapiniter.h"}
+00002 
+\Hypertarget{a00095_source_l00003}\hyperlink{a00217_a1137dec968988621ea18091fdf379987}{00003} \hyperlink{a00217}{MapIniter}::\hyperlink{a00217_a1137dec968988621ea18091fdf379987}{MapIniter}() \{\}
+00004 
+\Hypertarget{a00095_source_l00005}\hyperlink{a00217_ae6dfbed9cc8569db78442c0bfe57e252}{00005} \hyperlink{a00165}{IMap}* \hyperlink{a00217}{MapIniter}::\hyperlink{a00217_ae6dfbed9cc8569db78442c0bfe57e252}{initSimapleMap}() \{
+00006   \textcolor{keyword}{const} \textcolor{keywordtype}{int} mapW = 1000;
+00007   \textcolor{keyword}{const} \textcolor{keywordtype}{int} mapH = 1000;
+00008 
+00009   \hyperlink{a00165}{IMap}* result = \textcolor{keyword}{new} ListBseMap(mapW, mapH);
+00010   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 1000; i++) \{
+00011     \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}* item = \hyperlink{a00217_a8961b80aa1df5f628bd4e28e66a51d0b}{getRandomGrass}\hyperlink{a00217_a8961b80aa1df5f628bd4e28e66a51d0b}{(}mapW
+      \hyperlink{a00217_a8961b80aa1df5f628bd4e28e66a51d0b}{,} mapH\hyperlink{a00217_a8961b80aa1df5f628bd4e28e66a51d0b}{)};
+00012     result->insertElement(item, *item->getPosition());
+00013   \}
+00014   \textcolor{keywordflow}{return} result;
+00015 \}
+00016 
+\Hypertarget{a00095_source_l00017}\hyperlink{a00217_a8961b80aa1df5f628bd4e28e66a51d0b}{00017} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}* \hyperlink{a00217}{MapIniter}::\hyperlink{a00217_a8961b80aa1df5f628bd4e28e66a51d0b}{getRandomGrass}(\textcolor{keywordtype}{double} 
+      maxWidth, \textcolor{keywordtype}{double} maxHeigth) \{
+00018   \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}* result = \textcolor{keyword}{new} \hyperlink{a00137_ae2be75da1a2a9edfabe993770e24654a}{IBaseGameElement}();
+00019   result->setPosition(
+00020       \textcolor{keyword}{new} QVector3D((\textcolor{keywordtype}{double})rand() / (\textcolor{keywordtype}{double})RAND\_MAX * maxWidth,
+00021                     (\textcolor{keywordtype}{double})rand() / (\textcolor{keywordtype}{double})RAND\_MAX * maxHeigth, 0));
+00022   result\hyperlink{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}{->}\hyperlink{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}{setHelth}\hyperlink{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}{(}\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}\hyperlink{a00161_a67fae871f96708313bedc644630ac8bc}{::}\hyperlink{a00161_a67fae871f96708313bedc644630ac8bc}{InfinityValue}
+      \hyperlink{a00161_a67fae871f96708313bedc644630ac8bc}{(}\hyperlink{a00161_a67fae871f96708313bedc644630ac8bc}{)}\hyperlink{a00137_a2f95e7a61b5db7f2fbbfd32ff786f58c}{)};
+00023   result\hyperlink{a00137_ac480b8140b5b290f49b4b96a47291180}{->}\hyperlink{a00137_ac480b8140b5b290f49b4b96a47291180}{setTransitWeight}\hyperlink{a00137_ac480b8140b5b290f49b4b96a47291180}{(}\hyperlink{a00161_a8d33637f68b523cf2b21abd1509c47bf}{InfinityDouble}
+      \hyperlink{a00161_adb0a2fa93aa5f90a93c3f4303436913a}{::}\hyperlink{a00161_adb0a2fa93aa5f90a93c3f4303436913a}{FromValue}\hyperlink{a00161_adb0a2fa93aa5f90a93c3f4303436913a}{(}0\hyperlink{a00161_adb0a2fa93aa5f90a93c3f4303436913a}{)}\hyperlink{a00137_ac480b8140b5b290f49b4b96a47291180}{)};
+00024   result\hyperlink{a00137_a324cba2176155a50b5a2239eb0a8b6a0}{->}\hyperlink{a00137_a324cba2176155a50b5a2239eb0a8b6a0}{setType}\hyperlink{a00137_a324cba2176155a50b5a2239eb0a8b6a0}{(}\hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1baf}{eBaseGameElementType}\hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1bafa107c023644773dc2cde1d0047d6bc79c}{::}
+      \hyperlink{a00047_a5afb9d86324dabec6a0c73f9b6aa1bafa107c023644773dc2cde1d0047d6bc79c}{eGrass}\hyperlink{a00137_a324cba2176155a50b5a2239eb0a8b6a0}{)};
+00025   \textcolor{keywordflow}{return} result;
+00026 \}
+\end{DoxyCode}

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/db6/a00074">
+    <title>field.h File Reference</title>
+    <programlisting>#include &lt;QGLWidget&gt;</programlisting>
+    <programlisting>#include &lt;ibasegameelement.h&gt;</programlisting>
+<para>Include dependency diagram for field.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d9/da5/a00075.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for field.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../db/df8/a00076.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/d3f/a00173">Field</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/GameView/field.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;FIELD_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;FIELD_H</emphasis>
+3 <emphasis class="preprocessor">#include&#32;&lt;QGLWidget&gt;</emphasis>
+4 <emphasis class="preprocessor">#include&#32;&lt;<link linkend="d6/d2d/a00047">ibasegameelement.h</link>&gt;</emphasis>
+5 
+<link linkend="d7/d3f/a00173">6 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="d7/d3f/a00173">Field</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;QGLWidget&#32;{
+7 &#32;&#32;Q_OBJECT
+8 &#32;<emphasis class="keyword">public</emphasis>:
+9 &#32;&#32;<link linkend="d7/d3f/a00173_1ab3e028578ffc9df6d7d12dbbc83be19f">Field</link>(QWidget*&#32;parent&#32;=&#32;0);
+10 &#32;&#32;<link linkend="d7/d3f/a00173_1a45d6e6d09b8f8e46de62b40119d62c60">~Field</link>();
+11 
+12 &#32;<emphasis class="keyword">public</emphasis>&#32;slots:
+13 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d3f/a00173_1a407d6701413d3627ef50e9e86786b987">onDiffReceive</link>(QList&lt;DiffElement*&gt;*&#32;diff);
+14 &#32;&#32;<emphasis class="comment">//&#32;QGLWidget&#32;interface</emphasis>
+15 &#32;<emphasis class="keyword">protected</emphasis>:
+16 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d3f/a00173_1a38484502a93b5cd191d8ababc415e0cb">initializeGL</link>()&#32;Q_DECL_OVERRIDE;
+17 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d3f/a00173_1a4122f1e70a73ec6c580029d968e4553c">resizeGL</link>(<emphasis class="keywordtype">int</emphasis>&#32;w,&#32;<emphasis class="keywordtype">int</emphasis>&#32;h)&#32;Q_DECL_OVERRIDE;
+18 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d3f/a00173_1a43d725e582133d23bcbebdcd7bd4a287">paintGL</link>()&#32;Q_DECL_OVERRIDE;
+<link linkend="d7/d3f/a00173_1a7cd047782edbf1436174dfc2aeea1bdc">19 </link>&#32;&#32;QList&lt;IBaseGameElement*&gt;*&#32;<link linkend="d7/d3f/a00173_1a7cd047782edbf1436174dfc2aeea1bdc">fieldState</link>;
+20 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d3f/a00173_1ac2d8f10e9bccfe3cf51cf534c73cecd4">initRes</link>();
+21 
+22 &#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="d7/d3f/a00173_1a05becf8069f37b0529b691fcdd1ca8f1">drawGrass</link>(<emphasis class="keywordtype">float</emphasis>&#32;x,&#32;<emphasis class="keywordtype">float</emphasis>&#32;y);
+23 
+<link linkend="d7/d3f/a00173_1a4b226d02ce54a5d320cf3dc99b7b8433">24 </link>&#32;&#32;GLuint&#32;<link linkend="d7/d3f/a00173_1a4b226d02ce54a5d320cf3dc99b7b8433">grass</link>;
+25 
+<link linkend="d7/d3f/a00173_1af59e50c5d976daa2af7f35f1f3ea2b7c">26 </link>&#32;&#32;<emphasis class="keywordtype">float</emphasis>&#32;<link linkend="d7/d3f/a00173_1af59e50c5d976daa2af7f35f1f3ea2b7c">scaleK</link>&#32;=&#32;0.005;
+27 };
+28 
+29 <emphasis class="preprocessor">#endif&#32;&#32;//&#32;FIELD_H</emphasis>
+    </computeroutput></literallayout>
+</section>

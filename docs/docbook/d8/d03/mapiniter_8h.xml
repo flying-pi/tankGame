@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d03/mapiniter_8h">
+    <title>mapiniter.h File Reference</title>
+    <programlisting>#include &quot;imap.h&quot;</programlisting>
+    <programlisting>#include &quot;maps/listbsemap.h&quot;</programlisting>
+    <programlisting>#include &quot;ibasegameelement.h&quot;</programlisting>
+<para>Include dependency diagram for mapiniter.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/d9d/mapiniter_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for mapiniter.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../de/da0/mapiniter_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/df5/classMapIniter">MapIniter</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/yurabraiko/dev/qt/TankGame/Server/mapiniter.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#ifndef&#32;MAPINITER_H</emphasis>
+2 <emphasis class="preprocessor">#define&#32;MAPINITER_H</emphasis>
+3 
+4 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d4/dcf/imap_8h">imap.h</link>&quot;</emphasis>
+5 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d2/d06/listbsemap_8h">maps/listbsemap.h</link>&quot;</emphasis>
+6 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d0/d4c/ibasegameelement_8h">ibasegameelement.h</link>&quot;</emphasis>
+7 
+<link linkend="d6/df5/classMapIniter">8 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="d6/df5/classMapIniter">MapIniter</link>
+9 {
+10 <emphasis class="keyword">public</emphasis>:
+11 &#32;&#32;&#32;&#32;<link linkend="d6/df5/classMapIniter_1a1137dec968988621ea18091fdf379987">MapIniter</link>();
+12 &#32;&#32;&#32;&#32;<link linkend="de/d12/classIMap">IMap</link>&#32;*<link linkend="d6/df5/classMapIniter_1ae6dfbed9cc8569db78442c0bfe57e252">initSimapleMap</link>();
+13 
+14 <emphasis class="keyword">protected</emphasis>:
+15 &#32;&#32;&#32;&#32;<link linkend="de/d2b/classIBaseGameElement">IBaseGameElement</link>&#32;*<link linkend="d6/df5/classMapIniter_1a8961b80aa1df5f628bd4e28e66a51d0b">getRandomGrass</link>(<emphasis class="keywordtype">double</emphasis>&#32;maxWidth,<emphasis class="keywordtype">double</emphasis>&#32;maxHeigth);
+16 
+17 };
+18 
+19 <emphasis class="preprocessor">#endif&#32;//&#32;MAPINITER_H</emphasis>
+    </computeroutput></literallayout>
+</section>

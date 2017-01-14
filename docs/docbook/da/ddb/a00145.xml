@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/ddb/a00145">
+<title>Core class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/de7/a00014">&quot;core.h&quot;</link></programlisting>
+</para>
+<para>Inheritance diagram for Core</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d5/da7/a00144.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for Core</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="../../d7/dce/a00143.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/ddb/a00145_1a14e63188e0aa7c4a6f72d5501384d1f9">Core</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="da/ddb/a00145_1a14e63188e0aa7c4a6f72d5501384d1f9">
+                <title>Core::Core ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>
