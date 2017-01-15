@@ -1,7 +1,6 @@
 TEMPLATE = subdirs
 
-SUBDIRS += \
-    GameView \
-    Core \
-    Server \
-    simpleGamer
+SUBDIRS += Core GameView Server simpleGamer
+
+
+CONFIG += ordered

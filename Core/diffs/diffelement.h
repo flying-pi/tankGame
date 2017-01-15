@@ -8,6 +8,7 @@ enum eDiffType { eNew, eChange, eDeleted, eEmpty };
 
 class DiffElement {
  public:
+  ~DiffElement();
   DiffElement();
   DiffElement(eDiffType type, IBaseGameElement* data);
   friend QDataStream& operator<<(QDataStream& stream,

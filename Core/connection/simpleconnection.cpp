@@ -113,19 +113,6 @@ QString stringify(eMessageType e) {
   return "";
 }
 
-SimpleConnection::Receiver::Receiver(QTcpSocket* socket,
-                                     SimpleConnection* parentThread,
-                                     QObject* parent)
-    : QThread(parent) {
-  this->socket = socket;
-  this->parentThread = parentThread;
-  this->start();
-}
-
-SimpleConnection::Receiver::~Receiver() {
-  delete in;
-}
-
 bool SimpleConnection::Receiver::istThreadStart() {
   return isStart;
   msleep(100);
@@ -136,33 +123,4 @@ void SimpleConnection::Receiver::stop() {
   while (isLoopActive) {
     msleep(100);
   }
-}
-
-void SimpleConnection::Receiver::run() {
-  in = new QDataStream();
-  in->setDevice(socket);
-  in->setVersion(QDataStream::Qt_5_7);
-
-  qInfo() << "starting message receiver loop";
-  while (true) {
-    isLoopActive = true;
-    if (!isWork)
-      break;
-    isStart = true;
-    socket->waitForReadyRead(-1);
-    qInfo() << "starting reading some response";
-    MessageForServer sendedMessage;
-    (*in) >> sendedMessage;
-    int diffsLenth;
-    (*in) >> diffsLenth;
-    QList<DiffElement*>* result = new QList<DiffElement*>();
-    for (int i = 0; i < diffsLenth; i++) {
-      DiffElement* newItem = new DiffElement();
-      (*in) >> (*newItem);
-      result->append(newItem);
-    }
-    parentThread->sendDiff(result);
-    qInfo() << "something read from server";
-  }
-  isLoopActive = false;
 }

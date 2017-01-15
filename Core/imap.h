@@ -4,8 +4,7 @@
 #include <QSizeF>
 #include <QPointF>
 #include "ibasegameelement.h"
-
-// typedef bool(mapOperator)(IBaseGameElement* element);
+#include "diffs/diffcard.h"
 
 typedef std::function<bool(IBaseGameElement*)> mapOperator;
 
@@ -14,6 +13,7 @@ class IMap {
   IMap();
   virtual QSizeF* getSize() = 0;
   virtual void insertElement(IBaseGameElement* element, QVector3D* point) = 0;
+  virtual void updateFromDiff(DiffCard* diff) = 0;
   virtual void proccessAllInR(IBaseGameElement* element,
                               double r,
                               mapOperator) = 0;

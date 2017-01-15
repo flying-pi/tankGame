@@ -10,6 +10,9 @@ class DiffCard : public QObject {
   Q_OBJECT
  public:
   explicit DiffCard(QObject* parent = 0);
+
+  virtual void loadFromList(QList<DiffElement*>& newItems);
+  virtual void loadFromList(QList<DiffElement*>* newItems);
   virtual int getCountOfDiff() = 0;
   virtual DiffElement* at(int i) = 0;
   virtual DiffCard* subdiffForElements(QList<IBaseGameElement*> items) = 0;

@@ -1,5 +1,7 @@
 #include "diffelement.h"
 
+DiffElement::~DiffElement() {}
+
 DiffElement::DiffElement() {
   data = new IBaseGameElement();
   type = eEmpty;

@@ -13,6 +13,9 @@
 // clever clean, whait for stop all thread
 
 // clean diffs
+
+DiffCard* getGamerDiff();
+
 class MainGameLoop : public MailReceiver, public QThread {
  public:
   ~MainGameLoop();

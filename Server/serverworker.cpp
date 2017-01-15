@@ -28,7 +28,6 @@ void ServerWorker::run() {
       qInfo() << "send  response to client";
       for (int i = 0; i < data.diff->getCountOfDiff(); i++) {
         delete data.diff->at(i);
-        i--;
       }
       data.diff->clear();
       delete data.diff;

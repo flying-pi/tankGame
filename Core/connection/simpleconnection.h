@@ -98,8 +98,14 @@ class SimpleConnection : public QThread {
    public:
     Receiver(QTcpSocket* socket,
              SimpleConnection* parentThread,
-             QObject* parent = 0);
-    virtual ~Receiver();
+             QObject* parent = 0) {
+      this->socket = socket;
+      this->parentThread = parentThread;
+      this->start();
+    }
+
+    virtual ~Receiver() { delete in; }
+
     bool istThreadStart();
     void stop();
 
@@ -113,7 +119,36 @@ class SimpleConnection : public QThread {
 
     // QThread interface
    protected:
-    void run();
+    void run() {
+      in = new QDataStream();
+      in->setDevice(socket);
+      in->setVersion(QDataStream::Qt_5_7);
+
+      qInfo() << "starting message receiver loop";
+      QList<DiffElement*>* result = new QList<DiffElement*>();
+      int diffsLenth;
+      MessageForServer sendedMessage;
+      while (true) {
+        isLoopActive = true;
+        if (!isWork)
+          break;
+        isStart = true;
+        socket->waitForReadyRead(-1);
+
+        qInfo() << "starting reading some response";
+        (*in) >> sendedMessage;
+        (*in) >> diffsLenth;
+        result->clear();
+        for (int i = 0; i < diffsLenth; i++) {
+          DiffElement* newItem = new DiffElement();
+          (*in) >> (*newItem);
+          result->append(newItem);
+        }
+        parentThread->sendDiff(result);
+        qInfo() << "something read from server";
+      }
+      isLoopActive = false;
+    }
   };
 };
 

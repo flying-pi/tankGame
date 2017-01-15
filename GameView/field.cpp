@@ -1,21 +1,27 @@
 #include "field.h"
 #include <QDebug>
+#include "diffs/simplediffcard.h"
+#include "maps/listbsemap.h"
 
 Field::Field(QWidget* parent) : QGLWidget(parent) {
-  fieldState = new QList<IBaseGameElement*>();
+  diff = new SimpleDiffCard();
+  map = new ListBseMap();
   initRes();
 }
 
 Field::~Field() {
-  delete fieldState;
+  delete diff;
+  delete map;
 }
 
 void Field::onDiffReceive(QList<DiffElement*>* diff) {
-  for (int i = 0; i < diff->length(); i++) {
-    if (diff->at(i)->type == eDiffType::eNew) {
-      this->fieldState->append(diff->at(i)->data);
-    }
-  }
+  this->diff->clear();
+  this->diff->loadFromList(diff);
+  map->updateFromDiff(this->diff);
+  this->diff->clear();
+  for (int i = 0; i < diff->size(); i++)
+    delete diff->at(i);
+  delete diff;
   update();
 }
 void Field::initializeGL() {}
@@ -26,8 +32,8 @@ void Field::paintGL() {
   glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
   glTranslatef(-1, -1, 0);
-  for (int i = 0; i < fieldState->length(); i++) {
-    auto currentElement = fieldState->at(i);
+  for (int i = 0; i < map->getCount(); i++) {
+    auto currentElement = map->getElementAtPosition(i);
     if (currentElement->getType() == (int)eBaseGameElementType::eGrass) {
       drawGrass(currentElement->getPosition()->x(),
                 currentElement->getPosition()->y());

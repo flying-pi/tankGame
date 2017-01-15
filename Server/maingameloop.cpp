@@ -35,15 +35,17 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
 
     gamersItems.last()->append(basis);
     currentGamer->minion = gamersItems.last();
-    auto op = [](IBaseGameElement* element) -> bool {
+    auto op = [this, currentGamer](IBaseGameElement* element) -> bool {
       DiffElement* diff = new DiffElement(eDiffType::eNew, element);
-      //      diff->time = this->time;
-      //      currentGamer->personalDiff->append(diff);
+      diff->time = this->time;
+      currentGamer->personalDiff->append(diff);
       return false;
     };
     map->proccessAllInR(basis, basis->getRVision(), op);
-    receiver->receiveResponce(currentGamer->personalDiff, msg->message);
   }
+  auto diffValue = currentGamer->personalDiff;
+  currentGamer->personalDiff = getGamerDiff();
+  receiver->receiveResponce(diffValue, msg->message);
 }
 
 void MainGameLoop::proccessWatcherMessage(MailReceiver::mailMessage* msg,
@@ -78,10 +80,16 @@ void MainGameLoop::run() {
   mailMessage* msg;
   qInfo() << "starting main loop";
   while (isWork) {
+    // process incoming messages
     while ((msg = nextMessage()) != nullptr) {
       qInfo() << TAG << "receive new messahe " << (*msg);
       auto fun = getProccessorForMessage(msg->message->connectionType);
       (this->*fun)(msg, msg->sender);
+    }
+
+    foreach (auto items, gamersItems) {
+      for (int i = 0; i < items->size(); i++) {
+      }
     }
     msleep(100);
   }
@@ -117,9 +125,13 @@ MainGameLoop::GamerInformation::GamerInformation(IMap* map) {
   float rand2 = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
   position = QVector3D(size->width() * rand1, size->height() * rand2, 0);
 
-  personalDiff = new SimpleDiffCard();
+  personalDiff = getGamerDiff();
 }
 
 MainGameLoop::GamerInformation::~GamerInformation() {
   delete personalDiff;
+}
+
+DiffCard* getGamerDiff() {
+  return new SimpleDiffCard();
 }
