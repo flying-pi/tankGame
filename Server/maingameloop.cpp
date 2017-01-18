@@ -9,6 +9,7 @@ QString TAG = "MainGameLoop";
 MainGameLoop::MainGameLoop() {
   map = MapIniter().initSimapleMap();
   time = 1;
+  stepDiff = getSimpleDiff();
 }
 void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
                                         MailSender* receiver) {
@@ -22,6 +23,7 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
     }
   }
   if (!isAlredyExist) {
+    currentGamer = new GamerInformation(map);
     currentGamer->name = codingNum(gamersList.size());
     currentGamer->sender = receiver;
     gamersList.append(currentGamer);
@@ -42,25 +44,45 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
       return false;
     };
     map->proccessAllInR(basis, basis->getRVision(), op);
+  } else {
+    if (msg->message->messageType == eInsertNewItem) {
+      for (int i = 0; i < msg->message->items->size(); i++) {
+        map->insertElement(msg->message->items->at(i),
+                           msg->message->items->at(i)->getPosition());
+        DiffElement* diffItem =
+            new DiffElement(eDiffType::eNew, msg->message->items->at(i));
+        diffItem->time = time;
+        stepDiff->append(diffItem);
+      }
+    }
   }
   auto diffValue = currentGamer->personalDiff;
-  currentGamer->personalDiff = getGamerDiff();
+  currentGamer->personalDiff = getSimpleDiff();
   receiver->receiveResponce(diffValue, msg->message);
 }
 
 void MainGameLoop::proccessWatcherMessage(MailReceiver::mailMessage* msg,
                                           MailSender* receiver) {
-  if (!watchers.contains(receiver))
-    watchers.append(receiver);
+  WathcerInformation* watcher = nullptr;
+  for (int i = 0; i < watchers.size() && watcher == nullptr; i++) {
+    if (watchers.at(i)->sender == receiver)
+      watcher = watchers.at(i);
+  }
+  if (watcher == nullptr) {
+    watcher = new WathcerInformation();
+    watcher->sender = receiver;
+  }
   switch (msg->message->messageType) {
     case eFirstMessae:
       receiver->receiveResponce(getAllMapAsDiff(), msg->message);
       break;
     case eGetUpdateMessage:
-      Q_ASSERT_X(2 * 2 != 4, "implementation", "not implemented yet");
+      //      receiver->receiveResponce(watcher->personalDiff, msg->message);
+      //      watcher->personalDiff = getSimpleDiff();
+      receiver->receiveResponce(getAllMapAsDiff(), msg->message);
       break;
     default:
-      receiver->receiveResponce(new SimpleDiffCard(), msg->message);
+      receiver->receiveResponce(getSimpleDiff(), msg->message);
   }
 }
 
@@ -89,8 +111,14 @@ void MainGameLoop::run() {
 
     foreach (auto items, gamersItems) {
       for (int i = 0; i < items->size(); i++) {
+        // todo
       }
     }
+    for (int i = 0; i < watchers.size(); i++) {
+      WathcerInformation* watcher = watchers.at(i);
+      watcher->personalDiff->updateFromOtherCard(stepDiff);
+    }
+
     msleep(100);
   }
 }
@@ -125,13 +153,13 @@ MainGameLoop::GamerInformation::GamerInformation(IMap* map) {
   float rand2 = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
   position = QVector3D(size->width() * rand1, size->height() * rand2, 0);
 
-  personalDiff = getGamerDiff();
+  personalDiff = getSimpleDiff();
 }
 
 MainGameLoop::GamerInformation::~GamerInformation() {
   delete personalDiff;
 }
 
-DiffCard* getGamerDiff() {
+DiffCard* getSimpleDiff() {
   return new SimpleDiffCard();
 }

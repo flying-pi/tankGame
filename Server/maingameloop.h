@@ -14,7 +14,7 @@
 
 // clean diffs
 
-DiffCard* getGamerDiff();
+DiffCard* getSimpleDiff();
 
 class MainGameLoop : public MailReceiver, public QThread {
  public:
@@ -39,6 +39,8 @@ class MainGameLoop : public MailReceiver, public QThread {
   void proccessWatcherMessage(mailMessage* msg, MailSender* receiver);
   messageProccessor getProccessorForMessage(eConnectionType type);
 
+  DiffCard* stepDiff;
+
  protected:
   class GamerInformation {
    public:
@@ -55,14 +57,15 @@ class MainGameLoop : public MailReceiver, public QThread {
   class WathcerInformation {
    public:
     MailSender* sender;
-    WathcerInformation() {}
+    DiffCard* personalDiff;
+    WathcerInformation() { personalDiff = getSimpleDiff(); }
   };
 
   void run();
   bool isWork = true;
   DiffCard* getAllMapAsDiff();
   QList<DiffElement*>* getInitDiffsForGamer(BaseBasis* basis);
-  QList<MailSender*> watchers;
+  QList<WathcerInformation*> watchers;
   /**
    * list of client as gamers
    * @brief gamersList

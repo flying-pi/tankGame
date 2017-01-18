@@ -2,6 +2,7 @@
 #include <QDataStream>
 
 BaseBasis::BaseBasis() : IBaseGameElement() {
+  this->type = eBasis;
   helth = InfinityDouble::InfinityValue();
   weight = InfinityDouble::InfinityValue();
   transitWeight = InfinityDouble::InfinityValue();

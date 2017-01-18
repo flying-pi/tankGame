@@ -10,7 +10,7 @@
 #include <QTime>
 #include <QVector3D>
 
-enum eBaseGameElementType { eGrass, eSimpleTank, eBasis };
+enum eBaseGameElementType { eGrass, eSimpleTank, eBasis, eBullet };
 class IBaseGameElement;
 
 class IBaseGameElement : public QObject {

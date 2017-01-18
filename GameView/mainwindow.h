@@ -16,9 +16,6 @@ class MainWindow : public QMainWindow {
   ~MainWindow();
 
  protected:
-  void connectToServer();
-  SimpleConnection connection;
-
  private:
   Ui::MainWindow* ui;
 };

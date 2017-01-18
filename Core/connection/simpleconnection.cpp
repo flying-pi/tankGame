@@ -80,6 +80,21 @@ SimpleConnection::MessageBuilder::asFirstMessage(eConnectionType type) {
   return this;
 }
 
+SimpleConnection::MessageBuilder* SimpleConnection::MessageBuilder::addNewItem(
+    QList<IBaseGameElement*>* newEleements) {
+  this->message->connectionType = eConnectionType::eGamer;
+  this->message->messageType = eInsertNewItem;
+  this->message->items->append(*newEleements);
+  return this;
+}
+
+SimpleConnection::MessageBuilder*
+SimpleConnection::MessageBuilder::updateWatcher() {
+  this->message->connectionType = eConnectionType::eWatcher;
+  this->message->messageType = eGetUpdateMessage;
+  return this;
+}
+
 void SimpleConnection::MessageBuilder::build() {
   parent->addMessage(this);
 }

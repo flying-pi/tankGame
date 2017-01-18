@@ -23,9 +23,9 @@ class ServerWorker : public QThread, public MailSender {
  protected:
   struct responceData {
    public:
-    responceData(DiffCard* diff, MessageForServer* messag) {
-      this->diff = diff;
-      this->messag = messag;
+    responceData(DiffCard* _diff, MessageForServer* _messag) {
+      this->diff = _diff;
+      this->messag = _messag;
     }
 
     DiffCard* diff;

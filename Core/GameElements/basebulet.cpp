@@ -1,6 +1,8 @@
 #include "basebulet.h"
 
-BaseBulet::BaseBulet() {}
+BaseBulet::BaseBulet() : IBaseGameElement() {
+  this->type = eBullet;
+}
 
 QByteArray* BaseBulet::getAdditionalData() {}
 

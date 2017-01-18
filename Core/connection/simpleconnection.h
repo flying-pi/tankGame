@@ -9,9 +9,10 @@
 #include <QDataStream>
 #include <ibasegameelement.h>
 #include "diffs/diffelement.h"
+#include <QList>
 
 enum eConnectionType { eGamer, eWatcher };
-enum eMessageType { eFirstMessae, eGetUpdateMessage };
+enum eMessageType { eFirstMessae, eGetUpdateMessage, eInsertNewItem };
 
 QString stringify(eConnectionType e);
 QString stringify(eMessageType e);
@@ -22,19 +23,34 @@ class MessageForServer : public QObject {
  public:
   eConnectionType connectionType;
   eMessageType messageType;
+  QList<IBaseGameElement*>* items;
+
+  MessageForServer() { items = new QList<IBaseGameElement*>(); }
+
+  ~MessageForServer() { delete items; }
 
   friend QDataStream& operator<<(QDataStream& stream,
                                  const MessageForServer& myclass) {
-    return stream << ((int)myclass.connectionType)
-                  << ((int)myclass.messageType);
+    int itemsSize = myclass.items->size();
+    QDataStream& result = stream << ((int)myclass.connectionType)
+                                 << ((int)myclass.messageType) << itemsSize;
+    for (int i = 0; i < myclass.items->size(); i++)
+      result << (*myclass.items->at(i));
+    return result;
   }
   friend QDataStream& operator>>(QDataStream& stream,
                                  MessageForServer& myclass) {
     int con;
     int msg;
-    QDataStream& result = (stream >> con >> msg);
+    int countOfNewItems = 0;
+    QDataStream& result = (stream >> con >> msg >> countOfNewItems);
     myclass.connectionType = (eConnectionType)con;
     myclass.messageType = (eMessageType)msg;
+    for (int i = 0; i < countOfNewItems; i++) {
+      IBaseGameElement* element = new IBaseGameElement();
+      result >> (*element);
+      myclass.items->append(element);
+    }
     return result;
   }
 
@@ -63,6 +79,8 @@ class SimpleConnection : public QThread {
 
    public:
     MessageBuilder* asFirstMessage(eConnectionType type);
+    MessageBuilder* addNewItem(QList<IBaseGameElement*>* newEleements);
+    MessageBuilder* updateWatcher();
     void build();
 
    private:
@@ -125,7 +143,7 @@ class SimpleConnection : public QThread {
       in->setVersion(QDataStream::Qt_5_7);
 
       qInfo() << "starting message receiver loop";
-      QList<DiffElement*>* result = new QList<DiffElement*>();
+
       int diffsLenth;
       MessageForServer sendedMessage;
       while (true) {
@@ -138,7 +156,7 @@ class SimpleConnection : public QThread {
         qInfo() << "starting reading some response";
         (*in) >> sendedMessage;
         (*in) >> diffsLenth;
-        result->clear();
+        QList<DiffElement*>* result = new QList<DiffElement*>();
         for (int i = 0; i < diffsLenth; i++) {
           DiffElement* newItem = new DiffElement();
           (*in) >> (*newItem);

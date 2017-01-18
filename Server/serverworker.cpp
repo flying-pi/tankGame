@@ -26,13 +26,13 @@ void ServerWorker::run() {
       out->commitTransaction();
       socket->flush();
       qInfo() << "send  response to client";
-      for (int i = 0; i < data.diff->getCountOfDiff(); i++) {
+      for (int i = 0; i < data.diff->getCountOfDiff(); i++)
         delete data.diff->at(i);
-      }
       data.diff->clear();
       delete data.diff;
       delete data.messag;
     }
+    msleep(100);
     workerMutex.unlock();
   }
   th->stop();
@@ -41,27 +41,8 @@ void ServerWorker::run() {
   emit onStop(this);
 }
 
-class receiveRespnceThread : public QThread {
- public:
-  QMutex* mutex;
-  DiffCard* diff;
-  MessageForServer* message;
-  QQueue<ServerWorker::responceData>* responceMessage;
-
-  // QThread interface
- protected:
-  void run() {
-    mutex->lock();
-    responceMessage->push_back(ServerWorker::responceData(diff, message));
-    mutex->unlock();
-  }
-};
-
 void ServerWorker::receiveResponce(DiffCard* diff, MessageForServer* message) {
   qInfo() << "getting responce for client from map loop";
-
-  //  receiveRespnceThread r;
-  //  r.mutex = workerMutex;
 
   QtConcurrent::run(QThreadPool::globalInstance(), [=] {
     qInfo() << "ServerWorker::receiveResponce - befor mutex";

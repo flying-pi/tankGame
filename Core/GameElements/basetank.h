@@ -13,6 +13,12 @@ class BaseTank : public IBaseGameElement {
   virtual void setAdditionakData(QByteArray* data);
   virtual QByteArray* getAdditionalData();
 
+  virtual void setDirection(double _direction) { direction = _direction; }
+  virtual double getDirection() { return direction; }
+
+  virtual void setSpeed(double _speed) { speed = _speed; }
+  virtual double getSpeed() { return speed; }
+
  protected:
   double direction = 0;
   double speed = 0;

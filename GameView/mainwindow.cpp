@@ -2,20 +2,11 @@
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget* parent)
-    : QMainWindow(parent),
-      ui(new Ui::MainWindow),
-      connection(QHostAddress::LocalHost, this) {
+    : QMainWindow(parent), ui(new Ui::MainWindow) {
   ui->setupUi(this);
-  connectToServer();
+  ui->gameField->connectToServer();
 }
 
 MainWindow::~MainWindow() {
   delete ui;
-}
-
-void MainWindow::connectToServer() {
-  connection.openConnection();
-  connection.getBulder()->asFirstMessage(eConnectionType::eWatcher)->build();
-  connect(&connection, SIGNAL(onDiffReceive(QList<DiffElement*>*)),
-          ui->gameField, SLOT(onDiffReceive(QList<DiffElement*>*)));
 }

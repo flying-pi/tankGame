@@ -2,8 +2,10 @@
 #include <QDebug>
 #include "diffs/simplediffcard.h"
 #include "maps/listbsemap.h"
+#include <qtconcurrentrun.h>
 
-Field::Field(QWidget* parent) : QGLWidget(parent) {
+Field::Field(QWidget* parent)
+    : QGLWidget(parent), connection(QHostAddress::LocalHost, this) {
   diff = new SimpleDiffCard();
   map = new ListBseMap();
   initRes();
@@ -23,6 +25,10 @@ void Field::onDiffReceive(QList<DiffElement*>* diff) {
     delete diff->at(i);
   delete diff;
   update();
+  QtConcurrent::run(QThreadPool::globalInstance(), [=] {
+    QThread::msleep(100);
+    this->connection.getBulder()->updateWatcher()->build();
+  });
 }
 void Field::initializeGL() {}
 
@@ -31,15 +37,19 @@ void Field::resizeGL(int w, int h) {}
 void Field::paintGL() {
   glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-  glTranslatef(-1, -1, 0);
+  //  glTranslatef(-1, -1, 0);
   for (int i = 0; i < map->getCount(); i++) {
     auto currentElement = map->getElementAtPosition(i);
     if (currentElement->getType() == (int)eBaseGameElementType::eGrass) {
       drawGrass(currentElement->getPosition()->x(),
                 currentElement->getPosition()->y());
     }
+    if (currentElement->getType() == (int)eBaseGameElementType::eSimpleTank) {
+      drawTank(currentElement->getPosition()->x(),
+               currentElement->getPosition()->y());
+    }
   }
-  glTranslatef(1, 1, 0);
+  //  glTranslatef(1, 1, 0);
   //  glEnd();
 
   //  glDisable(GL_TEXTURE_2D);
@@ -95,4 +105,24 @@ void Field::drawGrass(float x, float y) {
   glVertex2f(x * this->scaleK + size, y * scaleK + size);
   glVertex2f(x * this->scaleK + size, y * scaleK);
   glEnd();
+}
+
+void Field::drawTank(float x, float y) {
+  float size = scaleK;
+  glColor3f(0.6862745098, 0.1215686275, 0.4156862745);
+  glBegin(GL_QUADS);
+  glVertex2f(x * this->scaleK, y * scaleK);
+  glVertex2f(x * this->scaleK, y * scaleK + size * 2);
+  glVertex2f(x * this->scaleK + size * 2, y * scaleK + size * 2);
+  glVertex2f(x * this->scaleK + size * 2, y * scaleK);
+  glEnd();
+}
+void Field::connectToServer() {
+  if (isConnected)
+    return;
+  connection.openConnection();
+  connect(&connection, SIGNAL(onDiffReceive(QList<DiffElement*>*)), this,
+          SLOT(onDiffReceive(QList<DiffElement*>*)));
+  connection.getBulder()->asFirstMessage(eConnectionType::eWatcher)->build();
+  isConnected = true;
 }

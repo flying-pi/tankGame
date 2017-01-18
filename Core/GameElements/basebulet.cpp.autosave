@@ -1,7 +1,0 @@
-#include "basebulet.h"
-
-BaseBulet::BaseBulet():IBaseGameElement() {}
-
-QByteArray* BaseBulet::getAdditionalData() {}
-
-void BaseBulet::setAdditionakData(QByteArray* data) {}
