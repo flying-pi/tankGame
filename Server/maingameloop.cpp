@@ -33,7 +33,7 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
     BaseBasis* basis = new BaseBasis();
     basis->setPosition(&currentGamer->position);
     basis->setEnergy(currentGamer->lifeCount);
-    map->insertElement(basis, basis->getPosition());
+    map->insertElement(basis);
 
     gamersItems.last()->append(basis);
     currentGamer->minion = gamersItems.last();
@@ -47,8 +47,7 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
   } else {
     if (msg->message->messageType == eInsertNewItem) {
       for (int i = 0; i < msg->message->items->size(); i++) {
-        map->insertElement(msg->message->items->at(i),
-                           msg->message->items->at(i)->getPosition());
+        map->insertElement(msg->message->items->at(i));
         DiffElement* diffItem =
             new DiffElement(eDiffType::eNew, msg->message->items->at(i));
         diffItem->time = time;

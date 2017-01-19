@@ -8,7 +8,8 @@ BaseBasis::BaseBasis() : IBaseGameElement() {
   transitWeight = InfinityDouble::InfinityValue();
 }
 
-BaseBasis::BaseBasis(GameElementData& data) : IBaseGameElement(data) {
+BaseBasis::BaseBasis(GameElementData& data) {
+  init(data);
   this->type = eBasis;
   helth = InfinityDouble::InfinityValue();
   weight = InfinityDouble::InfinityValue();
@@ -22,7 +23,7 @@ void BaseBasis::setType(int value) {
   IBaseGameElement::setType(value);
 }
 
-QByteArray* BaseBasis::getAdditionalData() {
+QByteArray* BaseBasis::getAdditionalData() const {
   additionalData->clear();
   QDataStream stream(additionalData, QIODevice::WriteOnly);
   stream << energy;

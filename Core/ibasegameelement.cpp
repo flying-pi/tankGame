@@ -11,3 +11,14 @@ QDataStream& operator>>(QDataStream& stream, GameElementData& myclass) {
   stream >> myclass.rVision;
   return stream;
 }
+
+void IBaseGameElement::init(GameElementData& data) {
+  setHelth(data.helth);
+  setWeight(data.weight);
+  setTransitWeight(data.transitWeight);
+  setPosition(data.position);
+  setName(data.name);
+  setAdditionakData(data.additionalData);
+  setRVision(data.rVision);
+  setType(data.type);
+}

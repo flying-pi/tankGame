@@ -8,8 +8,8 @@ double distanceBetweenElement(IBaseGameElement* el1, IBaseGameElement* el2) {
     return 0;
   if (el1 == el2)
     return 0;
-  QVector3D* p1 = el1->getPosition();
-  QVector3D* p2 = el2->getPosition();
+  const QVector3D* p1 = el1->getPosition();
+  const QVector3D* p2 = el2->getPosition();
   double dx = p1->x() - p2->x();
   double dy = p1->y() - p2->x();
   double dz = p1->z() - p2->z();

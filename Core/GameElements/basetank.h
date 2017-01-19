@@ -9,16 +9,19 @@ class BaseTank : public IBaseGameElement {
   BaseTank(GameElementData& data);
 
  public:
+  using IBaseGameElement::setType;
   virtual void setType(int value) override;
-  virtual BaseBulet generateBullet();
-  virtual void setAdditionakData(QByteArray* data);
-  virtual QByteArray* getAdditionalData();
+  virtual BaseBulet generateBullet() const;
 
-  virtual void setDirection(double _direction) { direction = _direction; }
-  virtual double getDirection() { return direction; }
+  using IBaseGameElement::setAdditionakData;
+  virtual void setAdditionakData(QByteArray* data) override;
+  virtual QByteArray* getAdditionalData() const;
 
-  virtual void setSpeed(double _speed) { speed = _speed; }
-  virtual double getSpeed() { return speed; }
+  virtual void setDirection(double _direction);
+  virtual double getDirection() const { return direction; }
+
+  virtual void setSpeed(double _speed);
+  virtual double getSpeed() const { return speed; }
 
  protected:
   double direction = 0;

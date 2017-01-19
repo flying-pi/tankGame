@@ -12,7 +12,7 @@ class IMap {
  public:
   IMap();
   virtual QSizeF* getSize() = 0;
-  virtual void insertElement(IBaseGameElement* element, QVector3D* point) = 0;
+  virtual void insertElement(IBaseGameElement* element) = 0;
   virtual void updateFromDiff(DiffCard* diff) = 0;
   virtual void proccessAllInR(IBaseGameElement* element,
                               double r,

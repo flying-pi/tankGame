@@ -16,8 +16,9 @@ class BaseBulet : public IBaseGameElement {
 
   // IBaseGameElement interface
  public:
-  QByteArray* getAdditionalData();
-  void setAdditionakData(QByteArray* data);
+  QByteArray* getAdditionalData() const;
+  using IBaseGameElement::setAdditionakData;
+  void setAdditionakData(QByteArray* data) override;
 };
 
 #endif  // BASEBULET_H

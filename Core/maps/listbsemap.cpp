@@ -19,7 +19,7 @@ QSizeF* ListBseMap::getSize() {
   delete size;
 }
 
-void ListBseMap::insertElement(IBaseGameElement* element, QVector3D* point) {
+void ListBseMap::insertElement(IBaseGameElement* element) {
   items->append(element);
 }
 
@@ -61,7 +61,7 @@ IBaseGameElement* ListBseMap::getElementAtPosition(int pos) {
 
 void ListBseMap::updateItem(IBaseGameElement* gameEleement, bool isReplace) {
   for (int i = 0; i < items->size(); i++) {
-    if ((*items->at(i)->getName()) == (*gameEleement->getName())) {
+    if ((items->at(i)->getName()) == (gameEleement->getName())) {
       delete items->at(i);
       items->removeAt(i);
       if (isReplace)
