@@ -2,6 +2,7 @@
 #define DIFFELEMENT_H
 
 #include "../ibasegameelement.h"
+#include "gameelementfactory.h"
 #include <Qt>
 
 enum eDiffType { eNew, eChange, eDeleted, eEmpty };
@@ -19,9 +20,11 @@ class DiffElement {
   }
   friend QDataStream& operator>>(QDataStream& stream, DiffElement& myclass) {
     int type;
-    QDataStream& result = stream >> type >> (*myclass.data);
+    GameElementData item;
+    stream >> type >> item;
+    myclass.data = getElement(item);
     myclass.type = (eDiffType)type;
-    return result;
+    return stream;
   }
   eDiffType type;
   IBaseGameElement* data;

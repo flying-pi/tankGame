@@ -6,6 +6,7 @@
 class BaseTank : public IBaseGameElement {
  public:
   BaseTank();
+  BaseTank(GameElementData& data);
 
  public:
   virtual void setType(int value) override;

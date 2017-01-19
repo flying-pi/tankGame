@@ -5,6 +5,10 @@ BaseTank::BaseTank() : IBaseGameElement() {
   this->type = eSimpleTank;
 }
 
+BaseTank::BaseTank(GameElementData& data) : IBaseGameElement(data) {
+  this->type = eSimpleTank;
+}
+
 void BaseTank::setType(int value) {
   if (value != ((int)eSimpleTank)) {
     Q_ASSERT_X(false, "game logic", "Wrong type for tank");

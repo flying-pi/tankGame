@@ -10,6 +10,7 @@
 #include <ibasegameelement.h>
 #include "diffs/diffelement.h"
 #include <QList>
+#include "gameelementfactory.h"
 
 enum eConnectionType { eGamer, eWatcher };
 enum eMessageType { eFirstMessae, eGetUpdateMessage, eInsertNewItem };
@@ -47,9 +48,9 @@ class MessageForServer : public QObject {
     myclass.connectionType = (eConnectionType)con;
     myclass.messageType = (eMessageType)msg;
     for (int i = 0; i < countOfNewItems; i++) {
-      IBaseGameElement* element = new IBaseGameElement();
-      result >> (*element);
-      myclass.items->append(element);
+      GameElementData item;
+      result >> item;
+      myclass.items->append(getElement(item));
     }
     return result;
   }

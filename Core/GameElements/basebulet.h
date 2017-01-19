@@ -6,6 +6,7 @@
 class BaseBulet : public IBaseGameElement {
  public:
   BaseBulet();
+  BaseBulet(GameElementData& data);
 
  protected:
   int lifetime = 0;

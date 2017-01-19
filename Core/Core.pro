@@ -30,7 +30,8 @@ SOURCES += core.cpp \
     diffs/diffcard.cpp \
     diffs/diffelement.cpp \
     diffs/simplediffcard.cpp \
-    connection/mailboxelement.cpp
+    connection/mailboxelement.cpp \
+    gameelementfactory.cpp
 
 HEADERS += core.h\
         core_global.h \
@@ -48,7 +49,8 @@ HEADERS += core.h\
     GameElements/basebasis.h \
     diffs/diffcard.h \
     diffs/diffelement.h \
-    diffs/simplediffcard.h
+    diffs/simplediffcard.h \
+    gameelementfactory.h
 
 unix {
     target.path = /usr/lib

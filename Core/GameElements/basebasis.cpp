@@ -8,6 +8,13 @@ BaseBasis::BaseBasis() : IBaseGameElement() {
   transitWeight = InfinityDouble::InfinityValue();
 }
 
+BaseBasis::BaseBasis(GameElementData& data) : IBaseGameElement(data) {
+  this->type = eBasis;
+  helth = InfinityDouble::InfinityValue();
+  weight = InfinityDouble::InfinityValue();
+  transitWeight = InfinityDouble::InfinityValue();
+}
+
 void BaseBasis::setType(int value) {
   if (value != ((int)eBasis)) {
     Q_ASSERT_X(false, "game logic", "Wrong type for basis");

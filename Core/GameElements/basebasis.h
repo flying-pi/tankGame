@@ -6,6 +6,7 @@
 class BaseBasis : public IBaseGameElement {
  public:
   BaseBasis();
+  BaseBasis(GameElementData& data);
   virtual void setType(int value) override;
   virtual QByteArray* getAdditionalData();
   virtual void setAdditionakData(QByteArray* data);

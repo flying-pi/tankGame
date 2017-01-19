@@ -13,6 +13,19 @@
 enum eBaseGameElementType { eGrass, eSimpleTank, eBasis, eBullet };
 class IBaseGameElement;
 
+struct GameElementData {
+  QVector3D* position = new QVector3D(0, 0, 0);
+  InfinityDouble* helth = InfinityDouble::FromValue(1);
+  InfinityDouble* weight = InfinityDouble::FromValue(0);
+  InfinityDouble* transitWeight = InfinityDouble::FromValue(0);
+  QByteArray* additionalData = new QByteArray();
+  qint32 rVision = 1;
+  qint32 type = -1;
+  QString name = "";
+};
+
+extern QDataStream& operator>>(QDataStream& stream, GameElementData& myclass);
+
 class IBaseGameElement : public QObject {
   Q_OBJECT
  public:
@@ -21,8 +34,19 @@ class IBaseGameElement : public QObject {
     weight = InfinityDouble::FromValue(0);
     transitWeight = InfinityDouble::FromValue(0);
     position = new QVector3D(0, 0, 0);
-    name = QString::number(QTime::currentTime().msec());
+    name = "";
     additionalData = new QByteArray();
+  }
+
+  IBaseGameElement(GameElementData& data) {
+    setHelth(data.helth);
+    setWeight(data.weight);
+    setTransitWeight(data.transitWeight);
+    setPosition(data.position);
+    setName(data.name);
+    setAdditionakData(data.additionalData);
+    setRVision(data.rVision);
+    setType(data.type);
   }
 
   virtual void nextStep(){};
@@ -41,14 +65,6 @@ class IBaseGameElement : public QObject {
                   << (*myclass.weight) << (*myclass.transitWeight)
                   << (*myclass.additionalData) << myclass.type << myclass.name
                   << myclass.rVision;
-  }
-  friend QDataStream& operator>>(QDataStream& stream,
-                                 IBaseGameElement& myclass) {
-    return stream >> (*myclass.position) >> (*myclass.helth) >>
-           (*myclass.weight) >> (*myclass.transitWeight) >>
-           (*myclass.additionalData) >> myclass.type >> myclass.name >>
-           myclass.rVision;
-    ;
   }
 
   virtual ~IBaseGameElement() {
