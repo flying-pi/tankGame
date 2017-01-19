@@ -1,7 +1,0 @@
-<map id="InfinityDouble::InfinityDouble" name="InfinityDouble::InfinityDouble">
-<area shape="rect" id="node2" href="$d6/d7d/a00161.html#adb0a2fa93aa5f90a93c3f4303436913a" title="InfinityDouble::FromValue" alt="" coords="252,5,487,36"/>
-<area shape="rect" id="node3" href="$df/d24/a00217.html#a8961b80aa1df5f628bd4e28e66a51d0b" title="MapIniter::getRandomGrass" alt="" coords="535,59,791,89"/>
-<area shape="rect" id="node6" href="$d6/d7d/a00161.html#a67fae871f96708313bedc644630ac8bc" title="InfinityDouble::Infinity\lValue" alt="" coords="270,112,469,161"/>
-<area shape="rect" id="node4" href="$df/d24/a00217.html#ae6dfbed9cc8569db78442c0bfe57e252" title="MapIniter::initSimapleMap" alt="" coords="839,59,1076,89"/>
-<area shape="rect" id="node5" href="$d3/de5/a00209.html#a0632599cb00fa2c86ba1c71904c1f59f" title="MainGameLoop::MainGameLoop" alt="" coords="1124,59,1421,89"/>
-</map>

@@ -1,3 +1,0 @@
-<map id="SimpleConnection::Receiver" name="SimpleConnection::Receiver">
-<area shape="rect" id="node3" href="$dc/dfe/a00125.html" title="{SimpleConnection\n|# isWork\l# adress\l# socket\l# out\l# mutex\l# messages\l|+ SimpleConnection()\l+ ~SimpleConnection()\l+ openConnection()\l+ sendDiff()\l+ getBulder()\l# run()\l# addMessage()\l# onSocketError()\l}" alt="" coords="150,144,363,457"/>
-</map>

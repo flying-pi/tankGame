@@ -1,3 +1,5 @@
-<map id="BaseTank" name="BaseTank">
-<area shape="rect" id="node2" href="$d2/df5/a00137.html" title="{IBaseGameElement\n|# position\l# helth\l# weight\l# transitWeight\l# additionalData\l# rVision\l# type\l# name\l|+ IBaseGameElement()\l+ nextStep()\l+ getPosition()\l+ getType()\l+ getHelth()\l+ getWeight()\l+ getMaxTransitWeight()\l+ getName()\l+ getAdditionalData()\l+ ~IBaseGameElement()\l+ setPosition()\l+ setHelth()\l+ setWeight()\l+ setTransitWeight()\l+ setType()\l+ setName()\l+ setAdditionakData()\l+ setRVision()\l+ getRVision()\l}" alt="" coords="5,143,233,699"/>
+<map id="MailReceiver::mailMessage" name="MailReceiver::mailMessage">
+<area shape="rect" id="node2" href="$db/d44/a00162.html" title="{MailSender\n||+ receiveResponce()\l+ setDefaultReceiver()\l}" alt="" coords="5,245,213,353"/>
+<area shape="rect" id="node3" href="$d3/d65/a00154.html" title="{MailReceiver\n|# messages\l# mutex\l# isQueueLock\l|+ sendMail()\l# nextMessage()\l}" alt="" coords="29,5,189,151"/>
+<area shape="rect" id="node4" href="$d9/d38/a00166.html" title="{MessageForServer\n|+ connectionType\l+ messageType\l+ items\l|+ MessageForServer()\l+ ~MessageForServer()\l+ toString()\l}" alt="" coords="237,217,456,381"/>
 </map>

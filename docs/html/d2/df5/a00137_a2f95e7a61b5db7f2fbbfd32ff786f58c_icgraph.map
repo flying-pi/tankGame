@@ -1,5 +1,0 @@
-<map id="IBaseGameElement::setHelth" name="IBaseGameElement::setHelth">
-<area shape="rect" id="node2" href="$df/d24/a00217.html#a8961b80aa1df5f628bd4e28e66a51d0b" title="MapIniter::getRandomGrass" alt="" coords="321,5,576,36"/>
-<area shape="rect" id="node3" href="$df/d24/a00217.html#ae6dfbed9cc8569db78442c0bfe57e252" title="MapIniter::initSimapleMap" alt="" coords="624,5,861,36"/>
-<area shape="rect" id="node4" href="$d3/de5/a00209.html#a0632599cb00fa2c86ba1c71904c1f59f" title="MainGameLoop::MainGameLoop" alt="" coords="909,5,1207,36"/>
-</map>

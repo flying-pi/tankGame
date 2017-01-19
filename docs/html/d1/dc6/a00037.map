@@ -1,8 +1,0 @@
-<map id="Core/GameElements/basebulet.h" name="Core/GameElements/basebulet.h">
-<area shape="rect" id="node2" href="$dc/d87/a00032.html" title="Core/GameElements/basebulet.cpp" alt="" coords="5,84,322,115"/>
-<area shape="rect" id="node3" href="$dd/d32/a00041.html" title="Core/GameElements/basetank.h" alt="" coords="346,84,638,115"/>
-<area shape="rect" id="node4" href="$d8/d41/a00038.html" title="Core/GameElements/basetank.cpp" alt="" coords="191,163,502,193"/>
-<area shape="rect" id="node5" href="$d1/dc1/a00092.html" title="Server/maingameloop.h" alt="" coords="526,163,746,193"/>
-<area shape="rect" id="node6" href="$d6/db6/a00241.html" title="Server/main.cpp" alt="" coords="445,241,602,272"/>
-<area shape="rect" id="node7" href="$db/dab/a00089.html" title="Server/maingameloop.cpp" alt="" coords="627,241,866,272"/>
-</map>

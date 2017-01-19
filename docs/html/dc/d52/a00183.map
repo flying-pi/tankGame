@@ -1,4 +1,0 @@
-<map id="ServerWorker" name="ServerWorker">
-<area shape="rect" id="node3" href="$d5/d13/a00205.html" title="{MailSender\n||+ receiveResponce()\l+ setDefaultReceiver()\l}" alt="" coords="124,217,331,325"/>
-<area shape="rect" id="node4" href="$de/db1/a00197.html" title="{MailReceiver\n|# messages\l# mutex\l# isQueueLock\l|+ sendMail()\l# nextMessage()\l}" alt="" coords="147,5,308,151"/>
-</map>

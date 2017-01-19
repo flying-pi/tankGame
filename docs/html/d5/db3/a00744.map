@@ -1,5 +1,0 @@
-<map id="MailReceiver::mailMessage" name="MailReceiver::mailMessage">
-<area shape="rect" id="node2" href="$d9/db0/a00750.html" title="{MailSender\n||+ receiveResponce()\l+ setDefaultReceiver()\l}" alt="" coords="5,217,213,325"/>
-<area shape="rect" id="node3" href="$d4/d8f/a00742.html" title="{MailReceiver\n|# messages\l# mutex\l# isQueueLock\l|+ sendMail()\l# nextMessage()\l}" alt="" coords="29,5,189,151"/>
-<area shape="rect" id="node4" href="$d9/d41/a00666.html" title="{MessageForServer\n|+ connectionType\l+ messageType\l|+ toString()\l}" alt="" coords="236,217,416,325"/>
-</map>

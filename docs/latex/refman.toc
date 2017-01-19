@@ -1,541 +1,75 @@
-\contentsline {chapter}{\numberline {1}Namespace Documentation}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Default\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Params Namespace Reference}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Variable Documentation}{1}{subsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1.1}port}{1}{subsubsection.1.1.1.1}
-\contentsline {section}{\numberline {1.2}limits Namespace Reference}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Variable Documentation}{1}{subsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.1.1}default\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basis\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Energy}{2}{subsubsection.1.2.1.1}
-\contentsline {subsubsection}{\numberline {1.2.1.2}max\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Count\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Of\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Items}{2}{subsubsection.1.2.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1.3}max\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Radius\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Of\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basis}{2}{subsubsection.1.2.1.3}
-\contentsline {section}{\numberline {1.3}static\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bock\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Types Namespace Reference}{2}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Variable Documentation}{2}{subsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.1.1}grass}{2}{subsubsection.1.3.1.1}
-\contentsline {section}{\numberline {1.4}Ui Namespace Reference}{2}{section.1.4}
-\contentsline {chapter}{\numberline {2}Class Documentation}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basis Class Reference}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Detailed Description}{6}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Constructor \& Destructor Documentation}{6}{subsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.2.1}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basis()}{6}{subsubsection.2.1.2.1}
-\contentsline {subsection}{\numberline {2.1.3}Member Function Documentation}{7}{subsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{7}{subsubsection.2.1.3.1}
-\contentsline {subsubsection}{\numberline {2.1.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Energy()}{7}{subsubsection.2.1.3.2}
-\contentsline {subsubsection}{\numberline {2.1.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{7}{subsubsection.2.1.3.3}
-\contentsline {subsubsection}{\numberline {2.1.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Max\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{7}{subsubsection.2.1.3.4}
-\contentsline {subsubsection}{\numberline {2.1.3.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{8}{subsubsection.2.1.3.5}
-\contentsline {subsubsection}{\numberline {2.1.3.6}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{8}{subsubsection.2.1.3.6}
-\contentsline {subsubsection}{\numberline {2.1.3.7}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{8}{subsubsection.2.1.3.7}
-\contentsline {subsubsection}{\numberline {2.1.3.8}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{8}{subsubsection.2.1.3.8}
-\contentsline {subsubsection}{\numberline {2.1.3.9}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{8}{subsubsection.2.1.3.9}
-\contentsline {subsubsection}{\numberline {2.1.3.10}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Step()}{9}{subsubsection.2.1.3.10}
-\contentsline {subsubsection}{\numberline {2.1.3.11}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additionak\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{9}{subsubsection.2.1.3.11}
-\contentsline {subsubsection}{\numberline {2.1.3.12}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Energy()}{9}{subsubsection.2.1.3.12}
-\contentsline {subsubsection}{\numberline {2.1.3.13}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{9}{subsubsection.2.1.3.13}
-\contentsline {subsubsection}{\numberline {2.1.3.14}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{10}{subsubsection.2.1.3.14}
-\contentsline {subsubsection}{\numberline {2.1.3.15}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{10}{subsubsection.2.1.3.15}
-\contentsline {subsubsection}{\numberline {2.1.3.16}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{10}{subsubsection.2.1.3.16}
-\contentsline {subsubsection}{\numberline {2.1.3.17}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{10}{subsubsection.2.1.3.17}
-\contentsline {subsubsection}{\numberline {2.1.3.18}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{10}{subsubsection.2.1.3.18}
-\contentsline {subsubsection}{\numberline {2.1.3.19}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{11}{subsubsection.2.1.3.19}
-\contentsline {subsection}{\numberline {2.1.4}Member Data Documentation}{11}{subsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.4.1}additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data}{11}{subsubsection.2.1.4.1}
-\contentsline {subsubsection}{\numberline {2.1.4.2}energy}{11}{subsubsection.2.1.4.2}
-\contentsline {subsubsection}{\numberline {2.1.4.3}helth}{11}{subsubsection.2.1.4.3}
-\contentsline {subsubsection}{\numberline {2.1.4.4}name}{11}{subsubsection.2.1.4.4}
-\contentsline {subsubsection}{\numberline {2.1.4.5}position}{11}{subsubsection.2.1.4.5}
-\contentsline {subsubsection}{\numberline {2.1.4.6}r\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision}{12}{subsubsection.2.1.4.6}
-\contentsline {subsubsection}{\numberline {2.1.4.7}transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight}{12}{subsubsection.2.1.4.7}
-\contentsline {subsubsection}{\numberline {2.1.4.8}type}{12}{subsubsection.2.1.4.8}
-\contentsline {subsubsection}{\numberline {2.1.4.9}weight}{12}{subsubsection.2.1.4.9}
-\contentsline {section}{\numberline {2.2}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bulet Class Reference}{12}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{15}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Constructor \& Destructor Documentation}{15}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bulet()}{15}{subsubsection.2.2.2.1}
-\contentsline {subsection}{\numberline {2.2.3}Member Function Documentation}{15}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{16}{subsubsection.2.2.3.1}
-\contentsline {subsubsection}{\numberline {2.2.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{16}{subsubsection.2.2.3.2}
-\contentsline {subsubsection}{\numberline {2.2.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Max\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{16}{subsubsection.2.2.3.3}
-\contentsline {subsubsection}{\numberline {2.2.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{16}{subsubsection.2.2.3.4}
-\contentsline {subsubsection}{\numberline {2.2.3.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{16}{subsubsection.2.2.3.5}
-\contentsline {subsubsection}{\numberline {2.2.3.6}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{16}{subsubsection.2.2.3.6}
-\contentsline {subsubsection}{\numberline {2.2.3.7}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{17}{subsubsection.2.2.3.7}
-\contentsline {subsubsection}{\numberline {2.2.3.8}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{17}{subsubsection.2.2.3.8}
-\contentsline {subsubsection}{\numberline {2.2.3.9}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Step()}{17}{subsubsection.2.2.3.9}
-\contentsline {subsubsection}{\numberline {2.2.3.10}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additionak\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{17}{subsubsection.2.2.3.10}
-\contentsline {subsubsection}{\numberline {2.2.3.11}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{18}{subsubsection.2.2.3.11}
-\contentsline {subsubsection}{\numberline {2.2.3.12}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{18}{subsubsection.2.2.3.12}
-\contentsline {subsubsection}{\numberline {2.2.3.13}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{18}{subsubsection.2.2.3.13}
-\contentsline {subsubsection}{\numberline {2.2.3.14}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{18}{subsubsection.2.2.3.14}
-\contentsline {subsubsection}{\numberline {2.2.3.15}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{19}{subsubsection.2.2.3.15}
-\contentsline {subsubsection}{\numberline {2.2.3.16}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{19}{subsubsection.2.2.3.16}
-\contentsline {subsubsection}{\numberline {2.2.3.17}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{19}{subsubsection.2.2.3.17}
-\contentsline {subsection}{\numberline {2.2.4}Member Data Documentation}{19}{subsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.4.1}additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data}{20}{subsubsection.2.2.4.1}
-\contentsline {subsubsection}{\numberline {2.2.4.2}demage}{20}{subsubsection.2.2.4.2}
-\contentsline {subsubsection}{\numberline {2.2.4.3}direction}{20}{subsubsection.2.2.4.3}
-\contentsline {subsubsection}{\numberline {2.2.4.4}helth}{20}{subsubsection.2.2.4.4}
-\contentsline {subsubsection}{\numberline {2.2.4.5}lifetime}{20}{subsubsection.2.2.4.5}
-\contentsline {subsubsection}{\numberline {2.2.4.6}name}{20}{subsubsection.2.2.4.6}
-\contentsline {subsubsection}{\numberline {2.2.4.7}position}{21}{subsubsection.2.2.4.7}
-\contentsline {subsubsection}{\numberline {2.2.4.8}r\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision}{21}{subsubsection.2.2.4.8}
-\contentsline {subsubsection}{\numberline {2.2.4.9}speed}{21}{subsubsection.2.2.4.9}
-\contentsline {subsubsection}{\numberline {2.2.4.10}transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight}{21}{subsubsection.2.2.4.10}
-\contentsline {subsubsection}{\numberline {2.2.4.11}type}{21}{subsubsection.2.2.4.11}
-\contentsline {subsubsection}{\numberline {2.2.4.12}weight}{21}{subsubsection.2.2.4.12}
-\contentsline {section}{\numberline {2.3}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tank Class Reference}{22}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{24}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Constructor \& Destructor Documentation}{24}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tank()}{24}{subsubsection.2.3.2.1}
-\contentsline {subsection}{\numberline {2.3.3}Member Function Documentation}{25}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}generate\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bullet()}{25}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{25}{subsubsection.2.3.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{25}{subsubsection.2.3.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Max\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{25}{subsubsection.2.3.3.4}
-\contentsline {subsubsection}{\numberline {2.3.3.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{25}{subsubsection.2.3.3.5}
-\contentsline {subsubsection}{\numberline {2.3.3.6}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{26}{subsubsection.2.3.3.6}
-\contentsline {subsubsection}{\numberline {2.3.3.7}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{26}{subsubsection.2.3.3.7}
-\contentsline {subsubsection}{\numberline {2.3.3.8}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{26}{subsubsection.2.3.3.8}
-\contentsline {subsubsection}{\numberline {2.3.3.9}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{26}{subsubsection.2.3.3.9}
-\contentsline {subsubsection}{\numberline {2.3.3.10}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Step()}{26}{subsubsection.2.3.3.10}
-\contentsline {subsubsection}{\numberline {2.3.3.11}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additionak\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{27}{subsubsection.2.3.3.11}
-\contentsline {subsubsection}{\numberline {2.3.3.12}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{27}{subsubsection.2.3.3.12}
-\contentsline {subsubsection}{\numberline {2.3.3.13}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{27}{subsubsection.2.3.3.13}
-\contentsline {subsubsection}{\numberline {2.3.3.14}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{27}{subsubsection.2.3.3.14}
-\contentsline {subsubsection}{\numberline {2.3.3.15}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{27}{subsubsection.2.3.3.15}
-\contentsline {subsubsection}{\numberline {2.3.3.16}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{28}{subsubsection.2.3.3.16}
-\contentsline {subsubsection}{\numberline {2.3.3.17}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{28}{subsubsection.2.3.3.17}
-\contentsline {subsubsection}{\numberline {2.3.3.18}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{28}{subsubsection.2.3.3.18}
-\contentsline {subsection}{\numberline {2.3.4}Member Data Documentation}{28}{subsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.4.1}additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data}{28}{subsubsection.2.3.4.1}
-\contentsline {subsubsection}{\numberline {2.3.4.2}direction}{29}{subsubsection.2.3.4.2}
-\contentsline {subsubsection}{\numberline {2.3.4.3}fire\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type}{29}{subsubsection.2.3.4.3}
-\contentsline {subsubsection}{\numberline {2.3.4.4}helth}{29}{subsubsection.2.3.4.4}
-\contentsline {subsubsection}{\numberline {2.3.4.5}name}{29}{subsubsection.2.3.4.5}
-\contentsline {subsubsection}{\numberline {2.3.4.6}position}{29}{subsubsection.2.3.4.6}
-\contentsline {subsubsection}{\numberline {2.3.4.7}r\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision}{29}{subsubsection.2.3.4.7}
-\contentsline {subsubsection}{\numberline {2.3.4.8}speed}{30}{subsubsection.2.3.4.8}
-\contentsline {subsubsection}{\numberline {2.3.4.9}transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight}{30}{subsubsection.2.3.4.9}
-\contentsline {subsubsection}{\numberline {2.3.4.10}type}{30}{subsubsection.2.3.4.10}
-\contentsline {subsubsection}{\numberline {2.3.4.11}weight}{30}{subsubsection.2.3.4.11}
-\contentsline {section}{\numberline {2.4}Core Class Reference}{30}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{31}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Constructor \& Destructor Documentation}{31}{subsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Core()}{31}{subsubsection.2.4.2.1}
-\contentsline {section}{\numberline {2.5}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element Class Reference}{31}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Detailed Description}{33}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Constructor \& Destructor Documentation}{33}{subsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.2.1}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{33}{subsubsection.2.5.2.1}
-\contentsline {subsubsection}{\numberline {2.5.2.2}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{33}{subsubsection.2.5.2.2}
-\contentsline {subsection}{\numberline {2.5.3}Friends And Related Function Documentation}{33}{subsection.2.5.3}
-\contentsline {subsubsection}{\numberline {2.5.3.1}operator$<$$<$}{34}{subsubsection.2.5.3.1}
-\contentsline {subsubsection}{\numberline {2.5.3.2}operator$>$$>$}{34}{subsubsection.2.5.3.2}
-\contentsline {subsection}{\numberline {2.5.4}Member Data Documentation}{34}{subsection.2.5.4}
-\contentsline {subsubsection}{\numberline {2.5.4.1}data}{34}{subsubsection.2.5.4.1}
-\contentsline {subsubsection}{\numberline {2.5.4.2}type}{34}{subsubsection.2.5.4.2}
-\contentsline {section}{\numberline {2.6}Field Class Reference}{35}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Detailed Description}{37}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Constructor \& Destructor Documentation}{37}{subsection.2.6.2}
-\contentsline {subsubsection}{\numberline {2.6.2.1}Field()}{37}{subsubsection.2.6.2.1}
-\contentsline {subsubsection}{\numberline {2.6.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Field()}{37}{subsubsection.2.6.2.2}
-\contentsline {subsection}{\numberline {2.6.3}Member Function Documentation}{37}{subsection.2.6.3}
-\contentsline {subsubsection}{\numberline {2.6.3.1}draw\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Grass()}{38}{subsubsection.2.6.3.1}
-\contentsline {subsubsection}{\numberline {2.6.3.2}initialize\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L()}{38}{subsubsection.2.6.3.2}
-\contentsline {subsubsection}{\numberline {2.6.3.3}init\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Res()}{38}{subsubsection.2.6.3.3}
-\contentsline {subsubsection}{\numberline {2.6.3.4}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receive}{38}{subsubsection.2.6.3.4}
-\contentsline {subsubsection}{\numberline {2.6.3.5}paint\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L()}{39}{subsubsection.2.6.3.5}
-\contentsline {subsubsection}{\numberline {2.6.3.6}resize\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}G\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L()}{39}{subsubsection.2.6.3.6}
-\contentsline {subsection}{\numberline {2.6.4}Member Data Documentation}{39}{subsection.2.6.4}
-\contentsline {subsubsection}{\numberline {2.6.4.1}field\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}State}{39}{subsubsection.2.6.4.1}
-\contentsline {subsubsection}{\numberline {2.6.4.2}grass}{39}{subsubsection.2.6.4.2}
-\contentsline {subsubsection}{\numberline {2.6.4.3}scaleK}{39}{subsubsection.2.6.4.3}
-\contentsline {section}{\numberline {2.7}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Gamer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Information Class Reference}{40}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Detailed Description}{41}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Constructor \& Destructor Documentation}{41}{subsection.2.7.2}
-\contentsline {subsubsection}{\numberline {2.7.2.1}Gamer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Information()}{41}{subsubsection.2.7.2.1}
-\contentsline {subsubsection}{\numberline {2.7.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gamer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Information()}{41}{subsubsection.2.7.2.2}
-\contentsline {subsection}{\numberline {2.7.3}Member Data Documentation}{41}{subsection.2.7.3}
-\contentsline {subsubsection}{\numberline {2.7.3.1}life\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Count}{41}{subsubsection.2.7.3.1}
-\contentsline {subsubsection}{\numberline {2.7.3.2}minion}{42}{subsubsection.2.7.3.2}
-\contentsline {subsubsection}{\numberline {2.7.3.3}name}{42}{subsubsection.2.7.3.3}
-\contentsline {subsubsection}{\numberline {2.7.3.4}personal\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Diff}{42}{subsubsection.2.7.3.4}
-\contentsline {subsubsection}{\numberline {2.7.3.5}position}{42}{subsubsection.2.7.3.5}
-\contentsline {subsubsection}{\numberline {2.7.3.6}sender}{42}{subsubsection.2.7.3.6}
-\contentsline {section}{\numberline {2.8}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element Class Reference}{43}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Detailed Description}{45}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Constructor \& Destructor Documentation}{45}{subsection.2.8.2}
-\contentsline {subsubsection}{\numberline {2.8.2.1}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element()}{45}{subsubsection.2.8.2.1}
-\contentsline {subsubsection}{\numberline {2.8.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element()}{46}{subsubsection.2.8.2.2}
-\contentsline {subsection}{\numberline {2.8.3}Member Function Documentation}{46}{subsection.2.8.3}
-\contentsline {subsubsection}{\numberline {2.8.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{46}{subsubsection.2.8.3.1}
-\contentsline {subsubsection}{\numberline {2.8.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{46}{subsubsection.2.8.3.2}
-\contentsline {subsubsection}{\numberline {2.8.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Max\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{46}{subsubsection.2.8.3.3}
-\contentsline {subsubsection}{\numberline {2.8.3.4}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{46}{subsubsection.2.8.3.4}
-\contentsline {subsubsection}{\numberline {2.8.3.5}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{47}{subsubsection.2.8.3.5}
-\contentsline {subsubsection}{\numberline {2.8.3.6}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{47}{subsubsection.2.8.3.6}
-\contentsline {subsubsection}{\numberline {2.8.3.7}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{47}{subsubsection.2.8.3.7}
-\contentsline {subsubsection}{\numberline {2.8.3.8}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{47}{subsubsection.2.8.3.8}
-\contentsline {subsubsection}{\numberline {2.8.3.9}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Step()}{47}{subsubsection.2.8.3.9}
-\contentsline {subsubsection}{\numberline {2.8.3.10}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Additionak\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{48}{subsubsection.2.8.3.10}
-\contentsline {subsubsection}{\numberline {2.8.3.11}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Helth()}{48}{subsubsection.2.8.3.11}
-\contentsline {subsubsection}{\numberline {2.8.3.12}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Name()}{48}{subsubsection.2.8.3.12}
-\contentsline {subsubsection}{\numberline {2.8.3.13}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{48}{subsubsection.2.8.3.13}
-\contentsline {subsubsection}{\numberline {2.8.3.14}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision()}{48}{subsubsection.2.8.3.14}
-\contentsline {subsubsection}{\numberline {2.8.3.15}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{49}{subsubsection.2.8.3.15}
-\contentsline {subsubsection}{\numberline {2.8.3.16}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type()}{49}{subsubsection.2.8.3.16}
-\contentsline {subsubsection}{\numberline {2.8.3.17}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight()}{49}{subsubsection.2.8.3.17}
-\contentsline {subsection}{\numberline {2.8.4}Friends And Related Function Documentation}{49}{subsection.2.8.4}
-\contentsline {subsubsection}{\numberline {2.8.4.1}operator$<$$<$}{50}{subsubsection.2.8.4.1}
-\contentsline {subsubsection}{\numberline {2.8.4.2}operator$>$$>$}{50}{subsubsection.2.8.4.2}
-\contentsline {subsection}{\numberline {2.8.5}Member Data Documentation}{50}{subsection.2.8.5}
-\contentsline {subsubsection}{\numberline {2.8.5.1}additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data}{50}{subsubsection.2.8.5.1}
-\contentsline {subsubsection}{\numberline {2.8.5.2}helth}{50}{subsubsection.2.8.5.2}
-\contentsline {subsubsection}{\numberline {2.8.5.3}name}{50}{subsubsection.2.8.5.3}
-\contentsline {subsubsection}{\numberline {2.8.5.4}position}{51}{subsubsection.2.8.5.4}
-\contentsline {subsubsection}{\numberline {2.8.5.5}r\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision}{51}{subsubsection.2.8.5.5}
-\contentsline {subsubsection}{\numberline {2.8.5.6}transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight}{51}{subsubsection.2.8.5.6}
-\contentsline {subsubsection}{\numberline {2.8.5.7}type}{51}{subsubsection.2.8.5.7}
-\contentsline {subsubsection}{\numberline {2.8.5.8}weight}{51}{subsubsection.2.8.5.8}
-\contentsline {section}{\numberline {2.9}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map Class Reference}{52}{section.2.9}
-\contentsline {subsection}{\numberline {2.9.1}Detailed Description}{53}{subsection.2.9.1}
-\contentsline {subsection}{\numberline {2.9.2}Constructor \& Destructor Documentation}{53}{subsection.2.9.2}
-\contentsline {subsubsection}{\numberline {2.9.2.1}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map()}{53}{subsubsection.2.9.2.1}
-\contentsline {subsection}{\numberline {2.9.3}Member Function Documentation}{53}{subsection.2.9.3}
-\contentsline {subsubsection}{\numberline {2.9.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Count()}{54}{subsubsection.2.9.3.1}
-\contentsline {subsubsection}{\numberline {2.9.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}At\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{54}{subsubsection.2.9.3.2}
-\contentsline {subsubsection}{\numberline {2.9.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Size()}{54}{subsubsection.2.9.3.3}
-\contentsline {subsubsection}{\numberline {2.9.3.4}insert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element()}{54}{subsubsection.2.9.3.4}
-\contentsline {subsubsection}{\numberline {2.9.3.5}proccess\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}In\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R()}{54}{subsubsection.2.9.3.5}
-\contentsline {section}{\numberline {2.10}Infinity\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Double Class Reference}{55}{section.2.10}
-\contentsline {subsection}{\numberline {2.10.1}Detailed Description}{56}{subsection.2.10.1}
-\contentsline {subsection}{\numberline {2.10.2}Constructor \& Destructor Documentation}{57}{subsection.2.10.2}
-\contentsline {subsubsection}{\numberline {2.10.2.1}Infinity\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Double()}{57}{subsubsection.2.10.2.1}
-\contentsline {subsection}{\numberline {2.10.3}Member Function Documentation}{57}{subsection.2.10.3}
-\contentsline {subsubsection}{\numberline {2.10.3.1}From\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Value()}{57}{subsubsection.2.10.3.1}
-\contentsline {subsubsection}{\numberline {2.10.3.2}Infinity\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Value()}{58}{subsubsection.2.10.3.2}
-\contentsline {subsection}{\numberline {2.10.4}Friends And Related Function Documentation}{58}{subsection.2.10.4}
-\contentsline {subsubsection}{\numberline {2.10.4.1}operator$<$$<$}{58}{subsubsection.2.10.4.1}
-\contentsline {subsubsection}{\numberline {2.10.4.2}operator$>$$>$}{58}{subsubsection.2.10.4.2}
-\contentsline {subsection}{\numberline {2.10.5}Member Data Documentation}{58}{subsection.2.10.5}
-\contentsline {subsubsection}{\numberline {2.10.5.1}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Infinity}{59}{subsubsection.2.10.5.1}
-\contentsline {subsubsection}{\numberline {2.10.5.2}w}{59}{subsubsection.2.10.5.2}
-\contentsline {section}{\numberline {2.11}List\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bse\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map Class Reference}{59}{section.2.11}
-\contentsline {subsection}{\numberline {2.11.1}Detailed Description}{61}{subsection.2.11.1}
-\contentsline {subsection}{\numberline {2.11.2}Constructor \& Destructor Documentation}{61}{subsection.2.11.2}
-\contentsline {subsubsection}{\numberline {2.11.2.1}List\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bse\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map()}{61}{subsubsection.2.11.2.1}
-\contentsline {subsubsection}{\numberline {2.11.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bse\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map()}{61}{subsubsection.2.11.2.2}
-\contentsline {subsection}{\numberline {2.11.3}Member Function Documentation}{61}{subsection.2.11.3}
-\contentsline {subsubsection}{\numberline {2.11.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Count()}{61}{subsubsection.2.11.3.1}
-\contentsline {subsubsection}{\numberline {2.11.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}At\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Position()}{61}{subsubsection.2.11.3.2}
-\contentsline {subsubsection}{\numberline {2.11.3.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Size()}{62}{subsubsection.2.11.3.3}
-\contentsline {subsubsection}{\numberline {2.11.3.4}insert\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element()}{62}{subsubsection.2.11.3.4}
-\contentsline {subsubsection}{\numberline {2.11.3.5}proccess\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}In\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{62}{subsubsection.2.11.3.5}
-\contentsline {subsubsection}{\numberline {2.11.3.6}proccess\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}In\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{62}{subsubsection.2.11.3.6}
-\contentsline {subsection}{\numberline {2.11.4}Member Data Documentation}{63}{subsection.2.11.4}
-\contentsline {subsubsection}{\numberline {2.11.4.1}items}{63}{subsubsection.2.11.4.1}
-\contentsline {subsubsection}{\numberline {2.11.4.2}size}{63}{subsubsection.2.11.4.2}
-\contentsline {section}{\numberline {2.12}Mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message Class Reference}{63}{section.2.12}
-\contentsline {subsection}{\numberline {2.12.1}Detailed Description}{64}{subsection.2.12.1}
-\contentsline {subsection}{\numberline {2.12.2}Constructor \& Destructor Documentation}{64}{subsection.2.12.2}
-\contentsline {subsubsection}{\numberline {2.12.2.1}mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{64}{subsubsection.2.12.2.1}
-\contentsline {subsection}{\numberline {2.12.3}Friends And Related Function Documentation}{64}{subsection.2.12.3}
-\contentsline {subsubsection}{\numberline {2.12.3.1}operator$<$$<$}{64}{subsubsection.2.12.3.1}
-\contentsline {subsection}{\numberline {2.12.4}Member Data Documentation}{65}{subsection.2.12.4}
-\contentsline {subsubsection}{\numberline {2.12.4.1}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Replace}{65}{subsubsection.2.12.4.1}
-\contentsline {subsubsection}{\numberline {2.12.4.2}message}{65}{subsubsection.2.12.4.2}
-\contentsline {subsubsection}{\numberline {2.12.4.3}sender}{65}{subsubsection.2.12.4.3}
-\contentsline {subsubsection}{\numberline {2.12.4.4}type}{65}{subsubsection.2.12.4.4}
-\contentsline {section}{\numberline {2.13}Mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver Class Reference}{66}{section.2.13}
-\contentsline {subsection}{\numberline {2.13.1}Detailed Description}{67}{subsection.2.13.1}
-\contentsline {subsection}{\numberline {2.13.2}Member Function Documentation}{67}{subsection.2.13.2}
-\contentsline {subsubsection}{\numberline {2.13.2.1}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{68}{subsubsection.2.13.2.1}
-\contentsline {subsubsection}{\numberline {2.13.2.2}send\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mail()}{68}{subsubsection.2.13.2.2}
-\contentsline {subsection}{\numberline {2.13.3}Member Data Documentation}{68}{subsection.2.13.3}
-\contentsline {subsubsection}{\numberline {2.13.3.1}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Queue\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Lock}{68}{subsubsection.2.13.3.1}
-\contentsline {subsubsection}{\numberline {2.13.3.2}messages}{68}{subsubsection.2.13.3.2}
-\contentsline {subsubsection}{\numberline {2.13.3.3}mutex}{68}{subsubsection.2.13.3.3}
-\contentsline {section}{\numberline {2.14}Mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sender Class Reference}{69}{section.2.14}
-\contentsline {subsection}{\numberline {2.14.1}Detailed Description}{70}{subsection.2.14.1}
-\contentsline {subsection}{\numberline {2.14.2}Member Function Documentation}{70}{subsection.2.14.2}
-\contentsline {subsubsection}{\numberline {2.14.2.1}receive\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Responce()}{71}{subsubsection.2.14.2.1}
-\contentsline {subsubsection}{\numberline {2.14.2.2}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Default\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver()}{71}{subsubsection.2.14.2.2}
-\contentsline {subsection}{\numberline {2.14.3}Member Data Documentation}{71}{subsection.2.14.3}
-\contentsline {subsubsection}{\numberline {2.14.3.1}receiver}{71}{subsubsection.2.14.3.1}
-\contentsline {section}{\numberline {2.15}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop Class Reference}{71}{section.2.15}
-\contentsline {subsection}{\numberline {2.15.1}Detailed Description}{74}{subsection.2.15.1}
-\contentsline {subsection}{\numberline {2.15.2}Member Typedef Documentation}{74}{subsection.2.15.2}
-\contentsline {subsubsection}{\numberline {2.15.2.1}message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Proccessor}{74}{subsubsection.2.15.2.1}
-\contentsline {subsection}{\numberline {2.15.3}Constructor \& Destructor Documentation}{75}{subsection.2.15.3}
-\contentsline {subsubsection}{\numberline {2.15.3.1}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop()}{75}{subsubsection.2.15.3.1}
-\contentsline {subsubsection}{\numberline {2.15.3.2}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop()}{75}{subsubsection.2.15.3.2}
-\contentsline {subsection}{\numberline {2.15.4}Member Function Documentation}{75}{subsection.2.15.4}
-\contentsline {subsubsection}{\numberline {2.15.4.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}All\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}As\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Diff()}{75}{subsubsection.2.15.4.1}
-\contentsline {subsubsection}{\numberline {2.15.4.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Looper\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Instance()}{76}{subsubsection.2.15.4.2}
-\contentsline {subsubsection}{\numberline {2.15.4.3}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Proccessor\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}For\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{76}{subsubsection.2.15.4.3}
-\contentsline {subsubsection}{\numberline {2.15.4.4}next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{76}{subsubsection.2.15.4.4}
-\contentsline {subsubsection}{\numberline {2.15.4.5}proccess\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Gamer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{77}{subsubsection.2.15.4.5}
-\contentsline {subsubsection}{\numberline {2.15.4.6}proccess\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Watcher\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{77}{subsubsection.2.15.4.6}
-\contentsline {subsubsection}{\numberline {2.15.4.7}run()}{78}{subsubsection.2.15.4.7}
-\contentsline {subsubsection}{\numberline {2.15.4.8}send\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mail()}{78}{subsubsection.2.15.4.8}
-\contentsline {subsubsection}{\numberline {2.15.4.9}start\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Looper()}{78}{subsubsection.2.15.4.9}
-\contentsline {subsection}{\numberline {2.15.5}Member Data Documentation}{78}{subsection.2.15.5}
-\contentsline {subsubsection}{\numberline {2.15.5.1}gamers\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Items}{78}{subsubsection.2.15.5.1}
-\contentsline {subsubsection}{\numberline {2.15.5.2}gamers\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List}{79}{subsubsection.2.15.5.2}
-\contentsline {subsubsection}{\numberline {2.15.5.3}instance}{79}{subsubsection.2.15.5.3}
-\contentsline {subsubsection}{\numberline {2.15.5.4}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Queue\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Lock}{79}{subsubsection.2.15.5.4}
-\contentsline {subsubsection}{\numberline {2.15.5.5}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Work}{79}{subsubsection.2.15.5.5}
-\contentsline {subsubsection}{\numberline {2.15.5.6}map}{79}{subsubsection.2.15.5.6}
-\contentsline {subsubsection}{\numberline {2.15.5.7}messages}{79}{subsubsection.2.15.5.7}
-\contentsline {subsubsection}{\numberline {2.15.5.8}mutex}{80}{subsubsection.2.15.5.8}
-\contentsline {subsubsection}{\numberline {2.15.5.9}watchers}{80}{subsubsection.2.15.5.9}
-\contentsline {section}{\numberline {2.16}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Window Class Reference}{80}{section.2.16}
-\contentsline {subsection}{\numberline {2.16.1}Detailed Description}{82}{subsection.2.16.1}
-\contentsline {subsection}{\numberline {2.16.2}Constructor \& Destructor Documentation}{82}{subsection.2.16.2}
-\contentsline {subsubsection}{\numberline {2.16.2.1}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Window()}{82}{subsubsection.2.16.2.1}
-\contentsline {subsubsection}{\numberline {2.16.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Window()}{83}{subsubsection.2.16.2.2}
-\contentsline {subsection}{\numberline {2.16.3}Member Function Documentation}{83}{subsection.2.16.3}
-\contentsline {subsubsection}{\numberline {2.16.3.1}connect\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}To\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server()}{83}{subsubsection.2.16.3.1}
-\contentsline {subsection}{\numberline {2.16.4}Member Data Documentation}{83}{subsection.2.16.4}
-\contentsline {subsubsection}{\numberline {2.16.4.1}connection}{83}{subsubsection.2.16.4.1}
-\contentsline {subsubsection}{\numberline {2.16.4.2}ui}{83}{subsubsection.2.16.4.2}
-\contentsline {section}{\numberline {2.17}Map\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Initer Class Reference}{84}{section.2.17}
-\contentsline {subsection}{\numberline {2.17.1}Detailed Description}{84}{subsection.2.17.1}
-\contentsline {subsection}{\numberline {2.17.2}Constructor \& Destructor Documentation}{84}{subsection.2.17.2}
-\contentsline {subsubsection}{\numberline {2.17.2.1}Map\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Initer()}{84}{subsubsection.2.17.2.1}
-\contentsline {subsection}{\numberline {2.17.3}Member Function Documentation}{85}{subsection.2.17.3}
-\contentsline {subsubsection}{\numberline {2.17.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Random\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Grass()}{85}{subsubsection.2.17.3.1}
-\contentsline {subsubsection}{\numberline {2.17.3.2}init\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Simaple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map()}{85}{subsubsection.2.17.3.2}
-\contentsline {section}{\numberline {2.18}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Builder Class Reference}{86}{section.2.18}
-\contentsline {subsection}{\numberline {2.18.1}Detailed Description}{88}{subsection.2.18.1}
-\contentsline {subsection}{\numberline {2.18.2}Constructor \& Destructor Documentation}{88}{subsection.2.18.2}
-\contentsline {subsubsection}{\numberline {2.18.2.1}Message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Builder()}{88}{subsubsection.2.18.2.1}
-\contentsline {subsection}{\numberline {2.18.3}Member Function Documentation}{88}{subsection.2.18.3}
-\contentsline {subsubsection}{\numberline {2.18.3.1}as\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}First\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{88}{subsubsection.2.18.3.1}
-\contentsline {subsubsection}{\numberline {2.18.3.2}build()}{89}{subsubsection.2.18.3.2}
-\contentsline {subsection}{\numberline {2.18.4}Friends And Related Function Documentation}{89}{subsection.2.18.4}
-\contentsline {subsubsection}{\numberline {2.18.4.1}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection}{89}{subsubsection.2.18.4.1}
-\contentsline {subsection}{\numberline {2.18.5}Member Data Documentation}{89}{subsection.2.18.5}
-\contentsline {subsubsection}{\numberline {2.18.5.1}message}{89}{subsubsection.2.18.5.1}
-\contentsline {subsubsection}{\numberline {2.18.5.2}parent}{89}{subsubsection.2.18.5.2}
-\contentsline {section}{\numberline {2.19}Message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}For\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server Class Reference}{90}{section.2.19}
-\contentsline {subsection}{\numberline {2.19.1}Detailed Description}{91}{subsection.2.19.1}
-\contentsline {subsection}{\numberline {2.19.2}Member Function Documentation}{91}{subsection.2.19.2}
-\contentsline {subsubsection}{\numberline {2.19.2.1}to\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}String()}{91}{subsubsection.2.19.2.1}
-\contentsline {subsection}{\numberline {2.19.3}Friends And Related Function Documentation}{91}{subsection.2.19.3}
-\contentsline {subsubsection}{\numberline {2.19.3.1}operator$<$$<$\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{91}{subsubsection.2.19.3.1}
-\contentsline {subsubsection}{\numberline {2.19.3.2}operator$<$$<$\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{92}{subsubsection.2.19.3.2}
-\contentsline {subsubsection}{\numberline {2.19.3.3}operator$>$$>$}{92}{subsubsection.2.19.3.3}
-\contentsline {subsection}{\numberline {2.19.4}Member Data Documentation}{92}{subsection.2.19.4}
-\contentsline {subsubsection}{\numberline {2.19.4.1}connection\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type}{92}{subsubsection.2.19.4.1}
-\contentsline {subsubsection}{\numberline {2.19.4.2}message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type}{92}{subsubsection.2.19.4.2}
-\contentsline {section}{\numberline {2.20}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Receiver Class Reference}{93}{section.2.20}
-\contentsline {subsection}{\numberline {2.20.1}Detailed Description}{95}{subsection.2.20.1}
-\contentsline {subsection}{\numberline {2.20.2}Constructor \& Destructor Documentation}{95}{subsection.2.20.2}
-\contentsline {subsubsection}{\numberline {2.20.2.1}Receiver()}{95}{subsubsection.2.20.2.1}
-\contentsline {subsubsection}{\numberline {2.20.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver()}{95}{subsubsection.2.20.2.2}
-\contentsline {subsection}{\numberline {2.20.3}Member Function Documentation}{95}{subsection.2.20.3}
-\contentsline {subsubsection}{\numberline {2.20.3.1}ist\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Start()}{96}{subsubsection.2.20.3.1}
-\contentsline {subsubsection}{\numberline {2.20.3.2}run()}{96}{subsubsection.2.20.3.2}
-\contentsline {subsubsection}{\numberline {2.20.3.3}stop()}{96}{subsubsection.2.20.3.3}
-\contentsline {subsection}{\numberline {2.20.4}Member Data Documentation}{96}{subsection.2.20.4}
-\contentsline {subsubsection}{\numberline {2.20.4.1}in}{96}{subsubsection.2.20.4.1}
-\contentsline {subsubsection}{\numberline {2.20.4.2}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Active}{96}{subsubsection.2.20.4.2}
-\contentsline {subsubsection}{\numberline {2.20.4.3}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Start}{97}{subsubsection.2.20.4.3}
-\contentsline {subsubsection}{\numberline {2.20.4.4}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Work}{97}{subsubsection.2.20.4.4}
-\contentsline {subsubsection}{\numberline {2.20.4.5}parent\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread}{97}{subsubsection.2.20.4.5}
-\contentsline {subsubsection}{\numberline {2.20.4.6}socket}{97}{subsubsection.2.20.4.6}
-\contentsline {section}{\numberline {2.21}receive\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Respnce\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread Class Reference}{97}{section.2.21}
-\contentsline {subsection}{\numberline {2.21.1}Detailed Description}{98}{subsection.2.21.1}
-\contentsline {subsection}{\numberline {2.21.2}Member Function Documentation}{99}{subsection.2.21.2}
-\contentsline {subsubsection}{\numberline {2.21.2.1}run()}{99}{subsubsection.2.21.2.1}
-\contentsline {subsection}{\numberline {2.21.3}Member Data Documentation}{99}{subsection.2.21.3}
-\contentsline {subsubsection}{\numberline {2.21.3.1}diff}{99}{subsubsection.2.21.3.1}
-\contentsline {subsubsection}{\numberline {2.21.3.2}message}{99}{subsubsection.2.21.3.2}
-\contentsline {subsubsection}{\numberline {2.21.3.3}mutex}{99}{subsubsection.2.21.3.3}
-\contentsline {subsubsection}{\numberline {2.21.3.4}responce\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message}{99}{subsubsection.2.21.3.4}
-\contentsline {section}{\numberline {2.22}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Receiver\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread Class Reference}{100}{section.2.22}
-\contentsline {subsection}{\numberline {2.22.1}Detailed Description}{102}{subsection.2.22.1}
-\contentsline {subsection}{\numberline {2.22.2}Constructor \& Destructor Documentation}{102}{subsection.2.22.2}
-\contentsline {subsubsection}{\numberline {2.22.2.1}Receiver\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread()}{102}{subsubsection.2.22.2.1}
-\contentsline {subsubsection}{\numberline {2.22.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread()}{102}{subsubsection.2.22.2.2}
-\contentsline {subsection}{\numberline {2.22.3}Member Function Documentation}{102}{subsection.2.22.3}
-\contentsline {subsubsection}{\numberline {2.22.3.1}run()}{102}{subsubsection.2.22.3.1}
-\contentsline {subsubsection}{\numberline {2.22.3.2}stop()}{103}{subsubsection.2.22.3.2}
-\contentsline {subsection}{\numberline {2.22.4}Member Data Documentation}{103}{subsection.2.22.4}
-\contentsline {subsubsection}{\numberline {2.22.4.1}in}{103}{subsubsection.2.22.4.1}
-\contentsline {subsubsection}{\numberline {2.22.4.2}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Work}{103}{subsubsection.2.22.4.2}
-\contentsline {subsubsection}{\numberline {2.22.4.3}parent\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread}{103}{subsubsection.2.22.4.3}
-\contentsline {subsubsection}{\numberline {2.22.4.4}receiver\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mutex}{104}{subsubsection.2.22.4.4}
-\contentsline {subsubsection}{\numberline {2.22.4.5}socket}{104}{subsubsection.2.22.4.5}
-\contentsline {section}{\numberline {2.23}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:responce\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data Struct Reference}{104}{section.2.23}
-\contentsline {subsection}{\numberline {2.23.1}Detailed Description}{105}{subsection.2.23.1}
-\contentsline {subsection}{\numberline {2.23.2}Constructor \& Destructor Documentation}{105}{subsection.2.23.2}
-\contentsline {subsubsection}{\numberline {2.23.2.1}responce\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data()}{105}{subsubsection.2.23.2.1}
-\contentsline {subsection}{\numberline {2.23.3}Member Data Documentation}{105}{subsection.2.23.3}
-\contentsline {subsubsection}{\numberline {2.23.3.1}diff}{105}{subsubsection.2.23.3.1}
-\contentsline {subsubsection}{\numberline {2.23.3.2}messag}{105}{subsubsection.2.23.3.2}
-\contentsline {section}{\numberline {2.24}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection Class Reference}{106}{section.2.24}
-\contentsline {subsection}{\numberline {2.24.1}Detailed Description}{108}{subsection.2.24.1}
-\contentsline {subsection}{\numberline {2.24.2}Constructor \& Destructor Documentation}{108}{subsection.2.24.2}
-\contentsline {subsubsection}{\numberline {2.24.2.1}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection()}{108}{subsubsection.2.24.2.1}
-\contentsline {subsubsection}{\numberline {2.24.2.2}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection()}{108}{subsubsection.2.24.2.2}
-\contentsline {subsection}{\numberline {2.24.3}Member Function Documentation}{109}{subsection.2.24.3}
-\contentsline {subsubsection}{\numberline {2.24.3.1}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Instance()}{109}{subsubsection.2.24.3.1}
-\contentsline {subsubsection}{\numberline {2.24.3.2}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error}{109}{subsubsection.2.24.3.2}
-\contentsline {subsubsection}{\numberline {2.24.3.3}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Stop}{109}{subsubsection.2.24.3.3}
-\contentsline {subsubsection}{\numberline {2.24.3.4}receive\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Responce()}{110}{subsubsection.2.24.3.4}
-\contentsline {subsubsection}{\numberline {2.24.3.5}run()}{110}{subsubsection.2.24.3.5}
-\contentsline {subsubsection}{\numberline {2.24.3.6}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Default\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver()}{110}{subsubsection.2.24.3.6}
-\contentsline {subsubsection}{\numberline {2.24.3.7}start\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server()}{110}{subsubsection.2.24.3.7}
-\contentsline {subsection}{\numberline {2.24.4}Member Data Documentation}{110}{subsection.2.24.4}
-\contentsline {subsubsection}{\numberline {2.24.4.1}connections}{111}{subsubsection.2.24.4.1}
-\contentsline {subsubsection}{\numberline {2.24.4.2}instance}{111}{subsubsection.2.24.4.2}
-\contentsline {subsubsection}{\numberline {2.24.4.3}receiver}{111}{subsubsection.2.24.4.3}
-\contentsline {subsubsection}{\numberline {2.24.4.4}server}{111}{subsubsection.2.24.4.4}
-\contentsline {section}{\numberline {2.25}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker Class Reference}{111}{section.2.25}
-\contentsline {subsection}{\numberline {2.25.1}Detailed Description}{114}{subsection.2.25.1}
-\contentsline {subsection}{\numberline {2.25.2}Constructor \& Destructor Documentation}{114}{subsection.2.25.2}
-\contentsline {subsubsection}{\numberline {2.25.2.1}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker()}{114}{subsubsection.2.25.2.1}
-\contentsline {subsection}{\numberline {2.25.3}Member Function Documentation}{114}{subsection.2.25.3}
-\contentsline {subsubsection}{\numberline {2.25.3.1}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Stop}{115}{subsubsection.2.25.3.1}
-\contentsline {subsubsection}{\numberline {2.25.3.2}receive\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Responce()}{115}{subsubsection.2.25.3.2}
-\contentsline {subsubsection}{\numberline {2.25.3.3}run()}{115}{subsubsection.2.25.3.3}
-\contentsline {subsubsection}{\numberline {2.25.3.4}set\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Default\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver()}{116}{subsubsection.2.25.3.4}
-\contentsline {subsection}{\numberline {2.25.4}Friends And Related Function Documentation}{116}{subsection.2.25.4}
-\contentsline {subsubsection}{\numberline {2.25.4.1}receive\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Respnce\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread}{116}{subsubsection.2.25.4.1}
-\contentsline {subsection}{\numberline {2.25.5}Member Data Documentation}{116}{subsection.2.25.5}
-\contentsline {subsubsection}{\numberline {2.25.5.1}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Work}{116}{subsubsection.2.25.5.1}
-\contentsline {subsubsection}{\numberline {2.25.5.2}out}{116}{subsubsection.2.25.5.2}
-\contentsline {subsubsection}{\numberline {2.25.5.3}receiver}{116}{subsubsection.2.25.5.3}
-\contentsline {subsubsection}{\numberline {2.25.5.4}responce\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message}{117}{subsubsection.2.25.5.4}
-\contentsline {subsubsection}{\numberline {2.25.5.5}socket}{117}{subsubsection.2.25.5.5}
-\contentsline {subsubsection}{\numberline {2.25.5.6}worker\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Mutex}{117}{subsubsection.2.25.5.6}
-\contentsline {section}{\numberline {2.26}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection Class Reference}{117}{section.2.26}
-\contentsline {subsection}{\numberline {2.26.1}Detailed Description}{120}{subsection.2.26.1}
-\contentsline {subsection}{\numberline {2.26.2}Constructor \& Destructor Documentation}{120}{subsection.2.26.2}
-\contentsline {subsubsection}{\numberline {2.26.2.1}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection()}{120}{subsubsection.2.26.2.1}
-\contentsline {subsubsection}{\numberline {2.26.2.2}$\sim $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection()}{120}{subsubsection.2.26.2.2}
-\contentsline {subsection}{\numberline {2.26.3}Member Function Documentation}{120}{subsection.2.26.3}
-\contentsline {subsubsection}{\numberline {2.26.3.1}add\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message()}{121}{subsubsection.2.26.3.1}
-\contentsline {subsubsection}{\numberline {2.26.3.2}get\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bulder()}{121}{subsubsection.2.26.3.2}
-\contentsline {subsubsection}{\numberline {2.26.3.3}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receive}{121}{subsubsection.2.26.3.3}
-\contentsline {subsubsection}{\numberline {2.26.3.4}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Socket\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error}{121}{subsubsection.2.26.3.4}
-\contentsline {subsubsection}{\numberline {2.26.3.5}open\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection()}{122}{subsubsection.2.26.3.5}
-\contentsline {subsubsection}{\numberline {2.26.3.6}run()}{122}{subsubsection.2.26.3.6}
-\contentsline {subsubsection}{\numberline {2.26.3.7}send\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Diff()}{122}{subsubsection.2.26.3.7}
-\contentsline {subsection}{\numberline {2.26.4}Member Data Documentation}{122}{subsection.2.26.4}
-\contentsline {subsubsection}{\numberline {2.26.4.1}adress}{122}{subsubsection.2.26.4.1}
-\contentsline {subsubsection}{\numberline {2.26.4.2}is\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Work}{123}{subsubsection.2.26.4.2}
-\contentsline {subsubsection}{\numberline {2.26.4.3}messages}{123}{subsubsection.2.26.4.3}
-\contentsline {subsubsection}{\numberline {2.26.4.4}mutex}{123}{subsubsection.2.26.4.4}
-\contentsline {subsubsection}{\numberline {2.26.4.5}out}{123}{subsubsection.2.26.4.5}
-\contentsline {subsubsection}{\numberline {2.26.4.6}socket}{123}{subsubsection.2.26.4.6}
-\contentsline {chapter}{\numberline {3}File Documentation}{125}{chapter.3}
-\contentsline {section}{\numberline {3.1}Core/connection/mailboxelement.h File Reference}{125}{section.3.1}
-\contentsline {section}{\numberline {3.2}mailboxelement.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{126}{section.3.2}
-\contentsline {section}{\numberline {3.3}Core/connection/simpleconnection.cpp File Reference}{127}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Function Documentation}{128}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}stringify()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{128}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}stringify()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{128}{subsubsection.3.3.1.2}
-\contentsline {section}{\numberline {3.4}simpleconnection.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{128}{section.3.4}
-\contentsline {section}{\numberline {3.5}Core/connection/simpleconnection.h File Reference}{130}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Enumeration Type Documentation}{131}{subsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.1.1}e\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type}{131}{subsubsection.3.5.1.1}
-\contentsline {subsubsection}{\numberline {3.5.1.2}e\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type}{132}{subsubsection.3.5.1.2}
-\contentsline {subsection}{\numberline {3.5.2}Function Documentation}{132}{subsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.2.1}stringify()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{132}{subsubsection.3.5.2.1}
-\contentsline {subsubsection}{\numberline {3.5.2.2}stringify()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{132}{subsubsection.3.5.2.2}
-\contentsline {section}{\numberline {3.6}simpleconnection.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{132}{section.3.6}
-\contentsline {section}{\numberline {3.7}Core/core.cpp File Reference}{134}{section.3.7}
-\contentsline {section}{\numberline {3.8}core.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{134}{section.3.8}
-\contentsline {section}{\numberline {3.9}Core/core.h File Reference}{135}{section.3.9}
-\contentsline {section}{\numberline {3.10}core.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{135}{section.3.10}
-\contentsline {section}{\numberline {3.11}Core/core\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}global.h File Reference}{136}{section.3.11}
-\contentsline {subsection}{\numberline {3.11.1}Macro Definition Documentation}{137}{subsection.3.11.1}
-\contentsline {subsubsection}{\numberline {3.11.1.1}C\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}S\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}H\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}R\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}D\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}X\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}O\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}RT}{137}{subsubsection.3.11.1.1}
-\contentsline {section}{\numberline {3.12}core\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}global.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{137}{section.3.12}
-\contentsline {section}{\numberline {3.13}Core/coreconst.h File Reference}{137}{section.3.13}
-\contentsline {section}{\numberline {3.14}coreconst.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{138}{section.3.14}
-\contentsline {section}{\numberline {3.15}Core/coreutil.h File Reference}{138}{section.3.15}
-\contentsline {subsection}{\numberline {3.15.1}Function Documentation}{139}{subsection.3.15.1}
-\contentsline {subsubsection}{\numberline {3.15.1.1}coding\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Num()}{139}{subsubsection.3.15.1.1}
-\contentsline {subsection}{\numberline {3.15.2}Variable Documentation}{139}{subsection.3.15.2}
-\contentsline {subsubsection}{\numberline {3.15.2.1}alphabet\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Size}{139}{subsubsection.3.15.2.1}
-\contentsline {subsubsection}{\numberline {3.15.2.2}alphabit}{140}{subsubsection.3.15.2.2}
-\contentsline {section}{\numberline {3.16}coreutil.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{140}{section.3.16}
-\contentsline {section}{\numberline {3.17}Core/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Elements/basebasis.cpp File Reference}{140}{section.3.17}
-\contentsline {section}{\numberline {3.18}basebasis.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{141}{section.3.18}
-\contentsline {section}{\numberline {3.19}Core/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Elements/basebasis.h File Reference}{141}{section.3.19}
-\contentsline {section}{\numberline {3.20}basebasis.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{142}{section.3.20}
-\contentsline {section}{\numberline {3.21}Core/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Elements/basebulet.cpp File Reference}{142}{section.3.21}
-\contentsline {section}{\numberline {3.22}basebulet.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{142}{section.3.22}
-\contentsline {section}{\numberline {3.23}Core/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Elements/basebulet.h File Reference}{143}{section.3.23}
-\contentsline {section}{\numberline {3.24}basebulet.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{143}{section.3.24}
-\contentsline {section}{\numberline {3.25}Core/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Elements/basetank.cpp File Reference}{144}{section.3.25}
-\contentsline {section}{\numberline {3.26}basetank.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{144}{section.3.26}
-\contentsline {section}{\numberline {3.27}Core/\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Elements/basetank.h File Reference}{144}{section.3.27}
-\contentsline {section}{\numberline {3.28}basetank.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{145}{section.3.28}
-\contentsline {section}{\numberline {3.29}Core/ibasegameelement.cpp File Reference}{146}{section.3.29}
-\contentsline {section}{\numberline {3.30}ibasegameelement.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{146}{section.3.30}
-\contentsline {section}{\numberline {3.31}Core/ibasegameelement.h File Reference}{146}{section.3.31}
-\contentsline {subsection}{\numberline {3.31.1}Enumeration Type Documentation}{147}{subsection.3.31.1}
-\contentsline {subsubsection}{\numberline {3.31.1.1}e\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type}{147}{subsubsection.3.31.1.1}
-\contentsline {subsubsection}{\numberline {3.31.1.2}e\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Type}{147}{subsubsection.3.31.1.2}
-\contentsline {section}{\numberline {3.32}ibasegameelement.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{147}{section.3.32}
-\contentsline {section}{\numberline {3.33}Core/imap.cpp File Reference}{149}{section.3.33}
-\contentsline {section}{\numberline {3.34}imap.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{150}{section.3.34}
-\contentsline {section}{\numberline {3.35}Core/imap.h File Reference}{150}{section.3.35}
-\contentsline {section}{\numberline {3.36}imap.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{151}{section.3.36}
-\contentsline {section}{\numberline {3.37}Core/infinitydouble.cpp File Reference}{151}{section.3.37}
-\contentsline {section}{\numberline {3.38}infinitydouble.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{151}{section.3.38}
-\contentsline {section}{\numberline {3.39}Core/infinitydouble.h File Reference}{152}{section.3.39}
-\contentsline {section}{\numberline {3.40}infinitydouble.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{152}{section.3.40}
-\contentsline {section}{\numberline {3.41}Core/maps/listbsemap.cpp File Reference}{153}{section.3.41}
-\contentsline {section}{\numberline {3.42}listbsemap.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{153}{section.3.42}
-\contentsline {section}{\numberline {3.43}Core/maps/listbsemap.h File Reference}{154}{section.3.43}
-\contentsline {section}{\numberline {3.44}listbsemap.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{155}{section.3.44}
-\contentsline {section}{\numberline {3.45}Core/util/baseutil.h File Reference}{155}{section.3.45}
-\contentsline {subsection}{\numberline {3.45.1}Function Documentation}{156}{subsection.3.45.1}
-\contentsline {subsubsection}{\numberline {3.45.1.1}distance\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Between\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element()}{156}{subsubsection.3.45.1.1}
-\contentsline {section}{\numberline {3.46}baseutil.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{157}{section.3.46}
-\contentsline {section}{\numberline {3.47}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}View/field.cpp File Reference}{157}{section.3.47}
-\contentsline {subsection}{\numberline {3.47.1}Function Documentation}{157}{subsection.3.47.1}
-\contentsline {subsubsection}{\numberline {3.47.1.1}load\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Texture2()}{157}{subsubsection.3.47.1.1}
-\contentsline {section}{\numberline {3.48}field.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{158}{section.3.48}
-\contentsline {section}{\numberline {3.49}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}View/field.h File Reference}{159}{section.3.49}
-\contentsline {section}{\numberline {3.50}field.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{160}{section.3.50}
-\contentsline {section}{\numberline {3.51}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}View/main.cpp File Reference}{160}{section.3.51}
-\contentsline {subsection}{\numberline {3.51.1}Function Documentation}{160}{subsection.3.51.1}
-\contentsline {subsubsection}{\numberline {3.51.1.1}main()}{161}{subsubsection.3.51.1.1}
-\contentsline {section}{\numberline {3.52}main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{161}{section.3.52}
-\contentsline {section}{\numberline {3.53}Server/main.cpp File Reference}{161}{section.3.53}
-\contentsline {subsection}{\numberline {3.53.1}Function Documentation}{162}{subsection.3.53.1}
-\contentsline {subsubsection}{\numberline {3.53.1.1}init\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Looper()}{162}{subsubsection.3.53.1.1}
-\contentsline {subsubsection}{\numberline {3.53.1.2}init\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server()}{163}{subsubsection.3.53.1.2}
-\contentsline {subsubsection}{\numberline {3.53.1.3}main()}{163}{subsubsection.3.53.1.3}
-\contentsline {subsubsection}{\numberline {3.53.1.4}on\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error()}{164}{subsubsection.3.53.1.4}
-\contentsline {section}{\numberline {3.54}main.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{164}{section.3.54}
-\contentsline {section}{\numberline {3.55}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}View/mainwindow.cpp File Reference}{165}{section.3.55}
-\contentsline {section}{\numberline {3.56}mainwindow.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{165}{section.3.56}
-\contentsline {section}{\numberline {3.57}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}View/mainwindow.h File Reference}{166}{section.3.57}
-\contentsline {section}{\numberline {3.58}mainwindow.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{166}{section.3.58}
-\contentsline {section}{\numberline {3.59}Server/const.h File Reference}{167}{section.3.59}
-\contentsline {section}{\numberline {3.60}const.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{167}{section.3.60}
-\contentsline {section}{\numberline {3.61}Server/maingameloop.cpp File Reference}{168}{section.3.61}
-\contentsline {subsection}{\numberline {3.61.1}Variable Documentation}{168}{subsection.3.61.1}
-\contentsline {subsubsection}{\numberline {3.61.1.1}T\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}AG}{168}{subsubsection.3.61.1.1}
-\contentsline {section}{\numberline {3.62}maingameloop.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{168}{section.3.62}
-\contentsline {section}{\numberline {3.63}Server/maingameloop.h File Reference}{170}{section.3.63}
-\contentsline {section}{\numberline {3.64}maingameloop.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{171}{section.3.64}
-\contentsline {section}{\numberline {3.65}Server/mapiniter.cpp File Reference}{171}{section.3.65}
-\contentsline {section}{\numberline {3.66}mapiniter.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{172}{section.3.66}
-\contentsline {section}{\numberline {3.67}Server/mapiniter.h File Reference}{172}{section.3.67}
-\contentsline {section}{\numberline {3.68}mapiniter.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{173}{section.3.68}
-\contentsline {section}{\numberline {3.69}Server/serverconnection.cpp File Reference}{174}{section.3.69}
-\contentsline {section}{\numberline {3.70}serverconnection.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{174}{section.3.70}
-\contentsline {section}{\numberline {3.71}Server/serverconnection.h File Reference}{175}{section.3.71}
-\contentsline {subsection}{\numberline {3.71.1}Enumeration Type Documentation}{176}{subsection.3.71.1}
-\contentsline {subsubsection}{\numberline {3.71.1.1}server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Error}{176}{subsubsection.3.71.1.1}
-\contentsline {section}{\numberline {3.72}serverconnection.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{176}{section.3.72}
-\contentsline {section}{\numberline {3.73}Server/serverworker.cpp File Reference}{176}{section.3.73}
-\contentsline {section}{\numberline {3.74}serverworker.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{177}{section.3.74}
-\contentsline {section}{\numberline {3.75}Server/serverworker.h File Reference}{178}{section.3.75}
-\contentsline {section}{\numberline {3.76}serverworker.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{179}{section.3.76}
+\contentsline {section}{\numberline {1}Class Documentation}{1}
+\contentsline {subsection}{\numberline {1.1}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Basis Class Reference}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Detailed Description}{3}
+\contentsline {subsection}{\numberline {1.2}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bulet Class Reference}{4}
+\contentsline {subsubsection}{\numberline {1.2.1}Detailed Description}{6}
+\contentsline {subsection}{\numberline {1.3}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Tank Class Reference}{7}
+\contentsline {subsubsection}{\numberline {1.3.1}Detailed Description}{9}
+\contentsline {subsection}{\numberline {1.4}Core Class Reference}{10}
+\contentsline {subsubsection}{\numberline {1.4.1}Detailed Description}{10}
+\contentsline {subsection}{\numberline {1.5}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Card Class Reference}{11}
+\contentsline {subsubsection}{\numberline {1.5.1}Detailed Description}{12}
+\contentsline {subsection}{\numberline {1.6}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element Class Reference}{13}
+\contentsline {subsubsection}{\numberline {1.6.1}Detailed Description}{14}
+\contentsline {subsection}{\numberline {1.7}Field Class Reference}{15}
+\contentsline {subsubsection}{\numberline {1.7.1}Detailed Description}{17}
+\contentsline {subsection}{\numberline {1.8}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data Struct Reference}{17}
+\contentsline {subsubsection}{\numberline {1.8.1}Detailed Description}{18}
+\contentsline {subsubsection}{\numberline {1.8.2}Member Data Documentation}{18}
+\contentsline {paragraph}{\numberline {1.8.2.1}additional\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data}{18}
+\contentsline {paragraph}{\numberline {1.8.2.2}helth}{18}
+\contentsline {paragraph}{\numberline {1.8.2.3}name}{18}
+\contentsline {paragraph}{\numberline {1.8.2.4}position}{18}
+\contentsline {paragraph}{\numberline {1.8.2.5}r\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Vision}{18}
+\contentsline {paragraph}{\numberline {1.8.2.6}transit\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Weight}{18}
+\contentsline {paragraph}{\numberline {1.8.2.7}type}{19}
+\contentsline {paragraph}{\numberline {1.8.2.8}weight}{19}
+\contentsline {subsection}{\numberline {1.9}Gamer Class Reference}{19}
+\contentsline {subsubsection}{\numberline {1.9.1}Detailed Description}{21}
+\contentsline {subsection}{\numberline {1.10}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Gamer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Information Class Reference}{21}
+\contentsline {subsubsection}{\numberline {1.10.1}Detailed Description}{22}
+\contentsline {subsection}{\numberline {1.11}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Base\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Element Class Reference}{23}
+\contentsline {subsubsection}{\numberline {1.11.1}Detailed Description}{25}
+\contentsline {subsection}{\numberline {1.12}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map Class Reference}{26}
+\contentsline {subsubsection}{\numberline {1.12.1}Detailed Description}{27}
+\contentsline {subsection}{\numberline {1.13}Infinity\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Double Class Reference}{28}
+\contentsline {subsubsection}{\numberline {1.13.1}Detailed Description}{29}
+\contentsline {subsection}{\numberline {1.14}List\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bse\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Map Class Reference}{29}
+\contentsline {subsubsection}{\numberline {1.14.1}Detailed Description}{31}
+\contentsline {subsubsection}{\numberline {1.14.2}Member Function Documentation}{31}
+\contentsline {paragraph}{\numberline {1.14.2.1}update\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Item()}{31}
+\contentsline {subsection}{\numberline {1.15}Mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Message Class Reference}{32}
+\contentsline {subsubsection}{\numberline {1.15.1}Detailed Description}{33}
+\contentsline {subsection}{\numberline {1.16}Mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Receiver Class Reference}{33}
+\contentsline {subsubsection}{\numberline {1.16.1}Detailed Description}{34}
+\contentsline {subsection}{\numberline {1.17}Mail\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sender Class Reference}{35}
+\contentsline {subsubsection}{\numberline {1.17.1}Detailed Description}{36}
+\contentsline {subsection}{\numberline {1.18}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop Class Reference}{37}
+\contentsline {subsubsection}{\numberline {1.18.1}Detailed Description}{39}
+\contentsline {subsubsection}{\numberline {1.18.2}Member Data Documentation}{39}
+\contentsline {paragraph}{\numberline {1.18.2.1}gamers\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Items}{39}
+\contentsline {paragraph}{\numberline {1.18.2.2}gamers\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}List}{39}
+\contentsline {subsection}{\numberline {1.19}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Window Class Reference}{40}
+\contentsline {subsubsection}{\numberline {1.19.1}Detailed Description}{41}
+\contentsline {subsection}{\numberline {1.20}Map\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Initer Class Reference}{41}
+\contentsline {subsubsection}{\numberline {1.20.1}Detailed Description}{41}
+\contentsline {subsection}{\numberline {1.21}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Builder Class Reference}{42}
+\contentsline {subsubsection}{\numberline {1.21.1}Detailed Description}{42}
+\contentsline {subsection}{\numberline {1.22}Message\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}For\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Server Class Reference}{43}
+\contentsline {subsubsection}{\numberline {1.22.1}Detailed Description}{44}
+\contentsline {subsection}{\numberline {1.23}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Receiver Class Reference}{45}
+\contentsline {subsubsection}{\numberline {1.23.1}Detailed Description}{47}
+\contentsline {subsection}{\numberline {1.24}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Receiver\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Thread Class Reference}{47}
+\contentsline {subsubsection}{\numberline {1.24.1}Detailed Description}{49}
+\contentsline {subsection}{\numberline {1.25}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:responce\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Data Struct Reference}{49}
+\contentsline {subsubsection}{\numberline {1.25.1}Detailed Description}{50}
+\contentsline {subsection}{\numberline {1.26}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection Class Reference}{50}
+\contentsline {subsubsection}{\numberline {1.26.1}Detailed Description}{52}
+\contentsline {subsection}{\numberline {1.27}Server\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Worker Class Reference}{53}
+\contentsline {subsubsection}{\numberline {1.27.1}Detailed Description}{55}
+\contentsline {subsection}{\numberline {1.28}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Connection Class Reference}{56}
+\contentsline {subsubsection}{\numberline {1.28.1}Detailed Description}{58}
+\contentsline {subsection}{\numberline {1.29}Simple\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Diff\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Card Class Reference}{59}
+\contentsline {subsubsection}{\numberline {1.29.1}Detailed Description}{61}
+\contentsline {subsection}{\numberline {1.30}Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Game\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:Wathcer\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Information Class Reference}{61}
+\contentsline {subsubsection}{\numberline {1.30.1}Detailed Description}{62}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TankGame: GameView/main.cpp File Reference</title>
+<title>TankGame: ServerConnection Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -30,6 +30,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TankGame
    </div>
+   <div id="projectbrief">Курсовий проект</div>
   </td>
  </tr>
  </tbody>
@@ -80,68 +81,96 @@ $(document).ready(function(){initNavTree('da/d2e/a00238.html','../../');});
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#signals">Signals</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-slots">Protected Slots</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
+<a href="../../d3/d42/a00235.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">main.cpp File Reference</div>  </div>
+<div class="title">ServerConnection Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d2/d1f/a00083_source.html">mainwindow.h</a>&quot;</code><br />
-<code>#include &lt;QApplication&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for main.cpp:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d0/d27/a00239.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-</div>
-<p><a href="../../da/d2e/a00238_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
-<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>argc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>argv</em>[]&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="../../da/d2e/a00238_source.html#l00004">4</a> of file <a class="el" href="../../da/d2e/a00238_source.html">main.cpp</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Inheritance diagram for ServerConnection:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../da/d2e/a00238_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d08/a00237.svg" width="336" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+<div class="dynheader">
+Collaboration diagram for ServerConnection:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/d40/a00236.svg" width="343" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:ae97f8eaa15a3da8f069ad502e89039ae"><td class="memItemLeft" align="right" valign="top"><a id="ae97f8eaa15a3da8f069ad502e89039ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onServerError</b> (serverError error)</td></tr>
+<tr class="separator:ae97f8eaa15a3da8f069ad502e89039ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1d45a6a7b2370c82ed2849959bb18c2a"><td class="memItemLeft" align="right" valign="top"><a id="a1d45a6a7b2370c82ed2849959bb18c2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startServer</b> ()</td></tr>
+<tr class="separator:a1d45a6a7b2370c82ed2849959bb18c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c5b969c3e5151033673e2bcce5ed4a"><td class="memItemLeft" align="right" valign="top"><a id="a26c5b969c3e5151033673e2bcce5ed4a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>receiveResponce</b> (<a class="el" href="../../d7/d6e/a00190.html">DiffCard</a> *diff, <a class="el" href="../../d9/d38/a00166.html">MessageForServer</a> *message)</td></tr>
+<tr class="separator:a26c5b969c3e5151033673e2bcce5ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85db0004c26606c5ac294e5de000b96"><td class="memItemLeft" align="right" valign="top"><a id="aa85db0004c26606c5ac294e5de000b96"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultReceiver</b> (<a class="el" href="../../d3/d65/a00154.html">MailReceiver</a> *receiver)</td></tr>
+<tr class="separator:aa85db0004c26606c5ac294e5de000b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad64d541093e285a983911f22ab9a0bff"><td class="memItemLeft" align="right" valign="top"><a id="ad64d541093e285a983911f22ab9a0bff"></a>
+static <a class="el" href="../../da/d2e/a00238.html">ServerConnection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getServerInstance</b> ()</td></tr>
+<tr class="separator:ad64d541093e285a983911f22ab9a0bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-slots"></a>
+Protected Slots</h2></td></tr>
+<tr class="memitem:af558fe509b60eb019281316513f6d188"><td class="memItemLeft" align="right" valign="top"><a id="af558fe509b60eb019281316513f6d188"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onWorkerStop</b> (<a class="el" href="../../d2/dc8/a00242.html">ServerWorker</a> *worker)</td></tr>
+<tr class="separator:af558fe509b60eb019281316513f6d188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac7f219a30789e91afa079ab5e49529bd"><td class="memItemLeft" align="right" valign="top"><a id="ac7f219a30789e91afa079ab5e49529bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> ()</td></tr>
+<tr class="separator:ac7f219a30789e91afa079ab5e49529bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aee9a8e6c0f1d25fc2fcb4662631c0c74"><td class="memItemLeft" align="right" valign="top"><a id="aee9a8e6c0f1d25fc2fcb4662631c0c74"></a>
+QTcpServer *&#160;</td><td class="memItemRight" valign="bottom"><b>server</b></td></tr>
+<tr class="separator:aee9a8e6c0f1d25fc2fcb4662631c0c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9e1b1ac7c2d57b439ab5918e7c31d0"><td class="memItemLeft" align="right" valign="top"><a id="a7d9e1b1ac7c2d57b439ab5918e7c31d0"></a>
+QList&lt; <a class="el" href="../../d2/dc8/a00242.html">ServerWorker</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>connections</b></td></tr>
+<tr class="separator:a7d9e1b1ac7c2d57b439ab5918e7c31d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57ce2f74f8ad76abb38974f85b97ac5"><td class="memItemLeft" align="right" valign="top"><a id="aa57ce2f74f8ad76abb38974f85b97ac5"></a>
+<a class="el" href="../../d3/d65/a00154.html">MailReceiver</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver</b></td></tr>
+<tr class="separator:aa57ce2f74f8ad76abb38974f85b97ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:adbbe8ffe6ee71b0aee4db9b6e689ba2a"><td class="memItemLeft" align="right" valign="top"><a id="adbbe8ffe6ee71b0aee4db9b6e689ba2a"></a>
+static <a class="el" href="../../da/d2e/a00238.html">ServerConnection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> = nullptr</td></tr>
+<tr class="separator:adbbe8ffe6ee71b0aee4db9b6e689ba2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"></div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>Server/<a class="el" href="../../">serverconnection.h</a></li>
+<li>Server/<a class="el" href="../../">serverconnection.cpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_e958f7c54a711a09e05f77330e36ce07.html">GameView</a></li><li class="navelem"><a class="el" href="../../da/d2e/a00238.html">main.cpp</a></li>
+    <li class="navelem"><a class="el" href="../../da/d2e/a00238.html">ServerConnection</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

@@ -1,5 +1,0 @@
-<map id="ServerWorker::ReceiverThread" name="ServerWorker::ReceiverThread">
-<area shape="rect" id="node3" href="$d2/db1/a00730.html" title="{ServerWorker\n|# socket\l# isWork\l# out\l# workerMutex\l# responceMessage\l|+ ServerWorker()\l+ receiveResponce()\l# run()\l}" alt="" coords="161,375,355,576"/>
-<area shape="rect" id="node4" href="$d9/db0/a00750.html" title="{MailSender\n||+ receiveResponce()\l+ setDefaultReceiver()\l}" alt="" coords="195,217,402,325"/>
-<area shape="rect" id="node5" href="$d4/d8f/a00742.html" title="{MailReceiver\n|# messages\l# mutex\l# isQueueLock\l|+ sendMail()\l# nextMessage()\l}" alt="" coords="218,5,378,151"/>
-</map>

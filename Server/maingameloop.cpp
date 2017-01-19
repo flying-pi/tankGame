@@ -110,7 +110,7 @@ void MainGameLoop::run() {
 
     foreach (auto items, gamersItems) {
       for (int i = 0; i < items->size(); i++) {
-        // todo
+        switch ((eBaseGameElementType)items->at(i)->getType())
       }
     }
     for (int i = 0; i < watchers.size(); i++) {

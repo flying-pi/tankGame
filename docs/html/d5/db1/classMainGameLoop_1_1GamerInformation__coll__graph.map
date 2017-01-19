@@ -1,4 +1,0 @@
-<map id="MainGameLoop::GamerInformation" name="MainGameLoop::GamerInformation">
-<area shape="rect" id="node2" href="$de/d1e/classMailSender.html" title="{MailSender\n||+ receiveResponce()\l+ setDefaultReceiver()\l}" alt="" coords="59,217,267,325"/>
-<area shape="rect" id="node3" href="$d7/d58/classMailReceiver.html" title="{MailReceiver\n|# messages\l# mutex\l# isQueueLock\l|+ sendMail()\l# nextMessage()\l}" alt="" coords="83,5,243,151"/>
-</map>

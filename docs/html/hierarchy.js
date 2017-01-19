@@ -1,44 +1,49 @@
 var hierarchy =
 [
-    [ "Core", "da/ddb/a00145.html", null ],
-    [ "DiffElement", "d5/d4e/a00141.html", null ],
-    [ "MainGameLoop::GamerInformation", "d1/de1/a00213.html", null ],
-    [ "IMap", "d0/d48/a00165.html", [
-      [ "ListBseMap", "de/d53/a00169.html", null ]
+    [ "Core", "d5/df1/a00206.html", null ],
+    [ "DiffElement", "d8/d00/a00186.html", null ],
+    [ "GameElementData", "d3/dd1/a00214.html", null ],
+    [ "MainGameLoop::GamerInformation", "d7/d2f/a00258.html", null ],
+    [ "IMap", "d0/d24/a00222.html", [
+      [ "ListBseMap", "dc/d55/a00226.html", null ]
     ] ],
-    [ "MailReceiver::mailMessage", "dd/de3/a00201.html", null ],
-    [ "MailReceiver", "de/db1/a00197.html", [
-      [ "MainGameLoop", "d3/de5/a00209.html", null ]
+    [ "MailReceiver::mailMessage", "d6/db8/a00158.html", null ],
+    [ "MailReceiver", "d3/d65/a00154.html", [
+      [ "MainGameLoop", "d7/d03/a00254.html", null ]
     ] ],
-    [ "MailSender", "d5/d13/a00205.html", [
-      [ "ServerConnection", "d8/d64/a00181.html", null ],
-      [ "ServerWorker", "de/df3/a00185.html", null ]
+    [ "MailSender", "db/d44/a00162.html", [
+      [ "ServerConnection", "da/d2e/a00238.html", null ],
+      [ "ServerWorker", "d2/dc8/a00242.html", null ]
     ] ],
-    [ "MapIniter", "df/d24/a00217.html", null ],
-    [ "SimpleConnection::MessageBuilder", "d9/d47/a00129.html", null ],
+    [ "MapIniter", "d5/d35/a00266.html", null ],
+    [ "SimpleConnection::MessageBuilder", "d8/df1/a00174.html", null ],
     [ "QGLWidget", null, [
-      [ "Field", "d7/d3f/a00173.html", null ]
+      [ "Field", "d1/da8/a00230.html", null ]
     ] ],
     [ "QMainWindow", null, [
-      [ "MainWindow", "dd/d4c/a00177.html", null ]
+      [ "MainWindow", "da/d31/a00234.html", null ]
     ] ],
     [ "QObject", null, [
-      [ "IBaseGameElement", "d2/df5/a00137.html", [
-        [ "BaseBasis", "da/d1e/a00149.html", null ],
-        [ "BaseBulet", "da/d01/a00153.html", null ],
-        [ "BaseTank", "d1/db7/a00157.html", null ]
+      [ "DiffCard", "d7/d6e/a00190.html", [
+        [ "SimpleDiffCard", "da/de7/a00210.html", null ]
       ] ],
-      [ "InfinityDouble", "d6/d7d/a00161.html", null ],
-      [ "MessageForServer", "d8/dfa/a00121.html", null ]
+      [ "Gamer", "d9/d2a/a00270.html", null ],
+      [ "IBaseGameElement", "dc/d9a/a00218.html", [
+        [ "BaseBasis", "db/d53/a00202.html", null ],
+        [ "BaseBulet", "d7/da0/a00198.html", null ],
+        [ "BaseTank", "dc/d57/a00194.html", null ]
+      ] ],
+      [ "InfinityDouble", "d7/d25/a00182.html", null ],
+      [ "MessageForServer", "d9/d38/a00166.html", null ]
     ] ],
     [ "QThread", null, [
-      [ "MainGameLoop", "d3/de5/a00209.html", null ],
-      [ "receiveRespnceThread", "dd/d52/a00221.html", null ],
-      [ "ServerConnection", "d8/d64/a00181.html", null ],
-      [ "ServerWorker", "de/df3/a00185.html", null ],
-      [ "ServerWorker::ReceiverThread", "dd/df4/a00193.html", null ],
-      [ "SimpleConnection", "dc/dfe/a00125.html", null ],
-      [ "SimpleConnection::Receiver", "d0/de8/a00133.html", null ]
+      [ "MainGameLoop", "d7/d03/a00254.html", null ],
+      [ "ServerConnection", "da/d2e/a00238.html", null ],
+      [ "ServerWorker", "d2/dc8/a00242.html", null ],
+      [ "ServerWorker::ReceiverThread", "d0/da7/a00250.html", null ],
+      [ "SimpleConnection", "d5/dcb/a00170.html", null ],
+      [ "SimpleConnection::Receiver", "d9/d90/a00178.html", null ]
     ] ],
-    [ "ServerWorker::responceData", "da/deb/a00189.html", null ]
+    [ "ServerWorker::responceData", "d4/d9a/a00246.html", null ],
+    [ "MainGameLoop::WathcerInformation", "d9/d8d/a00262.html", null ]
 ];

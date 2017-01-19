@@ -1,38 +1,85 @@
-\hypertarget{a00238}{}\section{Game\+View/main.cpp File Reference}
-\label{a00238}\index{Game\+View/main.\+cpp@{Game\+View/main.\+cpp}}
-{\ttfamily \#include \char`\"{}mainwindow.\+h\char`\"{}}\newline
-{\ttfamily \#include $<$Q\+Application$>$}\newline
-Include dependency graph for main.\+cpp\+:
+\subsection{Server\+Connection Class Reference}
+\label{a00238}\index{Server\+Connection@{Server\+Connection}}
+
+
+Inheritance diagram for Server\+Connection\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{d0/d27/a00239}
+\includegraphics[width=324pt]{d4/d08/a00237}
 \end{center}
 \end{figure}
-\subsection*{Functions}
+
+
+Collaboration diagram for Server\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d7/d40/a00236}
+\end{center}
+\end{figure}
+\subsubsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{a00238_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\mbox{\label{a00238_ae97f8eaa15a3da8f069ad502e89039ae}} 
+void {\bfseries on\+Server\+Error} (server\+Error error)
+\end{DoxyCompactItemize}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{a00238_a1d45a6a7b2370c82ed2849959bb18c2a}} 
+void {\bfseries start\+Server} ()
+\item 
+\mbox{\label{a00238_a26c5b969c3e5151033673e2bcce5ed4a}} 
+void {\bfseries receive\+Responce} (\textbf{ Diff\+Card} $\ast$diff, \textbf{ Message\+For\+Server} $\ast$message)
+\item 
+\mbox{\label{a00162_aa85db0004c26606c5ac294e5de000b96}} 
+virtual void {\bfseries set\+Default\+Receiver} (\textbf{ Mail\+Receiver} $\ast$receiver)
+\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{a00238_ad64d541093e285a983911f22ab9a0bff}} 
+static \textbf{ Server\+Connection} $\ast$ {\bfseries get\+Server\+Instance} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{a00238_af558fe509b60eb019281316513f6d188}} 
+void {\bfseries on\+Worker\+Stop} (\textbf{ Server\+Worker} $\ast$worker)
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{a00238_ac7f219a30789e91afa079ab5e49529bd}} 
+void {\bfseries run} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}} 
+Q\+Tcp\+Server $\ast$ {\bfseries server}
+\item 
+\mbox{\label{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}} 
+Q\+List$<$ \textbf{ Server\+Worker} $\ast$ $>$ $\ast$ {\bfseries connections}
+\item 
+\mbox{\label{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}} 
+\textbf{ Mail\+Receiver} $\ast$ {\bfseries receiver}
+\end{DoxyCompactItemize}
+\subsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}} 
+static \textbf{ Server\+Connection} $\ast$ {\bfseries instance} = nullptr
 \end{DoxyCompactItemize}
 
 
-\subsection{Function Documentation}
-\mbox{\Hypertarget{a00238_a0ddf1224851353fc92bfbff6f499fa97}\label{a00238_a0ddf1224851353fc92bfbff6f499fa97}} 
-\index{Game\+View/main.\+cpp@{Game\+View/main.\+cpp}!main@{main}}
-\index{main@{main}!Game\+View/main.\+cpp@{Game\+View/main.\+cpp}}
-\subsubsection{\texorpdfstring{main()}{main()}}
-{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+\subsubsection{Detailed Description}
 
 
-
-Definition at line \hyperlink{a00238_source_l00004}{4} of file \hyperlink{a00238_source}{main.\+cpp}.
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{da/d2e/a00238_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
-\end{center}
-\end{figure}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Server/serverconnection.\+h\item 
+Server/serverconnection.\+cpp\end{DoxyCompactItemize}

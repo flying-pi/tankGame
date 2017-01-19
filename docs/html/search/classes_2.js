@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['diffelement',['DiffElement',['../d5/d4e/a00141.html',1,'']]]
+  ['diffcard',['DiffCard',['../d7/d6e/a00190.html',1,'']]],
+  ['diffelement',['DiffElement',['../d8/d00/a00186.html',1,'']]]
 ];

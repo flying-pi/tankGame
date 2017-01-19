@@ -1,11 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$de/db1/a00197.html" title="MailReceiver" alt="" coords="5,5,135,36"/>
-<area shape="rect" id="node2" href="$d3/de5/a00209.html" title="MainGameLoop" alt="" coords="245,5,399,36"/>
-<area shape="rect" id="node3" href="$d5/d13/a00205.html" title="MailSender" alt="" coords="12,87,128,117"/>
-<area shape="rect" id="node4" href="$d8/d64/a00181.html" title="ServerConnection" alt="" coords="237,115,408,145"/>
-<area shape="rect" id="node5" href="$de/df3/a00185.html" title="ServerWorker" alt="" coords="254,60,390,91"/>
-<area shape="rect" id="node7" href="$dd/d52/a00221.html" title="receiveRespnceThread" alt="" coords="215,224,429,255"/>
-<area shape="rect" id="node8" href="$dd/df4/a00193.html" title="ServerWorker::ReceiverThread" alt="" coords="183,279,462,309"/>
-<area shape="rect" id="node9" href="$dc/dfe/a00125.html" title="SimpleConnection" alt="" coords="236,333,409,364"/>
-<area shape="rect" id="node10" href="$d0/de8/a00133.html" title="SimpleConnection::Receiver" alt="" coords="194,169,451,200"/>
+<area shape="rect" id="node1" href="$d6/db8/a00158.html" title="MailReceiver::mailMessage" alt="" coords="5,5,255,36"/>
 </map>

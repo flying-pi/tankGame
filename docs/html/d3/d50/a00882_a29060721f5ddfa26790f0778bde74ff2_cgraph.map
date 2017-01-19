@@ -1,5 +1,0 @@
-<map id="initServer" name="initServer">
-<area shape="rect" id="node2" href="$d6/d59/a00726.html#ad64d541093e285a983911f22ab9a0bff" title="ServerConnection::getServer\lInstance" alt="" coords="173,5,435,55"/>
-<area shape="rect" id="node3" href="$d6/d59/a00726.html#af558fe509b60eb019281316513f6d188" title="ServerConnection::onWorkerStop" alt="" coords="154,79,454,109"/>
-<area shape="rect" id="node4" href="$d6/d59/a00726.html#a1d45a6a7b2370c82ed2849959bb18c2a" title="ServerConnection::startServer" alt="" coords="167,133,440,164"/>
-</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TankGame: Member List</title>
+<title>TankGame: IBaseGameElement Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -30,6 +30,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TankGame
    </div>
+   <div id="projectbrief">Курсовий проект</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('dd/d52/a00221.html','../../');});
+$(document).ready(function(){initNavTree('dc/d9a/a00218.html','../../');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,23 +80,136 @@ $(document).ready(function(){initNavTree('dd/d52/a00221.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
+<a href="../../d3/dd5/a00215.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">receiveRespnceThread Member List</div>  </div>
+<div class="title">IBaseGameElement Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="../../dd/d52/a00221.html">receiveRespnceThread</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="../../dd/d52/a00221.html#a77d9cc109e9ebeb4f55d5b753621d0f1">diff</a></td><td class="entry"><a class="el" href="../../dd/d52/a00221.html">receiveRespnceThread</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../dd/d52/a00221.html#aa3512ecc40fc7e23890c11c08ea4838c">message</a></td><td class="entry"><a class="el" href="../../dd/d52/a00221.html">receiveRespnceThread</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dd/d52/a00221.html#a1945dd1b371f3efa9a07df815c868f96">mutex</a></td><td class="entry"><a class="el" href="../../dd/d52/a00221.html">receiveRespnceThread</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../dd/d52/a00221.html#a7f0a11ce86c12c80ca4305eaac48a285">responceMessage</a></td><td class="entry"><a class="el" href="../../dd/d52/a00221.html">receiveRespnceThread</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../dd/d52/a00221.html#a2087ccd86d00beff7c383049435c93bd">run</a>()</td><td class="entry"><a class="el" href="../../dd/d52/a00221.html">receiveRespnceThread</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
-</table></div><!-- contents -->
+<div class="dynheader">
+Inheritance diagram for IBaseGameElement:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d24/a00217.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div class="dynheader">
+Collaboration diagram for IBaseGameElement:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d6/d43/a00216.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9efae32aaf37ab1f60e58cafffe1c8e1"><td class="memItemLeft" align="right" valign="top"><a id="a9efae32aaf37ab1f60e58cafffe1c8e1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IBaseGameElement</b> (<a class="el" href="../../d3/dd1/a00214.html">GameElementData</a> &amp;data)</td></tr>
+<tr class="separator:a9efae32aaf37ab1f60e58cafffe1c8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2be75da1a2a9edfabe993770e24654a"><td class="memItemLeft" align="right" valign="top"><a id="ae2be75da1a2a9edfabe993770e24654a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>nextStep</b> ()</td></tr>
+<tr class="separator:ae2be75da1a2a9edfabe993770e24654a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86767bc494988b0ef52b2b6b1ceebe80"><td class="memItemLeft" align="right" valign="top"><a id="a86767bc494988b0ef52b2b6b1ceebe80"></a>
+virtual QVector3D *&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> () const</td></tr>
+<tr class="separator:a86767bc494988b0ef52b2b6b1ceebe80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea3e9dc158d4d82df42dcba016d7e8d"><td class="memItemLeft" align="right" valign="top"><a id="a8ea3e9dc158d4d82df42dcba016d7e8d"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () const</td></tr>
+<tr class="separator:a8ea3e9dc158d4d82df42dcba016d7e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fab43959f22ba878b23c099098284d6"><td class="memItemLeft" align="right" valign="top"><a id="a0fab43959f22ba878b23c099098284d6"></a>
+virtual <a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getHelth</b> () const</td></tr>
+<tr class="separator:a0fab43959f22ba878b23c099098284d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8672dda16f2da014ff8df9ea60fbaa"><td class="memItemLeft" align="right" valign="top"><a id="a0c8672dda16f2da014ff8df9ea60fbaa"></a>
+virtual <a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getWeight</b> () const</td></tr>
+<tr class="separator:a0c8672dda16f2da014ff8df9ea60fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da00acd717d832b755b474600b82d4d"><td class="memItemLeft" align="right" valign="top"><a id="a5da00acd717d832b755b474600b82d4d"></a>
+virtual <a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxTransitWeight</b> () const</td></tr>
+<tr class="separator:a5da00acd717d832b755b474600b82d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a3de85fece989477e9b26e84ee94b2"><td class="memItemLeft" align="right" valign="top"><a id="a57a3de85fece989477e9b26e84ee94b2"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const</td></tr>
+<tr class="separator:a57a3de85fece989477e9b26e84ee94b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0c637a59ef1d93162e5707348cc720"><td class="memItemLeft" align="right" valign="top"><a id="a4a0c637a59ef1d93162e5707348cc720"></a>
+virtual QByteArray *&#160;</td><td class="memItemRight" valign="bottom"><b>getAdditionalData</b> () const</td></tr>
+<tr class="separator:a4a0c637a59ef1d93162e5707348cc720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fc6b8dfbfab851de265cc850a7aa11"><td class="memItemLeft" align="right" valign="top"><a id="ae7fc6b8dfbfab851de265cc850a7aa11"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getRVision</b> () const</td></tr>
+<tr class="separator:ae7fc6b8dfbfab851de265cc850a7aa11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dc1a743fac99db03c3f47b5c6d69c4"><td class="memItemLeft" align="right" valign="top"><a id="a54dc1a743fac99db03c3f47b5c6d69c4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPosition</b> (QVector3D *value)</td></tr>
+<tr class="separator:a54dc1a743fac99db03c3f47b5c6d69c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f95e7a61b5db7f2fbbfd32ff786f58c"><td class="memItemLeft" align="right" valign="top"><a id="a2f95e7a61b5db7f2fbbfd32ff786f58c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setHelth</b> (<a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *value)</td></tr>
+<tr class="separator:a2f95e7a61b5db7f2fbbfd32ff786f58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5e42aa7985c9bf959f0275cbc1bac7"><td class="memItemLeft" align="right" valign="top"><a id="a4b5e42aa7985c9bf959f0275cbc1bac7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setWeight</b> (<a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *value)</td></tr>
+<tr class="separator:a4b5e42aa7985c9bf959f0275cbc1bac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac480b8140b5b290f49b4b96a47291180"><td class="memItemLeft" align="right" valign="top"><a id="ac480b8140b5b290f49b4b96a47291180"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setTransitWeight</b> (<a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *value)</td></tr>
+<tr class="separator:ac480b8140b5b290f49b4b96a47291180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324cba2176155a50b5a2239eb0a8b6a0"><td class="memItemLeft" align="right" valign="top"><a id="a324cba2176155a50b5a2239eb0a8b6a0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (int value)</td></tr>
+<tr class="separator:a324cba2176155a50b5a2239eb0a8b6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874f246d3249a989750e3db85ea4bfcd"><td class="memItemLeft" align="right" valign="top"><a id="a874f246d3249a989750e3db85ea4bfcd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (QString name)</td></tr>
+<tr class="separator:a874f246d3249a989750e3db85ea4bfcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d8528482d5be16100ad56dbfd4aae9"><td class="memItemLeft" align="right" valign="top"><a id="a71d8528482d5be16100ad56dbfd4aae9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setAdditionakData</b> (QByteArray *data)</td></tr>
+<tr class="separator:a71d8528482d5be16100ad56dbfd4aae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2719e14051c30f39ca60f4998e48abf9"><td class="memItemLeft" align="right" valign="top"><a id="a2719e14051c30f39ca60f4998e48abf9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRVision</b> (int _rVison)</td></tr>
+<tr class="separator:a2719e14051c30f39ca60f4998e48abf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7b708d24359a76935c0915d9751a50b0"><td class="memItemLeft" align="right" valign="top"><a id="a7b708d24359a76935c0915d9751a50b0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="../../d3/dd1/a00214.html">GameElementData</a> &amp;data)</td></tr>
+<tr class="separator:a7b708d24359a76935c0915d9751a50b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:afe080b1942ec40832e94cb884ec87456"><td class="memItemLeft" align="right" valign="top"><a id="afe080b1942ec40832e94cb884ec87456"></a>
+QVector3D *&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> = nullptr</td></tr>
+<tr class="separator:afe080b1942ec40832e94cb884ec87456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a440cf9e7d61c33482ab256a6e944b34d"><td class="memItemLeft" align="right" valign="top"><a id="a440cf9e7d61c33482ab256a6e944b34d"></a>
+<a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>helth</b> = nullptr</td></tr>
+<tr class="separator:a440cf9e7d61c33482ab256a6e944b34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99901016531fd27b9b197dc88d3bfa4a"><td class="memItemLeft" align="right" valign="top"><a id="a99901016531fd27b9b197dc88d3bfa4a"></a>
+<a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>weight</b> = nullptr</td></tr>
+<tr class="separator:a99901016531fd27b9b197dc88d3bfa4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865c937433f7d46665ca17e5adccd9df"><td class="memItemLeft" align="right" valign="top"><a id="a865c937433f7d46665ca17e5adccd9df"></a>
+<a class="el" href="../../d7/d25/a00182.html">InfinityDouble</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>transitWeight</b> = nullptr</td></tr>
+<tr class="separator:a865c937433f7d46665ca17e5adccd9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3547697d3bd0c2d65c83b07b3f8f91"><td class="memItemLeft" align="right" valign="top"><a id="a4d3547697d3bd0c2d65c83b07b3f8f91"></a>
+QByteArray *&#160;</td><td class="memItemRight" valign="bottom"><b>additionalData</b> = nullptr</td></tr>
+<tr class="separator:a4d3547697d3bd0c2d65c83b07b3f8f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ad3c240950eba352aeb04e6a9296b4"><td class="memItemLeft" align="right" valign="top"><a id="ae0ad3c240950eba352aeb04e6a9296b4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rVision</b> = 1</td></tr>
+<tr class="separator:ae0ad3c240950eba352aeb04e6a9296b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a4ca23072b617f3d17004e3c671bca"><td class="memItemLeft" align="right" valign="top"><a id="a73a4ca23072b617f3d17004e3c671bca"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = -1</td></tr>
+<tr class="separator:a73a4ca23072b617f3d17004e3c671bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af35fba4ed599605c3d78b3c3a71fa467"><td class="memItemLeft" align="right" valign="top"><a id="af35fba4ed599605c3d78b3c3a71fa467"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="separator:af35fba4ed599605c3d78b3c3a71fa467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a085503f71c16e737fb172c9cef329c2f"><td class="memItemLeft" align="right" valign="top"><a id="a085503f71c16e737fb172c9cef329c2f"></a>
+QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (QDataStream &amp;stream, const <a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a> &amp;myclass)</td></tr>
+<tr class="separator:a085503f71c16e737fb172c9cef329c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"></div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>Core/<a class="el" href="../../">ibasegameelement.h</a></li>
+<li>Core/<a class="el" href="../../">ibasegameelement.cpp</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

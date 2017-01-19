@@ -1,9 +1,0 @@
-<map id="MapIniter::getRandomGrass" name="MapIniter::getRandomGrass">
-<area shape="rect" id="node2" href="$de/d2b/classIBaseGameElement.html#ae2be75da1a2a9edfabe993770e24654a" title="IBaseGameElement::nextStep" alt="" coords="313,5,585,36"/>
-<area shape="rect" id="node3" href="$de/d2b/classIBaseGameElement.html#a2f95e7a61b5db7f2fbbfd32ff786f58c" title="IBaseGameElement::setHelth" alt="" coords="316,60,583,91"/>
-<area shape="rect" id="node4" href="$d2/dc5/classInfinityDouble.html#a8d33637f68b523cf2b21abd1509c47bf" title="InfinityDouble::Infinity\lDouble" alt="" coords="637,167,836,216"/>
-<area shape="rect" id="node5" href="$d2/dc5/classInfinityDouble.html#a67fae871f96708313bedc644630ac8bc" title="InfinityDouble::Infinity\lValue" alt="" coords="350,167,549,216"/>
-<area shape="rect" id="node6" href="$de/d2b/classIBaseGameElement.html#ac480b8140b5b290f49b4b96a47291180" title="IBaseGameElement::setTransit\lWeight" alt="" coords="309,240,589,289"/>
-<area shape="rect" id="node7" href="$d2/dc5/classInfinityDouble.html#adb0a2fa93aa5f90a93c3f4303436913a" title="InfinityDouble::FromValue" alt="" coords="332,313,567,344"/>
-<area shape="rect" id="node8" href="$de/d2b/classIBaseGameElement.html#a324cba2176155a50b5a2239eb0a8b6a0" title="IBaseGameElement::setType" alt="" coords="317,368,581,399"/>
-</map>

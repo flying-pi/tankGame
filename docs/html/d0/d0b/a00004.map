@@ -1,9 +1,0 @@
-<map id="Core/connection/mailboxelement.h" name="Core/connection/mailboxelement.h">
-<area shape="rect" id="node2" href="$d4/d81/a00110.html" title="Server/serverworker.h" alt="" coords="194,84,398,115"/>
-<area shape="rect" id="node3" href="$d0/dc2/a00104.html" title="Server/serverconnection.h" alt="" coords="15,163,254,193"/>
-<area shape="rect" id="node7" href="$d1/dc1/a00092.html" title="Server/maingameloop.h" alt="" coords="430,84,650,115"/>
-<area shape="rect" id="node6" href="$df/d98/a00107.html" title="Server/serverworker.cpp" alt="" coords="279,163,503,193"/>
-<area shape="rect" id="node4" href="$d6/db6/a00241.html" title="Server/main.cpp" alt="" coords="375,241,532,272"/>
-<area shape="rect" id="node5" href="$d4/d3a/a00101.html" title="Server/serverconnection.cpp" alt="" coords="5,241,264,272"/>
-<area shape="rect" id="node8" href="$db/dab/a00089.html" title="Server/maingameloop.cpp" alt="" coords="578,163,817,193"/>
-</map>

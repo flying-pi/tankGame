@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['connection',['connection',['../dd/d4c/a00177.html#a8235680bc39bc64e5686dfcaccabf72f',1,'MainWindow']]],
-  ['connections',['connections',['../d8/d64/a00181.html#a7d9e1b1ac7c2d57b439ab5918e7c31d0',1,'ServerConnection']]],
-  ['connectiontype',['connectionType',['../d8/dfa/a00121.html#a32f7c4034883ac363ca247c8a2843040',1,'MessageForServer']]]
+  ['gamersitems',['gamersItems',['../d7/d03/a00254.html#a7e240933ce2cf3b29a05c5061aa5226b',1,'MainGameLoop']]],
+  ['gamerslist',['gamersList',['../d7/d03/a00254.html#aac8195bc3183cb0cabe65f1ff813fbfb',1,'MainGameLoop']]]
 ];

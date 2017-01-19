@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TankGame: Member List</title>
+<title>TankGame: MailSender Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -30,6 +30,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TankGame
    </div>
+   <div id="projectbrief">Курсовий проект</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('d0/d48/a00165.html','../../');});
+$(document).ready(function(){initNavTree('db/d44/a00162.html','../../');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -79,24 +80,52 @@ $(document).ready(function(){initNavTree('d0/d48/a00165.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="../../de/db9/a00159.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">IMap Member List</div>  </div>
+<div class="title">MailSender Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is the complete list of members for <a class="el" href="../../d0/d48/a00165.html">IMap</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="../../d0/d48/a00165.html#a021e64b05ecb6558ed1d663676f82971">getCount</a>()=0</td><td class="entry"><a class="el" href="../../d0/d48/a00165.html">IMap</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d0/d48/a00165.html#a9fce1fb4ad8fac181fbbce3ce31da0a0">getElementAtPosition</a>(int pos)=0</td><td class="entry"><a class="el" href="../../d0/d48/a00165.html">IMap</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d0/d48/a00165.html#a183f2d7ba8ec154d0338e999f195d0c8">getSize</a>()=0</td><td class="entry"><a class="el" href="../../d0/d48/a00165.html">IMap</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d0/d48/a00165.html#ac705a2e065b5c4604e43a44b488d798a">IMap</a>()</td><td class="entry"><a class="el" href="../../d0/d48/a00165.html">IMap</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d0/d48/a00165.html#a2d44fb3d3798e08bebcd25ad5f1787f4">insertElement</a>(IBaseGameElement *element, QVector3D point)=0</td><td class="entry"><a class="el" href="../../d0/d48/a00165.html">IMap</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d0/d48/a00165.html#aa4feb51c5d024c99d4c57ccf5d2ff82d">proccessAllInR</a>(IBaseGameElement *element, double r, bool(&amp;mapOperator)(IBaseGameElement *element))=0</td><td class="entry"><a class="el" href="../../d0/d48/a00165.html">IMap</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-</table></div><!-- contents -->
+<div class="dynheader">
+Inheritance diagram for MailSender:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/d7d/a00161.svg" width="440" height="406"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Collaboration diagram for MailSender:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../de/d38/a00160.svg" width="219" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1ac02b696f81c3b3e9e5226574b1b135"><td class="memItemLeft" align="right" valign="top"><a id="a1ac02b696f81c3b3e9e5226574b1b135"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>receiveResponce</b> (<a class="el" href="../../d7/d6e/a00190.html">DiffCard</a> *diff, <a class="el" href="../../d9/d38/a00166.html">MessageForServer</a> *message)=0</td></tr>
+<tr class="separator:a1ac02b696f81c3b3e9e5226574b1b135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85db0004c26606c5ac294e5de000b96"><td class="memItemLeft" align="right" valign="top"><a id="aa85db0004c26606c5ac294e5de000b96"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultReceiver</b> (<a class="el" href="../../d3/d65/a00154.html">MailReceiver</a> *receiver)</td></tr>
+<tr class="separator:aa85db0004c26606c5ac294e5de000b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa57ce2f74f8ad76abb38974f85b97ac5"><td class="memItemLeft" align="right" valign="top"><a id="aa57ce2f74f8ad76abb38974f85b97ac5"></a>
+<a class="el" href="../../d3/d65/a00154.html">MailReceiver</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>receiver</b></td></tr>
+<tr class="separator:aa57ce2f74f8ad76abb38974f85b97ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"></div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Core/connection/<a class="el" href="../../">mailboxelement.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="../../db/d44/a00162.html">MailSender</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

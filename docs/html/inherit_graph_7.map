@@ -1,3 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$d1/de1/a00213.html" title="MainGameLoop::GamerInformation" alt="" coords="5,5,320,36"/>
+<area shape="rect" id="node1" href="$d3/d65/a00154.html" title="MailReceiver" alt="" coords="5,5,135,36"/>
+<area shape="rect" id="node2" href="$d7/d03/a00254.html" title="MainGameLoop" alt="" coords="245,5,399,36"/>
+<area shape="rect" id="node3" href="$db/d44/a00162.html" title="MailSender" alt="" coords="12,73,128,104"/>
+<area shape="rect" id="node4" href="$da/d2e/a00238.html" title="ServerConnection" alt="" coords="237,60,408,91"/>
+<area shape="rect" id="node5" href="$d2/dc8/a00242.html" title="ServerWorker" alt="" coords="254,115,390,145"/>
+<area shape="rect" id="node7" href="$d0/da7/a00250.html" title="ServerWorker::ReceiverThread" alt="" coords="183,169,462,200"/>
+<area shape="rect" id="node8" href="$d5/dcb/a00170.html" title="SimpleConnection" alt="" coords="236,224,409,255"/>
+<area shape="rect" id="node9" href="$d9/d90/a00178.html" title="SimpleConnection::Receiver" alt="" coords="194,279,451,309"/>
 </map>
