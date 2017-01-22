@@ -28,7 +28,7 @@ void ListBseMap::proccessAllInR(IBaseGameElement* element,
                                 mapOperator op) {
   for (int i = 0; i < items->size(); i++) {
     IBaseGameElement* el = items->at(i);
-    if (element != el && distanceBetweenElement(el, element))
+    if (element != el && distanceBetweenElement(el, element) < r)
       op(el);
   }
 }
@@ -61,13 +61,14 @@ IBaseGameElement* ListBseMap::getElementAtPosition(int pos) {
 
 void ListBseMap::updateItem(IBaseGameElement* gameEleement, bool isReplace) {
   for (int i = 0; i < items->size(); i++) {
-    if ((items->at(i)->getName()) == (gameEleement->getName())) {
+    if ((items->at(i)->getName()) == gameEleement->getName()) {
       delete items->at(i);
       items->removeAt(i);
       if (isReplace)
         items->append(gameEleement);
       else
         delete gameEleement;
+      break;
     }
   }
 }

@@ -13,6 +13,7 @@ class DiffElement {
   DiffElement();
   DiffElement(DiffElement& element);
   DiffElement(eDiffType type, IBaseGameElement* data);
+  DiffElement(eDiffType type, IBaseGameElement* data, int time);
   friend QDataStream& operator<<(QDataStream& stream,
                                  const DiffElement& myclass) {
     stream << ((int)myclass.type);

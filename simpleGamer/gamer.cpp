@@ -1,5 +1,6 @@
 #include "gamer.h"
 #include "GameElements/basetank.h"
+#include <cmath>
 
 Gamer::Gamer(QObject* parent)
     : QObject(parent), connection(QHostAddress::LocalHost, this) {}
@@ -12,14 +13,25 @@ void Gamer::startGamer() {
 }
 
 void Gamer::onDiffReceive(QList<DiffElement*>* diffList) {
-  if (count > 10)
+  //  if (count == 0) {
+  //    this->basis =
+  //    (BaseBasis*)diffList->at(0)->generateGameElementInstance();
+  //  }
+  if (count > 4)
     return;
-  BaseTank* newElement = new BaseTank();
-  newElement->setPosition(new QVector3D(0, 0, 0));
-  newElement->setDirection(0.2);
-  newElement->setSpeed(10);
+
   QList<IBaseGameElement*>* items = new QList<IBaseGameElement*>();
-  items->append(newElement);
+  for (int i = 0; i < 25; i++) {
+    BaseTank* newElement = new BaseTank();
+    //    newElement->setPosition(
+    //        new QVector3D(basis->getPosition()->x(),
+    //        basis->getPosition()->y(), 0));
+    newElement->setPosition(new QVector3D(0, 0, 0));
+    newElement->setDirection((double)rand() / (double)RAND_MAX * M_PI * 2);
+    newElement->setSpeed(((double)rand() / (double)RAND_MAX) * 0.3 - 0.15);
+    items->append(newElement);
+  }
   connection.getBulder()->addNewItem(items)->build();
+
   count++;
 }

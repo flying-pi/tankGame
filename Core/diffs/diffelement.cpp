@@ -24,6 +24,13 @@ DiffElement::DiffElement(eDiffType type, IBaseGameElement* data) {
   time = 0;
 }
 
+DiffElement::DiffElement(eDiffType type, IBaseGameElement* data, int time) {
+  this->type = type;
+  this->data = new GameElementData();
+  data->copyData(*this->data);
+  this->time = time;
+}
+
 IBaseGameElement* DiffElement::generateGameElementInstance() {
   return getElement(*data);
 }

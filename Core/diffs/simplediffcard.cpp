@@ -11,6 +11,12 @@ DiffCard* SimpleDiffCard::subdiffForElements(QList<IBaseGameElement*> items) {}
 // enum eDiffType { eNew, eChange, eDeleted, eEmpty };
 
 void SimpleDiffCard::updateFromOtherCard(DiffCard* card) {
+  if (items.size() == 0) {
+    for (int i = 0; i < card->getCountOfDiff(); i++) {
+      items.append(new DiffElement(*card->at(i)));
+    }
+    return;
+  }
   for (int i = 0; i < card->getCountOfDiff(); i++) {
     for (int j = 0; j < items.size(); j++) {
       if (card->at(i)->getData()->name == items.at(j)->getData()->name) {

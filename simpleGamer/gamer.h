@@ -18,6 +18,7 @@ class Gamer : public QObject {
  protected:
   SimpleConnection connection;
   int count = 0;
+  BaseBasis* basis;
 
  protected slots:
   void onDiffReceive(QList<DiffElement*>*);

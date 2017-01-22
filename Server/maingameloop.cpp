@@ -3,6 +3,7 @@
 #include <QtGlobal>
 #include <coreutil.h>
 #include "diffs/simplediffcard.h"
+#include <cmath>
 
 QString TAG = "MainGameLoop";
 
@@ -33,9 +34,11 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
     BaseBasis* basis = new BaseBasis();
     basis->setPosition(&currentGamer->position);
     basis->setEnergy(currentGamer->lifeCount);
-    map->insertElement(basis);
+    currentGamer->personalDiff->append(new DiffElement(eDiffType::eNew, basis));
 
+    map->insertElement(basis);
     gamersItems.last()->append(basis);
+
     currentGamer->minion = gamersItems.last();
     auto op = [this, currentGamer](IBaseGameElement* element) -> bool {
       DiffElement* diff = new DiffElement(eDiffType::eNew, element);
@@ -48,6 +51,7 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
     if (msg->message->messageType == eInsertNewItem) {
       for (int i = 0; i < msg->message->items->size(); i++) {
         map->insertElement(msg->message->items->at(i));
+        currentGamer->minion->append(msg->message->items->at(i));
         DiffElement* diffItem =
             new DiffElement(eDiffType::eNew, msg->message->items->at(i));
         diffItem->time = time;
@@ -70,6 +74,7 @@ void MainGameLoop::proccessWatcherMessage(MailReceiver::mailMessage* msg,
   if (watcher == nullptr) {
     watcher = new WathcerInformation();
     watcher->sender = receiver;
+    watchers.append(watcher);
   }
   switch (msg->message->messageType) {
     case eFirstMessae:
@@ -108,9 +113,30 @@ void MainGameLoop::run() {
       (this->*fun)(msg, msg->sender);
     }
 
-    foreach (auto items, gamersItems) {
+    for (int g = 0; g < gamersItems.size(); g++) {
+      auto items = gamersItems.at(g);
       for (int i = 0; i < items->size(); i++) {
-        //        switch ((eBaseGameElementType)items->at(i)->getType())
+        switch ((eBaseGameElementType)items->at(i)->getType()) {
+          case eGrass:
+            break;
+          case eSimpleTank: {
+            BaseTank* tank = (BaseTank*)items->at(i);
+            auto pos = tank->getPosition();
+            pos->setX(pos->x() + cos(tank->getDirection()) * tank->getSpeed());
+            pos->setY(pos->y() + sin(tank->getDirection()) * tank->getSpeed());
+            tank->setPosition(pos);
+            tank->setDirection(
+                (((double)rand() / (double)RAND_MAX) * 0.02 - 0.01) +
+                tank->getDirection());
+            auto diff = new DiffElement(eDiffType::eChange, tank, time);
+            stepDiff->append(diff);
+            gamersList.at(g)->personalDiff->append(new DiffElement(*diff));
+          } break;
+          case eBasis:
+            break;
+          case eBullet:
+            break;
+        }
       }
     }
     for (int i = 0; i < watchers.size(); i++) {
