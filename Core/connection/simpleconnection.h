@@ -49,6 +49,7 @@ class MessageForServer : public QObject {
     myclass.messageType = (eMessageType)msg;
     for (int i = 0; i < countOfNewItems; i++) {
       GameElementData item;
+      item.defaultInit();
       result >> item;
       myclass.items->append(getElement(item));
     }

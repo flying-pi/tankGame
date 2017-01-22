@@ -8,7 +8,7 @@ BaseBasis::BaseBasis() : IBaseGameElement() {
   transitWeight = InfinityDouble::InfinityValue();
 }
 
-BaseBasis::BaseBasis(GameElementData& data) {
+BaseBasis::BaseBasis(GameElementData& data) : IBaseGameElement() {
   init(data);
   this->type = eBasis;
   helth = InfinityDouble::InfinityValue();

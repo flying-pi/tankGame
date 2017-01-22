@@ -5,7 +5,7 @@ BaseTank::BaseTank() : IBaseGameElement() {
   this->type = eSimpleTank;
 }
 
-BaseTank::BaseTank(GameElementData& data) {
+BaseTank::BaseTank(GameElementData& data) : IBaseGameElement() {
   init(data);
   this->type = eSimpleTank;
 }

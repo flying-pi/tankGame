@@ -4,7 +4,7 @@ BaseBulet::BaseBulet() : IBaseGameElement() {
   this->type = eBullet;
 }
 
-BaseBulet::BaseBulet(GameElementData& data) {
+BaseBulet::BaseBulet(GameElementData& data) : IBaseGameElement() {
   init(data);
   this->type = eBullet;
 }

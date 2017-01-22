@@ -17,8 +17,8 @@ void SimpleConnection::openConnection() {
   connect(socket, SIGNAL(error(QAbstractSocket::SocketError)), this,
           SLOT(onSocketError(QAbstractSocket::SocketError)),
           Qt::DirectConnection);
-  connect(socket, SIGNAL(readyRead()), this, SLOT(onReadyRead()),
-          Qt::DirectConnection);
+  //  connect(socket, SIGNAL(readyRead()), this, SLOT(onReadyRead()),
+  //          Qt::DirectConnection);
   out = new QDataStream();
   out->setDevice(socket);
   out->setVersion(QDataStream::Qt_5_7);
@@ -42,10 +42,12 @@ void SimpleConnection::onReadyRead() {
 }
 
 void SimpleConnection::run() {
+  qInfo() << "starring connection thread. Opening socket connection.........";
   socket->connectToHost(adress, DefaultServerParams::port);
   isWork = socket->waitForConnected();
   qDebug() << "Connect to server on " << socket->peerAddress().toString() << ":"
            << socket->peerPort();
+  qDebug() << "owen port :: " << socket->localPort();
 
   while (!receiver->istThreadStart())
     qInfo() << "whaiting for receiver loop start........";

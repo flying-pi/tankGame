@@ -20,6 +20,9 @@ class ServerWorker : public QThread, public MailSender {
  protected:
   void run();
 
+ protected slots:
+  void onSocketError(QAbstractSocket::SocketError error);
+
  protected:
   struct responceData {
    public:

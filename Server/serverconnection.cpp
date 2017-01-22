@@ -33,18 +33,21 @@ void ServerConnection::run() {
   qDebug() << server->isListening();
   bool isAppareNewConnection;
   while (true) {
-    isAppareNewConnection = server->waitForNewConnection(100);
+    isAppareNewConnection = server->waitForNewConnection(-1);
+    //    isAppareNewConnection = server->hasPendingConnections();
     if (isAppareNewConnection) {
       QTcpSocket* newConnection = server->nextPendingConnection();
       if (newConnection == nullptr)
         continue;
       qInfo() << "appare new connection  :: "
-              << newConnection->peerAddress().toString();
+              << newConnection->peerAddress().toString() << ":"
+              << newConnection->peerPort();
       ServerWorker* newWorker = new ServerWorker(newConnection);
       newWorker->setDefaultReceiver(this->receiver);
       connections->append(newWorker);
       newWorker->start();
     }
+    msleep(30);
   }
 }
 

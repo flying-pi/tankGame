@@ -16,6 +16,8 @@ class MailSender;
 
 class MailReceiver {
  public:
+  MailReceiver();
+  ~MailReceiver();
   virtual void sendMail(MessageForServer* message,
                         MailSender* sender,
                         int type,
@@ -45,8 +47,7 @@ class MailReceiver {
     }
   };
   QQueue<mailMessage*> messages;
-  QMutex mutex;
-  volatile bool isQueueLock = false;
+  QMutex* mutex;
 
   virtual mailMessage* nextMessage();
 };

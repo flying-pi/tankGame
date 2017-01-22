@@ -5,6 +5,8 @@
 
 ServerWorker::ServerWorker(QTcpSocket* socket) {
   this->socket = socket;
+  connect(socket, SIGNAL(error(QAbstractSocket::SocketError)), this,
+          SLOT(onSocketError(QAbstractSocket::SocketError)));
 }
 
 void ServerWorker::run() {
@@ -17,7 +19,8 @@ void ServerWorker::run() {
     workerMutex.lock();
     while (responceMessage.length() > 0) {
       responceData data = responceMessage.takeFirst();
-      qInfo() << "getting some message for sending";
+      qInfo() << socket->peerAddress() << ":" << socket->peerPort()
+              << "getting some message for sending";
       out->startTransaction();
       (*out) << (*data.messag);
       (*out) << data.diff->getCountOfDiff();
@@ -25,7 +28,8 @@ void ServerWorker::run() {
         (*out) << (*data.diff->at(i));
       out->commitTransaction();
       socket->flush();
-      qInfo() << "send  response to client";
+      qInfo() << socket->peerAddress() << ":" << socket->peerPort()
+              << "send  response to client";
       for (int i = 0; i < data.diff->getCountOfDiff(); i++)
         delete data.diff->at(i);
       data.diff->clear();
@@ -39,6 +43,11 @@ void ServerWorker::run() {
   delete th;
   qInfo() << "worker has stoped";
   emit onStop(this);
+}
+
+void ServerWorker::onSocketError(QAbstractSocket::SocketError error) {
+  qCritical() << socket->peerAddress() << ":" << socket->peerPort()
+              << "error occured :: " << socket->errorString();
 }
 
 void ServerWorker::receiveResponce(DiffCard* diff, MessageForServer* message) {
@@ -75,7 +84,8 @@ void ServerWorker::ReceiverThread::run() {
   in = new QDataStream(socket);
   in->setVersion(QDataStream::Qt_5_7);
 
-  qInfo() << "starting receiving thread";
+  qInfo() << socket->peerAddress() << ":" << socket->peerPort()
+          << "starting receiving thread";
 
   while (true) {
     receiverMutex.lock();
@@ -84,13 +94,16 @@ void ServerWorker::ReceiverThread::run() {
         socket->state() == QAbstractSocket::ClosingState)
       isWork = false;
     if (!isWork) {
-      qInfo() << "stoping receiver loop";
+      qInfo() << socket->peerAddress() << ":" << socket->peerPort()
+              << "stoping receiver loop";
       break;
     }
-    qInfo() << "ready read from client";
+    qInfo() << socket->peerAddress() << ":" << socket->peerPort()
+            << "ready read from client";
     MessageForServer* newMessage = new MessageForServer();
     (*in) >> (*newMessage);
-    qInfo() << "get new message on server :: " << (*newMessage).toString();
+    qInfo() << socket->peerAddress() << ":" << socket->peerPort()
+            << "get new message on server :: " << (*newMessage).toString();
     parentThread->receiver->sendMail(newMessage, parentThread,
                                      newMessage->messageType);
     receiverMutex.unlock();

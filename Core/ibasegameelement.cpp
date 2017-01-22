@@ -29,19 +29,22 @@ void IBaseGameElement::copyData(GameElementData& out) {
   out.helth = new InfinityDouble(*helth);
   out.weight = new InfinityDouble(*weight);
   out.transitWeight = new InfinityDouble(*transitWeight);
-  out.additionalData = new QByteArray(*additionalData);
+  if (additionalData == nullptr)
+    out.additionalData = nullptr;
+  else
+    out.additionalData = new QByteArray(*additionalData);
   out.type = type;
   out.name = name;
   out.rVision = rVision;
 }
 
 void IBaseGameElement::init(GameElementData& data) {
-  setHelth(data.helth);
-  setWeight(data.weight);
-  setTransitWeight(data.transitWeight);
-  setPosition(data.position);
+  setHelth(new InfinityDouble(*data.helth));
+  setWeight(new InfinityDouble(*data.weight));
+  setTransitWeight(new InfinityDouble(*data.transitWeight));
+  setPosition(new QVector3D(*data.position));
   setName(data.name);
-  setAdditionakData(data.additionalData);
+  setAdditionakData(new QByteArray(*data.additionalData));
   setRVision(data.rVision);
   setType(data.type);
 }
