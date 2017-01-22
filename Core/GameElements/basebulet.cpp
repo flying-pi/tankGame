@@ -9,6 +9,8 @@ BaseBulet::BaseBulet(GameElementData& data) : IBaseGameElement() {
   this->type = eBullet;
 }
 
-QByteArray* BaseBulet::getAdditionalData() const {}
+QByteArray* BaseBulet::getAdditionalData() const {
+    return IBaseGameElement::getAdditionalData();
+}
 
 void BaseBulet::setAdditionakData(QByteArray* data) {}

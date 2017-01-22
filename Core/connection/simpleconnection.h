@@ -11,6 +11,8 @@
 #include "diffs/diffelement.h"
 #include <QList>
 #include "gameelementfactory.h"
+#include <QMutex>
+
 
 enum eConnectionType { eGamer, eWatcher };
 enum eMessageType { eFirstMessae, eGetUpdateMessage, eInsertNewItem };

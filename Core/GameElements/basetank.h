@@ -11,7 +11,6 @@ class BaseTank : public IBaseGameElement {
  public:
   using IBaseGameElement::setType;
   virtual void setType(int value) override;
-  virtual BaseBulet generateBullet() const;
 
   using IBaseGameElement::setAdditionakData;
   virtual void setAdditionakData(QByteArray* data) override;

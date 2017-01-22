@@ -6,7 +6,7 @@ int SimpleDiffCard::getCountOfDiff() {
   return items.size();
 }
 
-DiffCard* SimpleDiffCard::subdiffForElements(QList<IBaseGameElement*> items) {}
+DiffCard* SimpleDiffCard::subdiffForElements(QList<IBaseGameElement*> items) {return nullptr;}
 
 // enum eDiffType { eNew, eChange, eDeleted, eEmpty };
 

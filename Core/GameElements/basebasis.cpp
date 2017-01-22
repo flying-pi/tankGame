@@ -27,6 +27,7 @@ QByteArray* BaseBasis::getAdditionalData() const {
   additionalData->clear();
   QDataStream stream(additionalData, QIODevice::WriteOnly);
   stream << energy;
+  return additionalData;
 }
 
 void BaseBasis::setAdditionakData(QByteArray* data) {

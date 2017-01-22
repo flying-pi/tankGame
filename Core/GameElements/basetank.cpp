@@ -17,7 +17,6 @@ void BaseTank::setType(int value) {
   IBaseGameElement::setType(value);
 }
 
-BaseBulet BaseTank::generateBullet() const {}
 
 void BaseTank::setAdditionakData(QByteArray* data) {
   IBaseGameElement::setAdditionakData(data);

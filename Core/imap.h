@@ -5,6 +5,7 @@
 #include <QPointF>
 #include "ibasegameelement.h"
 #include "diffs/diffcard.h"
+#include <functional>
 
 typedef std::function<bool(IBaseGameElement*)> mapOperator;
 
