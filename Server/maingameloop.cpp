@@ -76,9 +76,9 @@ void MainGameLoop::proccessWatcherMessage(MailReceiver::mailMessage* msg,
       receiver->receiveResponce(getAllMapAsDiff(), msg->message);
       break;
     case eGetUpdateMessage:
-      //      receiver->receiveResponce(watcher->personalDiff, msg->message);
-      //      watcher->personalDiff = getSimpleDiff();
-      receiver->receiveResponce(getAllMapAsDiff(), msg->message);
+      receiver->receiveResponce(watcher->personalDiff, msg->message);
+      watcher->personalDiff = getSimpleDiff();
+      //      receiver->receiveResponce(getAllMapAsDiff(), msg->message);
       break;
     default:
       receiver->receiveResponce(getSimpleDiff(), msg->message);
@@ -117,6 +117,7 @@ void MainGameLoop::run() {
       WathcerInformation* watcher = watchers.at(i);
       watcher->personalDiff->updateFromOtherCard(stepDiff);
     }
+    stepDiff->freeItems();
 
     msleep(100);
   }
@@ -145,27 +146,13 @@ void MainGameLoop::startLooper() {
 MainGameLoop* MainGameLoop::instance = nullptr;
 
 MainGameLoop::GamerInformation::GamerInformation(IMap* map) {
-  qInfo()
-      << "creating MainGameLoop::GamerInformation::GamerInformation(IMap* map)";
   name = "";
   lifeCount = limits::defaultBasisEnergy;
   QSizeF* size = map->getSize();
-  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) "
-             "befor getting rand";
   float rand1 = ((float)(rand())) / ((float)(RAND_MAX));
   float rand2 = ((float)(rand())) / ((float)(RAND_MAX));
-  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) "
-             "after  getting rand";
-  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) :: "
-             "size ::"
-          << QString::number(size->width()) << QString::number(size->height());
   position = QVector3D(size->width() * rand1, size->height() * rand2, 0);
-
-  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) "
-             "init diff";
   personalDiff = getSimpleDiff();
-  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) was "
-             "created";
 }
 
 MainGameLoop::GamerInformation::~GamerInformation() {

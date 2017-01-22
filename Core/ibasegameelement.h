@@ -14,17 +14,34 @@ enum eBaseGameElementType { eGrass, eSimpleTank, eBasis, eBullet };
 class IBaseGameElement;
 
 struct GameElementData {
-  QVector3D* position = new QVector3D(0, 0, 0);
-  InfinityDouble* helth = InfinityDouble::FromValue(1);
-  InfinityDouble* weight = InfinityDouble::FromValue(0);
-  InfinityDouble* transitWeight = InfinityDouble::FromValue(0);
-  QByteArray* additionalData = new QByteArray();
+  QVector3D* position = nullptr;
+  InfinityDouble* helth = nullptr;
+  InfinityDouble* weight = nullptr;
+  InfinityDouble* transitWeight = nullptr;
+  QByteArray* additionalData = nullptr;
   qint32 rVision = 1;
   qint32 type = -1;
   QString name = "";
+
+  ~GameElementData() {
+    delete position;
+    delete helth;
+    delete weight;
+    delete transitWeight;
+    delete additionalData;
+  }
+
+  void defaultInit() {
+    position = new QVector3D(0, 0, 0);
+    helth = InfinityDouble::FromValue(1);
+    weight = InfinityDouble::FromValue(0);
+    transitWeight = InfinityDouble::FromValue(0);
+    additionalData = new QByteArray();
+  }
 };
 
 extern QDataStream& operator>>(QDataStream& stream, GameElementData& myclass);
+extern QDataStream& operator<<(QDataStream& stream, GameElementData& myclass);
 
 class IBaseGameElement : public QObject {
   Q_OBJECT
@@ -79,6 +96,7 @@ class IBaseGameElement : public QObject {
   }
   virtual void setRVision(int _rVison) { rVision = _rVison; }
 
+  void copyData(GameElementData& out);
  signals:
 
  public slots:

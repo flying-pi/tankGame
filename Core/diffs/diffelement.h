@@ -11,24 +11,30 @@ class DiffElement {
  public:
   ~DiffElement();
   DiffElement();
+  DiffElement(DiffElement& element);
   DiffElement(eDiffType type, IBaseGameElement* data);
   friend QDataStream& operator<<(QDataStream& stream,
                                  const DiffElement& myclass) {
     stream << ((int)myclass.type);
-    IBaseGameElement& gameElement = (*myclass.data);
-    return stream << gameElement;
+    return stream << (*myclass.data);
   }
   friend QDataStream& operator>>(QDataStream& stream, DiffElement& myclass) {
     int type;
-    GameElementData item;
-    stream >> type >> item;
-    myclass.data = getElement(item);
+    myclass.data->defaultInit();
+    stream >> type >> (*myclass.data);
     myclass.type = (eDiffType)type;
     return stream;
   }
   eDiffType type;
-  IBaseGameElement* data;
   uint64_t time;
+
+  inline GameElementData* getData() { return data; }
+  IBaseGameElement* generateGameElementInstance();
+
+  void update(DiffElement* element);
+
+ protected:
+  GameElementData* data;
 };
 
 #endif  // DIFFELEMENT_H

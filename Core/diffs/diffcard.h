@@ -20,6 +20,12 @@ class DiffCard : public QObject {
   virtual void clear() = 0;
   virtual void updateFromOtherCard(DiffCard* card) = 0;
 
+  /**
+   * @brief freeItems simular to claer but also call destructor for diff
+   * elemenst
+   */
+  virtual void freeItems();
+
  signals:
 
  public slots:

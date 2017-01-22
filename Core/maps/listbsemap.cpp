@@ -41,13 +41,13 @@ void ListBseMap::updateFromDiff(DiffCard* diff) {
   for (int i = 0; i < diff->getCountOfDiff(); i++) {
     switch (diff->at(i)->type) {
       case eNew:
-        items->append(diff->at(i)->data);
+        items->append(diff->at(i)->generateGameElementInstance());
         break;
       case eChange:
-        updateItem(diff->at(i)->data);
+        updateItem(diff->at(i)->generateGameElementInstance());
         break;
       case eDeleted:
-        updateItem(diff->at(i)->data, false);
+        updateItem(diff->at(i)->generateGameElementInstance(), false);
         break;
       case eEmpty:
         break;

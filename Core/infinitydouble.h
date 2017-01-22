@@ -15,6 +15,9 @@ class InfinityDouble : public QObject {
     return stream >> myclass.isInfinity >> myclass.w;
   }
 
+ public:
+  InfinityDouble(InfinityDouble& id);
+
  private:
   InfinityDouble();
   double w;
