@@ -44,6 +44,7 @@ class MainGameLoop : public MailReceiver, public QThread {
  protected:
   class GamerInformation {
    public:
+    uint64_t lastNameID = 1;
     QString name;
     uint64_t lifeCount;
     QVector3D position;

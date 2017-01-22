@@ -48,15 +48,25 @@ void MainGameLoop::proccessGamerMessage(MailReceiver::mailMessage* msg,
     };
     map->proccessAllInR(basis, basis->getRVision(), op);
   } else {
-    if (msg->message->messageType == eInsertNewItem) {
-      for (int i = 0; i < msg->message->items->size(); i++) {
-        map->insertElement(msg->message->items->at(i));
-        currentGamer->minion->append(msg->message->items->at(i));
-        DiffElement* diffItem =
-            new DiffElement(eDiffType::eNew, msg->message->items->at(i));
-        diffItem->time = time;
-        stepDiff->append(diffItem);
+    for (int g = 0; g < gamersList.size(); g++) {
+      if (gamersList.at(g)->sender != receiver)
+        continue;
+      if (msg->message->messageType == eInsertNewItem) {
+        for (int i = 0; i < msg->message->items->size(); i++) {
+          auto newItem = msg->message->items->at(i);
+          gamersList.at(g)->minion->append(newItem);
+          newItem->setName(gamersList.at(g)->name + "#" +
+                           codingNum(gamersList.at(g)->lastNameID));
+          gamersList.at(g)->lastNameID++;
+          map->insertElement(msg->message->items->at(i));
+          currentGamer->minion->append(msg->message->items->at(i));
+          DiffElement* diffItem =
+              new DiffElement(eDiffType::eNew, msg->message->items->at(i));
+          diffItem->time = time;
+          stepDiff->append(diffItem);
+        }
       }
+      break;
     }
   }
   auto diffValue = currentGamer->personalDiff;

@@ -1,14 +1,16 @@
 #include "mapiniter.h"
+#include "coreutil.h"
 
 MapIniter::MapIniter() {}
 
 IMap* MapIniter::initSimapleMap() {
-  const int mapW = 100;
-  const int mapH = 100;
+  const int mapW = 1000;
+  const int mapH = 1000;
 
   IMap* result = new ListBseMap(mapW, mapH);
   for (int i = 0; i < 400; i++) {
     IBaseGameElement* item = getRandomGrass(mapW, mapH);
+    item->setName(codingNum(result->getCount()));
     result->insertElement(item);
   }
   return result;

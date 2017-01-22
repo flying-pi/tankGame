@@ -34,7 +34,7 @@ class Field : public QGLWidget {
 
   GLuint grass;
 
-  float scaleK = 0.02;
+  float scaleK = 0.002;
 
   DiffCard* diff;
   IMap* map;

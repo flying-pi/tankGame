@@ -17,7 +17,7 @@ void Gamer::onDiffReceive(QList<DiffElement*>* diffList) {
   //    this->basis =
   //    (BaseBasis*)diffList->at(0)->generateGameElementInstance();
   //  }
-  if (count > 4)
+  if (count > 6)
     return;
 
   QList<IBaseGameElement*>* items = new QList<IBaseGameElement*>();
@@ -28,7 +28,7 @@ void Gamer::onDiffReceive(QList<DiffElement*>* diffList) {
     //        basis->getPosition()->y(), 0));
     newElement->setPosition(new QVector3D(0, 0, 0));
     newElement->setDirection((double)rand() / (double)RAND_MAX * M_PI * 2);
-    newElement->setSpeed(((double)rand() / (double)RAND_MAX) * 0.3 - 0.15);
+    newElement->setSpeed(((double)rand() / (double)RAND_MAX) * 1 - 0.5);
     items->append(newElement);
   }
   connection.getBulder()->addNewItem(items)->build();
