@@ -13,6 +13,17 @@ SimpleConnection::~SimpleConnection() {
 }
 
 void SimpleConnection::openConnection() {
+  socket = new QTcpSocket();
+  connect(socket, SIGNAL(error(QAbstractSocket::SocketError)), this,
+          SLOT(onSocketError(QAbstractSocket::SocketError)),
+          Qt::DirectConnection);
+  connect(socket, SIGNAL(readyRead()), this, SLOT(onReadyRead()),
+          Qt::DirectConnection);
+  out = new QDataStream();
+  out->setDevice(socket);
+  out->setVersion(QDataStream::Qt_5_7);
+  receiver = new ReceiverThread(socket, this);
+  receiver->start();
   this->start();
 }
 
@@ -26,20 +37,16 @@ void SimpleConnection::onSocketError(QAbstractSocket::SocketError err) {
   // TODO add something
 }
 
+void SimpleConnection::onReadyRead() {
+  qInfo() << "onReadyRead";
+}
+
 void SimpleConnection::run() {
-  socket = new QTcpSocket();
-  connect(socket, SIGNAL(error(QAbstractSocket::SocketError)), this,
-          SLOT(onSocketError(QAbstractSocket::SocketError)),
-          Qt::DirectConnection);
   socket->connectToHost(adress, DefaultServerParams::port);
   isWork = socket->waitForConnected();
   qDebug() << "Connect to server on " << socket->peerAddress().toString() << ":"
            << socket->peerPort();
-  out = new QDataStream();
-  out->setDevice(socket);
-  out->setVersion(QDataStream::Qt_5_7);
 
-  Receiver* receiver = new Receiver(socket, this);
   while (!receiver->istThreadStart())
     qInfo() << "whaiting for receiver loop start........";
 
@@ -128,12 +135,12 @@ QString stringify(eMessageType e) {
   return "";
 }
 
-bool SimpleConnection::Receiver::istThreadStart() {
+bool SimpleConnection::ReceiverThread::istThreadStart() {
   return isStart;
   msleep(100);
 }
 
-void SimpleConnection::Receiver::stop() {
+void SimpleConnection::ReceiverThread::stop() {
   isWork = false;
   while (isLoopActive) {
     msleep(100);

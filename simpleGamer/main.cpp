@@ -3,7 +3,12 @@
 
 int main(int argc, char* argv[]) {
   QCoreApplication a(argc, argv);
-  Gamer gamer;
-  gamer.startGamer();
+  qSetMessagePattern(
+      "%{time boot} :: [%{type}::%{appname} in %{file}:%{line} th:%{threadid}] "
+      "message:: "
+      "%{message} "
+      "%{backtrace [separator=\"\n\t\"]}");
+  Gamer* gamer = new Gamer(&a);
+  gamer->startGamer();
   return a.exec();
 }

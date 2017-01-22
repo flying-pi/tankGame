@@ -25,10 +25,9 @@ void Field::onDiffReceive(QList<DiffElement*>* diff) {
     delete diff->at(i);
   delete diff;
   update();
-  QtConcurrent::run(QThreadPool::globalInstance(), [=] {
-    QThread::msleep(100);
-    this->connection.getBulder()->updateWatcher()->build();
-  });
+
+  QThread::msleep(100);
+  this->connection.getBulder()->updateWatcher()->build();
 }
 void Field::initializeGL() {}
 

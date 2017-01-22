@@ -110,7 +110,7 @@ void MainGameLoop::run() {
 
     foreach (auto items, gamersItems) {
       for (int i = 0; i < items->size(); i++) {
-        switch ((eBaseGameElementType)items->at(i)->getType())
+        //        switch ((eBaseGameElementType)items->at(i)->getType())
       }
     }
     for (int i = 0; i < watchers.size(); i++) {
@@ -145,14 +145,27 @@ void MainGameLoop::startLooper() {
 MainGameLoop* MainGameLoop::instance = nullptr;
 
 MainGameLoop::GamerInformation::GamerInformation(IMap* map) {
+  qInfo()
+      << "creating MainGameLoop::GamerInformation::GamerInformation(IMap* map)";
   name = "";
   lifeCount = limits::defaultBasisEnergy;
   QSizeF* size = map->getSize();
-  float rand1 = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
-  float rand2 = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) "
+             "befor getting rand";
+  float rand1 = ((float)(rand())) / ((float)(RAND_MAX));
+  float rand2 = ((float)(rand())) / ((float)(RAND_MAX));
+  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) "
+             "after  getting rand";
+  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) :: "
+             "size ::"
+          << QString::number(size->width()) << QString::number(size->height());
   position = QVector3D(size->width() * rand1, size->height() * rand2, 0);
 
+  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) "
+             "init diff";
   personalDiff = getSimpleDiff();
+  qInfo() << " MainGameLoop::GamerInformation::GamerInformation(IMap* map) was "
+             "created";
 }
 
 MainGameLoop::GamerInformation::~GamerInformation() {

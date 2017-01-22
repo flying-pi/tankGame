@@ -16,7 +16,7 @@ ListBseMap::~ListBseMap() {
 }
 
 QSizeF* ListBseMap::getSize() {
-  delete size;
+  return size;
 }
 
 void ListBseMap::insertElement(IBaseGameElement* element) {

@@ -98,11 +98,12 @@ class SimpleConnection : public QThread {
 
  protected slots:
   void onSocketError(QAbstractSocket::SocketError error);
+  void onReadyRead();
 
   // QThread interface
  protected:
   volatile bool isWork = true;
-  void run();
+  void run() Q_DECL_OVERRIDE;
   QHostAddress adress;
   QTcpSocket* socket;
 
@@ -113,17 +114,18 @@ class SimpleConnection : public QThread {
 
   void addMessage(MessageBuilder* messages);
 
-  class Receiver : public QThread {
+  class ReceiverThread : public QThread {
    public:
-    Receiver(QTcpSocket* socket,
-             SimpleConnection* parentThread,
-             QObject* parent = 0) {
+    ReceiverThread(QTcpSocket* socket,
+                   SimpleConnection* parentThread,
+                   QObject* parent = 0) {
       this->socket = socket;
       this->parentThread = parentThread;
-      this->start();
+      in = new QDataStream(socket);
+      in->setVersion(QDataStream::Qt_5_7);
     }
 
-    virtual ~Receiver() { delete in; }
+    virtual ~ReceiverThread() { delete in; }
 
     bool istThreadStart();
     void stop();
@@ -138,11 +140,7 @@ class SimpleConnection : public QThread {
 
     // QThread interface
    protected:
-    void run() {
-      in = new QDataStream();
-      in->setDevice(socket);
-      in->setVersion(QDataStream::Qt_5_7);
-
+    void run() Q_DECL_OVERRIDE {
       qInfo() << "starting message receiver loop";
 
       int diffsLenth;
@@ -152,7 +150,7 @@ class SimpleConnection : public QThread {
         if (!isWork)
           break;
         isStart = true;
-        socket->waitForReadyRead(-1);
+        bool waitForReadyReadResult = socket->waitForReadyRead(-1);
 
         qInfo() << "starting reading some response";
         (*in) >> sendedMessage;
@@ -169,6 +167,7 @@ class SimpleConnection : public QThread {
       isLoopActive = false;
     }
   };
+  ReceiverThread* receiver;
 };
 
 #endif  // SIMPLECONNECTION_H
