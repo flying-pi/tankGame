@@ -42,7 +42,7 @@ var hierarchy =
       [ "ServerWorker", "d2/dc8/a00242.html", null ],
       [ "ServerWorker::ReceiverThread", "d0/da7/a00250.html", null ],
       [ "SimpleConnection", "d5/dcb/a00170.html", null ],
-      [ "SimpleConnection::Receiver", "d9/d90/a00178.html", null ]
+      [ "SimpleConnection::ReceiverThread", "d9/d90/a00178.html", null ]
     ] ],
     [ "ServerWorker::responceData", "d4/d9a/a00246.html", null ],
     [ "MainGameLoop::WathcerInformation", "d9/d8d/a00262.html", null ]

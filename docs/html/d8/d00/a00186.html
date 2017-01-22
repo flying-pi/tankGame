@@ -30,7 +30,6 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TankGame
    </div>
-   <div id="projectbrief">Курсовий проект</div>
   </td>
  </tr>
  </tbody>
@@ -83,12 +82,15 @@ $(document).ready(function(){initNavTree('d8/d00/a00186.html','../../');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="../../dc/d52/a00183.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DiffElement Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &quot;<a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>&quot;</code></p>
 <div class="dynheader">
 Collaboration diagram for DiffElement:</div>
 <div class="dyncontent">
@@ -98,36 +100,423 @@ Collaboration diagram for DiffElement:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a82e8ecd785a9d06708c42f128b7aaf09"><td class="memItemLeft" align="right" valign="top"><a id="a82e8ecd785a9d06708c42f128b7aaf09"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DiffElement</b> (eDiffType type, <a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a> *data)</td></tr>
+<tr class="memitem:a8d396cff83483225ce6607a6468a6ac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a8d396cff83483225ce6607a6468a6ac2">~DiffElement</a> ()</td></tr>
+<tr class="separator:a8d396cff83483225ce6607a6468a6ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb725fa0a448bf536959a5c469556599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#abb725fa0a448bf536959a5c469556599">DiffElement</a> ()</td></tr>
+<tr class="separator:abb725fa0a448bf536959a5c469556599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d458cabd9af1a12041fecc5af38b9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a16d458cabd9af1a12041fecc5af38b9b">DiffElement</a> (<a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;element)</td></tr>
+<tr class="separator:a16d458cabd9af1a12041fecc5af38b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e8ecd785a9d06708c42f128b7aaf09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a82e8ecd785a9d06708c42f128b7aaf09">DiffElement</a> (<a class="el" href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55">eDiffType</a> <a class="el" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a>, <a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a> *<a class="el" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>)</td></tr>
 <tr class="separator:a82e8ecd785a9d06708c42f128b7aaf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a0588ee446bbd8f6ec12680201e331"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dd1/a00214.html">GameElementData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a> ()</td></tr>
+<tr class="separator:a71a0588ee446bbd8f6ec12680201e331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a735e7c16ab3c3d92ee102a2125510971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a735e7c16ab3c3d92ee102a2125510971">generateGameElementInstance</a> ()</td></tr>
+<tr class="separator:a735e7c16ab3c3d92ee102a2125510971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3700027a45658d045bae66450f2a2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#ade3700027a45658d045bae66450f2a2a">update</a> (<a class="el" href="../../d8/d00/a00186.html">DiffElement</a> *element)</td></tr>
+<tr class="separator:ade3700027a45658d045bae66450f2a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad5d4aeee742d315da4f48e7f0b0218db"><td class="memItemLeft" align="right" valign="top"><a id="ad5d4aeee742d315da4f48e7f0b0218db"></a>
-eDiffType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memitem:ad5d4aeee742d315da4f48e7f0b0218db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55">eDiffType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a></td></tr>
 <tr class="separator:ad5d4aeee742d315da4f48e7f0b0218db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a656245277c76d03d7c20a55c54db6fef"><td class="memItemLeft" align="right" valign="top"><a id="a656245277c76d03d7c20a55c54db6fef"></a>
-<a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="separator:a656245277c76d03d7c20a55c54db6fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d790fc662b3fca8c99889995d688be3"><td class="memItemLeft" align="right" valign="top"><a id="a3d790fc662b3fca8c99889995d688be3"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>time</b></td></tr>
+<tr class="memitem:a3d790fc662b3fca8c99889995d688be3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">time</a></td></tr>
 <tr class="separator:a3d790fc662b3fca8c99889995d688be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a3b1834e58d55e785e8637fc0804f764a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/dd1/a00214.html">GameElementData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a></td></tr>
+<tr class="separator:a3b1834e58d55e785e8637fc0804f764a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a68d5973a4f23de0696d5c164b9a14397"><td class="memItemLeft" align="right" valign="top"><a id="a68d5973a4f23de0696d5c164b9a14397"></a>
-QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (QDataStream &amp;stream, const <a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;myclass)</td></tr>
+<tr class="memitem:a68d5973a4f23de0696d5c164b9a14397"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#a68d5973a4f23de0696d5c164b9a14397">operator&lt;&lt;</a> (QDataStream &amp;stream, const <a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;myclass)</td></tr>
 <tr class="separator:a68d5973a4f23de0696d5c164b9a14397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0d28f7b0a0c877592716bf643a1d8bd"><td class="memItemLeft" align="right" valign="top"><a id="ac0d28f7b0a0c877592716bf643a1d8bd"></a>
-QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;&gt;</b> (QDataStream &amp;stream, <a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;myclass)</td></tr>
+<tr class="memitem:ac0d28f7b0a0c877592716bf643a1d8bd"><td class="memItemLeft" align="right" valign="top">QDataStream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d00/a00186.html#ac0d28f7b0a0c877592716bf643a1d8bd">operator&gt;&gt;</a> (QDataStream &amp;stream, <a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;myclass)</td></tr>
 <tr class="separator:ac0d28f7b0a0c877592716bf643a1d8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"></div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>Core/diffs/<a class="el" href="../../">diffelement.h</a></li>
-<li>Core/diffs/<a class="el" href="../../">diffelement.cpp</a></li>
-</ul>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00010">10</a> of file <a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8d396cff83483225ce6607a6468a6ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d396cff83483225ce6607a6468a6ac2">&#9670;&nbsp;</a></span>~DiffElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DiffElement::~DiffElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/a00035_source.html#l00003">3</a> of file <a class="el" href="../../d4/d8c/a00035_source.html">diffelement.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d41/a00038_source.html#l00037">data</a>.</p>
+<div class="fragment"><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;                          {</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  <span class="keyword">delete</span> <a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;}</div><div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abb725fa0a448bf536959a5c469556599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb725fa0a448bf536959a5c469556599">&#9670;&nbsp;</a></span>DiffElement() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DiffElement::DiffElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/a00035_source.html#l00007">7</a> of file <a class="el" href="../../d4/d8c/a00035_source.html">diffelement.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d41/a00038_source.html#l00037">data</a>, <a class="el" href="../../d8/d41/a00038_source.html#l00008">eEmpty</a>, and <a class="el" href="../../d8/d41/a00038_source.html#l00028">type</a>.</p>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                         {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a> = <span class="keyword">new</span> <a class="code" href="../../d3/dd1/a00214.html">GameElementData</a>();</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a> = <a class="code" href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55ad9055c9ab98346c97996abcbc2ebf271">eEmpty</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">time</a> = 0;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div><div class="ttc" id="a00186_html_a3d790fc662b3fca8c99889995d688be3"><div class="ttname"><a href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">DiffElement::time</a></div><div class="ttdeci">uint64_t time</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00029">diffelement.h:29</a></div></div>
+<div class="ttc" id="a00214_html"><div class="ttname"><a href="../../d3/dd1/a00214.html">GameElementData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00016">ibasegameelement.h:16</a></div></div>
+<div class="ttc" id="a00038_html_ab32e61d383765a32bc5f9efebb4b9f55ad9055c9ab98346c97996abcbc2ebf271"><div class="ttname"><a href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55ad9055c9ab98346c97996abcbc2ebf271">eEmpty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00008">diffelement.h:8</a></div></div>
+<div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+<div class="ttc" id="a00186_html_ad5d4aeee742d315da4f48e7f0b0218db"><div class="ttname"><a href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">DiffElement::type</a></div><div class="ttdeci">eDiffType type</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00028">diffelement.h:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a16d458cabd9af1a12041fecc5af38b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d458cabd9af1a12041fecc5af38b9b">&#9670;&nbsp;</a></span>DiffElement() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DiffElement::DiffElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/a00035_source.html#l00013">13</a> of file <a class="el" href="../../d4/d8c/a00035_source.html">diffelement.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d41/a00038_source.html#l00037">data</a>, <a class="el" href="../../d8/d41/a00038_source.html#l00008">eEmpty</a>, <a class="el" href="../../d8/d41/a00038_source.html#l00028">type</a>, and <a class="el" href="../../d4/d8c/a00035_source.html#l00031">update()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                             {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a> = <span class="keyword">new</span> <a class="code" href="../../d3/dd1/a00214.html">GameElementData</a>();</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a> = <a class="code" href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55ad9055c9ab98346c97996abcbc2ebf271">eEmpty</a>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <a class="code" href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">time</a> = 0;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#ade3700027a45658d045bae66450f2a2a">update</a>(&amp;element);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div><div class="ttc" id="a00186_html_a3d790fc662b3fca8c99889995d688be3"><div class="ttname"><a href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">DiffElement::time</a></div><div class="ttdeci">uint64_t time</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00029">diffelement.h:29</a></div></div>
+<div class="ttc" id="a00214_html"><div class="ttname"><a href="../../d3/dd1/a00214.html">GameElementData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00016">ibasegameelement.h:16</a></div></div>
+<div class="ttc" id="a00186_html_ade3700027a45658d045bae66450f2a2a"><div class="ttname"><a href="../../d8/d00/a00186.html#ade3700027a45658d045bae66450f2a2a">DiffElement::update</a></div><div class="ttdeci">void update(DiffElement *element)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d8c/a00035_source.html#l00031">diffelement.cpp:31</a></div></div>
+<div class="ttc" id="a00038_html_ab32e61d383765a32bc5f9efebb4b9f55ad9055c9ab98346c97996abcbc2ebf271"><div class="ttname"><a href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55ad9055c9ab98346c97996abcbc2ebf271">eEmpty</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00008">diffelement.h:8</a></div></div>
+<div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+<div class="ttc" id="a00186_html_ad5d4aeee742d315da4f48e7f0b0218db"><div class="ttname"><a href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">DiffElement::type</a></div><div class="ttdeci">eDiffType type</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00028">diffelement.h:28</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d00/a00186_a16d458cabd9af1a12041fecc5af38b9b_cgraph.svg" width="468" height="42"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a82e8ecd785a9d06708c42f128b7aaf09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e8ecd785a9d06708c42f128b7aaf09">&#9670;&nbsp;</a></span>DiffElement() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DiffElement::DiffElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55">eDiffType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/a00035_source.html#l00020">20</a> of file <a class="el" href="../../d4/d8c/a00035_source.html">diffelement.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d0/d89/a00071_source.html#l00027">IBaseGameElement::copyData()</a>, <a class="el" href="../../d8/d41/a00038_source.html#l00037">data</a>, and <a class="el" href="../../d8/d41/a00038_source.html#l00028">type</a>.</p>
+<div class="fragment"><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                                               {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a> = <a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  this-&gt;data = <span class="keyword">new</span> <a class="code" href="../../d3/dd1/a00214.html">GameElementData</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  data-&gt;<a class="code" href="../../dc/d9a/a00218.html#a3542e932f00f3bc14039f88c29f410be">copyData</a>(*this-&gt;data);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">time</a> = 0;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="ttc" id="a00186_html_a3d790fc662b3fca8c99889995d688be3"><div class="ttname"><a href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">DiffElement::time</a></div><div class="ttdeci">uint64_t time</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00029">diffelement.h:29</a></div></div>
+<div class="ttc" id="a00214_html"><div class="ttname"><a href="../../d3/dd1/a00214.html">GameElementData</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00016">ibasegameelement.h:16</a></div></div>
+<div class="ttc" id="a00218_html_a3542e932f00f3bc14039f88c29f410be"><div class="ttname"><a href="../../dc/d9a/a00218.html#a3542e932f00f3bc14039f88c29f410be">IBaseGameElement::copyData</a></div><div class="ttdeci">void copyData(GameElementData &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d89/a00071_source.html#l00027">ibasegameelement.cpp:27</a></div></div>
+<div class="ttc" id="a00186_html_ad5d4aeee742d315da4f48e7f0b0218db"><div class="ttname"><a href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">DiffElement::type</a></div><div class="ttdeci">eDiffType type</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00028">diffelement.h:28</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d00/a00186_a82e8ecd785a9d06708c42f128b7aaf09_cgraph.svg" width="560" height="42"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a735e7c16ab3c3d92ee102a2125510971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735e7c16ab3c3d92ee102a2125510971">&#9670;&nbsp;</a></span>generateGameElementInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d9a/a00218.html">IBaseGameElement</a> * DiffElement::generateGameElementInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/a00035_source.html#l00027">27</a> of file <a class="el" href="../../d4/d8c/a00035_source.html">diffelement.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d41/a00038_source.html#l00037">data</a>, and <a class="el" href="../../d5/de0/a00050_source.html#l00009">getElement()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../db/dab/a00089_source.html#l00040">ListBseMap::updateFromDiff()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                           {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="../../d5/de0/a00050.html#ac686a69396391b2a08d6d7a34b5b9aea">getElement</a>(*<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div><div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+<div class="ttc" id="a00050_html_ac686a69396391b2a08d6d7a34b5b9aea"><div class="ttname"><a href="../../d5/de0/a00050.html#ac686a69396391b2a08d6d7a34b5b9aea">getElement</a></div><div class="ttdeci">IBaseGameElement * getElement(GameElementData &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/de0/a00050_source.html#l00009">gameelementfactory.h:9</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d00/a00186_a735e7c16ab3c3d92ee102a2125510971_cgraph.svg" width="427" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d00/a00186_a735e7c16ab3c3d92ee102a2125510971_icgraph.svg" width="568" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a71a0588ee446bbd8f6ec12680201e331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a0588ee446bbd8f6ec12680201e331">&#9670;&nbsp;</a></span>getData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/dd1/a00214.html">GameElementData</a>* DiffElement::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00031">31</a> of file <a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d41/a00038_source.html#l00037">data</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>; }</div><div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ade3700027a45658d045bae66450f2a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3700027a45658d045bae66450f2a2a">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DiffElement::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d00/a00186.html">DiffElement</a> *&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d4/d8c/a00035_source.html#l00031">31</a> of file <a class="el" href="../../d4/d8c/a00035_source.html">diffelement.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="../../d8/d41/a00038_source.html#l00028">type</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/a00035_source.html#l00013">DiffElement()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                             {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a> = element-&gt;<a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">time</a> = element-&gt;<a class="code" href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">time</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#a106720bc4626ee7fe2ba449f9341764b">position</a> = <span class="keyword">new</span> QVector3D(*element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#a106720bc4626ee7fe2ba449f9341764b">position</a>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#a51a21dd62c54c51c8876345cd2566a20">helth</a> = <span class="keyword">new</span> <a class="code" href="../../d7/d25/a00182.html">InfinityDouble</a>(*element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#a51a21dd62c54c51c8876345cd2566a20">helth</a>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#a0ce85d8f073571684da4032f6905d72b">weight</a> = <span class="keyword">new</span> <a class="code" href="../../d7/d25/a00182.html">InfinityDouble</a>(*element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#a0ce85d8f073571684da4032f6905d72b">weight</a>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#a680b775d70a0f088e5bf057dec7d6207">transitWeight</a> =</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keyword">new</span> <a class="code" href="../../d7/d25/a00182.html">InfinityDouble</a>(*element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#a680b775d70a0f088e5bf057dec7d6207">transitWeight</a>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#ae13cec53c661272a111a045c7a6b2c7d">additionalData</a> =</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keyword">new</span> QByteArray(*element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#ae13cec53c661272a111a045c7a6b2c7d">additionalData</a>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#a1e0848308b3541c759e42a260613abe7">type</a> = element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#a1e0848308b3541c759e42a260613abe7">type</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#aa26f51204ef64c7a433eb261a4c0ded8">name</a> = element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#aa26f51204ef64c7a433eb261a4c0ded8">name</a>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  this-&gt;<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#afcd33bc22674f40f84ef7e83e008ff4a">rVision</a> = element-&gt;<a class="code" href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">getData</a>()-&gt;<a class="code" href="../../d3/dd1/a00214.html#afcd33bc22674f40f84ef7e83e008ff4a">rVision</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="a00186_html_a3d790fc662b3fca8c99889995d688be3"><div class="ttname"><a href="../../d8/d00/a00186.html#a3d790fc662b3fca8c99889995d688be3">DiffElement::time</a></div><div class="ttdeci">uint64_t time</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00029">diffelement.h:29</a></div></div>
+<div class="ttc" id="a00214_html_a0ce85d8f073571684da4032f6905d72b"><div class="ttname"><a href="../../d3/dd1/a00214.html#a0ce85d8f073571684da4032f6905d72b">GameElementData::weight</a></div><div class="ttdeci">InfinityDouble * weight</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00019">ibasegameelement.h:19</a></div></div>
+<div class="ttc" id="a00214_html_a106720bc4626ee7fe2ba449f9341764b"><div class="ttname"><a href="../../d3/dd1/a00214.html#a106720bc4626ee7fe2ba449f9341764b">GameElementData::position</a></div><div class="ttdeci">QVector3D * position</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00017">ibasegameelement.h:17</a></div></div>
+<div class="ttc" id="a00182_html"><div class="ttname"><a href="../../d7/d25/a00182.html">InfinityDouble</a></div><div class="ttdef"><b>Definition:</b> <a href="../../da/d2a/a00086_source.html#l00006">infinitydouble.h:6</a></div></div>
+<div class="ttc" id="a00214_html_afcd33bc22674f40f84ef7e83e008ff4a"><div class="ttname"><a href="../../d3/dd1/a00214.html#afcd33bc22674f40f84ef7e83e008ff4a">GameElementData::rVision</a></div><div class="ttdeci">qint32 rVision</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00022">ibasegameelement.h:22</a></div></div>
+<div class="ttc" id="a00214_html_a680b775d70a0f088e5bf057dec7d6207"><div class="ttname"><a href="../../d3/dd1/a00214.html#a680b775d70a0f088e5bf057dec7d6207">GameElementData::transitWeight</a></div><div class="ttdeci">InfinityDouble * transitWeight</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00020">ibasegameelement.h:20</a></div></div>
+<div class="ttc" id="a00214_html_ae13cec53c661272a111a045c7a6b2c7d"><div class="ttname"><a href="../../d3/dd1/a00214.html#ae13cec53c661272a111a045c7a6b2c7d">GameElementData::additionalData</a></div><div class="ttdeci">QByteArray * additionalData</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00021">ibasegameelement.h:21</a></div></div>
+<div class="ttc" id="a00214_html_a51a21dd62c54c51c8876345cd2566a20"><div class="ttname"><a href="../../d3/dd1/a00214.html#a51a21dd62c54c51c8876345cd2566a20">GameElementData::helth</a></div><div class="ttdeci">InfinityDouble * helth</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00018">ibasegameelement.h:18</a></div></div>
+<div class="ttc" id="a00214_html_aa26f51204ef64c7a433eb261a4c0ded8"><div class="ttname"><a href="../../d3/dd1/a00214.html#aa26f51204ef64c7a433eb261a4c0ded8">GameElementData::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00024">ibasegameelement.h:24</a></div></div>
+<div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+<div class="ttc" id="a00186_html_a71a0588ee446bbd8f6ec12680201e331"><div class="ttname"><a href="../../d8/d00/a00186.html#a71a0588ee446bbd8f6ec12680201e331">DiffElement::getData</a></div><div class="ttdeci">GameElementData * getData()</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00031">diffelement.h:31</a></div></div>
+<div class="ttc" id="a00214_html_a1e0848308b3541c759e42a260613abe7"><div class="ttname"><a href="../../d3/dd1/a00214.html#a1e0848308b3541c759e42a260613abe7">GameElementData::type</a></div><div class="ttdeci">qint32 type</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00023">ibasegameelement.h:23</a></div></div>
+<div class="ttc" id="a00186_html_ad5d4aeee742d315da4f48e7f0b0218db"><div class="ttname"><a href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">DiffElement::type</a></div><div class="ttdeci">eDiffType type</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00028">diffelement.h:28</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d00/a00186_ade3700027a45658d045bae66450f2a2a_icgraph.svg" width="468" height="42"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a68d5973a4f23de0696d5c164b9a14397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d5973a4f23de0696d5c164b9a14397">&#9670;&nbsp;</a></span>operator<<</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDataStream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>myclass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00016">16</a> of file <a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                             {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    stream &lt;&lt; ((int)myclass.<a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> stream &lt;&lt; (*myclass.<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div><div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+<div class="ttc" id="a00186_html_ad5d4aeee742d315da4f48e7f0b0218db"><div class="ttname"><a href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">DiffElement::type</a></div><div class="ttdeci">eDiffType type</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00028">diffelement.h:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac0d28f7b0a0c877592716bf643a1d8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d28f7b0a0c877592716bf643a1d8bd">&#9670;&nbsp;</a></span>operator>></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDataStream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d00/a00186.html">DiffElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>myclass</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00021">21</a> of file <a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                                                            {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    myclass.<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>-&gt;<a class="code" href="../../d3/dd1/a00214.html#ac02bbcd6433017f12348a199d8ba5267">defaultInit</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    stream &gt;&gt; type &gt;&gt; (*myclass.<a class="code" href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">data</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    myclass.<a class="code" href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">type</a> = (<a class="code" href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55">eDiffType</a>)type;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> stream;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div><div class="ttc" id="a00038_html_ab32e61d383765a32bc5f9efebb4b9f55"><div class="ttname"><a href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55">eDiffType</a></div><div class="ttdeci">eDiffType</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00008">diffelement.h:8</a></div></div>
+<div class="ttc" id="a00214_html_ac02bbcd6433017f12348a199d8ba5267"><div class="ttname"><a href="../../d3/dd1/a00214.html#ac02bbcd6433017f12348a199d8ba5267">GameElementData::defaultInit</a></div><div class="ttdeci">void defaultInit()</div><div class="ttdef"><b>Definition:</b> <a href="../../db/db6/a00074_source.html#l00034">ibasegameelement.h:34</a></div></div>
+<div class="ttc" id="a00186_html_a3b1834e58d55e785e8637fc0804f764a"><div class="ttname"><a href="../../d8/d00/a00186.html#a3b1834e58d55e785e8637fc0804f764a">DiffElement::data</a></div><div class="ttdeci">GameElementData * data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00037">diffelement.h:37</a></div></div>
+<div class="ttc" id="a00186_html_ad5d4aeee742d315da4f48e7f0b0218db"><div class="ttname"><a href="../../d8/d00/a00186.html#ad5d4aeee742d315da4f48e7f0b0218db">DiffElement::type</a></div><div class="ttdeci">eDiffType type</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d41/a00038_source.html#l00028">diffelement.h:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3b1834e58d55e785e8637fc0804f764a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1834e58d55e785e8637fc0804f764a">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/dd1/a00214.html">GameElementData</a>* DiffElement::data</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00037">37</a> of file <a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/a00035_source.html#l00007">DiffElement()</a>, <a class="el" href="../../d4/d8c/a00035_source.html#l00027">generateGameElementInstance()</a>, <a class="el" href="../../d8/d41/a00038_source.html#l00031">getData()</a>, and <a class="el" href="../../d4/d8c/a00035_source.html#l00003">~DiffElement()</a>.</p>
+
+</div>
+</div>
+<a id="a3d790fc662b3fca8c99889995d688be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d790fc662b3fca8c99889995d688be3">&#9670;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t DiffElement::time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00029">29</a> of file <a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>.</p>
+
+</div>
+</div>
+<a id="ad5d4aeee742d315da4f48e7f0b0218db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d4aeee742d315da4f48e7f0b0218db">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d41/a00038.html#ab32e61d383765a32bc5f9efebb4b9f55">eDiffType</a> DiffElement::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d41/a00038_source.html#l00028">28</a> of file <a class="el" href="../../d8/d41/a00038_source.html">diffelement.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d4/d8c/a00035_source.html#l00007">DiffElement()</a>, <a class="el" href="../../d4/d8c/a00035_source.html#l00031">update()</a>, and <a class="el" href="../../db/dab/a00089_source.html#l00040">ListBseMap::updateFromDiff()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

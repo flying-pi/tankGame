@@ -6,5 +6,5 @@
 <area shape="rect" id="node5" href="$d2/dc8/a00242.html" title="ServerWorker" alt="" coords="254,115,390,145"/>
 <area shape="rect" id="node7" href="$d0/da7/a00250.html" title="ServerWorker::ReceiverThread" alt="" coords="183,169,462,200"/>
 <area shape="rect" id="node8" href="$d5/dcb/a00170.html" title="SimpleConnection" alt="" coords="236,224,409,255"/>
-<area shape="rect" id="node9" href="$d9/d90/a00178.html" title="SimpleConnection::Receiver" alt="" coords="194,279,451,309"/>
+<area shape="rect" id="node9" href="$d9/d90/a00178.html" title="SimpleConnection::Receiver\lThread" alt="" coords="194,279,451,328"/>
 </map>

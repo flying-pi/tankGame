@@ -1,9 +1,12 @@
-\subsection{Server\+Connection Class Reference}
+\hypertarget{a00238}{}\section{Server\+Connection Class Reference}
 \label{a00238}\index{Server\+Connection@{Server\+Connection}}
 
 
-Inheritance diagram for Server\+Connection\+:
-\nopagebreak
+{\ttfamily \#include \char`\"{}serverconnection.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Server\+Connection\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,66 +23,336 @@ Collaboration diagram for Server\+Connection\+:
 \includegraphics[width=329pt]{d7/d40/a00236}
 \end{center}
 \end{figure}
-\subsubsection*{Signals}
+\subsection*{Signals}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{a00238_ae97f8eaa15a3da8f069ad502e89039ae}} 
-void {\bfseries on\+Server\+Error} (server\+Error error)
+void \hyperlink{a00238_ae97f8eaa15a3da8f069ad502e89039ae}{on\+Server\+Error} (\hyperlink{a00131_a65727a063024ff0dedf1ac2f087f4165}{server\+Error} error)
 \end{DoxyCompactItemize}
-\subsubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{a00238_a1d45a6a7b2370c82ed2849959bb18c2a}} 
-void {\bfseries start\+Server} ()
+\hyperlink{a00238_af919491d0e2ff066b0a58cc50fc0d90d}{$\sim$\+Server\+Connection} ()
 \item 
-\mbox{\label{a00238_a26c5b969c3e5151033673e2bcce5ed4a}} 
-void {\bfseries receive\+Responce} (\textbf{ Diff\+Card} $\ast$diff, \textbf{ Message\+For\+Server} $\ast$message)
+void \hyperlink{a00238_a1d45a6a7b2370c82ed2849959bb18c2a}{start\+Server} ()
 \item 
-\mbox{\label{a00162_aa85db0004c26606c5ac294e5de000b96}} 
-virtual void {\bfseries set\+Default\+Receiver} (\textbf{ Mail\+Receiver} $\ast$receiver)
+void \hyperlink{a00238_a26c5b969c3e5151033673e2bcce5ed4a}{receive\+Responce} (\hyperlink{a00190}{Diff\+Card} $\ast$diff, \hyperlink{a00166}{Message\+For\+Server} $\ast$message)
+\item 
+virtual void \hyperlink{a00162_aa85db0004c26606c5ac294e5de000b96}{set\+Default\+Receiver} (\hyperlink{a00154}{Mail\+Receiver} $\ast$\hyperlink{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}{receiver})
 \end{DoxyCompactItemize}
-\subsubsection*{Static Public Member Functions}
+\subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{a00238_ad64d541093e285a983911f22ab9a0bff}} 
-static \textbf{ Server\+Connection} $\ast$ {\bfseries get\+Server\+Instance} ()
+static \hyperlink{a00238}{Server\+Connection} $\ast$ \hyperlink{a00238_ad64d541093e285a983911f22ab9a0bff}{get\+Server\+Instance} ()
 \end{DoxyCompactItemize}
-\subsubsection*{Protected Slots}
+\subsection*{Protected Slots}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{a00238_af558fe509b60eb019281316513f6d188}} 
-void {\bfseries on\+Worker\+Stop} (\textbf{ Server\+Worker} $\ast$worker)
+void \hyperlink{a00238_af558fe509b60eb019281316513f6d188}{on\+Worker\+Stop} (\hyperlink{a00242}{Server\+Worker} $\ast$worker)
 \end{DoxyCompactItemize}
-\subsubsection*{Protected Member Functions}
+\subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{a00238_ac7f219a30789e91afa079ab5e49529bd}} 
-void {\bfseries run} ()
+\hyperlink{a00238_a0adf644e7715ddbb83a53651b0804dec}{Server\+Connection} ()
+\item 
+void \hyperlink{a00238_ac7f219a30789e91afa079ab5e49529bd}{run} ()
 \end{DoxyCompactItemize}
-\subsubsection*{Protected Attributes}
+\subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}} 
-Q\+Tcp\+Server $\ast$ {\bfseries server}
+Q\+Tcp\+Server $\ast$ \hyperlink{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}{server}
 \item 
-\mbox{\label{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}} 
-Q\+List$<$ \textbf{ Server\+Worker} $\ast$ $>$ $\ast$ {\bfseries connections}
+Q\+List$<$ \hyperlink{a00242}{Server\+Worker} $\ast$ $>$ $\ast$ \hyperlink{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections}
 \item 
-\mbox{\label{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}} 
-\textbf{ Mail\+Receiver} $\ast$ {\bfseries receiver}
+\hyperlink{a00154}{Mail\+Receiver} $\ast$ \hyperlink{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}{receiver}
 \end{DoxyCompactItemize}
-\subsubsection*{Static Protected Attributes}
+\subsection*{Static Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\label{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}} 
-static \textbf{ Server\+Connection} $\ast$ {\bfseries instance} = nullptr
+static \hyperlink{a00238}{Server\+Connection} $\ast$ \hyperlink{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}{instance} = nullptr
 \end{DoxyCompactItemize}
 
 
-\subsubsection{Detailed Description}
+\subsection{Detailed Description}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
-\item 
-Server/serverconnection.\+h\item 
-Server/serverconnection.\+cpp\end{DoxyCompactItemize}
+Definition at line \hyperlink{a00131_source_l00012}{12} of file \hyperlink{a00131_source}{serverconnection.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00238_af919491d0e2ff066b0a58cc50fc0d90d}\label{a00238_af919491d0e2ff066b0a58cc50fc0d90d}} 
+\index{Server\+Connection@{Server\+Connection}!````~Server\+Connection@{$\sim$\+Server\+Connection}}
+\index{````~Server\+Connection@{$\sim$\+Server\+Connection}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{$\sim$\+Server\+Connection()}{~ServerConnection()}}
+{\footnotesize\ttfamily Server\+Connection\+::$\sim$\+Server\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00128_source_l00006}{6} of file \hyperlink{a00128_source}{serverconnection.\+cpp}.
+
+
+\begin{DoxyCode}
+00006                                     \{
+00007   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections}->size(); i++)
+00008     \textcolor{keyword}{delete} \hyperlink{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections}->at(i);
+00009   \textcolor{keyword}{delete} \hyperlink{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections};
+00010 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{a00238_a0adf644e7715ddbb83a53651b0804dec}\label{a00238_a0adf644e7715ddbb83a53651b0804dec}} 
+\index{Server\+Connection@{Server\+Connection}!Server\+Connection@{Server\+Connection}}
+\index{Server\+Connection@{Server\+Connection}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{Server\+Connection()}{ServerConnection()}}
+{\footnotesize\ttfamily Server\+Connection\+::\+Server\+Connection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00128_source_l00012}{12} of file \hyperlink{a00128_source}{serverconnection.\+cpp}.
+
+
+\begin{DoxyCode}
+00012                                    \{
+00013   \hyperlink{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections} = \textcolor{keyword}{new} QList<ServerWorker*>();
+00014 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{a00238_ad64d541093e285a983911f22ab9a0bff}\label{a00238_ad64d541093e285a983911f22ab9a0bff}} 
+\index{Server\+Connection@{Server\+Connection}!get\+Server\+Instance@{get\+Server\+Instance}}
+\index{get\+Server\+Instance@{get\+Server\+Instance}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{get\+Server\+Instance()}{getServerInstance()}}
+{\footnotesize\ttfamily static \hyperlink{a00238}{Server\+Connection}$\ast$ Server\+Connection\+::get\+Server\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \hyperlink{a00131_source_l00018}{18} of file \hyperlink{a00131_source}{serverconnection.\+h}.
+
+
+
+References \hyperlink{a00131_source_l00029}{instance}.
+
+
+
+Referenced by \hyperlink{a00290_source_l00020}{init\+Server()}.
+
+
+\begin{DoxyCode}
+00018                                                       \{
+00019     \textcolor{keywordflow}{if} (\hyperlink{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}{instance} == \textcolor{keyword}{nullptr})
+00020       \hyperlink{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}{instance} = \textcolor{keyword}{new} \hyperlink{a00238_a0adf644e7715ddbb83a53651b0804dec}{ServerConnection}();
+00021     \textcolor{keywordflow}{return} \hyperlink{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}{instance};
+00022   \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d2e/a00238_ad64d541093e285a983911f22ab9a0bff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00238_ae97f8eaa15a3da8f069ad502e89039ae}\label{a00238_ae97f8eaa15a3da8f069ad502e89039ae}} 
+\index{Server\+Connection@{Server\+Connection}!on\+Server\+Error@{on\+Server\+Error}}
+\index{on\+Server\+Error@{on\+Server\+Error}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{on\+Server\+Error}{onServerError}}
+{\footnotesize\ttfamily void Server\+Connection\+::on\+Server\+Error (\begin{DoxyParamCaption}\item[{\hyperlink{a00131_a65727a063024ff0dedf1ac2f087f4165}{server\+Error}}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{a00238_af558fe509b60eb019281316513f6d188}\label{a00238_af558fe509b60eb019281316513f6d188}} 
+\index{Server\+Connection@{Server\+Connection}!on\+Worker\+Stop@{on\+Worker\+Stop}}
+\index{on\+Worker\+Stop@{on\+Worker\+Stop}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{on\+Worker\+Stop}{onWorkerStop}}
+{\footnotesize\ttfamily void Server\+Connection\+::on\+Worker\+Stop (\begin{DoxyParamCaption}\item[{\hyperlink{a00242}{Server\+Worker} $\ast$}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [slot]}}
+
+
+
+Definition at line \hyperlink{a00128_source_l00016}{16} of file \hyperlink{a00128_source}{serverconnection.\+cpp}.
+
+
+
+Referenced by \hyperlink{a00290_source_l00020}{init\+Server()}.
+
+
+\begin{DoxyCode}
+00016                                                         \{
+00017   \hyperlink{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections}->removeAll(worker);
+00018   \textcolor{keyword}{delete} worker;
+00019 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d2e/a00238_af558fe509b60eb019281316513f6d188_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00238_a26c5b969c3e5151033673e2bcce5ed4a}\label{a00238_a26c5b969c3e5151033673e2bcce5ed4a}} 
+\index{Server\+Connection@{Server\+Connection}!receive\+Responce@{receive\+Responce}}
+\index{receive\+Responce@{receive\+Responce}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{receive\+Responce()}{receiveResponce()}}
+{\footnotesize\ttfamily void Server\+Connection\+::receive\+Responce (\begin{DoxyParamCaption}\item[{\hyperlink{a00190}{Diff\+Card} $\ast$}]{diff,  }\item[{\hyperlink{a00166}{Message\+For\+Server} $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{a00162_a1ac02b696f81c3b3e9e5226574b1b135}{Mail\+Sender}.
+
+
+
+Definition at line \hyperlink{a00128_source_l00054}{54} of file \hyperlink{a00128_source}{serverconnection.\+cpp}.
+
+
+\begin{DoxyCode}
+00055                                                                   \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{a00238_ac7f219a30789e91afa079ab5e49529bd}\label{a00238_ac7f219a30789e91afa079ab5e49529bd}} 
+\index{Server\+Connection@{Server\+Connection}!run@{run}}
+\index{run@{run}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Server\+Connection\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00128_source_l00027}{27} of file \hyperlink{a00128_source}{serverconnection.\+cpp}.
+
+
+
+References \hyperlink{a00134_source_l00048}{Server\+Worker\+::on\+Socket\+Error()}.
+
+
+\begin{DoxyCode}
+00027                            \{
+00028   \hyperlink{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}{server} = \textcolor{keyword}{new} QTcpServer();
+00029   \textcolor{keywordflow}{if} (!\hyperlink{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}{server}->listen(QHostAddress::Any, \hyperlink{a00147_a7ac0709dc92e311b3524c365a2a05d96}{DefaultServerParams::port})) \{
+00030     emit \hyperlink{a00238_ae97f8eaa15a3da8f069ad502e89039ae}{onServerError}(\hyperlink{a00131_a65727a063024ff0dedf1ac2f087f4165af21059407733b78da140dbc07981a44a}{serverError::canNotStartServer});
+00031     \textcolor{keywordflow}{return};
+00032   \}
+00033   qDebug() << \hyperlink{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}{server}->isListening();
+00034   \textcolor{keywordtype}{bool} isAppareNewConnection;
+00035   \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{
+00036     isAppareNewConnection = \hyperlink{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}{server}->waitForNewConnection(-1);
+00037     \textcolor{comment}{//    isAppareNewConnection = server->hasPendingConnections();}
+00038     \textcolor{keywordflow}{if} (isAppareNewConnection) \{
+00039       QTcpSocket* newConnection = \hyperlink{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}{server}->nextPendingConnection();
+00040       \textcolor{keywordflow}{if} (newConnection == \textcolor{keyword}{nullptr})
+00041         \textcolor{keywordflow}{continue};
+00042       qInfo() << \textcolor{stringliteral}{"appare new connection  :: "}
+00043               << newConnection->peerAddress().toString() << \textcolor{stringliteral}{":"}
+00044               << newConnection->peerPort();
+00045       \hyperlink{a00242}{ServerWorker}* newWorker = \textcolor{keyword}{new} \hyperlink{a00242}{ServerWorker}(newConnection);
+00046       newWorker->\hyperlink{a00162_aa85db0004c26606c5ac294e5de000b96}{setDefaultReceiver}(this->\hyperlink{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}{receiver});
+00047       \hyperlink{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}{connections}->append(newWorker);
+00048       newWorker->start();
+00049     \}
+00050     msleep(30);
+00051   \}
+00052 \}
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d2e/a00238_ac7f219a30789e91afa079ab5e49529bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{a00162_aa85db0004c26606c5ac294e5de000b96}\label{a00162_aa85db0004c26606c5ac294e5de000b96}} 
+\index{Server\+Connection@{Server\+Connection}!set\+Default\+Receiver@{set\+Default\+Receiver}}
+\index{set\+Default\+Receiver@{set\+Default\+Receiver}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{set\+Default\+Receiver()}{setDefaultReceiver()}}
+{\footnotesize\ttfamily virtual void Mail\+Sender\+::set\+Default\+Receiver (\begin{DoxyParamCaption}\item[{\hyperlink{a00154}{Mail\+Receiver} $\ast$}]{receiver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00058}{58} of file \hyperlink{a00005_source}{mailboxelement.\+h}.
+
+
+
+References \hyperlink{a00005_source_l00063}{Mail\+Sender\+::receiver}.
+
+
+\begin{DoxyCode}
+00058                                                           \{
+00059     this->receiver = \hyperlink{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}{receiver};
+00060   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{a00238_a1d45a6a7b2370c82ed2849959bb18c2a}\label{a00238_a1d45a6a7b2370c82ed2849959bb18c2a}} 
+\index{Server\+Connection@{Server\+Connection}!start\+Server@{start\+Server}}
+\index{start\+Server@{start\+Server}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{start\+Server()}{startServer()}}
+{\footnotesize\ttfamily void Server\+Connection\+::start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \hyperlink{a00128_source_l00021}{21} of file \hyperlink{a00128_source}{serverconnection.\+cpp}.
+
+
+
+Referenced by \hyperlink{a00290_source_l00020}{init\+Server()}.
+
+
+\begin{DoxyCode}
+00021                                    \{
+00022   \textcolor{keywordflow}{if} (this->isRunning())
+00023     \textcolor{keywordflow}{return};
+00024   this->start(Priority::NormalPriority);
+00025 \}
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/d2e/a00238_a1d45a6a7b2370c82ed2849959bb18c2a_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}\label{a00238_a7d9e1b1ac7c2d57b439ab5918e7c31d0}} 
+\index{Server\+Connection@{Server\+Connection}!connections@{connections}}
+\index{connections@{connections}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{connections}{connections}}
+{\footnotesize\ttfamily Q\+List$<$\hyperlink{a00242}{Server\+Worker}$\ast$$>$$\ast$ Server\+Connection\+::connections\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00131_source_l00032}{32} of file \hyperlink{a00131_source}{serverconnection.\+h}.
+
+\mbox{\Hypertarget{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}\label{a00238_adbbe8ffe6ee71b0aee4db9b6e689ba2a}} 
+\index{Server\+Connection@{Server\+Connection}!instance@{instance}}
+\index{instance@{instance}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{a00238}{Server\+Connection} $\ast$ Server\+Connection\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00131_source_l00029}{29} of file \hyperlink{a00131_source}{serverconnection.\+h}.
+
+
+
+Referenced by \hyperlink{a00131_source_l00018}{get\+Server\+Instance()}.
+
+\mbox{\Hypertarget{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}\label{a00162_aa57ce2f74f8ad76abb38974f85b97ac5}} 
+\index{Server\+Connection@{Server\+Connection}!receiver@{receiver}}
+\index{receiver@{receiver}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{receiver}{receiver}}
+{\footnotesize\ttfamily \hyperlink{a00154}{Mail\+Receiver}$\ast$ Mail\+Sender\+::receiver\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Definition at line \hyperlink{a00005_source_l00063}{63} of file \hyperlink{a00005_source}{mailboxelement.\+h}.
+
+
+
+Referenced by \hyperlink{a00005_source_l00058}{Mail\+Sender\+::set\+Default\+Receiver()}.
+
+\mbox{\Hypertarget{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}\label{a00238_aee9a8e6c0f1d25fc2fcb4662631c0c74}} 
+\index{Server\+Connection@{Server\+Connection}!server@{server}}
+\index{server@{server}!Server\+Connection@{Server\+Connection}}
+\subsubsection{\texorpdfstring{server}{server}}
+{\footnotesize\ttfamily Q\+Tcp\+Server$\ast$ Server\+Connection\+::server\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \hyperlink{a00131_source_l00031}{31} of file \hyperlink{a00131_source}{serverconnection.\+h}.
+

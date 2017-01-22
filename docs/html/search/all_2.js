@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['diffcard',['DiffCard',['../d7/d6e/a00190.html',1,'']]],
-  ['diffelement',['DiffElement',['../d8/d00/a00186.html',1,'']]]
+  ['cannotstartserver',['canNotStartServer',['../d7/d06/a00131.html#a65727a063024ff0dedf1ac2f087f4165af21059407733b78da140dbc07981a44a',1,'serverconnection.h']]],
+  ['clear',['clear',['../d7/d6e/a00190.html#ae1ca5f60f1c2c45bd71996892ade7e4e',1,'DiffCard::clear()'],['../da/de7/a00210.html#afcd2732fbdb804c0c56680c9a0bf514d',1,'SimpleDiffCard::clear()']]],
+  ['codingnum',['codingNum',['../d6/d5b/a00026.html#ac67899e626a301d63a108c03193ca4e1',1,'coreutil.h']]],
+  ['connection',['connection',['../d1/da8/a00230.html#a41df4a7a83c9440215d6db0d7efe6259',1,'Field::connection()'],['../d9/d2a/a00270.html#ac06b2fa9e13a0a52317f843e77b63cf1',1,'Gamer::connection()']]],
+  ['connections',['connections',['../da/d2e/a00238.html#a7d9e1b1ac7c2d57b439ab5918e7c31d0',1,'ServerConnection']]],
+  ['connectiontype',['connectionType',['../d9/d38/a00166.html#a32f7c4034883ac363ca247c8a2843040',1,'MessageForServer']]],
+  ['connecttoserver',['connectToServer',['../d1/da8/a00230.html#a7f59e0acc6381dd965ae367a666f0b18',1,'Field']]],
+  ['const_2eh',['const.h',['../d3/d00/a00113.html',1,'']]],
+  ['copydata',['copyData',['../dc/d9a/a00218.html#a3542e932f00f3bc14039f88c29f410be',1,'IBaseGameElement']]],
+  ['core',['Core',['../d5/df1/a00206.html',1,'Core'],['../d5/df1/a00206.html#a14e63188e0aa7c4a6f72d5501384d1f9',1,'Core::Core()']]],
+  ['core_2ecpp',['core.cpp',['../d2/de7/a00014.html',1,'']]],
+  ['core_2eh',['core.h',['../d4/d51/a00017.html',1,'']]],
+  ['core_5fglobal_2eh',['core_global.h',['../db/db2/a00020.html',1,'']]],
+  ['coreconst_2eh',['coreconst.h',['../d3/d52/a00023.html',1,'']]],
+  ['coreshared_5fexport',['CORESHARED_EXPORT',['../db/db2/a00020.html#a35b4f560a49976697e57858385e52c17',1,'core_global.h']]],
+  ['coreutil_2eh',['coreutil.h',['../d6/d5b/a00026.html',1,'']]],
+  ['count',['count',['../d9/d2a/a00270.html#abb5cfe27974fe9141ae8a7a2db8cc4be',1,'Gamer']]]
 ];

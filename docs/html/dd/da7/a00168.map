@@ -1,2 +1,3 @@
 <map id="SimpleConnection" name="SimpleConnection">
+<area shape="rect" id="node3" href="$d9/d90/a00178.html" title="{SimpleConnection::Receiver\lThread\n|# socket\l# in\l# isStart\l# isWork\l# isLoopActive\l|+ ReceiverThread()\l+ ~ReceiverThread()\l+ istThreadStart()\l+ stop()\l# run()\l}" alt="" coords="37,543,294,800"/>
 </map>
